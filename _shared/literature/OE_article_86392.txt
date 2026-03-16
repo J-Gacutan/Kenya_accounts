@@ -1,0 +1,2056 @@
+One Ecosystem 7: e86392
+doi: 10.3897/oneeco.7.e86392
+
+Research Article
+
+Accounting for ecosystem services and asset
+value: pilot accounts for KwaZulu-Natal,
+South Africa
+Jane Kirsten Turpie‡, Gwyneth Kay Letley§, Joshua Weiss§, Kevin Schmidt§
+‡ School of Economics, University of Cape Town, Rondebosch 7701, South Africa
+§ Anchor Environmental Consultants, Cape Town, South Africa
+
+Corresponding author: Jane Kirsten Turpie (jane.turpie@uct.ac.za)
+Academic editor: David N. Barton
+Received: 10 May 2022 | Accepted: 19 Sep 2022 | Published: 05 Dec 2022
+Citation: Turpie JK, Letley GK, Weiss J, Schmidt K (2022) Accounting for ecosystem services and asset value:
+pilot accounts for KwaZulu-Natal, South Africa. One Ecosystem 7: e86392.
+https://doi.org/10.3897/oneeco.7.e86392
+
+Abstract
+Pilot monetary ecosystem accounts were compiled for KwaZulu-Natal Province, South
+Africa, in order to highlight any data, methodological or process issues in their compilation
+and to contribute towards charting a strategy for ecosystem accounting. The Province is
+highly diverse, with eight biomes, large proportions under communal, private and state
+tenure, globally important biodiversity, variable landscape condition and encompassing
+catchment areas of nine river systems. We accounted for the supply and use of wild
+biomass, reared animal production, cultivation (including silviculture), nature-based
+tourism, property value, carbon storage and sequestration, pollination, flow regulation
+(maintenance of base flows), sediment retention, water quality amelioration and flood
+attenuation. For each ecosystem service, we devised conceptually valid methods that were
+suitable for the existing data to produce values consistent with the System of National
+Accounts. These were then summed to estimate total annual flows from each 100 x 100 m
+spatial unit and its asset value. Challenges encountered included lack of data on smallscale and subsistence production, mismatches in the classification of landcover and
+government production statistics, unreliable measures of ecosystem condition, the large
+scale of hydrological modelling and lack of centralised data organisation relating to
+hydrological services. There was heavy reliance on past empirical research and on global
+
+© Turpie J et al. This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY
+4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are
+credited.
+
+2
+
+Turpie J et al
+
+datasets. The combined value of the annual flow of the ecosystem services valued was
+R52.5 billion in 2011, equivalent to 12% of the provincial GDP. However, the values of
+many of the services have decreased over the accounting period, due to a combination of
+changes in demand and ecosystem condition. Asset value was undermined to some extent
+by unsustainable use of provisioning services. Some areas will require careful messaging,
+particularly in regard to the contentious issue of valuing carbon retention and the use of
+exchange values rather than welfare values that are used in economic analysis.
+
+Keywords
+natural capital accounting, ecosystem accounting, valuing ecosystem services, ecosystem
+asset value
+
+Introduction
+The United Nations’ System for Environmental Economic Accounting (SEEA) includes a
+framework for Ecosystem Accounting (SEEA EA) that was finalised in 2021 (United Nations
+2021). The SEEA EA complements and builds on the accounting for environmental assets
+as described in the SEEA Central Framework (United Nations et al. 2014b). It provides a
+spatially explicit approach that applies and adapts System of National Accounting (SNA)
+principles to systematically measure and monitor ecosystems for decision-making and
+planning, both in physical and monetary terms (Remme et al. 2018, Edens et al. 2022).
+The primary purpose of valuation in monetary terms is to integrate information on
+ecosystems and ecosystem services with information in the standard national accounts
+(United Nations 2021). Therefore, one of the main aims of the SEEA EA is to treat
+ecosystem services and assets in a way that is comparable to the treatment of produced
+assets and standard goods and services as described in the SNA. Recognising ecosystem
+services as outputs produced by ecosystem units allows for them to be recorded as being
+transacted within an accounting system.
+The main aim of this study was to pilot the development of monetary ecosystem accounts
+at a subnational scale in South Africa, following the then experimental SEEA EA (United
+Nations et al. 2014b) and associated guidelines (United Nations 2017). This study predated, but contributed to the development of the SEEA EA (United Nations 2021). The
+accounts were compiled for the Province of KwaZulu-Natal, building on the physical
+ecosystem extent and condition accounts compiled by Driver et al. (2015), as well as
+recent ecosystem service valuation studies carried out at national scale (Turpie et al.
+2017a) and metro scale for the eThekwini Municipality in KwaZulu-Natal (Turpie et al.
+2017b). This study provides the ecosystem services accounts in physical and monetary
+terms and the monetary ecosystem asset account for the years 2005 and 2011, based on
+available land-cover datasets. The accounts were presented in tabular form, at the scale of
+the Province, disaggregated by biome, as well as displayed in maps. This paper provides
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+3
+
+an overview and does not replicate all of the tables and figures in the Technical Report
+(Turpie et al. 2021) *1
+
+Study area
+KwaZulu-Natal is one of South Africa’s nine provinces and covers approximately 94000 km
+2
+or 8% of the country’s land area. It encompasses several full catchment areas from
+source to sea (Fig. 1). KwaZulu-Natal contains 10% of South Africa’s Strategic Water
+Source Areas (SWSAs) which deliver 50% of South Africa’s water (Nel et al. 2017, Le
+Maitre et al. 2018). An extensive network of engineered infrastructure supplies towns and
+cities with water.
+
+Figure 1.
+Topographical map of KwaZulu-Natal showing the main rivers, lakes and estuaries. The inset
+map shows KwaZulu-Natal’s location within South Africa.
+
+Due to its topographical variation and subtropical and coastal location, KwaZulu-Natal
+features most of South Africa’s biomes (Fig. 2) and supports a wealth of biodiversity. In
+2011, urban areas (Durban and other towns) covered 6.1% and 25.3% of the areas were
+under cultivation or tree plantations. There are six major river systems that end in large,
+permanently open estuaries, namely the Pongola, uMfolozi, Thukela, uMngeni, Mkomazi
+and the uMzimkhulu, as well as numerous smaller estuaries.
+
+Turpie J et al
+
+4
+
+Figure 2.
+The main towns, district municipality boundaries and the biomes of KwaZulu-Natal. Biomes
+from SANBI 2018 Vegetation Map (South African National Biodiversity Institute 2018). Note
+that ”freshwater ecosystems” and “azonal vegetation” (mainly associated with wetlands and
+riparian areas) have been combined as “freshwater ecosystems” for this study.
+
+KwaZulu-Natal contributed to 15.8% of South Africa’s GDP in 2011, with manufacturing and
+tertiary industries (trade, business services and transport and communications) being the
+dominant sectors (Statistics South Africa 2014). The sectors likely to benefit most from
+ecosystem services - Agriculture, forestry and fishing; Electricity, gas and water; Trade,
+catering and accommodation; and Finance, real estate and business services - contributed
+about 4%, 3%, 15% and 16%, respectively, in 2011. The Province is also the second most
+populous in the country with 10.3 million inhabitants in 2011 (almost 20% of the South
+African population). It has a youthful population with high birth rates and lower-thanaverage life expectancy and high dependency ratios (Statistics South Africa 2012).
+Unemployment rates were at 33% in 2011 (Statistics South Africa 2012). As of 2014, over
+60% of the adult population were classified as living in poverty, the third highest rate in
+South Africa (Statistics South Africa 2018).
+Almost 30% of the land area falls under the traditional authority (the Ingonyama Trust),
+which is largely under communal tenure (Fig. 3). State protected areas make up 8.7% of
+the land area and the remainder is under private tenure.
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+5
+
+Figure 3.
+Map of KwaZulu-Natal showing proclaimed protected areas (largely state-owned) as of 2011,
+Ingonyama Tribal Trust land (largely communal) and land under private tenure.
+
+Methodological Framework
+Ecosystems and ecosystem services
+Based on the full extent of accounting required for the SEEA EA, the KwaZulu-Natal
+monetary ecosystem accounts aimed to include ecosystem services from all types of
+cultivated areas, tree plantations, urban areas and man-made waterbodies, as well as
+natural (or semi-natural) terrestrial, freshwater and estuarine ecosystems within the
+accounting area, which excluded marine ecosystems.
+While the concept of ecosystem services is well established (Ehrlich and Mooney 1983),
+the development of a standardised approach to classify ecosystem services remains a
+serious challenge (United Nations et al. 2014a, Potschin et al. 2016, La Notte et al. 2017).
+Inconsistency across concepts and terminology has resulted in ambiguity and the SEEA
+Technical Recommendations (United Nations 2017) flagged the “definition and
+
+6
+
+Turpie J et al
+
+classification of ecosystem services” as a key area for further research. In this study, a list
+of services was generated, based on a range of existing classification systems, such as
+CICES (Haines-Young and Potschin-Young 2017) and knowledge of the study area (Table
+1). This is similar to the "reference list" subsequently published in the SEEA EA (United
+Nations 2021). The study only considered biotic services. Water was not included as a
+provisioning service, since it is not produced by ecosystems and is accounted for
+separately as a resource account. Rather, we regard ecosystem services pertaining to
+water supply as being those that regulate the timing and location of water flows and those
+that affect water quality, both of which affect the costs of collecting and producing potable
+water for use. Unlike CICES, within crop and animal production (eco)systems, we
+considered the ecosystem service to be the in situ environmental input to production,
+rather than the value of crop and animal production. This also means that we could
+account for pollination and pest control services as an input from surrounding ecosystems.
+While broad coverage of inland ecosystem services was attempted and key services were
+prioritised, not all services could be fully covered. The study also excluded estuary inputs
+to marine ecosystems (see Turpie et al. 2017b).
+Table 1.
+Ecosystem service classification used. Services with an asterisk were not included in this study.
+Broad
+category
+
+Ecosystem service
+
+Physical
+measure
+
+Valuation method
+
+Provisioning
+services
+
+Harvested wild
+biomass products
+
+kg or m3/ha/yr
+
+Resource rent, based on market prices
+
+In situ ecosystem
+Large Stock
+inputs to reared animal Units per ha#
+production
+
+Resource rent, based on market prices
+
+In situ ecosystem
+inputs to crop
+production
+In situ ecosystem
+inputs to plantation
+forestry production
+
+Cultural
+services
+
+Regulating
+services
+
+Crop production Resource rent of agri/silvicultural commercial and
+as proxy, in kg/ subsistence production, based on market or imputed
+ha/yr
+prices, after deducting contribution of pollination
+service to production
+Forestry
+production as
+proxy, in m3/ha/
+yr
+
+Genetic resources*
+
+-
+
+-
+
+Experiential value
+associated with active
+or passive use
+
+Monetary only
+
+Resource rent for nature-based tourism; Hedonic
+pricing method for property value; Local recreation not
+valued
+
+Existence value*
+
+-
+
+-
+
+Flood attenuation
+
+Monetary only
+
+Avoided conveyance infrastructure costs (metro only)
+
+Seasonal flow
+regulation
+
+Monetary only
+
+Annualised avoided costs of water supply
+infrastructure for existing supply systems plus avoided
+costs of purchasing water from vendors for those
+people who depend on instream flows for their
+domestic water supplies.
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+Broad
+category
+
+7
+
+Ecosystem service
+
+Physical
+measure
+
+Valuation method
+
+Sediment retention
+
+m3/ha/yr
+
+Annualised avoided cost of replacement of lost
+storage capacity
+
+Water quality
+amelioration
+
+Monetary only
+
+Water treatment costs avoided, based on a cost
+function
+
+Carbon retention
+
+tC/ha
+
+Annualised avoided damage costs using social cost of
+carbon
+
+Agricultural support
+services
+
+Monetary only
+
+Contribution to agricultural resource rent, based on
+benefit transfer of a production function
+
+Critical habitat for
+fisheries and wildlife*
+
+-
+
+-
+
+Treatment of intermediate services
+While many authors argue that one should only value final services, ignoring intermediate
+services (the provision of a service from one ecosystem type to another, such as crop
+pollination) would lead to a spatial bias in the valuation of ecosystems. Our approach was
+to estimate the contribution of the intermediate service and attribute that value to the
+habitat providing the service. Thus, the pollination contribution to agricultural production
+was subtracted from the estimated value of ecosystem inputs in agricultural land to avoid
+double counting.
+
+Quantification and Valuation
+For each ecosystem service, we selected valuation methods that are conceptually valid
+and that produce values that are consistent with the SNA. We attempted to value actual
+use (rather than capacity to supply). We expressed the value of ecosystems in terms of
+exchange values (consistent with the SNA) rather than welfare values, but point out that
+these go a large part of the way to providing information for welfare values. The benefits
+derived from ecosystem services were expressed in terms of annual flows. These were
+then summed across all benefit flows to estimate a total annual flow of value from each
+spatial unit. This total value flow was then used to estimate the asset value of that spatial
+unit in terms of its net present value (NPV). We used a social discount rate of 3.66%
+(Addicott et al. 2020) and a time period of 25 years, noting the high level of uncertainty in
+projecting values into the future (see review by Badura et al. 2017) and that discounting
+mitigates this concern to some extent. In most cases, it was assumed that ES flows were
+constant, but for provisioning services, future ES flows were modelled, based on estimated
+levels of offtake relative to their stocks and productivity. All values are presented in 2010
+Rands, which was the most recent national accounting base at the time of the study.
+
+Spatial framework, accounting period and data
+We used the national 100 x 100 m (1 ha) Basic Spatial Unit (BSU) grid, constructed by
+Statistics South Africa for the purpose of ecosystem accounting (Stats SA, see Anderson
+
+8
+
+Turpie J et al
+
+2019). Base raster layers (e.g. land use, biomes, census areas) were first projected and
+then snapped to this grid, ensuring consistency across all ecosystem services and no
+overlaps for any given area per land-cover class or ecosystem type. We used the 2005 and
+2011 KwaZulu-Natal Land Cover datasets, which have 47 classes (including a measure of
+condition for major natural land-cover classes) and a nominal resolution of 20 m.
+
+Accounting
+The supply and use tables only account for ecosystem services used, such that the sum of
+supply of a particular service must equal the sum of use. For wild biomass, the amount
+used would also include illegal use and amounts exceeding sustainable yield. In the case
+of some regulating services, accounting only for the service used is easier to achieve in
+monetary than physical terms because of the spatio-dynamic complexity of the service
+and, thus, for certain services, the physical accounts have reported on the service capacity
+, irrespective of whether it is demanded. For certain cultural services, only the monetary
+accounts are provided, since physical measures were not available (see Table 1). The
+ecosystem monetary asset account records the monetary value of opening and closing
+stocks of all ecosystem assets within an ecosystem accounting area and any additions or
+reductions in these stocks.
+
+Quantifying and valuing ecosystem services and benefits
+Wild resources
+Hundreds of wild plant and animal species are harvested in the wild by large numbers of
+households who rely on harvesting natural resources on a subsistence or small-scale basis
+(Dovie et al. 2002, Shackleton et al. 2002a, Shackleton et al. 2002b, Shackleton et al. 2007
+, Twine et al. 2003, Kaschula and Shackleton 2009, Turpie et al. 2010, Turpie et al. 2014).
+These were grouped into ten broad types of resources (Table 2). Their stocks were
+estimated, based on land cover, vegetation type (South African National Biodiversity
+Institute 2018) and corresponding information from literature and availability was based on
+land tenure. Demand was estimated at the census sub-place (~ village) level, based on
+household survey data (mainly from Turpie et al. (2010), Dovie et al. (2002), Shackleton et
+al. (2002a), Shackleton et al. (2002b), Twine et al. (2003), Cocks and Wiersum (2003)
+Turpie et al. (2010)). Household use was estimated using a purpose-built spatial model,
+under the assumption of a 5-10 km range of collection, limited by the availability of stocks
+(see Turpie et al. in prep). Resource was mapped in physical terms (see example for
+fuelwood (Fig. 4). Values were based on prices reported in the surveys and collection costs
+were assumed to be negligible. The asset value was calculated as the net present value
+over 25 years taking sustainability into account where harvesting was compared to the
+corresponding sustainable yield at the level of the BSU. Where harvesting exceeded the
+estimated sustainable use, stocks were eroded at the corresponding rate, affecting future
+use and values. In some cases, this effectively resulted in the asset life being less than 25
+years.
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+Table 2.
+Wild biomass groupings, based on the CICES framework and resource characteristics.
+
+Wild plant resources
+
+Purpose
+
+Group
+
+Nutrition and health
+
+Wild plant foods and medicines
+
+Energy
+
+Wood fuel
+
+Raw materials
+
+Grass
+Reeds and sedges
+Palm leaves
+Poles and withies
+Timber
+Wood for carving/curios
+
+Wild animal resources
+
+Nutrition
+
+Terrestrial birds and animals
+Fish and other aquatic organisms
+
+Figure 4.
+Estimated spatial variation in the informal harvesting of fuelwood across KwaZulu-Natal.
+
+9
+
+10
+
+Turpie J et al
+
+Land inputs to reared animal production
+KwaZulu-Natal accounts for about 20% of cattle in the country (Meissner et al. 2013).
+These are found in both high input production systems on private lands and ‘low input-low
+output’ systems on communal lands. The ecosystem service is the land’s contribution to
+livestock or wildlife production (for meat, live sales or hunting), which includes natural
+fodder provision. As a proxy for the physical measure, we quantified the amount of
+livestock supported in standardised large stock units (LSUs, Mokolobate et al. 2017).
+District level stocking rates, production and value on private and communal lands were
+derived from the Census of Commercial Agriculture 2007 (Statistics South Africa 2011),
+quarterly provincial statistics, the agricultural household survey (Statistics South Africa
+2012) and other studies (Kunene and Fossey 2006, Turpie et al. 2010, Turpie et al. 2014,
+Mahlobo 2016, Nkosi 2017). Wildlife stocking and offtake rates were not available, but
+production value was calculated using information from Ezemvelo KwaZulu-Natal Wildlife
+and literature (Taylor et al. 2015). Reared animal production was valued using the resource
+rent method (gross income less intermediate expenditure, labour costs and user costs of
+fixed capital), based on the agricultural census.
+
+Land inputs to cultivated production
+We used production in tonnes of produce or m3 of timber as a proxy for the physical
+measure of land inputs to cultivated production. The service was valued in terms of
+resource rent, less the contribution of pollination services from adjacent natural
+ecosystems. Commercial crop production, prices and input costs were taken from the
+Census of Commercial Agriculture (Statistics South Africa 2006, Statistics South Africa
+2011), using groupings that could be aligned to land-cover classes. Silviculture production
+and value were only available at provincial level (Forestry South Africa 2017). Communal
+crop production, prices and input costs were taken from household studies in northern
+KwaZulu-Natal (Turpie et al. 2014) and used as a single average value per hectare.
+
+Experiential value
+While cultural values are generally understood to comprise both use and non-use values,
+the SEEA EA only accounts for use values, which we term "experiential value". We
+developed a framework for the consideration of experiential benefits, as accruing in three
+ways: to people who live close to the site used (herein characterised as “locals”), to people
+who come from nearby (“visitors”) and to people who travel relatively far to visit the site
+(“tourists”), with methods of valuation typically being different for each (Fig. 5Fig. 6). This
+study only covered value to locals as manifest in property investment and value to tourists.
+There were no data or valuation studies (e.g. travel cost studies) on which to estimate the
+value to nearby visitors.
+The contribution of ecosystems to tourism value was estimated using tourism statistics and
+spatial data on activity (Fig. 6). First, the tourism expenditure attributed to visiting
+attractions, as opposed to other activities, such as visiting family and friends, was
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+11
+
+estimated for different categories of domestic and foreign tourists, based on information
+collated from the South African Tourism (SAT) annual performance reports (South African
+Tourism 2005, South African Tourism 2006, South African Tourism 2011) and from data
+collected in regional tourist offices. Resource rent was estimated using ratios from the SAT
+Satellite Accounts (Statistics South Africa 2010, Statistics South Africa 2015). This value
+was spatially allocated to the BSU grid in proportion to photo user density using the
+InVEST Recreation Model 3.5.0 which obtains data on geotagged photographs uploaded
+to flickr.com. Geotagged photographs are a reliable proxy for visitation rates (Wood et al.
+2013, Turpie et al. 2017a, Turpie et al. 2017b, Lee and Tsou 2018, Barros et al. 2019).
+
+Figure 5.
+A typology of values associated with experiential uses of ecosystems (source: authors).
+
+The amenity value of ecosystems to locals was estimated in terms of the contribution of
+urban green open space areas to property value. The property value of urban green open
+space areas in KwaZulu-Natal was estimated, based on the hedonic pricing study of
+eThekwini Municipality which was derived from very detailed property and open space data
+(see Turpie et al. 2017b). Such data were not available for other urban areas in the
+Province. Thus, a simple benefits transfer model was derived for the latter areas, based on
+the relationship between suburb-level census data on household income and premiums
+paid for open space in eThekwini. This was applied to the ten urban centres identified
+using the Functional Town Typology by van Huyssteen et al. (2018). The aggregated
+premium value was annualised for the supply and use tables.
+
+Carbon retention
+In South Africa, total ecosystem carbon was mapped at national scale in 2015 (Department
+of Environmental Affairs 2015). This was used to estimate the 2005 and 2011 carbon
+stocks, based on average carbon values per land cover type. We sought to value the
+
+12
+
+Turpie J et al
+
+service in terms of the avoided climate change damage costs, both to South Africa and the
+rest of the world. This was considered preferable to using market values, since there is
+very little trade in ecosystem carbon in South Africa (Remme et al. 2015). However,
+estimates of the global social cost of carbon (SCC)- the net present value of avoided costs
+from the release of 1 t of CO2 - are numerous and vary greatly (for example, see Tol 2008).
+Estimates have also been increasing over time, as the more recent studies have tended to
+be more comprehensive. Estimates now range from US$10 to US$1000/tCO2 (Ricke et al.
+2018). In their critical review of literature, van den Bergh and Botzen (2014) suggested a
+lower bound value of US$125/tCO2. Disaggregated estimates have also started emerging.
+For example, Nordhaus (2017) provided an updated median estimate of global SCC as
+US$31/tCO2 (in 2010 US$) and estimated that 3% of this would be borne in Africa. Ricke et
+al. (2018) produced a far higher median estimate of global SCC (US$417/tCO 2 in 2018
+US$) and disaggregated this to country-level, yielding a unit cost of US$3.31 for South
+Africa. In this study, we used the more conservative estimate from Nordhaus (2017) with a
+global SCC of US$31/tCO2 and an estimate of US$3.31 for South Africa’s SCC, which is
+0.8% of the global SCC estimate produced by Ricke et al. (2018).
+
+Figure 6.
+Nature-based tourism value for the year 2011 across KwaZulu-Natal, based on the distribution
+of geo-referenced photographs uploaded to Flickr.
+
+The value of SCC is expected to increase over time as populations and per capita incomes
+grow and should correspond to the year of the account, as ecosystem carbon retained will
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+13
+
+increase in real value over time. Therefore, the SCC estimates from the literature were
+escalated at a rate of 3% per year (Nordhaus 2017) to derive different estimates for 2005
+and 2011. The annualised social cost of carbon was estimated using a social rate of
+discount of 3.24%.
+
+Pollination
+Crop pollination by insects increases both yield and quality of crops (Melin et al. 2014). In
+KwaZulu-Natal, most commercial crops are wind pollinated and it is assumed that
+vegetable and fruit farmers tend to actively pollinate their crops. We, therefore, focused on
+the likely benefits to communal land farmers. The location and extent of vegetable and fruit
+gardens was estimated using census data (Statistics South Africa 2012), community
+survey data (Statistics South Africa 2016) and information from literature (Shisanya and
+Hendriks 2011, Ogundiran et al. 2014). We used land-cover data to calculate the amount
+and type of natural vegetation surrounding each of the settlement areas and we used a
+value function transfer approach, based on the panel model of Tibesigwa et al. (2019) to
+predict the value added to income from pollinator-dependent crops by natural pollinators.
+
+Flow regulation
+Ecosystems can reduce seasonal variation in downstream river flows through infiltration
+and temporary storage in catchment areas (relative to the variation in rainfall), reducing the
+built storage capacity needed to achieve a given yield through the year (Vogel et al. 1999,
+Vogel et al. 2007, Guswa et al. 2017). Therefore, water supply infrastructure and reservoir
+capacity, in particular, can be treated as a substitute for the service provided by
+ecosystems.
+For this study, a hydrological model was set up for all of the catchments of KwaZulu-Natal
+using the Soil and Water Assessment Tool (SWAT) model. The service was mapped in
+physical terms as the difference in infiltration relative to a bare landscape, in m3 per ha.
+The benefits generated from the service were considered in terms of the avoided additional
+storage capacity required to meet the yield of the existing supply systems, which was
+estimated, based on the theoretical relationship between storage, yield and reliability for a
+standardised reservoir (Kuria and Vogel 2015) and costed, based on data from a national
+inventory of reservoirs. We also estimated the avoided costs of obtaining water for people
+who depend on instream flows for their domestic water supplies, based on monthly water
+demands by these households within each sub-catchment (derived from Statistics South
+Africa 2012).
+
+Sediment retention
+Erosion and sedimentation within watersheds can become a major issue as it causes
+structural damage to reservoirs, causes flooding, affects the quality of drinking water and
+increases water treatment costs (Pimentel et al. 1995, Basson 2009). Natural vegetation
+and crops can reduce erosivity by stabilising soils and intercepting rainfall (de Groot et al.
+
+Turpie J et al
+
+14
+
+2002). Vegetated areas also capture eroded sediments transported in surface flows,
+preventing them from entering rivers (Blumenfeld et al. 2009, Conte et al. 2011). While
+some level of sedimentation of dams is expected and planned for under natural conditions,
+elevated catchment erosion either incurs dredging costs or shortens the lifespan of dams
+and related infrastructure.
+The extent to which ecosystems retained and/or captured sediments relative to a bare
+landscape was estimated and mapped using the InVEST Sediment Delivery Ratio model.
+Due to the potentially large and costly damages of sedimentation, we assumed that the
+service would be fully demanded. We used the replacement cost of lost storage capacity to
+estimate its value.
+
+Water quality amelioration
+The impacts of natural vegetation and cultivated land on water quality were estimated
+using the SWAT hydrological model. The model was set up to estimate changes in
+phosphorus loads at raw water treatment extraction points relative to a bare landscape in
+which the retention/absorption capacity of the vegetated areas was reduced. The value of
+the service was then estimated in terms of the avoided costs to water treatment works
+using a water treatment cost model developed by Turpie et al. (2017b).
+
+Results
+The ecosystem service supply and use accounts were developed in both physical and
+monetary terms for 2005 and 2011. The monetary supply and use accounts for 2011 are
+presented in Table 3 and Table 4 and the ecosystem monetary asset account in Table 5.
+The aggregate values for 2005 and 2011 are compared in Table 6.
+Table 3.
+Total supply per ecosystem type 2011 in monetary values (R millions). Note: Built includes manmade parks, value pertains to parks, area to all built area.
+Biome
+(ha)
+Resource
+
+Freshwater Grassland Indian
+Savannah Forests Estuaries Cultivated Built
+ecosystems
+Ocean
+Coastal
+Belt
+
+54 901
+
+3 354 881
+
+362 944
+
+2 292
+315
+
+181 604
+
+39 425
+
+2 361 582 682 874
+
+Wood
+products
+
+3.27
+
+520.67
+
+179.74
+
+612.69
+
+216.18
+
+0.16
+
+Non-wood
+products
+
+18.11
+
+Livestock
+production
+
+2.9906
+
+2513.45
+
+Total
+
+9 330
+526
+4
+046.16
+
+866.56
+
+175.23
+
+537.16
+
+49.95
+
+0.54
+
+1
+647.54
+
+984.9509
+
+95.0889 384.2992
+
+5.0088
+
+0.5349
+
+1
+472.87
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+Biome
+(ha)
+Resource
+
+Freshwater Grassland Indian
+Savannah Forests Estuaries Cultivated Built
+ecosystems
+Ocean
+Coastal
+Belt
+
+Crop
+production
+
+5 021.98
+
+15
+
+Total
+
+5
+021.98
+
+Experiential
+value
+
+21.1
+
+326.0
+
+193.9
+
+297.4
+
+80.9
+
+36.3
+
+161.9
+
+Carbon
+storage
+
+133.26
+
+13 261.20
+
+1
+421.88
+
+9 010.02
+
+909.21
+
+4.40
+
+9 839.37
+
+Pollination
+
+0.06
+
+11.09
+
+5.03
+
+29.73
+
+1.77
+
+0.00
+
+47.69
+
+Flow
+regulation
+
+23.29
+
+2 014.08
+
+22.61
+
+1 020.55
+
+85.19
+
+1.06
+
+3
+166.78
+
+Flood
+attenuation
+Sediment
+retention
+
+1
+009.1
+
+34
+579.34
+
+23.50
+5.99
+
+2
+126.60
+
+23.50
+
+167.75
+
+22.28
+
+94.58
+
+39.50
+
+0.30
+
+330.40
+
+Water
+quality
+amelioration
+
+12.89
+
+0.08
+
+2.65
+
+0.41
+
+-
+
+16.03
+
+Total R
+millions
+
+208.04
+
+18 165.17
+
+2
+115.85
+
+11 989.10
+
+1
+388.14
+
+43.29
+
+17 536.70
+
+1
+52
+032.61 478.90
+
+Value R/ha
+
+3 789.37
+
+5 414.55
+
+5
+829.68
+
+5 230.13
+
+7
+643.78
+
+1 098.11
+
+7 425.83
+
+1
+5
+512.15 624.43
+
+Table 4.
+Total use per economic user (2011) in monetary values. R millions.
+Economic
+users
+Ecosystem
+service
+
+Agric,
+Forestry
+and
+Fisheries
+
+Wood
+products
+
+2 513.45
+
+Water Trade, catering & Other
+Households Government Rest
+supply accommodation sectors
+of
+world
+1 532.71
+
+1 647.54
+
+1
+647.54
+
+Livestock
+production
+
+815.45
+
+Crop
+production
+
+3 441.24
+
+Carbon
+storage
+
+4
+046.16
+
+Non-wood
+products
+
+Experiential
+value
+
+Total
+
+657.43
+
+1
+472.88
+
+1 580.74
+
+5
+021.98
+
+798.83
+
+1
+327.78
+
+2
+126.60
+273.18
+
+34
+34
+306.16 579.34
+
+Turpie J et al
+
+16
+
+Economic
+users
+Ecosystem
+service
+
+Agric,
+Forestry
+and
+Fisheries
+
+Water Trade, catering & Other
+Households Government Rest
+supply accommodation sectors
+of
+world
+
+Pollination
+Flow
+regulation
+
+47.69
+
+Total
+
+47.69
+
+3 166.78
+
+3
+166.78
+
+Flood
+attenuation
+
+23.50
+
+23.50
+
+Sediment
+retention
+
+330.40
+
+330.40
+
+Water quality
+amelioration
+
+16.03
+
+16.03
+
+Total
+
+9 936.91
+
+346.43
+
+798.83
+
+1
+327.78
+
+5 489.61
+
+273.18
+
+34
+52
+306.16 478.90
+
+Table 5.
+Ecosystem monetary asset account 2005-2011. NPV calculated using an asset lifespan of 25 years
+and a discount rate of 3.66%. All values expressed in 2010 prices.
+Freshwater Grassland Indian
+Savannah Forests Estuaries Cultivated Urban
+ecosystems
+Ocean
+green
+Coastal
+space
+Belt
+Opening
+stock
+(2005)
+
+2 797.05
+
+269
+912.28
+
+33
+383.63
+
+181
+813.62
+
+18
+792.00
+
+Change
+due to
+change in
+ecosystem
+extent
+
+-121.74
+
+-25 359.56 -5
+845.08
+
+-19
+719.94
+
+Change
+due to
+change in
+ecosystem
+capacity
+and/or
+service
+demand
+
+641.72
+
+37 104.20
+
+4
+200.92
+
+Net change
+
+519.97
+
+11 744.64
+
+Closing
+stock
+(2011)
+
+3 317.03
+
+Net change
+%
+
+18.6%
+
+566.46
+
+TOTAL
+
+215
+197.79
+
+14
+737
+844.65 307.48
+
+-466.86 -1.70
+
+64 233.38
+
+3
+15
+017.71 736.21
+
+25 701.99
+
+2
+715.82
+
+134.74
+
+4 655.54
+
+-1
+74
+135.15 019.77
+
+-1
+644.16
+
+5 982.05
+
+2
+248.96
+
+133.04
+
+68 888.92
+
+1
+89
+882.55 755.98
+
+281
+656.92
+
+31
+739.47
+
+187
+795.67
+
+21
+040.96
+
+699.50
+
+284
+086.71
+
+16
+827
+727.21 063.46
+
+4.4%
+
+-4.9%
+
+3.3%
+
+12.0%
+
+23.5%
+
+32.0%
+
+12.7%
+
+12.2%
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+17
+
+Table 6.
+Value of ecosystem service flows and associated asset values in 2005 and 2011; in 2010 R
+millions.
+Class
+
+Ecosystem service
+
+2005
+
+2011
+
+Annual flow Asset value Annual flow Asset value
+Provisioning
+
+Cultural
+
+Regulating
+
+Wild resources
+
+3 722.16
+
+32 032.23
+
+3 180.25
+
+28 440.48
+
+Animal production
+
+1 672.99
+
+27 100.67
+
+1 472.87
+
+23 859.03
+
+Cultivation
+
+6 456.70
+
+104 591.91
+
+7 535.43
+
+122 066.22
+
+Nature-based tourism
+
+532.83
+
+8 631.31
+
+798.83
+
+12 940.22
+
+Property
+
+1 164.97
+
+18 871.27
+
+1 327.78
+
+21 508.60
+
+Carbon storage (value to SA)
+
+236.39
+
+3 829.49
+
+273.18
+
+4 425.46
+
+Carbon storage (value to ROW) 29 686.17
+
+480 915.93
+
+34 306.16
+
+555 759.87
+
+Pollination
+
+51.26
+
+830.33
+
+47.69
+
+772.50
+
+Flow regulation
+
+3 247.87
+
+52 612.12
+
+3 166.78
+
+51 298.55
+
+Flood attenuation
+
+31.02
+
+502.49
+
+23.50
+
+380.68
+
+Sediment retention
+
+435.79
+
+7 059.28
+
+330.40
+
+5 352.18
+
+Water quality amelioration
+
+20.40
+
+330.46
+
+16.03
+
+259.67
+
+Total
+
+47 258.53
+
+737 307.48
+
+52 478.90
+
+827 063.46
+
+Total excluding Carbon value to ROW
+
+17 572.38
+
+256 391.56
+
+18 172.74
+
+271 303.59
+
+The combined value of the annual flow of ecosystem services was R47.3 billion in 2005
+and R52.5 billion in 2011, which was equivalent to 13% and 12% of provincial GDP. Of this,
+R17.6 billion and R18.2 billion of the benefits accrued to South Africa (Table 6) and only
+R8.4 billion and R8.9 billion (about 17% of ecosystem services value) was recorded within
+the SNA. In other words, the ecosystem service accounts extend the 2005 and 2011 GDP
+estimates by R38.9 and R43.6 million, respectively. Note that this will increase when the
+accounts are extended to the marine economic exclusion zone (EEZ) boundary and to all
+services.
+The bulk of the value of ecosystem services was produced by regulating services (73% in
+2011). Provisioning services and the cultural services valued accounted for 23% and 4% of
+the total value in 2011, respectively. Regulating value was dominated by carbon retention,
+which accounted for 65% of total value. Flow regulation accounted for 6%, while sediment
+retention and water quality amelioration only made up 1% of value. Provisioning service
+value was mostly crop production, which accounted for 14% of the value.
+Just under two thirds of the provisioning services value in 2011 was produced by cultivated
+land (62%). Most of the value of regulating services was produced in the grassland biome
+(41%), savannah biome (27%) and cultivated land (26%). Landscaped urban parks
+produced 48% of the value of the partial estimate of cultural ecosystem services.
+Grassland and savannah ecosystems were important for nature-based tourism. Within
+
+18
+
+Turpie J et al
+
+forest ecosystems, cultural services (in particular, nature-based tourism) accounted for the
+highest percentage share of the value followed by regulating services.
+The main users of the ecosystem services quantified were the rest of the world (66%;
+carbon storage as an exported service in the form of avoided damage costs to the rest of
+the world)*2, followed by the agriculture, forestry and fisheries sectors (19%) and
+households (11%). Approximately 2% of the total value flows to the trade, catering and
+accommodation sectors, which are also an important source of employment in the
+Province.
+The asset value of ecosystems was estimated at R737 billion and R827 billion in 2005 and
+2011, respectively (Table 5, Table 6), an increase in value of 12.2% over six years. The net
+change in asset value between 2005 and 2011 was the result of a 2% overall loss of value
+due to reduction in the extent of ecosystems, combined with a net increase of 10% of value
+which is attributed to the changes in capacity for supply or the demand for services.
+In physical terms, all service volumes apart from crop production and cultural services,
+decreased from 2005 to 2011. The aggregate value of all services also decreased from
+2005 to 2011, except for crop production, cultural services and carbon retention (Table 6).
+The annual value of harvested wild resources decreased by over R500 million, ecosystem
+contribution to livestock production by just over R200 million and hydrological services by
+just under R200 million. These reductions are due to decreases in extent and condition of
+natural ecosystems and/or decreases in the demand for services. The aggregate increase
+in value of crop production was due to the combination of a 29.5% increase in cultivated
+area and a 0.7% increase in production per unit area. While the carbon retention value
+increased between 2005 and 2011, this was due to the changing price of carbon and not
+an overall increase in the change of total ecosystem carbon stored. In fact, ecosystem
+carbon decreased by 40.1 TgC (3.2%) over the six-year period. Increases in experiential
+value were due to increased numbers of users and/or price.
+
+Discussion
+Ecosystem values and changes over time
+This study found that ecosystem services made a significant contribution when compared
+to GDP. Only a fraction of this value is currently recorded in the national accounts, primarily
+associated with formal agriculture and forestry production and ecosystem contributions to
+property value and tourism. The value of the additional service flows valued in the
+ecosystem accounts is significant and includes informal use of provisioning services, all
+regulating services and the recreational value not estimated in this study.
+The study also showed, however, that the volumes of all provisioning and regulating
+services from natural landscapes decreased over the accounting period. These losses in
+services were likely due to a combination of the overharvesting of resources, overgrazing
+leading to denudation in some areas and bush encroachment in other areas, the spread of
+invasive alien plants and the loss of habitat due to expanding cultivation and human
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+19
+
+settlements. While these concerns have been well noted (Driver et al. 2015), this study has
+shown that their aggregate economic impact can be substantial. Furthermore, the losses
+were not fully portrayed in the asset valuation. While the effects of overexploitation on
+provisioning services were taken into account, it was implicitly assumed that the future
+ecosystem capacity to supply regulating services and reared animal production would
+remain unchanged. This is unrealistic given current rates of degradation. Future studies
+would also need to consider the sustainability of crop production. Given the significant
+losses in value of ecosystem services from natural ecosystem types over only six years, it
+is clear that further research is required to validate these findings and to seek urgent
+solutions. Indeed, the degradation of natural ecosystems could have significant impacts for
+the most vulnerable communities in the Province, who are reliant on them for their
+livelihoods, water and food security.
+The interpretation of value changes is important. In spite of decreases in most of their
+services, the values of most natural systems increased as a result of the increased
+demand for tourism and carbon. In the case of nature-based tourism, value increased in
+spite of general evidence of a decline in the extent and condition of natural areas. Over
+time, it would be useful to consider the counterfactual or what tourism value might have
+been in the absence of the negative ecological trends. Similarly, for carbon, the increase in
+service value would have been greater if carbon retention had not decreased.
+
+Completeness and reliability of estimates
+This study has estimated the value of a range of ecosystem services, covering most broad
+types. We did not include all ecosystem services, some are only partially valued and the
+geographic coverage excludes the marine environment. Future iterations should expand
+these accounts to include other services such as local recreation, local climate regulation
+and air quality amelioration, as well as expanding the area to include coastal and marine
+ecosystems and their services. In addition, some of the methods used in this study are
+innovative and require further refinement and validation. For some services, compiling the
+biophysical aspects are the most limiting factor, while for others, economic data are
+limiting. Nevertheless, the study provides a solid beginning from which to progress.
+In many cases, data were not ideal from a temporal or spatial perspective, especially for
+provisioning services. For example, the low spatial resolution and commercial focus of
+agricultural data, as well as lack of regularly updated data, created difficulties. There were
+very little data on wildlife ranching and forestry and none on bioprospecting. These types of
+data issues will be relatively straightforward to resolve once countries start planning for
+ecosystem accounting. Addressing other data shortcomings may require considerable
+effort, such as ecosystem condition, ecosystem capacity for resource provision, illegal
+offtake of endangered species and the sustainability of various types of ecosystem use.
+Our study showed that, taking sustainability of resource use into account, had a significant
+effect on asset value. It is easy to see that this could produce a more appropriate policy
+response than an account that assumes that values can be sustained in perpetuity.
+
+20
+
+Turpie J et al
+
+Our valuation of cultural services focused on the use value aspect, which we termed
+experiential value. Both the aggregate tourism estimates and the estimated contribution of
+urban green space to property value were considered reliable and relatively complete
+estimates. However, we missed an entire component pertaining to the relatively local use
+of ecosystems, such as recreation, religious or cultural ceremonies. Such values can be
+estimated in future, based on travel cost surveys (e.g. Ezebilo 2016) or mobile phone or
+other big data (e.g. Jaung and Carrasco 2020) and would add value to ecosystems close
+to any rural or urban settlements, especially where inhabitants are wealthier.
+The valuation of hydrological services involved modelling at a far greater scale than is
+typically the case. Clarification of these services is critical since they are widely interpreted
+in literature. We value the role that ecosystems play in saving the costs of water supply to
+people, including their influence on climate, but not as a source of water per se (see further
+comment below). Since the role that tropical forests play in influencing local or regional
+rainfall (Duku and Hein 2021) does not apply in the study area, we focused on the timing
+and quality of flows. We, therefore, developed a relatively rapid method for quantifying the
+flow regulation service which obviated the need for detailed water resources modelling in
+each water supply area (Turpie et al. in prep). Nevertheless, scaling the modelling up to
+national scale will likely be onerous and may require development of simpler hydrological
+models. Not all benefits were quantified in this study, including flow regulation for irrigation
+supply and flood attenuation outside eThekwini Municipality. Furthermore, the SEEA EA
+(United Nations 2021) now recommends that water supply is included as a provisioning
+service. Although not all authors see water itself as being supplied by ecosystems, its
+inclusion will greatly increase the overall asset value of ecosystems.
+Data limitations meant that pollination had to be valued using a benefits transfer method,
+using a relationship developed elsewhere on the continent, which was far from ideal. It is
+almost certain that many of these estimates will eventually be replaced by better estimates,
+based on better data and better models. As this happens, it will be important to update the
+earlier estimates as best as possible in order to ensure continuity of the accounting
+dataset. While this may require an adjustment of policy responses as better information
+comes to light, it is still preferable to begin with some estimate than with none. Where it
+comes to natural ecosystems for which a change in land cover or use could lead to
+permanent damage, preliminary estimates should probably have been less conservative.
+
+Value of carbon retention
+The valuation of carbon stored in ecosystems is a critical concern in monetary ecosystem
+accounting. There has been a long-standing debate within the SEEA with regards to the
+framing and treatment of the carbon service and a consistent approach to its valuation
+(Remme et al. 2015, Edens et al. 2019, Keith et al. 2021). Accounting for the climate
+regulation service in monetary terms commonly involves using one of two approaches: the
+carbon trading price or the social cost of carbon, as recommended in the updated SEEA
+EA (United Nations 2021). Both of these represent a measure of avoided damage, a costbased method which assumes there is a willingness to pay to avoid the associated
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+21
+
+damage (United Nations 2021). While using the carbon price seems preferable over the
+SCC because it comes from actual market transactions (Horlings et al. 2020,United
+Nations 2021), many countries (including South Africa) do not yet have mature carbon
+trading systems and the SCC is the only suitable alternative.
+The SCC, used in this study, is an estimate of the current marginal damage cost of a tonne
+of carbon emitted. Applying this at scale to the gigatonnes of carbon in the landscape
+makes the assumption that this cost would still apply to the last tonne in the landscape. In
+aggregate, this value can rival the GDP of a country and is, hence, unrealistic in terms of
+proxy for exchange value. In reality, the technological replacement cost for this service,
+which is currently too high to be considered in valuation studies, may well decrease to well
+below this level by the time the last tonne of carbon is lost to the atmosphere. Thus, the
+carbon retention value in this study could be a gross overestimate and is one of the
+methods that needs a thorough review.
+
+Will accounting values be useful for economic decision-making?
+The SEEA-EA methods align with the SNA, which produce measures such as Gross
+Domestic Product (GDP). These are measures of production value, but are often misused
+as measures of welfare (Jorgenson 2018). Economic analysis used to guide project,
+programme or policy decisions often involve the estimation of changes in welfare for the
+gainers and losers involved. These welfare measures, which comprise the sum of producer
+and consumer surplus, tend to be larger than contributions to GDP, which are more closely
+aligned to incomes generated in production. Ecosystem accounting requires that values
+are expressed in terms of exchange values as per the SNA, so called since they are the
+incomes generated in the exchange of goods and services. This raises the concern that
+ecosystem accounting could be used incorrectly and lead to distorted decision-making with
+regard to the environment. However, it is worth noting firstly that in many cases, exchange
+values of ecosystem services will align closely with welfare values and, for the rest, that
+ecosystem accounting at a national scale will go a long way towards producing welfare
+estimates.
+The valuation methods used in accounting are largely based on methods developed for
+cost-benefit analysis and, in reality, many estimates of the value of ecosystem services
+intended for cost-benefit analysis have, in fact, been exchange values, since they are often
+easier to compute. Based on the current state of the art, there would be little distinction
+between exchange value and welfare value estimates in the values of provisioning and
+regulating services. Provisioning services, as for this study, are typically estimated by
+subtracting costs from the value of production, focusing on either resource rents or
+producer surplus, but not consumer surplus. Regulating services, as for this study, tend to
+be valued in much the same way in both the accounts and for cost-benefit analysis, using
+an avoided costs approach. This has the same impact on production values and welfare
+values.
+Cultural services are where value estimates are likely to differ most, since valuation
+methods for economic analysis have focused on deriving consumer surplus, especially for
+
+22
+
+Turpie J et al
+
+cases where access to (or viewing) nature is free or merely priced to cover costs. This
+study estimated the direct value added from domestic and international tourism
+expenditure (as reflected in the national accounts), as well as that from property value
+premiums attributed to green open space. An economic analysis would also be interested
+in the consumer surplus of domestic users. Estimates of international tourism value,
+therefore, need little or no adjustment. For the rest, revealed preference valuation studies
+(travel cost and hedonic pricing) can be adapted to provide welfare estimates through
+second stage analysis (for example, see Wolf and Klaiber 2021). More importantly, an
+economic analysis would also be expected to include non-use value, which is estimated
+using stated-preference surveys. Thus, in general, the work undertaken in compiling
+ecosystem service accounts is likely to be very useful in feeding into economic analysis,
+but will require augmentation, particularly for cultural services. Ultimately, we suggest that
+both should be derived during the accounting process, with the welfare values provided in
+supplementary tables. Meanwhile, it is important that the difference is clearly
+communicated to policy-makers. The monetary accounts should not be interpreted as
+being “the value of nature” (Hein et al. 2020).
+
+Will monetary ecosystem accounts send the right message?
+Related to the above, there are also concerns that monetary accounting of ecosystems
+may send the wrong policy message since anthropogenic landscapes are often more
+valuable, on average, than natural landscapes, as was found in this study. Accounting
+tables report the aggregate and average values of ecosystems, but do not report on
+marginal values. Although agricultural value may be higher than that of neighbouring
+ecosystems, subsequent conversions are likely to return decreasing values as they expand
+into less suitable areas. Conversely, the marginal value of natural ecosystems will increase
+as they contract into critical areas. For all else being equal, the optimal allocation of land
+use is the point where marginal values of each become equal. The analysis of potential
+policy impacts, therefore, involves projection of these non-linear area-value relationships in
+conjunction with the conversion of accounting values to welfare values. While accounting
+alone does not provide the full information required for such analyses, it goes a long way to
+providing information for them and will become increasingly valuable as long term datasets
+start to emerge in the process. It will also be important for future iterations of this work to
+draw on additional data inputs to capture changes in the capacity of anthropogenic, as well
+as natural landscapes, in the estimation of future flows and asset values.
+
+Acknowledgements
+This study was funded by the United Nations Environment Programme as part of the South
+African component of the international, EU-funded, Natural Capital Accounting and
+Valuation of Ecosystem Services project. Thanks to Gerhardt Bouwer and Robert Parry of
+Statistics South Africa and Ezemvelo KwaZulu-Natal Wildlife for assistance with data. We
+are grateful to William Speller and Julian Chow of UNEP, Bram Edens of United Nations
+Statistics Division and Mandy Driver of the South African National Biodiversity Institute for
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+23
+
+their valuable inputs. Thank you to Carl Obst and Rocky Harris for their constructive
+comments on an earlier version of the manuscript.
+
+Ethics and security
+Not applicable.
+
+Author contributions
+JKT: Conceptualisation and writing; GL: Analysis; JW: GIS, KS: Hydrology
+
+Conflicts of interest
+None.
+
+References
+•
+
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Addicott E, Fenichel E, Kotchen M (2020) Even the Representative Agent Must Die:
+Using Demographics to Inform Long-Term Social Discount Rates. Journal of the
+Association of Environmental and Resource Economists 7 (2): 379‑415. https://doi.org/
+10.1086/706885
+Anderson R (2019) Basic Spatial Unit. Version 2019_01. April 2019. Statistics South
+Africa, Pretoria.
+Badura T, Ferrini S, Agarwala M, Turner K (2017) Valuation for Natural Capital and
+Ecosystem Accounting. Synthesis report for the European Commission. Centre for
+Social and Economic Research on the Global Environment. University of East Anglia,
+Norwich.
+Barros C, Moya-Gómez B, Gutiérrez J (2019) Using geotagged photographs and GPS
+tracks from social networks to analyse visitor behaviour in national parks. Current
+Issues in Tourism 23 (10): 1291‑1310. https://doi.org/10.1080/13683500.2019.1619674
+Basson GR (2009) Management of siltation in existing and new reservoirs. General
+Report Q. 89. Proc. of the 23rd Congress of the Int. Commission on Large Dams
+CIGBICOLD (vol. 2).
+Blumenfeld S, Lu C, Christophersen T, Coates D (2009) Water, Wetlands and Forests. A
+Review of Ecological, Economic and Policy Linkages. Secretariat of the Convention on
+Biological Diversity and Secretariat of the Ramsar Convention on Wetlands, Montreal
+and Gland. CBD Technical Series No. 47.
+Cocks ML, Wiersum KF (2003) The significance of plant diversity to rural households in
+the Eastern Cape province of South Africa. Forests, Trees and Livelihoods 13: 39‑58.
+https://doi.org/10.1080/14728028.2003.9752443
+Conte M, Ennaanay D, Mendoza G, Walter MT, Wolny S, Freyberg D, Nelson E,
+Solorzano L (2011) Chapter 6: Retention of nutrients and sediment by vegetation. In:
+Kareiva P, Tallis H, Ricketts TH, Daily GC, Polasky S (Eds) Natural Capital: theory and
+
+24
+
+•
+
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+•
+
+•
+•
+
+•
+
+•
+
+Turpie J et al
+
+practice of mapping ecosystem services. Oxford University Press Inc., New York.
+https://doi.org/10.1093/acprof:oso/9780199588992.003.0006
+de Groot RS, Wilson MA, Boumans RJ (2002) A typology for the classification,
+description and valuation of ecosystem functions, goods and services. Ecological
+Economics 41 (3): 393‑408. https://doi.org/10.1016/s0921-8009(02)00089-7
+Department of Environmental Affairs (2015) The South African National Terrestrial
+Carbon Sink Assessment. Pretoria, South Africa.
+Dovie DB, Shackleton CM, Witkowski ET (2002) Direct-use values of woodland
+resources consumed and traded in a South African village. International Journal of
+Sustainable Development & World Ecology 9 (3): 269‑283. https://doi.org/
+10.1080/13504500209470122
+Driver A, Nel JL, Smith J, Daniels F, Poole CJ, Jewitt D, Escott BJ (2015) Land and
+ecosystem accounting in KwaZulu‐Natal, South Africa. Discussion document for
+Advancing SEEA Experimental Ecosystem Accounting Project, October 2015. South
+African National Biodiversity Institute, Pretoria.
+Duku C, Hein L (2021) The impact of deforestation on rainfall in Africa: a data-driven
+assessment. Environmental Research Letters 16 (6). https://doi.org/10.1088/1748-9326/
+abfcfb
+Edens B, Elsasser P, Ivanov E (2019) Discussion paper 6: Defining and valuing carbon
+related services in the SEEA EEA. Paper submitted to the Expert Meeting on Advancing
+the Measurement of Ecosystem Services for Ecosystem Accounting, New York, 22-24
+January 2019 and subsequently revised. Version of 15 March 2019. URL: https://
+seea.un.org/events/expert-meeting-advancing-measurement-ecosystem-servicesecosystem-accounting
+Edens B, Maes J, Hein L, Obst C, Siikamaki J, Schenau S, Javorsek M, Chow J, Chan
+JY, Steurer A, Alfieri A (2022) Establishing the SEEA Ecosystem Accounting as a global
+standard. Ecosystem Services 54 https://doi.org/10.1016/j.ecoser.2022.101413
+Ehrlich P, Mooney H (1983) Extinction, Substitution, and Ecosystem Services.
+BioScience 33 (4): 248‑254. https://doi.org/10.2307/1309037
+Ezebilo EE (2016) Economic value of a non-market ecosystem service: an application
+of the travel cost method to nature recreation in Sweden. International Journal of
+Biodiversity Science, Ecosystem Services & Management 12 (4): 314‑327. https://
+doi.org/10.1080/21513732.2016.1202322
+Forestry South Africa (2017) Industry Info: Statistical Data. Forestry South Africa.. URL:
+https://forestry.co.za/statistical-data/.
+Guswa AJ, Hamel P, Dennedy-Frank PJ (2017) Potential effects of landscape change
+on water supplies in the presence of reservoir storage. Water Resources Research 53
+(4): 2679‑2692. https://doi.org/10.1002/2016wr019691
+Haines-Young R, Potschin-Young M (2017) Common International Classification of
+Ecosystem Services (CICES) V5.1. Guidance on the Application of the Revised
+Structure.
+Hein L, Bagstad K, Obst C, Edens B, Schenau S, Castillo G, Soulard F, Brown C, Driver
+A, Bordt M, Steurer A, Harris R, Caparrós A (2020) Progress in natural capital
+accounting for ecosystems. Science 367 (6477): 514‑515. https://doi.org/10.1126/
+science.aaz8901
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+•
+
+•
+
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+25
+
+Horlings E, Schenau S, Hein L, Lof M, de Jongh L, Polder M (2020) Experimental
+monetary valuation of ecosystem services and assets in the Netherlands. CBS Den
+Haag and Wageningen University & Research..
+Jaung W, Carrasco LR (2020) Travel cost analysis of an urban protected area and
+parks in Singapore: a mobile phone data application. Journal of Environmental
+Management 261 https://doi.org/10.1016/j.jenvman.2020.110238
+Jorgenson D (2018) Production and Welfare: Progress in Economic Measurement.
+Journal of Economic Literature 56: 867‑919. https://doi.org/10.1257/jel.20171358
+Kaschula SA, Shackleton CM (2009) Quantity and significance of wild meat off-take by
+a rural community in the Eastern Cape, South Africa. Environmental Conservation 36:
+192‑200. https://doi.org/10.1017/s0376892909990282
+Keith H, Vardon M, Obst C, Young V, Houghton RA, Mackey B (2021) Evaluating
+nature-based solutions for climate mitigation and conservation requires comprehensive
+carbon accounting. Science of The Total Environment 769 https://doi.org/10.1016/
+j.scitotenv.2020.144341
+Kunene N, Fossey A (2006) A survey on livestock production in some traditional areas
+of northern Kwazulu-Natal. Livestock Research for Rural Development. URL: http://
+www.utafoundation.org/lrrd1808/cont1.808 .htm
+Kuria FW, Vogel RM (2015) Global Storage-Reliability-Yield Relationships for Water
+Supply Reservoirs. Water Resources Management 29: 1591‑1605. https://doi.org/
+10.1007/s11269-014-0896-4
+La Notte A, D’Amato D, Mäkinen H, Paracchini ML, Liquete C, Egoh B, Geneletti D,
+Crossman ND (2017) Ecosystem services classification: A systems ecology perspective
+of the cascade framework. Ecological Indicators 74: 392‑402. https://doi.org/10.1016/
+j.ecolind.2016.11.030
+Lee JY, Tsou M (2018) Mapping spatiotemporal tourist behaviours and hotspots through
+location-based photo-sharing service (Flickr) data. In: Kiefer P, Huang H, Van de Weghe
+N, Raubal M (Eds) Progress in Location Based Services. Springer International
+Publishing, Cham. [ISBN 978-3-319-71470-7]. https://doi.org/
+10.1007/978-3-319-71470-7_16
+Le Maitre DC, Seyler H, Holland M, Smith-Adao L, Nel JL, Maherry A, Witthuser K
+(2018) Identification, Delineation and Importance of the Strategic Water Source Areas of
+South Africa, Lesotho and Swaziland for Surface Water and Groundwater. Report No.
+TT 743/1/18, Water Research Commission, Pretoria.
+Mahlobo BT (2016) Multi–criteria livestock assessment for sustainability of smallholder
+farms in Kwa-Zulu Natal. MSc Thesis in Sustainable Agriculture, Stellenbosch
+University.
+Meissner HH, Scholtz MM, Palmer AR (2013) Sustainability of the South African
+Livestock Sector towards 2050 Part 1: Worth and impact of the sector. South African
+Journal of Animal Science 43 (3): 282‑297. https://doi.org/10.4314/sajas.v43i3.
+Melin A, Rouget M, Midgley J, Donaldson J (2014) Pollination ecosystem services in
+South African agricultural systems. South African Journal of Science 110: 1‑9. https://
+doi.org/10.1590/sajs.2014/20140078
+Mokolobate MC, Scholtz MM, Calitz FJ (2017) Explaining the principle of large stock
+units and its implications on grazing capacity. Applied Animal Husbandry & Rural
+Development 10: 17‑20.
+
+26
+
+•
+
+•
+
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Turpie J et al
+
+Nel J, Le Maitre D, Roux D, Colvin C, Smith J, Smith-Adao L, Maherry A, Sitas N (2017)
+Strategic water source areas for urban water security: Making the connection between
+protecting ecosystems and benefiting from their services. Ecosystem Services 28:
+251‑259. https://doi.org/10.1016/j.ecoser.2017.07.013
+Nkosi NZ (2017) Level of access to agricultural extension and advisory services by
+emerging livestock farmers in uThungulu district municipality, KwaZulu-Natal province.
+MSc Thesis in Agriculture, University of South Africa.
+Nordhaus W (2017) Revisiting the social cost of carbon. Proceedings of the National
+Academy of Sciences 114 (7): 1518‑1523. https://doi.org/10.1073/pnas.1609244114
+Ogundiran OA, Monde N, Agholor I, Odeyemi AS (2014) The Role of Home Gardens in
+Household Food Security in Eastern Cape: A Case Study of Three Villages in Nkonkobe
+Municipality. Journal of Agricultural Science 6 (1): 129‑136.
+Pimentel D, Harvey C, Resosudarmo P, Sinclair K, Kurz D, McNair M, Crist S, Shpritz L,
+Fitton L, Saffouri R, Blair R (1995) Environmental and Economic Costs of Soil Erosion
+and Conservation Benefits. Science 267 (5201): 1117‑1123. https://doi.org/10.1126/
+science.267.5201.1117
+Potschin M, Haines-Young R, Fish R, Turner RK (2016) Routledge Handbook of
+Ecosystem Services. Routledge, Taylor & Francis Group, London; New York. https://
+doi.org/10.4324/9781315775302
+Remme R, Edens B, Schröter M, Hein L (2015) Monetary accounting of ecosystem
+services: A test case for Limburg province, the Netherlands. Ecological Economics 112:
+116‑128. https://doi.org/10.1016/j.ecolecon.2015.02.015
+Remme R, Lof M, de Jongh L, Hein L, Schenau S, de Jong R, Bogaart P (2018) The
+SEEA EEA biophysical ecosystem service supply-use account for the Netherlands.
+Wageningen University. URL: https://www.cbs.nl/-/media/_pdf/2018/23/psu_ess_nl.pdf
+Ricke K, Drouet L, Caldeira K, Tavoni M (2018) Country-level social cost of carbon.
+Nature Climate Change 8 (10): 895‑900. https://doi.org/10.1038/s41558-018-0282-y
+Shackleton CM, Shackleton SE, Ntshudu M, Ntzebeza J (2002a) Direct use values of
+non-timber forest products from three rural villages in the Kat River Valley, Eastern
+Cape Province, South Africa. Journal of Tropical Forest Products 8: 45‑65.
+Shackleton CM, Hassan R, De Wit M, Shackleton SE, Beukman R (2002b) Natural
+woodlands and forests: Contribution to national income and economic welfare. In:
+Hassan R (Ed.) Accounting for stock and flow values of woody land resources: Methods
+and results from South Africa. Centre for Environmental Economics and Policy
+(CEEPA), University of Pretoria, Pretoria, 53-72 pp.
+Shackleton CM, Timmermans HG, Nongwe N, Hamer N, Palmer NR (2007) Direct-use
+Values of Non-Timber Forest Products from two areas on the Transkei Wild Coast.
+Agrekon 46: 113‑134. https://doi.org/10.1080/03031853.2007.9523764
+Shisanya SO, Hendriks SL (2011) The contribution of community gardens to food
+security in the Maphephetheni uplands, determined by the Household Food Insecurity
+Access Scale. Development Southern Africa 28 (4): 509‑526. https://doi.org/
+10.1080/0376835x.2011.605568
+South African National Biodiversity Institute (2018) The Vegetation Map of South Africa,
+Lesotho and Swaziland 2006-2018. Mucina, L., Rutherford, M.C. and Powrie, L.W.
+(Eds). URL: http://bgis.sanbi.org/SpatialDataset/Detail/18
+South African Tourism (2005) 2005 Annual Tourism Report. Pretoria, South Africa.
+
+Accounting for ecosystem services and asset value: pilot accounts for KwaZulu-Natal, ...
+
+•
+•
+•
+
+•
+•
+
+•
+•
+
+•
+•
+•
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+27
+
+South African Tourism (2006) Annual Domestic Tourism report 2005. Pretoria, South
+Africa.
+South African Tourism (2011) 2011 Annual Tourism Report. Pretoria, South Africa.
+Statistics South Africa (2006) Census of commercial agriculture, 2002 – KwaZulu-Natal.
+Financial and production statistics. Report 11-02-03 (2002). Statistics South Africa,
+Pretoria, 109 pp.
+Statistics South Africa (2010) Tourism Satellite Account. Statistics South Africa, Pretoria.
+Statistics South Africa (2011) Census of commercial agriculture, 2007 – KwaZulu-Natal.
+Provincial statistics for selected products. Report 11-02-02 (2007). Statistics South
+Africa, Pretoria, 17 pp.
+Statistics South Africa (2012) National Census 2011. Statistics South Africa, Pretoria.
+Statistics South Africa (2014) Gross domestic product: Annual estimates 2004 – 2013,
+Regional estimates 2004 – 2013, Third quarter 2014. Statistical Release P0441.
+Statistics South Africa, Pretoria, 86 pp.
+Statistics South Africa (2015) Tourism Satellite Account. Statistics South Africa, Pretoria.
+Statistics South Africa (2016) Statistics South Africa Community Survey 2016. Statistics
+South Africa, Pretoria.
+Statistics South Africa (2018) Men, Women and Children. Findings of the Living
+Conditions Survey 2014/15. Statistics South Africa, Pretoria.
+Taylor WA, Lindsey PA, Davies-Mostert H (2015) An assessment of the economic,
+social and conservation value of the wildlife ranching industry and its potential to
+support the green economy in South Africa. The Endangered Wildlife Trust,
+Johannesburg.
+Tibesigwa B, Siikamäki J, Lokina R, Alvsilver J (2019) Naturally available wild pollination
+services have economic value for nature dependent smallholder crop farms in Tanzania.
+Scientific Reports 9 https://doi.org/10.1038/s41598-019-39745-7
+Tol RJ (2008) The Social Cost of Carbon: Trends, Outliers and Catastrophes. The
+Open-Access, Open-Assessment E-Journal 2: 2008‑2025. https://doi.org/10.5018/
+economics-ejournal.ja.2008-25
+Turpie J, Feigenbaum T, Hayman M, Hutchings K, Cousins T, Chipeya T, Talbot M
+(2014) Analysis of alternatives to determine the most feasible solution to the
+hydrological issues of the Lake St Lucia estuarine system: socio-economic assessment.
+iSimangaliso Wetland Park Authority. Report.
+Turpie JK, de Wet J, Clark B, Orr K, Brown C, Joubert A, Reinecke K, Magoba R,
+Beuster H, Clarke T, Kotze D (2010) The nature, distribution and value of aquatic
+ecosystem services of the Olifants, Inkomati and Usutu to Mhlathuze Water
+Management Areas. Contract Report for Department: Water Affairs and Forestry,
+Pretoria, 378 pp.
+Turpie JK, Letley G, Chrystal R, Corbello S (2017a) The value of Durban’s natural
+capital and its role in Green Urban Development. Part 1: A spatial valuation of the
+natural and semi-natural open space areas in eThekwini Municipality. World Bank
+Report. https://doi.org/10.1596/26765
+Turpie JK, Forsythe KJ, Knowles A, Blignaut J, Letley G (2017b) Mapping and valuation
+of South Africa's ecosystem services: A local perspective. Ecosystem Services 27:
+179‑192. https://doi.org/10.1016/j.ecoser.2017.07.008
+Turpie JK, Letley G, Schmidt K, Weiss J, O’Farrell, Jewitt D (2021) Towards a method
+for accounting for ecosystem services and asset value: Pilot accounts for KwaZulu-
+
+28
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+•
+•
+
+•
+
+•
+
+•
+
+Turpie J et al
+
+Natal, South Africa, 2005-2011. NCAVES project report. URL: https://seea.un.org/
+content/knowledge-base
+Turpie JK, Weiss J, Letley G (in prep) Novel spatial modelling method for determining
+sustainable wild harvested resource use with regards to ecosystem service and asset
+value in an ecosystem accounting framework.
+Twine WC, Moshe D, Netshiluvhi TR, Siphungu V (2003) Consumption and direct-use
+values of savanna bioresources used by rural households in Mametja, a semi-arid area
+of Limpopo Province. South African Journal of Science 99: 467‑473.
+United Nations, European Commission, Food and Agricultural Organization of the
+United Nations, Organisation for Economic Co-operation and Development, The World
+Bank (2014a) System of Environmental-Economic Accounting 2012 – Experimental
+Ecosystem Accounting. United Nations, New York.
+United Nations, European Commission, Food and Agricultural Organization of the
+United Nations, International Monetary Fund, Organisation for Economic Co-operation
+and Development, The World Bank (2014b) System of Environmental-Economic
+Accounting 2012 – Central Framework. United Nations, New York.
+United Nations (2017) SEEA Experimental Ecosystem Accounting: Technical
+Recommendations. Prepared as part of the joint UNEP / UNSD / CBD project on
+Advancing Natural Capital Accounting funded by NORAD. URL: https://seea.un.org/
+sites/seea.un.org/files/Presentations/Training_China_2017/
+seea_eea_tech_rec_final_v3.2_16oct2017.pdf
+United Nations, et al. (2021) System of Environmental-Economic Accounting—
+Ecosystem Accounting (SEEA EA). White cover publication, pre-edited text subject to
+official editing. URL: https://seea.un.org/ecosystem-accounting
+van den Bergh JCJM, Botzen WJW (2014) A lower bound to the social cost of CO2
+emissions. Nature Climate Change 4 (4): 253‑258. https://doi.org/10.1038/nclimate2135
+van Huyssteen E, Green C, Sogoni Z, Maritz J, McKelly D (2018) South African
+Functional Town Typology. 2. CSIR. URL: http://stepsa.org/socio_econ.html#Indicator
+Vogel R, Sieber J, Archfield S, Smith M, Apse C, Huber-Lee A (2007) Relations among
+storage, yield, and instream flow. Water Resources Research 43 (5). https://doi.org/
+10.1029/2006wr005226
+Vogel RM, Lane M, Ravindiran RS, Kirshen P (1999) Storage reservoir behavior in the
+United States. Journal of Water Resources Planning and Management 125 (5):
+245‑254. https://doi.org/10.1061/(ASCE)0733-9496(1999)125:5(245)
+Wolf D, Klaiber HA (2021) Willingness to Pay in Hedonic Pricing Models. Oxford
+Research Encyclopedia of Economics and Finance https://doi.org/10.1093/acrefore/
+9780190625979.013.583
+Wood SA, Guerry AD, Silver JM, Lacayo M (2013) Using social media to quantify
+nature-based tourism and recreation. Scientific Reports 3 (1). https://doi.org/10.1038/
+srep02976
+
+Endnotes
+*1
+*2
+
+seea.un.org/file/19398/download?token=bkG5DCit
+Note that, for the SEEA EA, it has subsequently been decided to treat all carbon
+services as used by the government in which the ecosystems are located.
+
+

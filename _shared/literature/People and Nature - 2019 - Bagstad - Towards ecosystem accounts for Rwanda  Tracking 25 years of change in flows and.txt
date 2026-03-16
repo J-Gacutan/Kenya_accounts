@@ -1,0 +1,4389 @@
+Received: 14 March 2019
+
+| Accepted: 15 October 2019
+
+DOI: 10.1002/pan3.10062
+
+RESEARCH ARTICLE
+
+Towards ecosystem accounts for Rwanda: Tracking 25 years of
+change in flows and potential supply of ecosystem services
+Kenneth J. Bagstad1,2
+| Jane Carter Ingram3
+| Glenn-Marie Lange2 |
+Michel Masozera4 | Zachary H. Ancona1
+| Mediatrice Bana5 | Desire Kagabo6 |
+Bernard Musana7 | Nsharwasi Leon Nabahungu8 | Emmanuel Rukundo9
+|
+10
+11
+12
+Evariste Rutebuka
+| Stephen Polasky
+| Denis Rugege
+| Claudine Uwera13
+1
+
+Geosciences & Environmental Change Science Center, U.S. Geological Survey, Denver, CO, USA; 2Wealth Accounting and Valuation of Ecosystem Services
+(WAVES) Partnership, The World Bank, Washington, DC, USA; 3Ernst and Young and Wildlife Conservation Society, Washington, DC, USA; 4World Wide
+Fund for Nature International, Kigali, Rwanda; 5Wildlife Conservation Society, Kigali, Rwanda; 6CIAT-CGIAR Climate Change, Agriculture, and Food Security,
+Kigali, Rwanda; 7Rwanda Agriculture and Animal Resources Development Board (RAB), Kigali, Rwanda; 8International Institute of Tropical Agriculture (IITA),
+Bukavu, Congo; 9State Key Laboratory of Water Environment Simulation, School of Environment, Beijing Normal University, Beijing, China; 10Department
+of Environmental Management, Institute of Life and Earth Science, Pan-African University, University of Ibadan, Ibadan, Nigeria; 11Department of Applied
+Economics, University of Minnesota, St. Paul, MN, USA; 12Green Economy Advisory & Research, Kigali, Rwanda and 13Ministry of Finance and Economic
+Planning, Kigali, Rwanda
+
+Correspondence
+Kenneth J. Bagstad
+Email: kjbagstad@usgs.gov
+Funding information
+Science for Nature and People Partnership;
+World Bank's Wealth Accounting and
+Valuation of Ecosystem Services
+Handling Editor: Yvonne Buckley
+
+Abstract
+1. Rwanda, a small but rapidly developing central African nation, has undertaken
+development of natural capital accounts to better inform its economic development through the World Bank's Wealth Accounting and Valuation of Ecosystem
+Services (WAVES) Partnership. In this paper, we develop ecosystem service (ES)
+models to quantify ecosystem condition and physical supply components of ecosystem accounts in Rwanda from 1990 to 2015.
+2. We applied the InVEST carbon storage, sediment delivery ratio, nutrient delivery
+ratio, and annual and seasonal water yield models to map changes in potential ES
+supply nationwide. We also quantified flows of sediment, water and nutrients to
+96 hydroelectric dam, irrigation dam and water treatment plant sites.
+3. Over a 25-year period, we found declines in all ES, which were most strongly
+driven by conversion of forests to cropland. Declines were most pronounced
+from 1990 to 2000 and 2010 to 2015; ES were relatively stable from 2000 to
+2010 (with the exception of nutrient exports to water bodies, which jumped most
+sharply from 2000 to 2010). From 2010 to 2015, over 42% of Rwanda's water-use
+sites (representing 9% of the nation's hydroelectric generation capacity and 59%
+of its water treatment capacity) had upstream increases in sediment export and
+quick flow greater than the national average. Half of Rwanda's water treatment
+plants had upstream phosphorus exports greater than the national average.
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2019 The Authors. People and Nature published by John Wiley & Sons Ltd on behalf of British Ecological Society
+People and Nature. 2020;2:163–188.	﻿
+
+wileyonlinelibrary.com/journal/pan3
+
+| 163
+
+| People and Nature
+
+BAGSTAD et al.
+
+4. Our results quantify nation-wide ES trends, their implications for key waterdependent industries, and the importance of protected areas in safeguarding ES
+flows and potential supply in Rwanda. They also provide data that can be integrated with existing land, water and economic accounts for Rwanda, as well as a
+baseline to inform development strategies that better link economic and environmental goals.
+KEYWORDS
+
+ecosystem accounting, ecosystem services, InVEST, System of Environmental and Economic
+Accounting (SEEA)
+
+1 | I NTRO D U C TI O N
+
+Strategy (EDPRS II) to guide the country's development from 2013
+
+As the economies of many low-income African countries continue to
+
+veloped around thematic areas reflecting Rwanda's emerging de-
+
+grow, there is rising concern that current production and consump-
+
+velopment priorities, including (a) economic transformation, (b)
+
+tion models will undermine their ecological systems and limit the
+
+rural development, (c) productivity and youth employment and (d)
+
+quality of growth on the continent (Egoh et al., 2012; IPBES, 2018;
+
+accountable governance. EDPRS II targeted 11.5% annual GDP
+
+Marques et al., 2019). Governments throughout the region are com-
+
+growth; actual annual growth rates from 2010 to 2017 ranged from
+
+mitting to follow sustainable economic development pathways that
+
+4.7% to 8.9% (World Bank, 2018a). Land, water, forests and wildlife
+
+maintain their natural capital to secure ecosystem services (ES) that
+
+are the critical assets on which Rwandans rely for their livelihoods
+
+are critical for livelihoods and economic development (Gaborone
+
+and support to industries such as energy, tourism and agriculture.
+
+Declaration, 2019; UNEP, 2015). Across Africa, recent experience
+
+Yet, under a business-as-usual scenario, targeted economic growth,
+
+and economic models alike illustrate how ‘green’ investments can
+
+increasing population, land scarcity and competing demand for
+
+improve economic performance while conserving the natural re-
+
+water by various industries is likely to put additional pressure on
+
+source base on which African economies and livelihoods depend
+
+ecosystems and the services they provide. For instance, develop-
+
+(UNEP, 2015). Rwanda is among the countries making a commitment
+
+ment goals to increase energy generation capacity and production of
+
+to green development within a rapidly growing economy. Rwanda
+
+priority crops (maize, wheat, rice, Irish potatoes, beans and cassava)
+
+has one of the higher GDP growth rates in Africa (World Bank,
+
+under the national Crop Intensification Program are important com-
+
+2018a) with ambitions of transitioning into a middle-income country
+
+ponents of the country's development strategy. Achieving both will
+
+by 2020, as articulated in its ‘Vision 2020’ plan (Republic of Rwanda,
+
+be heavily dependent on the condition of land and water resources
+
+2000). The Government has pledged to pursue this growth through
+
+(Kathiresan, 2011; Republic of Rwanda, 2013), yet is also likely to
+
+strategies that will maintain its natural capital through their com-
+
+impact ecosystem services; the extent of these impacts under differ-
+
+mitment to the Gaborone Declaration, the national green growth
+
+ent development trajectories is not yet clear. For instance, Rwanda's
+
+and climate resilience strategy, establishment of a national natural
+
+goal of increasing agricultural self-sufficiency through increased fer-
+
+capital committee steering committee, and demonstrating that the
+
+tilizer use (Republic of Rwanda, Ministry of Agriculture, & Animal
+
+maintenance of natural capital is a critical component of its growth
+
+Resources, 2013) has not been evaluated against its potential conse-
+
+plans (Republic of Rwanda, 2011). Rwanda has made substantial
+
+quences for water quality. Similarly, the future of tourism will depend
+
+progress in poverty reduction (from 58.9% of the population in 2000
+
+on forest and wildlife conservation within the country's protected
+
+to 38.2% in 2017; NISR, 2018a; World Bank, 2017); however, its
+
+areas; Rwanda's model of revenue sharing with respect to tourism
+
+growing population continues to exert further pressure on land use
+
+fees has been globally recognized for demonstrating how wildlife
+
+in favour of settlements and agriculture. These factors increase the
+
+conservation and tourism can benefit local communities (Spenceley,
+
+need for innovative, science-based planning to promote more sus-
+
+Habyalimana, Tusabe, & Mariza, 2010), though challenges remain
+
+tainable development trajectories. The Government is keen to adopt
+
+(Munanura, Backman, Hallo, & Powell, 2016). Rwanda's primary
+
+comprehensive green economy options in an effort to pursue more
+
+linked environment and development challenge is the management
+
+durable and equitable development pathways (Republic of Rwanda,
+
+of existing resources to meet the needs of a growing population who
+
+2011). However, the information and frameworks needed to assess
+
+depend on natural resources for every aspect of their livelihoods.
+
+those options are currently incomplete or lacking, as is the case in
+
+As plans to implement development policies proceed, it will be im-
+
+nearly all nations.
+
+portant to understand how past and projected land-use changes will
+
+through 2018 (Republic of Rwanda, 2013). The strategy was de-
+
+In May 2013, the Government of Rwanda approved the sec-
+
+impact ecosystems and the services they provide for human liveli-
+
+ond phase of the Economic Development and Poverty Reduction
+
+hoods and different industries. However, the country currently lacks
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+164
+
+People and Nature
+
+| 165
+
+the evidence base needed to make decisions about where and how
+
+by ecosystems from their actual flows to beneficiaries that account
+
+to develop without incurring negative trade-offs across industries or
+
+for beneficiary locations in relation to ES supply and beneficiaries’
+
+depleting the country's natural resource base and losing critical ES.
+
+levels of demand (Hein et al., 2016). Hein et al. additionally define
+the concepts of capacity and capability, both of which relate to
+
+1.1 | Ecosystem service assessments and natural
+capital accounting for decision support
+
+the sustainability of ecosystem service use (capacity referring to
+the sustainable use level of multiple ES and capability the sustainable use of a single priority ES). Capacity and capability are most
+relevant for provisioning ES (capacity and flow are equivalent for
+
+Decision-making about economic development and natural resource
+
+regulating ES); we thus do not quantify them in this study. Others
+
+management can benefit from timely and accurate information about
+
+have provided similar but slightly different concepts to address
+
+ES. Incorporating ES information into natural resource and economic
+
+differences between ES provision and flow in the SEEA-EEA (La
+
+planning can improve the overall value of benefits provided by the
+
+Notte & Dalmazzone, 2018; La Notte, Vallecillo, Marques, & Maes,
+
+landscape and avoid unintended declines in ES provision (Guerry
+
+2019). These two papers define ‘ES potential’ (equivalent to Hein
+
+et al., 2015; Nelson et al., 2009; Polasky, Nelson, Pennington, &
+
+et al.’s ‘potential supply’, a stock-aligned concept), plus multiple flow-
+
+Johnson, 2011; Zheng et al., 2013). Similarly, incorporation of ES
+
+aligned concepts: ‘potential flows’ as the maximum flow that can be
+
+into national-level development planning can improve conservation
+
+sustained over time (equivalent to Hein et al.’s ‘capacity’ and ‘capa-
+
+and development outcomes and increase the likelihood of achiev-
+
+bility’; La Notte et al. also use the term ‘capacity’ but unlike Hein et
+
+ing sustainable development (Griggs et al., 2013; Miteva, 2019).
+
+al. quantify it as a stock-aligned concept, based on its net present
+
+Conversely, the lack of a unifying data and analytical framework
+
+value), which differ from ‘actual flows’ that reflect current ES de-
+
+can lead to resource management problems. For instance, agricul-
+
+mand (equivalent to Hein et al.’s ‘flow’). We use Hein et al.’s defi-
+
+tural, water or energy ministries may individually plan to use the
+
+nitions for flows and potential supply of ES (equivalent to La Notte
+
+same resources without considering each others’ plans or their com-
+
+et al.’s ‘actual flows’ and ‘potential’, respectively) while noting that
+
+bined effects. Ecosystem accounts provide a unifying framework
+
+both sets of concepts are relatively new and neither have reached
+
+to understand resource availability and use by different industries,
+
+the consensus needed for incorporation into the formal SEEA-EEA
+
+helping assess trade-offs to determine optimal development paths
+
+guidance. The SEEA-EEA 2020 revision process, which is currently
+
+(Australian Bureau of Statistics, 2017; Keith, Vardon, Stein, Stein, &
+
+underway, aims to achieve such terminological consensus and for-
+
+Lindenmayer, 2017; World Bank, 2016).
+
+malization (U.N., 2018).
+
+Although ES assessments can be used to inform natural resource
+
+The SEEA-EEA Technical Recommendations (U.N., 2017) recog-
+
+management in several ways, their use in natural capital accounts
+
+nize that different ES classification systems can provide frameworks
+
+is increasingly common (Vardon, Burnett, & Dovers, 2016). Natural
+
+for consistently classifying ES in applications of the SEEA-EEA,
+
+capital accounts comprise the System of Environmental-Economic
+
+including the Common International Classification of Ecosystem
+
+Accounts (SEEA) Central Framework (SEEA-CF, U.N. et al., 2014a)
+
+Services (CICES, Haines-Young & Potschin, 2018) and National
+
+and the SEEA Experimental Ecosystem Accounts (SEEA-EEA, U.N.
+
+Ecosystem Services Classification System (NESCS, USEPA, 2015). In
+
+et al., 2014b). Rwanda is 1 of 16 nations engaged in the develop-
+
+our case, the modelled ecosystem services of carbon storage, sedi-
+
+ment of natural capital accounts through the Wealth Accounting
+
+ment regulation, nutrient regulation and water yield correspond to
+
+and Valuation of Ecosystem Services (WAVES) Partnership (World
+
+CICES version 5.1 classes ‘Regulation of chemical composition of
+
+Bank, 2018b). Rwanda has developed land and water accounts
+
+atmosphere and oceans’, ‘Control of erosion rates’, ‘Regulation of
+
+as part of the SEEA-CF (Republic of Rwanda, 2018, 2019), which
+
+the chemical condition of freshwaters by living processes’ and the
+
+provide time series data on land cover (1990–2015), land use and
+
+‘Water’ division of Provisioning (Abiotic) services, respectively. In
+
+transaction values (2014–2015), and physical supply and use and
+
+NESCS, by contrast, carbon storage is not considered an ecosys-
+
+asset tables for water (2012–2015); mineral accounts are in devel-
+
+tem service, as it is not a final ecosystem good or service; carbon
+
+opment (Stage & Uwera, 2018). Building on these accounts, ES data
+
+would thus be included solely in a SEEA-EEA thematic carbon ac-
+
+organized within the SEEA-EEA can broaden country's understand-
+
+count (U.N., 2017). All of our modelled sediment regulation, nutrient
+
+ing of the effects of recent development policies, helping to guide
+
+regulation and water yield metrics would fall under the NESCS eco-
+
+future planning.
+
+logical end-product ‘Water’, with their ‘Environment’ determined by
+
+Like all accounts, the SEEA-EEA includes sets of tables built
+
+the ecosystem type at the location of their use, and the use and user
+
+using rules that quantify linkages between natural resources and
+
+dependent on the type of water user (e.g. water company or util-
+
+economic production. The SEEA-EEA includes multiple compo-
+
+ity, hydroelectric power generator or agricultural irrigator; USEPA,
+
+nents, including ecosystem extent and condition accounts, physical
+
+2015). Important terminological differences also exist between the
+
+and monetary supply and use tables, asset accounts, and thematic
+
+SEEA-CF and the SEEA-EEA, for which SEEA-CF ‘Natural water’, a
+
+accounts for land, water, carbon and biodiversity (U.N. et al., 2014b;
+
+physical input moved from the environment into economic produc-
+
+U.N., 2017). In understanding ES trends to inform the accounts, it is
+
+tion, corresponds to ‘Water provisioning’ in the SEEA-EEA Technical
+
+critical to distinguish the potential supply of ES that can be produced
+
+Recommendations (U.N. et al., 2014a; U.N., 2017).
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+1.2 | Evidence-based management: Have Rwandan
+environmental policies protected natural capital?
+
+BAGSTAD et al.
+
+of existing woodlots and reforesting degraded and sensitive lands
+(Belgian Development Agency, 2012). The World Bank is working
+with the Rwanda Environment Management Authority (REMA) as part
+
+Making economic planning decisions that protect ES requires evi-
+
+of the Landscape Approach to Forest Restoration and Conservation
+
+dence on the impacts that alternative land use and resource allo-
+
+(LAFREC) project to develop sustainable forest management objec-
+
+cation have on ES. In many fields, including business, education,
+
+tives for the Gishwati Forest landscape. REMA also compiles a bien-
+
+economic development and medicine, there is movement towards
+
+nial State of the Environment report that publishes various indicators
+
+systematically assessing the benefits of various interventions and
+
+on the nation's environment (REMA, 2015, 2017). Various NGOs
+
+basing management decisions on this evidence (e.g. Pfeffer & Sutton,
+
+are also working with partners throughout the country to address
+
+2006; Slavin, 2002; Straus, Tetroe, & Graham, 2011). There have
+
+Rwanda's environmental, social and economic challenges by selec-
+
+also been calls for evidence-based policy and management in con-
+
+tively raising naturally occurring trees with economic value. Despite
+
+servation and resource management (Sutherland, Pullin, Dolman,
+
+these efforts, a lack of nationally consistent data and methods has
+
+& Knight, 2004). At present, such evidence is unevenly used to in-
+
+limited the ability to assess the impact of these investments and pol-
+
+form decisions affecting ES through land use or resource allocation
+
+icies on ES that are critical to the Rwanda's economic development.
+
+(McKenzie et al., 2014). Evidence-based ecosystem management
+
+In this paper, we used ES models to quantify trends in service
+
+requires data and models capable of accurately predicting the provi-
+
+provision in Rwanda from 1990 to 2015, populating ecosystem
+
+sion of ES under alternative land use and resource allocation, plus
+
+condition and physical supply tables in the SEEA-EEA. We used
+
+a greater understanding of how policy interventions impact the en-
+
+Rwanda's land accounts (Republic of Rwanda, 2018) as an ecosystem
+
+vironment (Karamage et al., 2017). Models are necessary for pre-
+
+extent account, and do not at this time quantify monetary accounts
+
+dicting impacts of potential decisions (Schröter, Remme, Sumarga,
+
+(U.N. et al., 2014b). This time period encompasses both the period of
+
+Barton, & Hein, 2015), and their validation with field data can instil
+
+extreme instability in Rwanda in the 1990s and the greater stability
+
+confidence in their predictive ability. Models can also help to quan-
+
+it has experienced starting in the 2000s. Diverse modelling methods
+
+tify recent historical baselines for ES, that is, how future interven-
+
+can be applied in ecosystem accounting (Schröter et al., 2015); in
+
+tions may lead to divergence from recent trends. Additionally, where
+
+this case, we used the Integrated Valuation of Ecosystem Services
+
+available, official statistics can also inform ecosystem accounts, par-
+
+Tradeoffs (InVEST) tool (Sharp et al., 2016), building on preliminary
+
+ticularly for provisioning ecosystem services (Vallecillo et al., 2019).
+
+modelling work done by the Natural Capital Project to apply these
+
+A retrospective analysis of ES trends aligns well with the goals of
+
+models in Rwanda and neighbouring Uganda (Gourevitch et al.,
+
+the SEEA-EEA, which tracks ES trends and their contributions to
+
+2016). We modelled carbon storage, sediment regulation, nutrient
+
+specific economic industries, households and government.
+
+regulation, and annual and seasonal water yield. We summarized
+
+Over the past two decades, the Government of Rwanda has en-
+
+results for the nation, its five provinces, 30 districts, and four na-
+
+acted policies and legislation governing land use, to ensure sound
+
+tional parks, quantifying potential supply of these ES. Additionally,
+
+land use and environmental protection for sustainable development.
+
+for sediment regulation and water yield, we quantified changes in ES
+
+Ecosystem accounts can be used to show how effective these pol-
+
+flows (Hein et al., 2016) in watersheds upstream of irrigation dams,
+
+icies have been in conserving natural capital and ES. For instance,
+
+hydroelectric power dams and water treatment plants. For nutrient
+
+soil erosion control, increased soil fertility and environmental pro-
+
+regulation, we quantified ES flow changes upstream of water treat-
+
+tection have been emphasized in the major national development
+
+ment plants, a water user for whom excess nutrients may be prob-
+
+frameworks, particularly in Vision 2020 and EDPRS II (Republic of
+
+lematic. This enables us to identify locations where changing land
+
+Rwanda, 2000, 2013). Recognizing how high demographic pressure
+
+cover and agricultural practices may affect water supplies for hydro-
+
+has led to the occupation of marginal areas and rapid soil degrada-
+
+electric power, irrigation and domestic supply. In these locations, fu-
+
+tion in fragile ecosystems, Vision 2020 stated clearly that ‘to ensure
+
+ture development plans may need to address how changes to water
+
+sustainable development, Rwanda will implement adequate land and
+
+quantity, quality and timing may impact water security and economic
+
+water management techniques, coupled with a sound biodiversity
+
+development. Our work thus illustrates the application of ecosystem
+
+policy’ (Republic of Rwanda, 2000, p. 20). Various laws passed over
+
+accounts to evaluate sustainability of ES in a small, rapidly changing
+
+the last two decades govern soil conservation, land management
+
+African nation illustrative of the continent's rapid economic, popu-
+
+and general environmental protection, with particular emphasis on
+
+lation and environmental change (Egoh et al., 2012; IPBES, 2018).
+
+erosion control to support more sustainable agriculture.
+Finally, the Government of Rwanda has been working with national and international partners to implement forestry and soil
+conservation programmes that contribute towards meeting the
+EDPRS II and Vision 2020 goals. For example, since 2000 the Belgian
+
+2 | M ATE R I A L S A N D M E TH O DS
+2.1 | Study area
+
+Development Agency has worked with the Rwanda Natural Resource
+Authority (RNRA; now the Rwanda Water and Forestry Authority)
+
+Rwanda is a landlocked country situated in the central African high-
+
+to reduce deforestation and poverty by improving the management
+
+lands with a total surface area of 26,338 km2 and some 1,385,000 ha
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+166
+
+People and Nature
+
+| 167
+
+F I G U R E 1 Study area map. District
+numbers are used to organize districtscale ecosystem accounts by province
+(Supporting Information Appendix D)
+
+of potentially arable land (Figures 1 and 2). With a population of 12.2
+
+soil loss. Conversion of land from forest and woodland to cropland
+
+million people and 494 people per km2, Rwanda is the most densely
+
+has been the most notable trend in Rwanda's land cover, particularly
+
+populated country in Africa (World Bank, 2018a). Rwanda's popula-
+
+from 1990 to 2000 and 2010 to 2015 (Republic of Rwanda, 2018,
+
+tion is predicted to more than double to 26 million by 2050, with
+
+Figure 2).
+
+population density increasing to 987 people per km2 (Republic of
+Rwanda, 2011). The majority of the population farms small hillside
+plots in the rural areas, though urbanization is increasing at 4.4%
+
+2.2 | Selection of ecosystem services for modelling
+
+per year.
+From east to west, there is a general topographic trend of in-
+
+Through a series of working group meetings convened by the
+
+creasing elevation, greater local relief and increasing slope steep-
+
+Science for Nature and People Partnership (SNAPP) from September
+
+ness. Agricultural production is concentrated in the central and
+
+2015 through March 2017, we defined a list of ES, methods, and
+
+western portions of the country where there is more rainfall, de-
+
+data sources and developed and refined ES models together with
+
+spite the prevailing hilly and mountainous terrain. Additionally, the
+
+stakeholders. The working group included representatives from the
+
+relatively fertile soils found in the west, especially the volcanic soils
+
+Government of Rwanda, civil society (i.e. the Wildlife Conservation
+
+in the northwest, have attracted generations of Rwandan farmers
+
+Society-Rwanda), and technical experts from the World Bank, US
+
+(Clay & Lewis, 1990). Because of this farming pattern, half of all
+
+Geological Survey, and Rwandan and US academics. Carbon storage,
+
+fields are on slopes greater than 18%. Thus, if not properly man-
+
+sediment regulation, nutrient regulation and water yield were identi-
+
+aged, much of Rwanda's farmland has the potential for excessive
+
+fied as ES that would add value for decision-making and were feasible
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+FIGURE 2
+
+BAGSTAD et al.
+
+Rwanda Scheme II land cover, 1990–2015. Source: Regional Center for Mapping of Resources for Development
+
+to quantify using existing data. Flood regulation was of interest to
+
+to pair land-cover data with estimated carbon pools in vegetation,
+
+the government, but we lacked the needed input and calibration
+
+soils and woody debris for each land-cover type. Its SDR model es-
+
+data for its modelling. As described below, we did run the InVEST
+
+timates sediment retention and export by pairing the Universal Soil
+
+seasonal water yield model, which estimates quick flow – runoff that
+
+Loss Equation (Renard, Foster, Weesies, McCool, & Yoder, 1997)
+
+occurs during or soon after rain events. Although not a flood model,
+
+with a connectivity index to model sediment export and retention.
+
+it provides somewhat of a proxy for how the landscape's capacity
+
+The NDR model uses land-cover specific estimates of nitrogen and
+
+for rainfall infiltration and flood regulation are changing over time.
+
+phosphorus loading and potential nutrient uptake, combined with
+the SDR model's connectivity index to quantify nutrient export to
+
+2.3 | Modelling approach
+
+downstream water bodies. NDR model outputs include nutrient load
+(kg N and P applied to or potentially released from each grid cell) and
+export (N and P reaching downstream water bodies). Nutrient reten-
+
+We used the InVEST 3.3.3 modelling software (Sharp et al., 2016)
+
+tion (N and P retained by soils and vegetation that is prevented from
+
+to quantify carbon storage, sediment regulation (sediment deliv-
+
+reaching water bodies) can be estimated as the difference between
+
+ery ratio (SDR) model), nutrient regulation (nutrient delivery ratio
+
+nutrient loads and nutrient exports, but the model does not calculate
+
+(NDR) model), and annual and seasonal water yield in Rwanda for
+
+nutrient retention on a grid cell basis. The annual water yield model
+
+the years 1990, 2000, 2010 and 2015, based largely on land-cover
+
+uses the Budyko curve method (Fu, 1981) to model actual evapo-
+
+data generated by the Regional Center for Mapping of Resources
+
+transpiration (AET), then subtracts AET from mean annual precipita-
+
+for Development (RCMRD, http://geopo​r tal.rcmrd.org/). Further
+
+tion to quantify annual water yield. Finally, the seasonal water yield
+
+details about the model data sources and parameterization are in-
+
+model estimates quick flow (runoff during and immediately following
+
+cluded as Supporting Information; a brief description of each InVEST
+
+storm events, which can cause problems with flooding, water quality
+
+model follows. InVEST’s carbon storage model uses a lookup table
+
+and dry-season water availability; estimated using the Curve Number
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+168
+
+People and Nature
+
+| 169
+
+method) and local recharge (which becomes available as baseflow
+
+timing of water received by each user. While this analysis does not
+
+that supports dry-season river flows; calculated by subtracting AET
+
+explicitly quantify ES demand (which would require spatially explicit
+
+plus quick flow from precipitation). We conducted our analysis at
+
+water-use data and further information about the effects of sedi-
+
+30 m spatial resolution. More details are included as Supporting
+
+ment and nutrients on different water users), it does address the dif-
+
+Information, including spatial data inputs and literature sources
+
+ference between potential supply and actual flows of water-based
+
+for model parameterization (Supporting Information Appendix A),
+
+ES. Finally, we used ArcGIS to estimate additions and reductions in
+
+methods for deriving soil erosion model support (P) factors based
+
+each ES for the different time periods and to summarize changes
+
+on terracing data for Rwanda (Ndabamenye et al., 2013; Supporting
+
+in ES by land-cover type (i.e. ecosystem extent) to populate eco-
+
+Information Appendix B), and water model calibration (Supporting
+
+system condition and biophysical supply tables for the ecosystem
+
+Information Appendices A and C); all results are available as a US
+
+accounts (U.N. et al., 2014b). Our final tables include ecosystem ex-
+
+Geological Survey data release (Bagstad et al., 2019).
+
+tent (derived from Republic of Rwanda, 2018), ecosystem condition
+
+We summarized results for all five provinces and 30 districts in
+
+(nation-wide nitrogen and phosphorus load and export, sediment ex-
+
+Rwanda, as well as for the nation's four national parks. We also used
+
+port), potential supply (nation-wide carbon storage, annual and sea-
+
+spatial data for existing and planned water infrastructure use loca-
+
+sonal water yield, sediment retention) and physical supply (annual
+
+tions, specifically 33 irrigation dams, 24 hydroelectric dams and 39
+
+and seasonal water yield, sediment and nutrient delivery parameters
+
+water treatment plants to distinguish between the potential supply of
+
+upstream of water users).
+
+water and sediment regulation for the entire nation and actual flows
+that reach different water users (as well as actual flows of nutrient
+exports to water treatment plants; Hein et al., 2016). We then evaluated changes in sediment export, phosphorus exports (phosphorus
+
+3 | R E S U LT S
+
+being the nutrient typically responsible for freshwater eutrophication) and quick flow from 2010 to 2015 within watersheds upstream
+
+Nationally, most ES experienced relatively steep declines from 1990
+
+of water-use points. This analysis excludes ES change in small areas
+
+to 2015, with a period of relative stability between 2000 and 2010
+
+in Uganda that lie upstream of some Rwandan water users. To do
+
+(Figure 3). Carbon storage, sediment retention and local recharge
+
+this, we used ArcGIS to (a) snap each dam or treatment plant site
+
+declined while indicators of ES degradation – sediment export and
+
+to its nearest river flow accumulation line, (b) delineate upstream
+
+quick flow (the inverses of sediment retention and local recharge, re-
+
+watersheds for each site and (c) sum annual water yield, quick flow,
+
+spectively) – increased rapidly over this period. Nutrient loading, re-
+
+local recharge, sediment retention, sediment export and phosphorus
+
+tention and exports jumped most substantially from 2000 to 2010,
+
+export occurring within each upstream watershed. Changes in these
+
+a period during which fertilizer inputs increased by 590% (Republic
+
+values over time can indicate changes in the quality, quantity and
+
+of Rwanda, Ministry of Agriculture, & Animal Resources, 2013).
+
+FIGURE 3
+
+Ecosystem service trends for Rwanda, 1990–2015
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+2010
+
+2015
+
+Phosphorous
+export (T)
+
+Phosphorous
+load (T)
+
+1
+
+4
+
+2010
+
+2015
+
+0
+
+0
+
+1
+
+2000
+
+2010
+
+2015
+
+0
+
+2
+
+2000
+
+1990
+
+1
+
+1990
+
+2
+
+2015
+
+10
+
+1
+
+2
+
+0
+
+1
+
+128
+
+215
+
+2015
+
+2010
+
+349
+
+88
+
+2010
+
+140
+
+114
+
+4
+
+16
+
+4
+
+0
+
+24
+
+69
+
+24
+
+5
+
+10
+
+34
+
+289
+
+154
+
+1990
+
+116
+
+2000
+
+Nitrogen export 1990
+(T)
+2000
+
+Nitrogen load
+(T)
+
+129
+
+3
+
+34
+
+2000
+
+38
+
+208
+
+7
+
+14
+
+1990
+
+Moderate
+forest
+
+Sediment
+export (kT)
+
+Dense
+forest
+
+Year
+
+48
+
+139
+
+23
+
+25
+
+281
+
+740
+
+128
+
+135
+
+109
+
+285
+
+52
+
+64
+
+996
+
+2,393
+
+1,071
+
+1,868
+
+1,242
+
+1,001
+
+939
+
+1,158
+
+Sparse
+forest
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+0
+
+0
+
+1
+
+1
+
+0
+
+1
+
+13
+
+15
+
+0
+
+0
+
+19
+
+18
+
+Woodland
+41
+
+8
+
+8
+
+2
+
+1
+
+26
+
+17
+
+6
+
+2
+
+37
+
+25
+
+13
+
+4
+
+140
+
+69
+
+45
+
+15
+
+320
+
+149
+
+141
+
+19
+
+12
+
+11
+
+2
+
+126
+
+118
+
+132
+
+33
+
+64
+
+36
+
+64
+
+16
+
+579
+
+452
+
+893
+
+261
+
+377
+
+107
+
+381
+
+89
+
+Open
+grassland
+
+116,827
+
+81,861
+
+233,393
+
+70,750
+
+Open
+grassland
+
+Closed
+grassland
+
+31,384
+
+13,382
+
+12,337
+
+4,263
+
+Closed
+grassland
+
+4
+
+7
+
+0
+
+3
+
+35
+
+58
+
+0
+
+40
+
+21
+
+21
+
+0
+
+21
+
+213
+
+206
+
+3
+
+321
+
+160
+
+73
+
+0
+
+85
+
+Closed
+shrubland
+
+49,469
+
+35,769
+
+846
+
+83,734
+
+Closed
+shrubland
+
+45
+
+43
+
+7
+
+16
+
+337
+
+316
+
+78
+
+178
+
+154
+
+131
+
+44
+
+98
+
+1,445
+
+1,271
+
+564
+
+1,297
+
+654
+
+450
+
+262
+
+534
+
+Open
+shrubland
+
+279,445
+
+245,939
+
+149,821
+
+355,986
+
+Open
+shrubland
+
+62
+
+46
+
+7
+
+7
+
+298
+
+99
+
+15
+
+14
+
+125
+
+91
+
+14
+
+15
+
+602
+
+198
+
+30
+
+29
+
+41
+
+14
+
+15
+
+14
+
+Perennial
+cropland
+
+33,947
+
+10,985
+
+11,033
+
+10,653
+
+Perennial
+cropland
+
+3,268
+
+2,847
+
+394
+
+193
+
+12,072
+
+9,542
+
+1,391
+
+728
+
+6,519
+
+5,683
+
+802
+
+397
+
+24,173
+
+19,259
+
+3,060
+
+1,672
+
+11,004
+
+8,099
+
+9,068
+
+4,252
+
+Annual
+cropland
+
+3
+
+10
+
+2
+
+3
+
+15
+
+51
+
+7
+
+11
+
+50
+
+77
+
+47
+
+79
+
+196
+
+285
+
+158
+
+235
+
+17
+
+37
+
+12
+
+38
+
+1
+
+2
+
+2
+
+0
+
+0
+
+7
+
+9
+
+2
+
+1
+
+5
+
+5
+
+2
+
+2
+
+16
+
+27
+
+12
+
+11
+
+0
+
+2
+
+1
+
+4
+
+4
+
+0
+
+0
+
+15
+
+19
+
+1
+
+1
+
+84
+
+52
+
+29
+
+29
+
+270
+
+165
+
+89
+
+75
+
+62
+
+29
+
+19
+
+16
+
+Urban
+
+150,040
+
+155,805
+
+153,491
+
+153,427
+
+Water body
+
+Water
+body
+
+83,359
+
+104,780
+
+79,932
+
+115,945
+
+Wetland
+
+Wetland
+
+1,306,551
+
+1,110,862
+
+1,121,563
+
+618,480
+
+Annual
+cropland
+
+(Continues)
+
+3,468
+
+3,134
+
+450
+
+250
+
+13,240
+
+11,040
+
+1,787
+
+1,149
+
+7,181
+
+6,441
+
+1,077
+
+728
+
+28,973
+
+24,764
+
+6,340
+
+6,093
+
+14,027
+
+10,094
+
+11,080
+
+6,289
+
+Total
+
+36,176
+
+20,642
+
+13,842
+
+11,632
+
+Urban
+
+| People and Nature
+BAGSTAD et al.
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+0
+
+472
+
+7,967
+
+9,922
+
+Ecosystem types (land cover)
+
+268,292
+
+581,245
+
+538,383
+
+943,980
+
+Sparse forest Woodland
+
+Metric
+
+B. Ecosystem condition
+
+47,042
+
+123,335
+
+48,329
+
+114,489
+
+2010
+
+2015
+
+71,282
+
+148,898
+
+85,827
+
+63,064
+
+Moderate
+forest
+
+2000
+
+Dense forest
+
+1990
+
+Year
+
+Ecosystem types (land cover)
+
+A. Ecosystem extent (ha)
+
+TA B L E 1 Ecosystem extent (A), condition (B), potential supply (C) and physical supply (D) tables for Rwanda [Correction added after online publication on 7 January 2020: numbers altered
+to correct misplaced commas]
+
+170
+
+(Continued)
+
+429,963
+
+346,036
+
+819,223
+
+554,304
+
+405,183
+
+334,065
+
+765,498
+
+22,493
+
+18,626
+
+11,960
+
+36,907
+
+2000
+
+2010
+
+2015
+
+1990
+
+2000
+
+2010
+
+2015
+
+1990
+
+2000
+
+2010
+
+2015
+
+37
+
+89
+
+2015
+
+376
+
+5,363
+4,972
+
+44,762
+
+36,138
+
+55,952
+
+481
+
+539
+
+Sparse
+forest
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+Woodland
+
+0
+
+510
+
+4,230
+
+5,993
+
+0
+
+184
+
+4,508
+
+5,776
+
+0
+
+849
+
+17,552
+
+19,907
+
+0
+
+12
+
+830
+
+873
+
+0
+
+0
+
+2
+
+3
+
+Woodland
+11
+
+76,669
+
+41,263
+
+127,891
+
+32,934
+
+97,897
+
+33,432
+
+108,148
+
+33,697
+
+187,680
+
+94,291
+
+273,344
+
+94,671
+
+9,749
+
+3,337
+
+11,368
+
+3,837
+
+18
+
+13
+
+36
+
+14,158
+
+12,573
+
+5,915
+
+3,059
+
+177
+
+89
+
+4,285
+
+2,052
+
+4,081
+
+590
+
+162
+
+19
+
+Closed
+Open
+grassland grassland
+
+48,980
+
+21,115
+
+20,052
+
+6,336
+
+187,228
+
+82,818
+
+83,674
+
+28,604
+
+222,363
+
+96,953
+
+97,603
+
+32,846
+
+10,850
+
+4,950
+
+5,113
+
+1,777
+
+5
+
+2
+
+2
+
+1
+
+Closed
+Open
+grassland grassland
+
+335
+
+3,373
+
+918
+
+439
+
+29
+
+13
+
+Closed
+shrubland
+
+38,150
+
+22,661
+
+723
+
+50,600
+
+68,201
+
+24,094
+
+567
+
+45,061
+
+148,974
+
+72,020
+
+1,703
+
+155,069
+
+5,168
+
+2,583
+
+10
+
+3,181
+
+9
+
+7
+
+0
+
+16
+
+Closed
+shrubland
+
+15,677
+
+12,854
+
+5,453
+
+4,327
+
+203
+
+116
+
+Open
+shrubland
+
+185,949
+
+165,645
+
+103,299
+
+214,656
+
+163,088
+
+230,803
+
+119,573
+
+275,008
+
+645,042
+
+608,115
+
+337,108
+
+814,394
+
+17,496
+
+16,264
+
+9,116
+
+22,139
+
+52
+
+46
+
+28
+
+67
+
+Open
+shrubland
+
+20,938
+
+11,844
+
+1,418
+
+558
+
+18
+
+5
+
+Perennial
+cropland
+
+46,285
+
+28,003
+
+28,299
+
+26,792
+
+43,616
+
+37,004
+
+37,118
+
+35,732
+
+116,216
+
+73,252
+
+73,485
+
+70,543
+
+3,330
+
+1,526
+
+1,470
+
+1,505
+
+6
+
+2
+
+2
+
+2
+
+Perennial
+cropland
+
+668,777
+
+541,949
+
+85,336
+
+77,587
+
+4,667
+
+3,814
+
+Annual
+cropland
+
+1,962,462
+
+1,597,340
+
+1,550,445
+
+852,562
+
+2,196,800
+
+1,825,947
+
+1,724,531
+
+1,108,721
+
+4,068,392
+
+3,356,034
+
+3,218,491
+
+1,986,039
+
+196,245
+
+158,284
+
+165,249
+
+96,764
+
+183
+
+156
+
+158
+
+89
+
+Annual
+cropland
+
+1,319
+
+3,663
+
+344
+
+539
+
+11
+
+17
+
+Wetland
+
+473,449
+
+528,702
+
+399,701
+
+571,471
+
+3,281
+
+6,453
+
+4,607
+
+8,007
+
+3,765
+
+19,383
+
+12,621
+
+21,575
+
+566
+
+1,217
+
+428
+
+1,603
+
+64
+
+75
+
+57
+
+83
+
+Wetland
+
+490
+
+684
+
+65
+
+56
+
+0
+
+0
+
+Water
+body
+
+108,640
+
+120,380
+
+112,223
+
+114,563
+
+2,542
+
+4,302
+
+3,552
+
+3,015
+
+1,951
+
+6,506
+
+5,201
+
+4,007
+
+174
+
+520
+
+262
+
+211
+
+14
+
+14
+
+14
+
+14
+
+Water
+body
+
+29,755
+
+23,399
+
+821
+
+475
+
+37
+
+20
+
+Urban
+
+60,094
+
+33,411
+
+21,791
+
+17,450
+
+19,484
+
+8,922
+
+4,895
+
+3,126
+
+91,400
+
+47,449
+
+29,632
+
+21,361
+
+1,426
+
+732
+
+521
+
+442
+
+4
+
+2
+
+2
+
+1
+
+Urban
+
+623
+
+492
+
+548
+
+533
+
+(Continues)
+
+761,170
+
+662,551
+
+162,687
+
+163,716
+
+5,837
+
+4,730
+
+Total
+
+3,241,573
+
+2,924,343
+
+2,777,304
+
+2,386,700
+
+4,508,390
+
+4,792,822
+
+4,797,848
+
+5,088,423
+
+7,378,769
+
+7,119,634
+
+6,971,882
+
+7,093,821
+
+400,401
+
+404,075
+
+403,319
+
+408,201
+
+Total
+
+| 171
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+2010
+
+7,272
+
+17,719
+
+44
+
+98
+
+Moderate
+forest
+
+183,022
+
+307,168
+
+322,216
+
+443,558
+
+747,399
+
+1,573,278
+
+1,639,933
+
+2,619,157
+
+859,918
+
+1,772,860
+
+1,805,048
+
+2,920,910
+
+87,095
+
+155,840
+
+132,295
+
+220,331
+
+76
+
+170
+
+157
+
+277
+
+Sparse
+forest
+
+People and Nature
+
+Nitrogen
+export (kg)
+
+2,416
+
+14,926
+
+2015
+
+8
+
+2015
+
+2010
+
+1
+
+2010
+
+Sediment
+export (kT)
+
+Dense
+forest
+
+Year
+
+Metric
+
+Sediment
+retention
+(kT)
+
+20,963
+
+46,185
+
+67,809
+
+27,292
+
+213,355
+
+631,518
+
+661,560
+
+368,215
+
+213,844
+
+625,886
+
+670,132
+
+362,588
+
+18,522
+
+42,188
+
+52,598
+
+24,290
+
+16
+
+42
+
+50
+
+25
+
+Moderate
+forest
+
+Ecosystem types (land cover)
+
+49,779
+
+589,910
+
+16,622
+
+2010
+
+1990
+
+24,060
+
+2000
+
+2015
+
+31,247
+
+2015
+
+1990
+
+19
+
+46
+
+2010
+
+D. Physical supply
+
+Quick flow
+(1,000 m3)
+
+Local
+recharge
+(1,000 m3)
+
+Water yield
+(1,000 m3)
+
+Sediment
+retention
+(kT)
+
+35
+
+25
+
+2000
+
+Carbon storage (MT)
+
+Dense
+forest
+
+Ecosystem types (land cover)
+
+1990
+
+Year
+
+Metric
+
+C. Potential supply
+
+TA B L E 1
+
+BAGSTAD et al.
+
+| People and Nature
+1,281,041
+
+1,170,919
+20,651
+
+34,008
+
+2,160,124
+5,431
+
+2,064,829
+
+3,306,614
+52,717
+
+10,189
+
+3,223,905
+29,568
+
+314,683
+
+356,113
+743
+
+988
+
+Urban
+
+Total
+
+BAGSTAD et al.
+
+Increases in annual water yield indicate less evapotranspiration (i.e.
+water regulation through vegetation) and more runoff, but their
+implications are somewhat ambiguous. Analysis of local recharge
+and quick flow thus provides a more complete view of changes in
+water yield (Sharp et al., 2016). Ecosystem condition tables (quantifying nutrient loads and exports and sediment export), potential
+
+25,714
+
+23,347
+
+361
+
+938
+
+235
+
+1,853
+
+219
+
+294
+
+Water
+body
+
+supply tables (that account for total production of potential benefits
+to people) and physical supply tables (showing ES use and flows to
+people, U.N. et al., 2014b) for all ES, with summaries for the nation,
+
+74,073
+
+50,490
+961,083
+
+821,860
+
+1,393
+
+2,391
+989,737
+
+1,058,481
+
+6,507
+
+2
+1,982,215
+
+1,791,486
+
+318
+
+783
+270,650
+
+334,818
+
+Information Appendix D and shown below for the nation (Table 1).
+Key land-cover (i.e. ecosystem extent) trends from 1990 to
+2015 that underlie ES changes in Rwanda include loss of forests and
+woodlands (−61.3%), shrublands (−25.2%) and wetlands (−28.1%),
+and increasing cover of grasslands (+97.6%), croplands (+113.1%)
+and urban areas (+211%, Republic of Rwanda, 2018). ES changes
+
+23,176
+
+11,763
+
+17,023
+
+14,163
+
+29,449
+
+55,948
+
+5,946
+
+typically reflect trends in the extent of these ecosystems (shown
+10,445
+
+Perennial
+cropland
+
+Annual
+cropland
+
+Wetland
+
+provinces, districts and protected areas are included as Supporting
+
+in the leftmost bar for each ecosystem type in Figure 4). However,
+ecosystem extent is a better predictor for simple models like car-
+
+36,428
+
+40,119
+
+4,957
+
+6,995
+
+7,398
+
+23,411
+
+Total carbon storage nationwide (including above-ground, below-
+
+29,577
+
+3.1 | National, provincial and district-level potential
+ecosystem service supply changes
+
+15,099
+
+76,083
+
+45,008
+
+3,619
+
+167,483
+
+17,006
+45,105
+
+6,385
+62,330
+
+117,440
+
+151,230
+11,474
+
+4,418
+89
+
+30,506
+70,862
+
+17,657
+72,264
+
+138,930
+
+5,424
+1,546
+894
+3,761
+
+2,207
+
+1,068
+
+Open
+shrubland
+
+soils, topography, climate and agricultural practices.
+
+ground, soil and woody debris carbon) declined from 627.0 MT in
+1990 to 495.3 MT in 2015, with a slight increase from 2000 to 2010
+(Figures 5 and 6). On a per hectare basis, carbon stocks fell from
+247.4 T/ha to 195.4 T/ha over this period. Carbon storage was great-
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+est in the country's Eastern, Southern and Western Provinces, which
+include wetlands and substantial protected areas (Akagera National
+Park (NP) in the east, with extensive natural grasslands, shrublands,
+
+65,692
+
+130,934
+
+632,140
+
+378,212
+
+737,101
+
+413,318
+
+1,640
+
+and wetlands, and Nyungwe NP in the southwest with its exten21,836
+
+Sparse
+forest
+
+nutrient retention, which depend not just on land cover but also on
+
+sive forest). At the district level, carbon storage ranged from 150 to
+257 T/ha, with the smallest values in cropland-dominated Gisagara
+District and the largest in Rusizi, which contains forested areas
+
+8,628
+
+21,733
+2,676
+
+Nationally, modelled sediment export more than doubled from
+6.3 to 14.0 MT/year from 1990 to 2015. On a per-hectare basis, sediment export increased from a mean of 2.5 T/ha*year to 5.5 T/ha*-
+
+12,148
+
+98,419
+
+286,796
+80,112
+
+276,191
+
+98,764
+
+292,299
+83,018
+
+295,635
+
+119
+
+2,545
+17
+
+29
+
+Dense
+forest
+
+Moderate
+forest
+
+within Nyungwe NP (Supporting Information Appendix E).
+
+year over our study period. Conversely, sediment retention declined
+steadily from 408.5 to 400.8 MT from 1990 to 2015. Generally, sediment export was greatest in the Northern and Western Provinces,
+
+2015
+
+2010
+
+Quick flow
+(1,000 m3)
+
+Local recharge 2010
+(1,000 m3)
+2015
+
+2015
+
+2010
+
+Water yield
+(1,000 m3)
+
+2015
+
+2010
+
+Phosphorus
+export (kg)
+
+Metric
+
+Year
+
+particularly in the higher-elevation districts, and lowest in the flatter
+D. Physical supply
+
+TA B L E 1
+
+(Continued)
+
+Ecosystem types (land cover)
+
+Woodland
+
+Closed
+Open
+grassland grassland
+
+Closed
+shrubland
+
+bon sequestration than for more complex models like sediment and
+
+Eastern Province (Figures 5 and 6; Supporting Information Appendix
+E). On a per hectare basis, sediment export ranged from 0.8 to
+18.3 T/ha*year in Bugesera and Nyabihu districts, respectively.
+Modelled nitrogen exports in Rwanda increased from 730 to
+7,183 T from 1990 to 2015; phosphorus exports during this period
+rose from 250 to 3,469 T. These trends are driven by increases in
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+172
+
+People and Nature
+
+| 173
+
+nutrient loads (from 6.1 to 29 kT N and 1.2 to 13.2 kT P from 1990
+
+mountainous western part of the country than in the east. District-
+
+to 2015). Nitrogen and phosphorus retention by ecosystems (the
+
+level changes were generally characterized by small increases
+
+difference between nutrient loads and exports) similarly rose during
+
+(<10% change per time period), with the exception of districts in the
+
+this period. Over time, however, ecosystems retained a smaller per-
+
+Eastern Province, many of which saw decreases in water yield from
+
+centage of the nutrient loads (from 88% and 78% of nitrogen and
+
+1990 to 2000 then increases from 2000 onward, largely owing to
+
+phosphorus loads in 1990 to 75% and 74% of the same nutrients
+
+large-scale transitions between shrublands and grasslands in those
+
+in 2015). Nutrient export was greatest both in total and per hect-
+
+years (Figure 6; Supporting Information Appendix E).
+
+are terms for the Southern Province (Figures 5 and 6; Supporting
+
+Nationally, local recharge (like annual water yield) follows a
+
+Information Appendix E); regions with large extents of cropland and
+
+strong east-west gradient, with greater recharge in the rainier
+
+greater slope and rainfall typically had the highest nutrient export
+
+west than in the east (Figure 5). Changing land cover led to in-
+
+levels.
+
+creases in quick flow and decreases in local recharge from 1990
+
+We estimated nation-wide water yield at 7.14 billion m3 in 1990,
+
+to 2015, with the greatest changes occurring from 1990 to 2000
+
+which increased to 7.42 billion m3 by 2015. While small, these water
+
+and 2010 to 2015 (Figure 6). Local recharge nationally declined
+
+yield increases are not necessarily desirable. Less evapotranspira-
+
+from 5.07 to 4.49 billion m 3 from 1990 to 2015 while quick flow
+
+tion leaves more water available for surface and groundwater re-
+
+increased from 2.39 to 3.23 billion m 3 over this period. As a re-
+
+sources, but this water may runoff quickly, contributing to water
+
+sult, the percentage of water yield as quick flow increased from
+
+quality problems and reduced groundwater recharge. To address
+
+32.0% to 41.8% from 1990 to 2015. At the province and district
+
+these limitations, the seasonal water yield model results (described
+
+level, changes in quick flow and local recharge were somewhat
+
+below) add additional nuance to our analysis of hydrologic ES.
+
+more varied (Figure 4; Supporting Information Appendix E). Quick
+
+Water yield in Rwanda strongly follows the country's rainfall gra-
+
+flow steadily increased over time in the Southern and Western
+
+dient (Figure 5), with greater precipitation and water yield in the
+
+Provinces and saw slower or more uneven increases elsewhere.
+
+F I G U R E 4 Changes in ecosystem extent, condition and potential ecosystem service supply for Rwanda by ecosystem (land cover) types,
+1990–2015 (1990 = 100%)
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+FIGURE 5
+
+BAGSTAD et al.
+
+Changes in ecosystem service metrics for Rwanda for 1990 and 2015, showing district boundaries
+
+3.2 | Potential ecosystem service supply changes in
+protected areas
+
+NP saw a decline in carbon storage from 1.14 to 1.08 MT from 1990
+to 2000 (reflecting forest loss, Ordway, 2015), then an increase to
+1.23 MT in 2015.
+
+Nyungwe NP saw a small decline in carbon storage throughout the
+
+Sediment export from protected areas was much lower than
+
+study period, from 40.0 to 38.7 MT (Figure 7). Akagera NP wit-
+
+the national average on a per-hectare basis (0.9 vs. 5.5 T/ha*year).
+
+nessed a decline in carbon storage from 35.4 to 29.6 MT from 1990
+
+Substantial increases in sediment export occurred in Gishwati-
+
+to 2000, but a rebound to 33.2 MT by 2015. Volcanoes NP saw a
+
+Mukura NP (+256% from 1990 to 2015, largely driven by defor-
+
+similar decline then rebound in carbon storage, from 5.4 to 5.1 to 6.3
+
+estation in the 1990s (Ordway, 2015, with subsequent recovery;
+
+MT in 1990, 2000, and 2015, respectively. Finally, Gishwati-Mukura
+
+Figure 7), Akagera NP (+37% from 1990 to 2015, with greater
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+174
+
+FIGURE 5
+
+People and Nature
+
+| 175
+
+(Continued)
+
+sediment export occurring in years when grasslands were more
+
+caused by a small number of cropland cells found within the park
+
+dominant than shrublands) and Nyungwe NP (+137%).
+
+boundaries. These may indicate small-scale encroachment of crop-
+
+Nutrient exports from protected areas were minor (<1% of the
+national total in 2015), particularly on a per-hectare basis. While
+
+lands into protected areas or classification errors in the land-cover
+datasets.
+
+forests, grasslands and shrublands release nutrients, they do so
+
+Akagera NP saw an 18.6% increase in water yield from 1990
+
+at a much lower rate than croplands and urban areas. Temporary
+
+to 2015 while the other three national parks had minimal (1%–2%)
+
+increases in nutrient exports (e.g. for Gishwati-Mukura and
+
+changes in water yield over the study period (Figure 7). With greater
+
+Volcanoes NP in 2010 and Nyungwe NP in 2015) appear to be
+
+forest cover and lacking urban and agricultural land, national parks
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+FIGURE 5
+
+BAGSTAD et al.
+
+(Continued)
+
+have less of their water delivered as quick flow – 23.7% across all
+
+increases above the national average (Figure 8). This represents
+
+parks in 2015, as compared to a national average of 41.8%. Relative
+
+8.9% of Rwanda's hydroelectric generation capacity and 59.0% of
+
+changes in quick flow in the national parks were greatest for
+
+its water treatment capacity. Sites for five irrigation dams, six hy-
+
+Nyugngwe NP (owing to increases in grassland and shrubland within
+
+droelectric dams and seven water treatment plants had upstream
+
+the park from 2010 to 2015) and Gishwati-Mukura NP (primarily due
+
+increases in 50% or more in both quick flow and sediment export. In
+
+to forest loss in the 1990s; Figure 7).
+
+all, 19 of Rwanda's water treatment plants had upstream phosphorus exports greater than the national average (representing 73.5%
+
+3.3 | Ecosystem service flows for irrigation,
+hydroelectric power and drinking water
+
+of the nation's water treatment capacity), 11 of which were greater
+than 50%. ES beneficiaries who depend on sites like these are likely
+at greater risk for the security of their water supplies, particularly
+under climate change.
+
+Between 2010 and 2015, nation-wide sediment export increased by
+38.9%, phosphorus exports increased by 10.6% and quick flow increased by 10.2%. By comparison, sediment export and quick flow in
+watersheds upstream of all hydroelectric dam sites increased modestly
+(+14.3% and +8.8%, respectively; Figure 8). For irrigation dam and
+
+4 | D I S CU S S I O N
+4.1 | Ecosystem service trends and implications
+
+water treatment plant sites, increases in sediment export were greater
+than the national average (+43.5% and +47%, respectively), as were
+
+SEEA-EEA accounts can evaluate linkages between changes in land
+
+increases in quick flow (+10.5% and +12.8%, respectively). Phosphorus
+
+cover, multiple ES and their economic consequences (U.N. et al.,
+
+exports upstream of water treatment plants increased by 20.2%.
+
+2014b). Ecosystem condition, potential supply and ES flows (Hein
+
+Sites for 14 irrigation dams, 11 hydroelectric dams and 16 water
+
+et al., 2016) degraded substantially in Rwanda from 1990 to 2015,
+
+treatment plants had upstream quick flow and sediment export
+
+particularly from 1990 to 2000 and 2010 to 2015. Deforestation
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+176
+
+People and Nature
+
+| 177
+
+F I G U R E 6 Changes in potential ecosystem service supply in Rwanda from 1990 to 2015, summarized by five provinces: (a) Carbon
+storage; (b) Sediment retention; (c) Sediment export; (d) Annual water yield; (e) Local recharge; (f) Quick flow; (g) Nitrogen export; (h)
+Phosphorus export
+and environmental degradation during the conflicts of the 1990s
+
+have undesirable impacts on water users within Rwanda and down-
+
+are well documented (Ordway, 2015), and increasing deforesta-
+
+stream nations. Particularly given Rwanda's ambitions to maintain
+
+tion since 2010 has been noted elsewhere (Hansen et al., 2013;
+
+and restore natural capital while pursuing economic development
+
+Karamage et al., 2017; Kayiranga et al., 2016; Republic of Rwanda,
+
+and poverty reduction and given the enactment of various laws to
+
+2018, though REMA 2015 report increasing forest cover, possibly
+
+protect environmental quality over the last two decades, the 2010–
+
+of young trees not yet classified as forests in land-cover datasets
+
+2015 ES trends are problematic. In recognition that deforestation
+
+developed from satellite imagery). Increases in nutrient exports,
+
+has increased since 2010, there is a need to better understand for-
+
+which were most pronounced from 2000 to 2010, can cause eu-
+
+est loss and its drivers and to track forest and land-cover change
+
+trophication of watercourses (Nahayo et al., 2016; REMA, 2015) and
+
+on a more frequent basis. Forest loss is likely at least partly due to
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+FIGURE 6
+
+BAGSTAD et al.
+
+(Continued)
+
+high population pressure in Rwanda, which makes conservation of
+
+carbon storage values (cropland, grassland and urban).1 Increases
+
+natural habitats outside of protected areas challenging. These pres-
+
+in nutrient export were driven most strongly by increased fertil-
+
+sures stem from Rwanda's basic demographics as a small, landlocked
+
+ization of croplands from 2000 to 2010, and to a lesser extent by
+
+nation with high population growth and the densest population in
+
+increases in cropland area from 1990 to 2000 and 2010 to 2015.
+
+Africa.
+
+Sediment export and retention changes were primarily driven by
+
+Rwanda's ES trends reflect land-cover change over the 25-year
+
+large-scale conversion of forested land to agriculture, and to a
+
+study period. Carbon storage changes were driven by declines in
+
+lesser degree changes in terracing of croplands. A small decline
+
+land-cover types with greater carbon storage (forests, wetlands
+
+in annual water yield from 1990 to 2000 was driven by conver-
+
+and shrublands) and expansion of areas with lower per-hectare
+
+sion of shrubland to cropland and grassland with greater assumed
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+178
+
+FIGURE 6
+
+People and Nature
+
+| 179
+
+(Continued)
+
+evapotranspiration. Declines in evapotranspiration from 2000
+
+the analysis to 2015, (b) using a calibrated water model, (c) using the
+
+onward, which led to greater water yield, were driven by forest
+
+seasonal water yield model to quantify quick flow and local recharge,
+
+loss. Increases in quick flow and reductions in local recharge were
+
+(d) using more up-to-date data, including Tier II land-cover data from
+
+most evident around Kigali City and districts with growing urban
+
+RCMRD, 2 (e) accounting for changes over time in fertilizer applica-
+
+centres, which is likely due to increasing impervious surface cover.
+
+tion rates and the extent and effectiveness of terracing on soil ero-
+
+Other changes in quick flow and local recharge are attributable
+
+sion, and (f) modelling ES flows to water users and their changes over
+
+to not just the type and extent of land-cover change, but where it
+
+time.
+
+occurs (i.e. on soils with greater or lesser infiltration capacity, or
+further upstream or downstream).
+
+Our results have important implications for water users – particularly for trade-offs that may emerge as the country plans to expand
+
+Our results generally align with other ES studies in Rwanda. For
+
+water use for irrigation, hydroelectric power, coffee washing and other
+
+instance, Karamage et al. (2017) found increasing runoff from 1990
+
+uses (Republic of Rwanda & Ministry of Natural Resources, 2011),
+
+to 2016. Soil erosion increases have previously been documented
+
+and between increased use of fertilizer to improve agricultural out-
+
+in Rwanda (Karamage, Shao, et al., 2016; Karamage, Zhang, et al.,
+
+put and food self-sufficiency and in water quality and aquatic health.
+
+2016), though calibrated models are still lacking. REMA (2015) notes
+
+For instance, increases in fertilizer application have increased wheat
+
+localized problems with water quality and availability, particularly in
+
+and maize yields by factors of 2.5 to 3 (Republic of Rwanda, Ministry
+
+the dry season. Our carbon storage estimate (495.3 MT nationally,
+
+of Agriculture, & Animal Resources, 2013), but at the cost of sub-
+
+138.3 MT in forests, of which 58.5 MT was in above-ground and be-
+
+stantially increased nutrient exports to the country's surface waters
+
+low-ground biomass) differed substantially from Rwanda's national
+
+(Nahayo et al., 2016; REMA, 2015). Additionally, irrigated cropland
+
+forest inventory (DFS et al., 2016), which estimated above-ground
+
+was projected to grow from 18,000 to 100,000 ha from 2010 to 2017.
+
+and below-ground carbon to total 25.9 MT. Although well below
+
+Hydroelectric power expansion was planned from 69 MW of gener-
+
+our estimates, the national forest inventory includes carbon in plan-
+
+ation capacity in 2009 to 130 MW in 2012 (though problems with
+
+tations, shrubland and agroforestry areas only (i.e. it excludes for-
+
+sediment impacts to hydroelectric power generation have previously
+
+est carbon storage in protected areas, which we estimated at 79.5
+
+been noted in Rwanda, Munyaneza, Majoro, Mutake, & Hagenimana,
+
+MT); future work could better harmonize these results with ours.
+
+2015). Domestic water users – particularly in rural areas – are tar-
+
+Our results are also generally comparable to those of Rukundo et
+
+geted for expansion of reliable, safe and adequate drinking water.
+
+al. (2018), who modelled multiple ES in Rwanda from 1990 to 2010
+
+Coffee is Rwanda's fastest growing industry, with planned growth of
+
+using InVEST. However, our study expands on theirs by (a) extending
+
+coffee washing stations from 46 to 240 from 2005 to 2012 (Republic
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+BAGSTAD et al.
+
+F I G U R E 7 Changes in potential ecosystem service supply in Rwanda from 1990 to 2015, summarized by protected areas: (a) Carbon
+storage; (b) Sediment retention; (c) Sediment export; (d) Annual water yield; (e) Local recharge; (f) Quick flow; (g) Nitrogen export; (h)
+Phosphorus export
+of Rwanda & Ministry of Natural Resources, 2011). Most coffee wash-
+
+and how the country can better balance water use and natural re-
+
+ing stations in Rwanda rely on water from springs and wells, making
+
+source protection.
+
+adequate groundwater recharge important for the future of this in-
+
+National parks cover 9% of Rwanda but are important for the
+
+dustry. While western Rwanda is relatively water-rich, the nation has
+
+protection and provision of ES. In 1990, the area now covered by
+
+problems with water quality and dry-season availability, which may be
+
+four national parks provided 13.1% of the nation's carbon storage,
+
+exacerbated by rising water demand, nutrient exports to aquatic sys-
+
+13.4% of its sediment retention and 18% of its local recharge (parks
+
+tems, declines in local recharge and climate change. Our results aug-
+
+play a relatively minimal role in nutrient loading and export). As ES
+
+ment information provided by Rwanda's water accounts (Republic of
+
+declined more rapidly outside of parks, parks’ contribution to na-
+
+Rwanda, 2019), showing how land cover and water resources interact
+
+tional ES rose – by 2015, providing 16% of its carbon storage, 13.7%
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+180
+
+FIGURE 7
+
+People and Nature
+
+| 181
+
+(Continued)
+
+of its sediment retention and 19.6% of its local recharge. Particularly
+
+Plath, & Wronski, 2015). This shows how population pressures in-
+
+in the rainy and mountainous western part of the country, Rwanda's
+
+teract with conservation, which is critical to the maintenance of ES
+
+parks play key roles in protecting water quality, quantity and tim-
+
+in Rwanda.
+
+ing. Given Rwanda's role as a water supplier to downstream nations
+
+At least five potential solutions exist to the ES declines quantified
+
+in the Congo and Nile Basins (many of which are water stressed),
+
+in this study, all of which are being actively pursued by the Government
+
+the protection of hydrologic ES by Rwanda's ecosystems is import-
+
+of Rwanda and civil society. First, the importance of improved in situ
+
+ant for neighbouring nations as well. National park boundaries in
+
+soil and nutrient management, particularly through erosion control,
+
+Rwanda have changed over time, with Gishwati-Mukura NP created
+
+has long been recognized (Ndabamenye et al., 2013) and is a focus
+
+in 2015 but large parts of Akagera NP degazetted to accommodate
+
+of agricultural development efforts. In a sensitivity analysis of the ef-
+
+refugees returning to Rwanda after the conflict of the 1990s (Apio,
+
+fects of terracing on erosion, Rwanda would have needed to improve
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+FIGURE 7
+
+BAGSTAD et al.
+
+(Continued)
+
+its rate of terracing improvements from 2010 to 2015 by about 7.5
+
+4.2 | Caveats
+
+times to offset land cover change-induced soil erosion during that
+period. Improved outcomes for water quality may also be achievable
+
+In this paper, we modelled ES in Rwanda using the latest data, a
+
+by targeting reforestation to intercept nutrients and sediment before
+
+calibrated annual water yield model, terracing data to inform a soil
+
+they flow into major waterways (Chaplin-Kramer et al., 2016). Second,
+
+erosion model (Supporting Information Appendices A–C), and ap-
+
+the government is actively promoting renewable energy, particularly
+
+plied a seasonal water yield model to better quantify hydrologic ES.
+
+hydroelectric generation and methane extraction from Lake Kivu, to
+
+Relative to past ES modelling efforts in Africa that rely on older,
+
+reduce pressure on forests for biomass energy. Third, payments for
+
+coarser resolution, or global data or lack calibration (Gourevitch et
+
+ecosystem services (PES) have been discussed as a means of incentiv-
+
+al., 2016; Leh, Matlock, Cummings, & Nalley, 2013; Rukundo et al.,
+
+izing smallholder farmers in Rwanda to adopt sustainable agriculture
+
+2018), results of this study are relatively robust. Still, several im-
+
+management practices to protect soil and water resources (Tetra Tech
+
+portant caveats apply.
+
+& LTS Africa, 2018). Fourth, by developing ‘green cities’, Rwanda aims
+
+First, sediment and nutrient load data needed to calibrate soil
+
+to densify its urban cores, reducing population pressure on non-urban
+
+erosion and nutrient models are scarce in Rwanda (Muvundja et al.,
+
+areas (REMA, 2017; World Bank & Government of Rwanda, 2019).
+
+2009; Uwimana, Dam, Gettel, & Irvine, 2018); an attempted cali-
+
+Finally, the creation of the Rwanda Water and Forestry Authority in
+
+bration using sediment load data for watersheds draining into Lake
+
+early 2017 from the former RNRA explicitly recognizes the linkages
+
+Kivu (Muvundja et al., 2009) had relatively low predictive power. A
+
+between forests and water, and the need to jointly manage these crit-
+
+national water-quality monitoring programme with adequate spatio-
+
+ical resources. Our ecosystem accounts and their underlying models
+
+temporal coverage and co-located with stream gages could provide
+
+can assist in tracking the effectiveness of these strategies (e.g. soil
+
+data to calibrate sediment and nutrient models. New water-qual-
+
+erosion control), spatial targeting of PES (i.e. to small watersheds up-
+
+ity monitoring efforts begun in 2017 by the Ministry of Natural
+
+stream of water users, with high risk of land-cover change, low oppor-
+
+Resources may aid in future model calibration efforts (Christian &
+
+tunity costs for conservation, and monitoring infrastructure to detect
+
+Vedaste, 2017).
+
+change, building on Figure 8), and quantifying linkages and dependencies between natural resources (e.g. forests and water).
+
+Second, our analysis of dams and water treatment plants required delineation of their upstream watersheds. We confirmed the
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+182
+
+People and Nature
+
+| 183
+
+F I G U R E 8 (a) Upstream watersheds of all hydroelectric dam, irrigation dam and water treatment plants in Rwanda. (b) Watersheds with
+greatest quick flow increases, 2010–2015. (c) Watersheds with greatest sediment export increases, 2010–2015. (d) Watersheds upstream of
+water treatment plants with greatest phosphorus export increases, 2010–2015
+locations of some existing facilities using satellite imagery. However,
+
+between natural and planted trees, nor do we have field data spe-
+
+watershed delineation requires that facilities be accurately located
+
+cific to individual species that would enable analysis of such ES
+
+on river flow accumulation lines, and in some cases, the facility lo-
+
+trade-offs.
+
+cation was ambiguous, introducing uncertainty into our analysis.
+
+Fourth, where possible, we used national datasets, which are
+
+We suggest a full review of facility locations with Rwandan utility
+
+typically more trusted and often of better quality than global
+
+or agency staff to confirm exact water-use locations prior to the
+
+datasets. In some cases, however, national data were dated and/
+
+use of this information in precise spatial natural resource planning.
+
+or incomplete (e.g. the national soil survey dates to the late 1980s
+
+Additionally, the use of the national average and 50% increases in
+
+with limited sampling inside national parks, Verdoodt & van Ranst,
+
+sediment export and quick flow (Figure 8) are admittedly arbitrary
+
+2006). As more national data become available, they should fur-
+
+cut-offs to illustrate the use of ES flow information in planning. Dam
+
+ther improve the quality and credibility of our results. For exam-
+
+or water treatment plant managers could better inform the develop-
+
+ple, the development of a public, national-scale water data portal
+
+ment of more rigorous sedimentation or quick flow thresholds for
+
+should enable improved calibration of hydrologic ES models in the
+
+integrated land and water resources planning.
+
+future as more data become available (Rwanda Water & Forestry
+
+Third, data limitations prevent our current approach from being
+
+Authority, 2019).
+
+able to answer management questions about ES trade-offs related
+
+Finally, given data limitations and unresolved conceptual issues
+
+to plantations, including Eucalyptus and important perennial crops
+
+(e.g. the fact that sediment retention is a non-rival service simultane-
+
+like tea, coffee and bananas. Although Eucalyptus is an extremely
+
+ously benefitting multiple water users in the same watershed), it was
+
+common planting in Rwanda and perennial crops are of high eco-
+
+not possible to construct a physical use table. This conceptual issue
+
+nomic importance, current land-cover data do not distinguish
+
+is one of many being addressed by the SEEA-EEA revision process
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+(U.N., 2018), which should enable the inclusion of physical use tables
+in future Rwandan ecosystem accounts.
+
+BAGSTAD et al.
+
+quantity and timing changes affect different industries. Similar GIS
+algorithms can be used to quantify other types of ES flows, providing more complete inputs to ecosystem accounts (Bagstad, Johnson,
+
+4.3 | Next steps for ecosystem accounting
+in Rwanda
+We quantified ES in Rwanda for four intervals over a 25-year pe-
+
+Voigt, & Villa, 2013).
+
+5 | CO N C LU S I O N S
+
+riod. While adequate to show long-term trends, 5- to 10-year intervals are suboptimal for integration with more regularly produced
+
+In this paper, we provide an initial view of ecosystem condition and
+
+national economic accounts, particularly given Rwanda's demand
+
+physical ES supply trends for Rwanda that can serve as a founda-
+
+for official statistics in decision-making (Stage & Uwera, 2018).
+
+tion for more complete ecosystem accounts, including analysis of
+
+Land-cover data – a key input to many ES models – are now increas-
+
+additional ES and monetary accounts (U.N. et al., 2014b). Economic
+
+ingly being produced with greater temporal resolution. Examples
+
+valuation to develop monetary supply-use tables is a next step and
+
+include the European Space Agency's Climate Change Initiative
+
+will require greater integration with both Rwanda's water and na-
+
+(ESA-CCI, 2017) and RCMRD’s use of TimeSync software to begin
+
+tional economic accounts. Although simple valuation is currently
+
+production of high-resolution annual land-cover change maps for
+
+possible using, for example, the social cost of carbon and water pro-
+
+African nations using cloud computing (Cohen, Yang, & Kennedy,
+
+ductivity data from the water accounts (Republic of Rwanda, 2019),
+
+2010; SERVIR Global, 2017). These offer the possibility that eco-
+
+more sophisticated but data-intensive approaches to value ES like
+
+system accounting can become part of a regularly updated monitor-
+
+sediment regulation would be more informative for decision-making.
+
+ing programme with greater relevance for decision-making, rather
+
+This could incorporate additional key industries such as mining and
+
+than an occasional exercise. Particularly in nations or regions with
+
+coffee and tea production.
+
+high population pressure and the potential for rapid land-cover
+
+Ecosystem accounts are useful for helping to frame trends al-
+
+change, regular updates to ecosystem accounts are important to
+
+ready uncovered in Rwanda's land and water accounts (Republic
+
+avoid mistaken assumptions that land cover and ES trends are sta-
+
+of Rwanda, 2018, 2019), and for understanding the effectiveness
+
+ble (as was the case in Rwanda from 2000 to 2010, but not 2010 to
+
+of past economic development policies such as EDPRS and Vision
+
+2015). Bagstad, Cohen, Ancona, McNulty, and Sun (2018) provide
+
+2020 (Republic of Rwanda, 2000, 2013). In Rwanda's case, the sta-
+
+further guidance on the sensitivity of ES results to data and model
+
+bilization of ES losses in the 2000s appeared to indicate success
+
+selection, which will be relevant when national land-cover data can-
+
+in balancing economic development, poverty reduction and envi-
+
+not be generated annually and the use of global or regional datasets
+
+ronmental protection. However, ES gains have reversed since 2010,
+
+is considered.
+
+showing the challenge of sustaining natural capital in the face of
+
+Future analyses could consider additional ES that matter to the
+
+rapid economic and population growth (e.g. Marques et al., 2019).
+
+country. For instance, flood regulation is an important ES in Rwanda,
+
+As the Government of Rwanda contemplates ambitious future pol-
+
+but beyond the use of simple proxies (Martinez-López et al., 2019)
+
+icies such as the upcoming National Strategy for Transformation
+
+requires more complex models and underlying data than are cur-
+
+I (the successor to EDPRS) and Vision 2050, ecosystem accounts
+
+rently available. Future ecosystem accounts could also address
+
+can help track progress, quantify trade-offs, and set realistic base-
+
+provisioning and cultural ecosystem services, for instance, tourism
+
+lines from which to develop comprehensive and linked environ-
+
+(Banerjee et al., 2018) and fuel, timber and food (NISR, 2018b).
+
+mental-economic policies. Furthermore, ecosystem accounts can
+
+Inclusion of more ecosystem services, including provisioning and
+
+illustrate linked trends and previously unidentified trade-offs in
+
+cultural services, would more fully quantify ecosystems’ contribu-
+
+the environment, economy and human well-being of other rapidly
+
+tion to Rwanda's economy.
+
+changing African nations.
+
+InVEST provided a suitable platform for biophysical modelling of
+potential ES supply (Hein et al., 2016), and is one of several mod-
+
+AC K N OW L E D G E M E N T S
+
+elling tools available for ecosystem accounting (Bagstad, Semmens,
+
+Support for this work was provided by the Natural Capital Accounting
+
+Waage, & Winthrop, 2013). Although feasible to apply in Rwanda,
+
+working group funded by the Science for Nature and People
+
+the burden of InVEST model development, parameterization and cal-
+
+Partnership (SNAPP) and the World Bank's Wealth Accounting and
+
+ibration remains high for national governments in developing nations
+
+Valuation of Ecosystem Services (WAVES) Partnership. All working
+
+in the absence of external technical assistance. Further work to more
+
+group participants consented to participation in this study. We also
+
+efficiently reuse ES data and models and otherwise lower the barri-
+
+thank other members of WAVES-Rwanda, specifically Sofia Ahlroth,
+
+ers and time requirements for ES modelling is thus needed for more
+
+Tim Brown and Benjamin Bukombe. Michael Vardon provided con-
+
+widespread application of ecosystem accounting in developing na-
+
+structive reviews of the model results and manuscript. Support
+
+tions. To quantify ES flows rather than just potential supply, we used
+
+for Bagstad and Ancona's time was provided by the US Geological
+
+a GIS watershed delineation tool to understand how water quality,
+
+Survey's Land Change Science program. The use any of trade, firm
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+184
+
+People and Nature
+
+| 185
+
+or product names is for descriptive purposes only and does not imply
+
+choice of the chosen thematic resolution for land-cover maps. We
+
+endorsement by the US Government.
+
+lacked the data to uniquely parameterize open versus closed grasslands and shrublands in the carbon, RUSLE C factor (SDR model), and
+
+C O N FL I C T O F I N T E R E S T
+
+Kc and root depth (annual water yield model) lookup tables, and dif-
+
+The authors declare no conflict of interest.
+
+ferent forest, grassland/shrubland, and cropland types in the NDR
+model lookup table (Supporting Information Appendix A). In these
+
+AU T H O R S ’ C O N T R I B U T I O N S
+
+cases, a more detailed land-cover classification does not help us to
+
+K.J.B., J.C.I., G.-M.L., M.M., M.B., S.P., D.R. and C.U. designed the re-
+
+make a more refined assessment, but further ecological studies could
+
+search. K.J.B., Z.H.A., D.K., B.M. and N.L.N. performed the research.
+
+help to better distinguish between ES provision differences when
+
+K.J.B., Z.H.A., M.B., D.K., M.B., E.R., E.R. and N.L.N. contributed
+
+using Level II land cover in future ecosystem accounts.
+
+data, ran models and analysed data. K.J.B., J.C.I., G.-M.L. and M.M.
+wrote the paper. All authors approved the final version of this paper.
+DATA AVA I L A B I L I T Y S TAT E M E N T
+A data release containing all relevant datasets will be available within
+the US Geological Survey Science Data Catalog https​://data.usgs.
+gov/datac​atalo​g/;
+
+https​://doi.org/10.5066/F72806JN
+
+(Bagstad
+
+et al., 2019).
+ORCID
+Kenneth J. Bagstad
+
+https://orcid.org/0000-0001-8857-5615
+
+Jane Carter Ingram
+
+https://orcid.org/0000-0002-9710-4935
+
+Zachary H. Ancona
+
+https://orcid.org/0000-0001-5430-0218
+
+Emmanuel Rukundo
+Evariste Rutebuka
+
+https://orcid.org/0000-0002-3220-3422
+https://orcid.org/0000-0001-9267-3349
+
+Stephen Polasky
+
+https://orcid.org/0000-0003-4934-2434
+
+Claudine Uwera
+
+https://orcid.org/0000-0002-9490-3969
+
+E N D N OT E S
+1
+
+Land-cover data generally showed declines in forest density
+(Figure 2), with the exception of recovery of dense forests in protected areas from 2010 to 2015. Dense forests are classified as
+having >70% tree canopy cover, moderate forests from 40% to
+70% cover and sparse forests as 10%–40% cover. Transitions between forest cover classes indicate the crossing of these thresholds, but do not tell us how far a given cell is from that threshold. It
+is thus possible that some changes in forest density could reflect
+cells with forest cover near a threshold that crossed it from one
+time period to the next.
+
+2
+
+RCMRD has produced two land-cover data products for Rwanda –
+Level I with 6 land-cover classes and Level II with 13 classes. Like any
+land-cover data, classification error rates will be lower for datasets
+with fewer land-cover classes. For the 1990–2010 data, Level II accuracy was 80.0% and Level I accuracy was 86.4% (RCMRD-SERVIR
+Africa, 2013). For 2015, Level II had 77.5% accuracy and Level I 79.6%
+(RCMRD, 2017) – so relatively little accuracy was lost in moving from
+6 to 13 land-cover classes. While the 2015 maps were produced as
+part of a separate effort than the 1990, 2000 and 2010 maps, the
+developers of the 2015 data used similar methods and performed accuracy assessments and comparisons with the earlier data to ensure
+its compatibility. Rukundo et al.’s (2018) trends for ES modeled based
+on Level I land-cover data for 1990 to 2010 were quite similar to ours,
+which gives us further confidence that ES trends are robust to the
+
+REFERENCES
+Apio, A., Plath, M., & Wronski, T. (2015). Recovery of ungulate
+populations in post-civil war Akagera National Park, Rwanda.
+Journal of East African Natural History, 104, 127–141. https​://doi.
+org/10.2982/028.104.0110
+Australian Bureau of Statistics. (2017). Experimental environmental-economic accounts for the great barrier reef. Retrieved from http://
+www.abs.gov.au/AUSST​ATS/abs@.nsf/Looku​p/4680.0Main​+Featu​
+res12017
+Bagstad, K. J., Cohen, E. M., Ancona, Z. H., McNulty, S., & Sun, G. (2018).
+Effects of data and model choices on ecosystem services results for
+Rwanda. Applied Geography, 93, 25–36. https​://doi.org/10.1016/j.
+apgeog.2018.02.005
+Bagstad, K. J., Ingram, J. C., Lange, G., Masozera, M., Ancona, Z. H., Bana,
+M., … Uwera, C. (2019). Data release for “Toward ecosystem accounts
+for Rwanda: Tracking 25 years of change in flows and potential supply of ecosystem services”. U.S. Geological Survey Data Release. https​:
+//doi.org/10.5066/F72806JN
+Bagstad, K. J., Johnson, G. W., Voigt, B., & Villa, F. (2013). Spatial dynamics of ecosystem service flows: A comprehensive approach to
+quantifying actual services. Ecosystem Services, 4, 117–125. https​://
+doi.org/10.1016/j.ecoser.2012.07.012
+Bagstad, K. J., Semmens, D. J., Waage, S., & Winthrop, R. (2013). A comparative assessment of decision-support tools for ecosystem services
+quantification and valuation. Ecosystem Services, 5, 27–39. https​:
+//doi.org/10.1016/j.ecoser.2013.07.004
+Banerjee, O., Cicowiez, M., Ochuodo, T., Masozera, M., Wolde, B., Lal,
+P., … Alavapati, J. (2018). Financing the sustainable management of
+Rwanda’s protected areas. Journal of Sustainable Tourism, 26, 1381–
+1397. https​://doi.org/10.1080/09669​582.2018.1456541
+Belgian Development Agency. (2012). Support program to the reforestation in 9 districts of the northern and western provinces of Rwanda.
+Brussels: Belgian Development Agency.
+Chaplin-Kramer, R., Hamel, P., Sharp, R., Kowal, V., Wolny, S., Sim,
+S., & Mueller, C. (2016). Landscape configuration is the primary
+driver of impacts on water quality associated with agricultural expansion. Environmental Research Letters, 11, 074012. https​://doi.
+org/10.1088/1748-9326/11/7/074012
+Christian, S. B., & Vedaste, K. (2017). Water pollution study: Draft report.
+Kigali: Prepared for the Rwanda Ministry of Natural Resources.
+Clay, D., & Lewis, L. A. (1990). Land use, soil loss, and sustainable agriculture in Rwanda. Human Ecology, 18, 147–161. https​://doi.
+org/10.1007/BF008​89179​
+Cohen, W. B., Yang, Z., & Kennedy, R. (2010). Detecting trends in
+forest disturbance and recovery using yearly Landsat time series: 2. TimeSync – Tools for calibration and validation. Remote
+Sensing of Environment, 114, 2911–2924. https​://doi.org/10.1016/j.
+rse.2010.07.010
+Deutsche Forstservice GmbH (DFS), I-Mage Consult, & Enterprise
+Multiservices. (2016). Support program to the development of the
+Forestry Sector in Rwanda–Phase II, Execution of a National Forest
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+Inventory. Technical Report 07, detailed results, National Forest
+Inventory. Kigali: Rwanda Natural Resources Authority.
+Egoh, B. N., O'Farrell, P. J., Charef, A., Josephine Gurney, L., Koellner, T.,
+Nibam Abi, H., … Willemen, L. (2012). An African account of ecosystem service provision: Use, threats and policy options for sustainable
+livelihoods. Ecosystem Services, 2, 71–81. https​://doi.org/10.1016/j.
+ecoser.2012.09.004
+European Space Agency-Climate Change Initiative (ESA-CCI). (2017).
+300 m annual global land cover time series from 1992 to 2015.
+Retrieved from https​://www.esa-landc​over-cci.org/?q=node/175
+Fu, B. P. (1981). On the calculation of the evaporation from land surface.
+Scientia Atmospherica Sinica, 5, 23–31.
+Gaborone Declaration for Sustainability in Africa. (2019). Gaborone
+declaration for sustainability in Africa. Retrieved from http://www.
+gabor​onede​clara​tion.com/
+Gourevitch, J. D., Hawthorne, P. L., Keeler, B. L., Beatty, C. R., Greve,
+M., & Verdone, M. A. (2016). Optimizing investments in nationalscale forest landscape restoration in Uganda to maximize multiple
+benefits. Environmental Research Letters, 11, 114027. https​://doi.
+org/10.1088/1748-9326/11/11/114027
+Griggs, D., Stafford-Smith, M., Gaffney, O., Rockström, J., Öhman, M.
+C., Shyamsundar, P., … Noble, I. (2013). Sustainable development
+goals for people and planet. Nature, 495, 305–307. https​://doi.
+org/10.1038/495305a
+Guerry, A. D., Polasky, S., Lubchenco, J., Chaplin-Kramer, R., Daily, G.
+C., Griffin, R., … Vira, B. (2015). Natural capital and ecosystem services informing decisions: From promise to practice. Proceedings of
+the National Academy of Science of the United States of America, 112,
+7348–7355. https​://doi.org/10.1073/pnas.15037​51112​
+Haines-Young, R., & Potschin, M. (2018). Common International
+Classification of Ecosystem Services (CICES) V.5.1. Guidance on the
+Application of the Revised Structure. Retrieved from https​://cices.
+eu/resou​rces/
+Hansen, M. C., Potapov, P. V., Moore, R., Hancher, M., Turubanova, S. A.,
+Tyukavina, A., … Townshend, J. R. G. (2013). High-resolution global
+maps of 21st-century forest cover change. Science, 342, 850–853.
+https​://doi.org/10.1126/scien​ce.1244693
+Hein, L., Bagstad, K. J., Edens, B., Obst, C., de Jong, R., & Lesschen, J. P.
+(2016). Defining ecosystem assets for natural capital accounting. PLoS
+ONE, 11, e0164460. https​://doi.org/10.1371/journ​al.pone.0164460
+Intergovernmental Panel on Biodiversity and Ecosystem Services
+(IPBES). (2018). Summary for policymakers of the regional assessment
+report on biodiversity and ecosystem services for Africa. Bonn: IPBES
+Secretariat.
+Jayachandran, S., de Laat, J., Lambin, E. F., Stanton, C. Y., Audy, R., &
+Thomas, N. E. (2017). Cash for carbon: A randomized trial of payments for ecosystem services to reduce deforestation. Science, 357,
+267–273. https​://doi.org/10.1126/scien​ce.aan0568
+Karamage, F., Shao, H., Chen, X., Ndayisaba, F., Nahayo, L., Kayiranga,
+A., … Zhang, C. (2016). Deforestation effects on soil erosion in the
+Lake Kivu Basin, D.R. Congo-Rwanda. Forests, 7, 281. https​://doi.
+org/10.3390/f7110281.
+Karamage, F., Zhang, C., Fang, X., Liu, T., Ndayisaba, F., Nahayo, L., …
+Nsengiyumva, J. (2017). Modeling rainfall-runoff response to land
+use and land cover change in Rwanda (1990–2016). Water, 9, 1990–
+2016. https​://doi.org/10.3390/w9020147
+Karamage, F., Zhang, C., Ndayisaba, F., Shao, H., Kayiranga, A., Fang, X.,
+… Tian, G. (2016). Extent of cropland and related soil erosion risk in
+Rwanda. Sustainability, 8, 609. https​://doi.org/10.3390/su807​0609
+Kathiresan, A. (2011). Strategies for sustainable crop intensification in
+Rwanda: Shifting focus from producing enough to producing surplus.
+Kigali: Ministry of Agriculture and Animal Resources.
+Kayiranga, A., Kurban, A., Ndayisaba, F., Nahayo, L., Karamage, F.,
+Ablekim, A., … Ilniyaz, O. (2016). Monitoring forest cover change
+and fragmentation using remote sensing and landscape metrics
+
+BAGSTAD et al.
+
+in Nyungwe-Kibira Park. Journal of Geoscience and Environment
+Protection, 4, 13–33. https​://doi.org/10.4236/gep.2016.411003
+Keith, H., Vardon, M., Stein, J., Stein, J. L., & Lindenmayer, D. (2017).
+Ecosystem accounts define explicit and spatial trade-offs for managing natural resources. Nature Ecology & Evolution, 1, 1368–1392.
+https​://doi.org/10.1038/s41559-017-0309-1
+La Notte, A., & Dalmazzone, S. (2018). Sustainability assessment and
+causality nexus through ecosystem service accounting: The case of
+water purification in Europe. Journal of Environmental Management,
+223, 964–974. https​://doi.org/10.1016/j.jenvm​an.2018.06.072
+La Notte, A., Vallecillo, S., Marques, A., & Maes, J. (2019). Beyond the
+economic boundaries to account for ecosystem services. Ecosystem
+Services, 35, 116–129. https​://doi.org/10.1016/j.ecoser.2018.12.007
+Leh, M. D. K., Matlock, M. D., Cummings, E. C., & Nalley, L. L. (2013).
+Quantifying and mapping multiple ecosystem services change in
+West Africa. Agriculture, Ecosystems, & Environment, 165, 6–18. https​:
+//doi.org/10.1016/j.agee.2012.12.001
+Marques, A., Martins, I. S., Kastner, T., Plutzar, C., Theurl, M. C.,
+Eisenmenger, N., … Pereira, H. M. (2019). Increasing impacts of land
+use on biodiversity and carbon sequestration driven by population
+and economic growth. Nature Ecology & Evolution, 3, 628–637. https​:
+//doi.org/10.1038/s41559-019-0824-3
+Martínez-López, J., Bagstad, K. J., Balbi, S., Magrach, A., Voigt, B.,
+Athanasiadis, I., … Villa, F. (2019). Towards globally customizable ecosystem service models. Science of the Total Environment, 650, 2325–
+2336. https​://doi.org/10.1016/j.scito​tenv.2018.09.371
+McKenzie, E., Posner, S., Tillmann, P., Bernhardt, J. R., Howard, K., &
+Rosenthal, A. (2014). Understanding the use of ecosystem service
+knowledge in decision making: Lessons from international experiences of spatial planning. Environment and Planning C, 32, 320–340.
+https​://doi.org/10.1068/c12292j
+Miteva, D. A. (2019). The integration of natural capital into development
+policies. Oxford Review of Economic Policy, 35, 162–181. https​://doi.
+org/10.1093/oxrep/​gry029
+Munanura, I. E., Backman, K. F., Hallo, J. C., & Powell, R. B. (2016).
+Perceptions of tourism revenue sharing impacts on Volcanoes
+National Park, Rwanda: A Sustainable Livelihoods framework. Journal of Sustainable Tourism, 24, 1709–1726. https​://doi.
+org/10.1080/09669​582.2016.1145228
+Munyaneza, O., Majoro, F., Mutake, S., & Hagenimana, E. (2015).
+Performance evaluation of sediment basins: Case study of Keya hydropower plant in Rwanda. Journal of Water Resource and Protection,
+7, 1387–1398. https​://doi.org/10.4236/jwarp.2015.716112
+Muvundja, F. A., Pasche, N., Bugenyi, F. W. B., Isumbisho, M., Müller, B.,
+Namugize, J.-N., … Wüest, A. (2009). Balancing nutrient inputs to
+Lake Kivu. Journal of Great Lakes Research, 35, 406–418. https​://doi.
+org/10.1016/j.jglr.2009.06.002
+Nahayo, L., Li, L., Kayiranga, A., Karamage, F., Mupenzi, C., Ndayisaba,
+F., & Nyesheja, E. M. (2016). Agricultural impact on environment and
+counter measures in Rwanda. African Journal of Agricultural Research,
+11, 2205–2212. https​://doi.org/10.5897/AJAR2​016.10899​
+National Institute of Statistics of Rwanda (NISR). (2018a). The Fifth
+Integrated Household Living Survey (EICV5): 2016/2017 poverty profile
+report. Kigali: National Institute of Statistics of Rwanda.
+National Institute of Statistics of Rwanda (NISR). (2018b). Rwanda statistical YearBook 2018. Kigali: National Institute of Statistics of Rwanda.
+Ndabamenye, T., Musana, S. B., Ngoga, T. G., Kagabo, M. D.,
+Dusengemungu, L., Nabahungu, L. N., & Muhinda Mbonigaba, J. J.
+(Eds.). (2013). Soil erosion control baseline in Rwanda. Kigali: Rwanda
+Agriculture Board (RAB).
+Nelson, E., Mendoza, G., Regetz, J., Polasky, S., Tallis, H., Cameron, D.
+R., … Shaw, M. R. (2009). Modeling multiple ecosystem services,
+biodiversity conservation, commodity production, and tradeoffs at
+landscape scales. Frontiers in Ecology and Environment, 7, 4–11. https​:
+//doi.org/10.1890/080023
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+186
+
+Ordway, E. M. (2015). Political shifts and changing forests: Effects
+of armed conflict on forest conservation in Rwanda. Global
+Ecology and Conservation, 3, 448–460. https​://doi.org/10.1016/j.
+gecco.2015.01.013
+Pfeffer, J., & Sutton, R. I. (2006). Hard facts, dangerous half-truths, and
+total nonsense: Profiting from evidence-based management. Cambridge:
+Harvard University Press.
+Polasky, S., Nelson, E., Pennington, D., & Johnson, K. (2011). The impact
+of land-use change on ecosystem services, biodiversity and returns
+to landowners: A case study in the State of Minnesota. Environmental
+and Resource Economics, 48, 219–242. https​://doi.org/10.1007/
+s10640-010-9407-0
+Regional Center for Mapping of Resources for Development (RCMRD).
+(2017). Accuracy report 2015 land cover. Retrieved from http://geopo​
+rtal.rcmrd.org/docum​ents/640
+Regional Center for Mapping of Resources for Development (RCMRD)SERVIR Africa. (2013). A GIS & remote sensing approach in reducing
+vulnerabilities to climate change impacts in Africa. Retrieved from
+https​://unfccc.int/sites/​defau​lt/files/​rcmrd_servir_africa.pdf
+Renard, K. G., Foster, G. R., Weesies, G. A., McCool, D. K., & Yoder, D.
+C. (1997). Predicting Soil Erosion by Water: A Guide to Conservation
+Planning with the Revised Universal Soil Loss Equation (RUSLE).
+Washington, DC: United States Department of AgricultureAgriculture Handbook Number 703.
+Republic of Rwanda. (2000). Rwanda vision 2020. Kigali: Ministry of
+Finance and Economic Planning.
+Republic of Rwanda. (2011). Green growth and climate resilience national
+strategy for climate change and low carbon development, October 2011.
+Kigali: Republic of Rwanda.
+Republic of Rwanda. (2013). Economic development and poverty reduction
+strategy, 2013–2018, “Shaping Our Development”. Kigali: Republic of
+Rwanda.
+Republic of Rwanda. (2018). Natural capital accounts for land. Kigali: NISR,
+Ministry of Environment and Ministry of Lands and Forestry.
+Republic of Rwanda. (2019). Natural capital accounts for water.
+Kigali: NISR, Ministry of Environment and Ministry of Lands and
+Forestry.
+Republic of Rwanda, Ministry of Agriculture and Animal Resources.
+(2013). Strategic plan for the transformation of agriculture in Rwanda
+phase III. Kigali: Ministry of Agriculture and Animal Resources.
+Republic of Rwanda, Ministry of Natural Resources. (2011). Water resources management sub-sector strategic plan (2011–2015). Kigali:
+Ministry of Natural Resources.
+Rukundo, E., Liu, S., Dong, Y., Rutebuka, E., Asamoah, E. F., Xu, J., &
+Wu, X. (2018). Spatio-temporal dynamics of critical ecosystem services in response to agricultural expansion in Rwanda, East Africa.
+Ecological Indicators, 89, 696–705. https​://doi.org/10.1016/j.ecoli​
+nd.2018.02.032
+Rwanda Environment Management Authority (REMA). (2015). Rwanda
+State of Environment and Outlook, 2015: Greening agriculture with
+resource efficient, low carbon and climate resilient practices. Kigali:
+REMA. Retrieved from http://www.rema.gov.rw/
+Rwanda Environment Management Authority (REMA). (2017). Rwanda
+State of Environment and Outlook, 2017: Achieving sustainable urbanization. Kigali: REMA. Retrieved from http://www.rema.gov.rw/
+Rwanda Water and Forestry Authority. (2019). Rwanda water resources
+portal. Retrieved from https​://water​portal.rwfa.rw/data/
+Schröter, M., Remme, R. P., Sumarga, E., Barton, D. N., & Hein, L. (2015).
+Lessons learned for spatial modeling of ecosystem services in support of ecosystem accounting. Ecosystem Services, 13, 64–69. https​:
+//doi.org/10.1016/j.ecoser.2014.07.003
+SERVIR Global. (2017). Tracking the changing landscape of Eastern and
+Southern Africa. Retrieved from https​://servi​rglob​al.net/Globa​l/
+Artic​les/Artic​le/2535/track​ing-the-chang​ing-lands​c ape-of-easte​rnand-south​ern-africa
+
+People and Nature
+
+| 187
+
+Sharp, R., Tallis, H. T., Ricketts, T., Guerry, A. D., Wood, S. A., ChaplinKramer, R., …Bierbower, W. (2016). InVEST +VERSION+ user’s
+guide. The Natural Capital Project, Stanford University, University
+of Minnesota, The Nature Conservancy, and World Wildlife Fund.
+Retrieved from http://data.natur​alcap​italp​roject.org/night​ly-build/​
+invest-users-guide/​html/index.html
+Slavin, R. E. (2002). Evidence-based education policies: Transforming educational practice and research. Educational Researcher, 31, 15–21.
+https​://doi.org/10.3102/00131​89X03​1007015
+Spenceley, A., Habyalimana, S., Tusabe, R., & Mariza, D. (2010). Benefits to
+the poor from gorilla tourism in Rwanda. Development Southern Africa,
+27, 647–662. https​://doi.org/10.1080/03768​35X.2010.522828
+Stage, J., & Uwera, C. (2018). Prospects for establishing environmental satellite accounts in a developing country: The case of
+Rwanda. Journal of Cleaner Production, 200, 219–230. https​://doi.
+org/10.1016/j.jclep​ro.2018.07.274
+Strauss, S. E., Tetroe, J. M., & Graham, I. D. (2011). Knowledge translation is the use of knowledge in health care decision making. Journal
+of Clinical Epidemiology, 64, 6–10. https​://doi.org/10.1016/j.jclin​
+epi.2009.08.016
+Sutherland, W. J., Pullin, A. S., Dolman, P. M., & Knight, T. M. (2004). The
+need for evidence-based conservation. Trends in Ecology & Evolution,
+19, 305–308. https​://doi.org/10.1016/j.tree.2004.03.018
+Tetra Tech & LTS Africa, Ltd. (2018). Experiences and lessons learned in
+payment for ecosystem services (PES) in East Africa. Retrieved from
+https​://www.clima​telin​k s.org/resou​rces/exper​iences-and-lesso​nslearn​ed-payme​nts-ecosy​stem-servi​ces-pes-east-africa
+U.S. Environmental Protection Agency. (2015). National Ecosystem
+Services Classification System (NESCS): Framework design and policy
+application. EPA-800-R-15-002. Washington, DC: Author. Retrieved
+from https​://www.epa.gov/sites/​produ​c tion/​files/​2015-12/docum​
+ents/110915_nescs_final_report_-_compl​iant_1.pdf
+United Nations. (2017). SEEA experimental ecosystem accounting: Technical
+recommendations. New York: Author.
+United Nations. (2018). SEEA experimental ecosystem accounting revision 2020: Revision issues note-final. New York: Author. Retrieved
+from https​://seea.un.org/sites/​seea.un.org/files/​docum​ents/EEA/
+eea_2020_revis​ion_issue_final_jul20​18.pdf
+United Nations Environment Programme (UNEP). (2015). Building inclusive green economies in Africa experience and lessons learned, 2010–
+2015. Nairobi: Author.
+United Nations, European Commission, U.N. Food and Agriculture
+Organization, International Monetary Fund, Organization for
+Economic Cooperation and Development, and World Bank. (2014a).
+System of environmental-economic accounting, central framework. New
+York: United Nations.
+United Nations, European Commission, U.N. Food and Agriculture
+Organization, Organization for Economic Cooperation and
+Development, and World Bank (2014b). System of environmental-economic accounting 2012, experimental ecosystem accounting. New York:
+United Nations.
+Uwimana, A., van Dam, A. A., Gettel, G. M., & Irvine, K. (2018). Effects
+of agricultural land use on sediment and nutrient retention in valley-bottom wetlands of Migina catchment, southern Rwanda.
+Journal of Environmental Management, 219, 103–114. https​://doi.
+org/10.1016/j.jenvm​an.2018.04.094
+Vallecillo, S., La Notte, A., Kakoulaki, G., Roberts, N., Kamberaj, J.,
+Dottori, F., … Maes, J. (2019). Ecosystem services accounting. Part IIPilot accounts for crop and timber provision, global climate regulation,
+and flood control. EUR 29731 EN. Luxembourg: Publications Office of
+the European Union. https​://doi.org/10.2760/631588
+Vardon, M., Burnett, P., & Dovers, S. (2016). The accounting push and
+the policy pull: Balancing environmental and economic decisions.
+Ecological Economics, 124, 145–152. https​://doi.org/10.1016/j.ecole​
+con.2016.01.021
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+BAGSTAD et al.
+
+| People and Nature
+
+Verdoodt, A., & van Ranst, E. (2006). The soil information system of
+Rwanda: A useful tool to identify guidelines towards sustainable
+land management. Afrika Focus, 19, 69–92. https​://doi.org/10.21825/​
+af.v19i1.5415
+World Bank. (2016). Managing catchments for hydropower services: WAVES
+technical report. Washington, DC: Author.
+World Bank. (2017). World development indicators. Washington, DC:
+World Author.
+World Bank. (2018a). World bank open data: Free and open access to
+global development data. Retrieved from http://data.world​bank.org/
+World Bank. (2018b). WAVES annual report, 2018. Washington, DC: Author.
+World Bank and Government of Rwanda. (2019). Future drivers of growth
+in Rwanda: Innovation, integration, agglomeration and competition.
+Washington, DC: World Bank.
+Zheng, H., Robinson, B., Liang, Y.-C., Polasky, S., Ma, D.-C., Wang, F., …
+Daily, G. C. (2013). The benefits, costs, and livelihood implications of
+a regional PES (payment for ecosystem service) program. Proceedings
+
+BAGSTAD et al.
+
+of the National Academy of Science of the United States of America, 110,
+16681–16686. https​://doi.org/10.1073/pnas.13123​24110​
+
+S U P P O R T I N G I N FO R M AT I O N
+Additional supporting information may be found online in the
+Supporting Information section.
+
+How to cite this article: Bagstad KJ, Ingram JC, Lange G-M, et
+al. Towards ecosystem accounts for Rwanda: Tracking 25 years
+of change in flows and potential supply of ecosystem services.
+People Nat. 2020;2:163–188. https​://doi.org/10.1002/
+pan3.10062​
+
+25758314, 2020, 1, Downloaded from https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10062 by National Health And Medical Research Council, Wiley Online Library on [15/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+188
+
+

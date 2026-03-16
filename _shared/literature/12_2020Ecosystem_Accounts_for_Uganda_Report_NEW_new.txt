@@ -1,0 +1,7343 @@
+UGANDA BUREAU OF STATISTICS
+
+TOWARDS ECOSYSTEM ACCOUNTS
+FOR UGANDA
+
+UGANDA NATURAL CAPITAL ACCOUNTING PROGRAM
+
+October 2020
+
+FOREWORD
+Between October 2018 and November 2020, the Government of Uganda with the support of the World
+
+Bank-led Wealth Accounting and the Valuation of Ecosystem Services (WAVES) Global Partnership
+Program implemented the Uganda Natural Capital Accounting (NCA) program. The NCA program
+aimed to mainstream natural capital into development policy dialogue and planning by integrating a set
+of accounts to inform the Third National Development Plan (NDPIII), the National Land Policy (2013)
+and the Uganda Forestry Policy (2001), among others. The NCA program also increased understanding
+on the real contribution of natural assets and the ecosystem services to the economy and how the
+economy and its sectors affect the natural asset base. The report “Towards Ecosystem Accounting for
+Uganda” is a benchmarking report that shows the progress on developing Experimental Ecosystem Accounts
+
+for forest and wetland ecosystems one of the products proposed under the NCA program.
+The report on “Towards Ecosystem Accounting in Uganda” describes the results of the first iteration for
+experimental ecosystem accounts in Uganda using the Integrated Valuation of Ecosystem Services and
+Trade-offs (InVEST) model. The work on ecosystem accounting has indicated how information in
+ecosystem accounts could be used to support policy making and ecosystem management. The
+examination of the land cover accounts in combination with the information of on National Parks and
+Wildlife Reserves allowed the representativeness of these conservation areas to be assessed and showed
+that woodlands were better represented than other forest types in all river basins.
+As the Government of Uganda continues to develop and implement policies to meet the Vision 2040, it
+seems that ecosystem accounts could help set realistic baselines, track progress, demonstrate trends,
+quantify trade-offs, and ensure the most effective synergies between environmental, social and economic
+policies. Going forward, extending the ecosystem service accounts to cover more services, and in
+particular cultural and recreational services, will need to occur for the accounts to have maximum
+impact.
+On behalf of the Government of Uganda, the Uganda Bureau of Statistics would like to thank the World
+Bank WAVES program for the technical and financial support provided in developing Uganda’s
+Towards Ecosystem Accounting Report. The report provides a sound basis for strengthening ecosystem
+accounting in the country.
+
+...........................................................................
+Chris N. Mukiza, PhD
+Executive Director
+Uganda Bureau of Statistics
+
+ii
+
+ACKNOWLEDGEMENTS
+The Government of Uganda’s Natural Capital Accounting initiative extends gratitude to the ministries,
+agencies and local government authorities who participated in the developing the report on “Towards
+Ecosystem Accounts in Uganda”. The Government is especially grateful to the Ministry of Finance,
+Planning and Economic Development (MoFPED) and the National Planning Authority (NPA) for their
+leadership; to the National Forestry Authority (NFA), the Wetland Management Department (WMD)
+and Forestry Sector Support Department (FSSD) in the Ministry of Water and Environment (MWE), the
+National Environment Management Authority (NEMA) and the Uganda Wildlife Authority (UWA) for
+compiling the physical data. The Government of Uganda also extends gratitude to the Uganda Bureau
+of Statistics (UBOS) for developing the accounts themselves and to the Technical Working Group for
+their guidance and support. In-depth reviews by Statistics Netherlands and Statistics Canada are also
+gratefully acknowledged.
+The work received technical and financial support from the World Bank’s Wealth Accounting and the
+Valuation of Ecosystem Services (WAVES) Partnership Program.
+
+iii
+
+TABLE OF CONTENTS
+FOREWORD ......................................................................................................................................... ii
+ACKNOWLEDGEMENTS ................................................................................................................. iii
+LIST OF FIGURE ................................................................................................................................. v
+LIST OF TABLES ................................................................................................................................ v
+EXECUTIVE SUMMARY .................................................................................................................. vi
+ACRONYMS AND ABBREVIATIONS .......................................................................................... viii
+CHAPTER ONE: INTRODUCTION.................................................................................................. 1
+1.1
+
+Country and policy context .................................................................................................... 1
+
+1.2
+
+Project background ................................................................................................................ 2
+
+1.3
+
+Objective, aims and scope of report ....................................................................................... 2
+
+1.4
+
+Outline of report ..................................................................................................................... 3
+
+CHAPTER TWO: FRAMEWORK, DATA SOURCES AND METHODS..................................... 4
+2.1
+
+The SEEA framework ............................................................................................................ 4
+
+2.2
+
+Land cover and ecosystem accounting................................................................................... 5
+
+2.3
+
+Accounting for wetlands and forest uses ............................................................................... 6
+
+2.4
+
+Accounting for ecosystem services ........................................................................................ 7
+
+CHAPTER THREE: RESULTS ........................................................................................................ 12
+3.1
+
+Land cover by river basin..................................................................................................... 12
+
+3.2
+
+Wetland ecosystem extent by basin ..................................................................................... 14
+
+3.3
+
+Forest extent by administrative land use class ..................................................................... 21
+
+3.4
+
+Physical flows and ecosystem service accounts................................................................... 30
+
+CHAPTER FOUR: DISCUSSION .................................................................................................... 35
+4.1
+
+Policy implications............................................................................................................... 35
+
+4.2
+
+Uncertainties and limitations ............................................................................................... 35
+
+4.3
+
+Future opportunities ............................................................................................................. 36
+
+CHAPTER FIVE: CONCLUSIONS ................................................................................................. 39
+REFERENCES .................................................................................................................................... 40
+ANNEXES ............................................................................................................................................ 42
+Annex 1: Data inputs for InVEST model .......................................................................................... 42
+Annex 2. Land cover extent by drainage basin ................................................................................. 46
+Annex 3 Wetland extent by land cover class ..................................................................................... 48
+Annex 4: Forest extent by land use ................................................................................................... 52
+Annex 5. Physical flows and ecosystem services by drainage basin ................................................. 57
+
+iv
+
+LIST OF FIGURE
+Figure 1: Major river basins within Uganda.................................................................................................... 6
+Figure 2. Land use and land cover in Uganda, 1990, 2005, 2010 and 2015. .................................................. 9
+Figure 3: Land cover extent by basin 1990 (1,000 ha) .................................................................................. 12
+Figure 4: Land cover extent by basin 2005 (1,000 ha) .................................................................................. 13
+Figure 5: Land cover extent by basin 2010 (1,000 ha) .................................................................................. 13
+Figure 6: Land cover extent by basin 2015 (1,000 ha) .................................................................................. 14
+Figure 7: Permanent wetland extent by land cover and basin in 1990 (1,000 ha) ......................................... 15
+Figure 8: Permanent wetland extent by land cover class and basin in 2005 (1,000 ha) ................................ 15
+Figure 9: Permanent wetland extent by land cover class and basin in 2010 (1,000 ha) ................................ 16
+Figure 10: Permanent wetland extent by land cover class and basin, 2015 (1,000 ha) ................................. 16
+Figure 11: Seasonal wetland extent by land cover class and basin in 1990 (1,000 ha) ................................. 17
+Figure 12: Seasonal wetland extent by land cover and basin, 2005 (1,000 ha) ............................................. 17
+Figure 13: Seasonal wetland extent by land cover and basin, 2010 (1,000 ha) ............................................. 18
+Figure 14: Seasonal wetland extent by land cover extent by basin, 2015 (1,000 ha) .................................... 18
+Figure 15: Normal (dry land) extent by basin, including wetland extent on dryland, 1990 (1,000 ha)......... 19
+Figure 16: Normal (dry land) extent by basin, including wetland extent on dryland, 2005 (1,000 ha)......... 19
+Figure 17: Normal (dry land) extent by basin, including wetland extent on dryland, 2010 (1,000 ha)......... 20
+Figure 18: Normal (dry land) extent including wetland extent on dryland by drainage basin, 2015 (1,000
+ha).................................................................................................................................................................. 20
+Figure 19: Forest extent on private land by cover class and basin in 1990 (1,000 ha) .................................. 21
+Figure 20: Forest extent on private land by cover class and basin in 2005 (ha) ............................................ 22
+Figure 21: Forest extent on private land by cover class and basin in 2010 (1,000 ha) .................................. 22
+Figure 22: Forest extent on private land by land cover class and basin in 2015 (1,000 ha) .......................... 23
+Figure 23: Forest extent for CFRs by land cover class and drainage basin in 1990 (1,000 ha) .................... 23
+Figure 24: Forest extent for CFRs by land cover class and basin in 2005 (1,000 ha) ................................... 24
+Figure 25: Forest extent for CFRs by land cover class and basin in 2010 (1,000 ha) ................................... 24
+Figure 26: Forest extent for CFRs by land cover class and basin in 2015 (1,000 ha) ................................... 25
+Figure 27: Forest extent for LFRs by land cover class and basin in 1990 (1,000 ha) ................................... 25
+Figure 28: Forest extent for LFRs by land cover class and basin in 2005 (1,000ha) .................................... 26
+Figure 29: Forest extent for LFRs by land cover class and drainage basin in 2010 (1,000ha)...................... 26
+Figure 30: Forest extent for LFRs by land cover class and drainage basin in 2015 (1,000 ha)..................... 27
+Figure 31: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in 1990
+(1,000ha) ....................................................................................................................................................... 28
+Figure 32: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in 2005
+(1,000 ha) ...................................................................................................................................................... 28
+Figure 33: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in 2010
+(1,000 ha) ...................................................................................................................................................... 29
+Figure 34: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in 2015
+(1,000 ha) ...................................................................................................................................................... 29
+Figure 35. Carbon storage in Uganda, 1990, 2005, 2010 and 2015 (ton C/ha) by year. ............................... 30
+Figure 36. Annual water yield, Uganda, 1990, 2005, 2010 and 2015 (mm water / hectare / year). .............. 31
+Figure 37. Sediment retention in Uganda, 1990, 2005, 2010 and 2015 (ton/ha/year). .................................. 33
+
+LIST OF TABLES
+Table 1. InVEST model outputs. ..................................................................................................................... 8
+Table 2. Experimental ecosystem services account, Uganda by river basin, 2015 ....................................... 34
+
+v
+
+EXECUTIVE SUMMARY
+Uganda has begun the task of creating ecosystem accounts, using data, modelling tools and capacity that
+are readily available. This report outlines the progress on the production of ecosystem accounts,
+including experimental accounts and the challenges of producing them, along with a plan for their
+ongoing production and potential use. All accounts were in physical metrics as time and resources did
+not allow monetary measures to be developed.
+The primary objective of this was to assess if ecosystem accounts could be developed for Uganda. This
+was to demonstrate the general set-up of ecosystem accounts, determine the feasibility of their
+production, and assess their policy relevance – particularly for key ecosystems of interest like forests
+and wetlands that provide a range of benefits to people as well as being rich in biodiversity.
+The process and methods used built on previous work and in particular the work and land and forest
+accounting in Uganda and the SEEA–Experimental Ecosystem Accounting framework, which notes that
+land cover can be used as a proxy for ecosystems. Using these and other information sources, such as
+the Wetland Atlas in combination with modelling tools, a suite of accounts covering the eight river
+basins that make up Uganda were produced for the years 1990, 2005, 2010 and 2015. This information
+revealed changes in land cover and in particular the loss of nearly 2.8 million hectares of woodland
+across the country between 1990 and 2015 with much converted to farmland. The river basin that lost
+the most woodland was Aswa, losing more than 0.8 million hectares
+The land cover information was integrated with other information to produce accounts examining
+wetlands and forest management in the country. The wetland accounts highlighted large changes in the
+extent of different land covers within wetlands as defined in national Wetland Atlas. In particular,
+temporary wetland showed large variation between years and the net change between 1990 and 2015
+revealed that just over 0.4 million ha of wetland had become farmland. Similarly, the forest account
+showed changes is the use of forest all five forest types. For example, the extent of forests in National
+Parks and Wildlife Reserves had decreased from the 831,000 ha in 1990 to 640,000 ha in 2015.
+Modelling was used to generate estimates of physical flows related to ecosystem services. The modelling
+enabled an experimental ecosystem service account to be designed and populated for the supply side for
+each of the eight major watersheds. In this, physical estimates of carbon storage, carbon sequestration,
+water yield and sediment retention were mapped. The estimates were made for the years matching the
+land cover account: i.e., 1990, 2005, 2010, and 2015. There were differences between river basins and
+the services they supplied. For example, nationally there was an increase in the amount of carbon stored
+from 769 million tonnes in 1990 to 804 million in 2015 but there were differences between river basins,
+with the amount of carbon stored being less in four river basins. Water yield also increased nationally
+and with five basins showing increases in yield, while 3 showed decreases. The changes in these four
+physical flows measured were related to changes in land cover.
+The work developing the accounts revealed that there were differences in data sources that needed to be
+reconciled. This was most apparent in the information for wetlands, where differences in the definitions
+and methods underpinning that data sources were apparent. Data quality assessment was also a challenge
+with data from many sources being used for purposes for which they were not designed. Going forward
+these challenges will need to be addressed. A clear positive benefit was that staff from different
+professions and different agencies were able to work together on the production of accounts and an
+ongoing formal process for guiding the development, production and use of ecosystem accounts will be
+needed.
+The work on ecosystem accounting has indicated how information in the accounts could be used to
+support policy making and ecosystem management. In principle, the accounts can support land use
+planning, climate change mitigation, biodiversity conservation, water supply and agricultural policies.
+
+vi
+
+The examination of the land cover accounts in combination with the information of on National Parks
+and Wildlife Reserves allowed the representativeness of these conservation are to be assessed, and
+showed that woodlands were better represented than other forest types in all river basins. They also
+showed that the amount of forest within national parks was decreasing owing to changes in land cover
+which were probably driven by human activity
+As the Government of Uganda continues to develop and implement policies to meet the Vision 2040, it
+seems that ecosystem accounts could help set realistic baselines, track progress, demonstrate trends,
+quantify trade-offs, and ensure more effective synergies between environmental, social and economic
+policies. Going forward, extending the ecosystem service accounts to cover more services, and in
+particular cultural and recreational services, will need to occur for the accounts to have maximum
+impact.
+The utility of the ecosystem accounts would be considerably improved if monetary measures related to
+ecosystem assets and services were also developed. As such, economic valuation of ecosystem services
+is a critical next step and will require greater integration with both Uganda’s land accounts and national
+economic accounts. Previous Ugandan work on the valuation of ecosystem services would be a useful
+starting point.
+The work demonstrates that, while there are challenges, the data sources, methods and capacity currently
+available to Uganda can be used to produce ecosystem accounts. Over time the work will need to expand
+and be mindful of the need to address the policy and management needs of the government and private
+sector.
+
+vii
+
+ACRONYMS AND ABBREVIATIONS
+BSU
+
+Basic Statistical Unit
+
+CNDPF
+
+Comprehensive National Development Planning Framework
+
+CFR
+
+Central Forest Reserve
+
+CICES
+
+Common International Classification of Ecosystem Services
+
+CWA
+
+Community Wildlife Reserve
+
+DJM
+
+Dual Joint Management
+
+EAU
+
+Environmental Accounting Unit
+
+GIS
+
+Geographic Information System
+
+GoU
+
+Government of Uganda
+
+InVEST
+
+Integrated Valuation of Ecosystem Services and Trade-offs
+
+IUCN
+
+International Union for the Conservation of Nature
+
+LFR
+
+Local Forest Reserve
+
+MDAs
+
+Ministries, Departments and Agencies
+
+MoFPED
+
+Ministry of Finance, Planning and Economic Development
+
+MWE
+
+Ministry of Water and Environment
+
+NBS
+
+National Biomass Survey
+
+NCA
+
+Natural Capital Accounting
+
+NDP
+
+National Development Plan
+
+NEMA
+
+National Environment Management Authority
+
+NFA
+
+National Forestry Authority
+
+NPA
+
+National Planning Authority
+
+NP-AEEA
+
+National Plan for Advancing Environmental Economic Accounting
+
+SDGs
+
+Sustainable Development Goals
+
+SEEA CF
+
+System for Environmental Economic Accounting Central Framework
+
+SEEA EEA
+
+System for Environmental Economic Accounting Experimental Ecosystem Accounts
+
+SNA
+
+System of National Accounts
+
+UBOS
+
+Uganda Bureau of Statistics
+
+UGGDS
+
+Uganda Green Growth Development Strategy
+
+UNSD
+
+United Nations Statistical Division
+
+UWA
+
+Uganda Wildlife Authority
+
+WAVES
+
+Wealth Accounting and the Valuation of Ecosystem Services
+
+WCMC
+
+World Conservation Monitoring Centre
+
+WMD
+
+Wetlands Management Department
+
+viii
+
+CHAPTER ONE: INTRODUCTION
+1.1
+
+Country and policy context
+
+Uganda is rich in biodiversity, harboring a number of iconic species, including over 50% of the world’s
+gorilla population (Pomeroy et al. 2017). Uganda is also rich in water and forest resources. However,
+these biodiversity, forests and water resources are increasingly under pressure (NEMA 2019). Land
+conversion and habitat losses are among the main threats and some two-thirds of Uganda’s forests were
+lost since 1990. The Government of Uganda is addressing these concerns in the national policy
+framework (GoU/NPA 2017).
+The Government of Uganda approved the Comprehensive National Development Planning Framework
+(CNDPF) in 2007 (GoU/ NPA 2013). The CNDPF is strategic plan that’s main elements are: the 30year national vision (Vision 2040); 10-year national development plan; the 5-year national development
+plans, and; annual plans and budgets. In July 2020, the third National Development Plan (NDP III
+2020/21 – 2024/2025) replaced the NDP II 2015/16 – 2019/2020 (NDP II).
+Article 27 of Uganda’s National Constitution states that natural resources are to be managed and utilized
+in a sustainable manner and the government would take all possible measures to prevent or minimize
+damage and destruction to environment resulting from pollution and other causes. The government is
+also mandated to create and develop parks, reserves and recreation areas and ensure conservation of
+natural resources and promote rational use to safeguard and protect the country’s biodiversity (GoU
+1995).
+In 2017, the Government of Uganda completed the Uganda Green Growth Development Strategy
+(UGGDS) where natural capital management and development is one of the five focus areas (GOU/NPA
+2017). The UGGDS harmonized the aspiration of Uganda’s Constitutional position on natural resource
+management, the Vision 2040, NDP II and the Sustainable Development Goals (SDGs), among others,
+and made natural capital accounting a priority for realizing sustainable development in the country.
+Under the structure of the CNDPF, Ministries, Departments and Agencies (MDAs) are required to
+prepare sector policies and master plans, consistent with the long-term national development goals and
+objectives. The sector policies shall set out, among other things, the strategic direction of the sector for
+the next five years and ensure that the sectors’ strategic roles in national development are sustained and
+enhanced in light of new and emerging challenges.
+In order to streamline the inclusion of natural capital accounting into MDA plans, the government
+through the Uganda Bureau of Statistics (UBOS), and with support from the United Nations Statistics
+Division (UNSD) and the World Bank developed a National Plan for Advancing Environmental
+Economic Accounting in Uganda (NP-AEEA). The NP-AEEA provides guidance on how sectors can
+initiate and integrate statistics on natural capital with other indicators used by different sectors,
+ministries, departments and agencies. The NP-AEEA provides a streamlined pathway for implementing
+environmental-economic accounting and for integrating accounting information into annual work plans
+and budgets as well as sector policies and master plans.
+To fulfill the aim of integrating natural capital into the planning and management process used in the
+country, the government with support of the World Bank and the UNSD launched the NP-AEEA, the
+Uganda Land Physical Asset Accounts, and the Water Accounts in November 2019. The National Wood
+Asset and Forest Resources Accounts were launched in September 2020.
+
+1
+
+1.2
+
+Project background
+
+The Government of Uganda (GOU) is implementing the Natural Capital Accounting (NCA) program
+through the UBOS, the Ministry of Finance, Planning and Economic Development (MoFPED), the
+Ministry of Water and Environment (MWE) and the National Planning Authority (NPA). The NCA
+program seeks to mainstream natural capital into development policy dialogue and planning by
+integrating a set of accounts that will inform the Third National Development Plan (NDPIII) and other
+national and sectoral policies. The program aims to increase understanding of the contribution of natural
+assets and the ecosystem services to the economy and the impact of the economy and other human
+actions on the natural asset base. NCA Program implementation is supported by the World Bank-led
+Wealth Accounting and the Valuation of Ecosystem Services (WAVES) Global Partnership Program.
+The NCA program is organized in three components:
+(i)
+
+(ii)
+
+(iii)
+
+1.3
+
+Accounts development, with the objective to strengthen UBOS capacity for the production and
+dissemination of NCA by developing land accounts, forest resource accounts, ecosystem
+accounting, and supporting the production and dissemination of the National Compendium of
+SEEA;
+Studies and activities to enhance accounts development, with the objective to address gaps that
+need special attention for future NCA implementation by developing an assessment of
+ecosystem services in the Albertine Rift, several issue papers (on wood fuels, macroeconomic
+indicators, and linkages between NCA and NDPIII, working on narratives to include Natural
+Capital in MOFPED dialogues and reports; and
+Institutional engagement, professional development and policy dialogue, with the objective to
+raise awareness and increase understanding on the possible policy applications of NCA through
+a strong communication strategy, hosting a series of training events and knowledge sharing
+activities, and fostering inter-institutional dialogue on NCA.
+
+Objective, aims and scope of report
+
+The objective of this report is to provide an update on the development of ecosystem accounts for
+Uganda, focusing on basic building blocks for the accounts and what could be developed in the short
+term with the available data and modelling tools. This is in order to show the general set-up of ecosystem
+accounts, determine the feasibility of their production, identify data gaps and assess their policy
+relevance.
+The three key aims of this report are to explore:
+(1) The production of ecosystem asset accounts;
+(2) The production of ecosystem service accounts;
+(3) How such accounts can be used to inform policy and management in
+For the accounts for ecosystem assets, the available land cover and land use information was compiled
+at a national scale for the purpose of developing national level accounts as well as for the eight major
+river basins of Uganda (Figure 1). A very small area of Uganda is found outside of these eight river
+basins and for accounting purposes these are included in the national tables as a balancing item. The
+land cover information was then related to other on information on wetlands as well as the management
+of forests and wetlands.
+The development of ecosystem services accounts requires the modelling of physically flows and then
+determining the use of these flows by people. With time and resources limited only a few ecosystem
+
+2
+
+services could be estimated. As climate change, water supply and agricultural management are important
+policy areas in Uganda four related ecosystem services related to these areas were chosen: carbon
+storage, carbon sequestration, water provisioning, and erosion control.
+Carbon storage and sequestration contribute to mitigating climate change, while erosion control is the
+contribution of ecosystems to mitigating sedimentation of reservoirs used for power generation and
+irrigation as well as the erosion of agricultural land.
+In this report the ecosystem services were only estimated in physical units. Water provisioning is
+modeled in this report in a generic way as the difference between the rainwater per pixel and the loss of
+water through evapotranspiration. In this case, the potential ecosystem service of water supply can be
+more accurately linked, in physical points, to the site where water is extracted from an ecosystem (e.g.
+a drinking water well). The generation of water by rainfall minus evapotranspiration is a physical flow
+feeding into the ecosystem service. Given the lack of data on water abstraction, this indicator is used to
+approximate the potential ecosystem service ‘water provisioning’. Linking this information to the
+existing water accounts (GOU 2019) would reveal actual uses of much of the water (e.g. for
+hydroelectricity generation). The valuation of the ecosystem services consistent with the SEEA would
+require the application of exchange values to each of the ecosystems services reported here.
+
+1.4
+
+Outline of report
+
+The report is broken into six sections, with five appendices. Section 1 is the Introduction. Section 2
+provides the details of the framework used to organize information and the data sources and methods
+used to populate the accounts. Section 3 provides summary results in a range of figures and maps and
+briefly highlights key data. Section 4 discusses the results, including policy relevance and the data
+limitations, while Section 5 is conclusions. This is followed by the references and the Annexes which
+contain more detail on the data sources used in modelling as well as the detailed accounting tables.
+
+3
+
+CHAPTER TWO: FRAMEWORK, DATA SOURCES AND
+METHODS
+2.1
+
+The SEEA framework
+
+The framework and concepts underpinning this study are from the SEEA (UN et al. 2014a, 2014b). The
+SEEA-EEA has been designed to enable countries to analyze and monitor changes in their ecosystem
+capital and the relation between ecosystems and economic activities (UN et al., 2014b). The SEEA EEA
+is a spatially explicit framework that includes a range of information on the physical extent and condition
+of ecosystems, the ecosystem services they supply, and the monetary value of the ecosystem assets and
+services. The SEEA-EEA also covers the basic spatial units of the accounts and their aggregation.
+Supporting the SEEA-EEA is a set of Technical Recommendations (UN 2017). The terminology of the
+SEEA-EEA and Technical Recommendations are followed in this report.
+Ecosystem accounting relies on three spatial categorizations: the Basic Spatial Unit (BSU), the
+Ecosystem Type (previously called ‘Land Cover Ecosystem Unit or LCEU) – and the Ecosystem
+Accounting Area (EA), previously called Ecosystem Account Unit (see UN et al. 2014a and UN, 2017).
+The BSU is the smallest, relatively homogenous unit in the map. The BSU used in the land cover account
+is a hectare. The use of hectares is aligned with national indicators for wetlands, which are presented in
+the Vision 2040 and NDP III.
+The SEEA EEA is complementary to the SEEA Central Framework (UN et al., 2014b), which is a (nonspatial) statistical standard broadly used to measure, among other things, stocks of individual natural
+resources, including land, mineral and biological assets and environmental expenditures. Both the SEEA
+EEA and the SEEA Central Framework are connected to the System of National Accounts (SNA), the
+statistical standard applied in almost all countries worldwide, including in Uganda, to produce economic
+and other statistics. The combination of all three frameworks allows a rich suite of information to be
+produced. One limitation of the SNA and SEEA Central Framework is that sub-national data are usually
+not available. However, the SEEA EEA is a spatial framework and focuses on ecosystems assets services
+at sub-nation levels: the Ecosystem Accounting Areas and in the case of Uganda these were the eight
+river basins (Figure 1). The SEEA Central Framework covers various elements that are not part of the
+SEEA EEA, such as air emissions and solid wastes flowing to the environment and environmental
+expenditures, among others.
+The SEEA EEA consists of an interlinked set of maps and accounting tables. The accounts that are part
+of the SEEA EEA are:
+(i)
+(ii)
+(iii)
+(iv)
+
+the ecosystem extent account specifying ecosystem type and area covered by each ecosystem
+type;
+the ecosystem condition account, including a set of scalable physical indicators that allow
+monitoring changes in ecosystem state or health;
+the ecosystem services supply and use account specifying actual flows of ecosystem services,
+and the uses of ecosystems by economic sector in physical and monetary terms; and,
+the monetary ecosystem asset account, specifying the monetary value of ‘stocks’ of ecosystem
+capital.
+
+There are associated SEEA EEA accounts are for land cover, biodiversity, water and carbon (UN et al.,
+2014b; UN, 2017). Note that comprehensive accounts for all of these aspects are not yet compiled in
+Uganda, although accounts for land cover (UBS 2019), water (GOU 2019) and some aspects of
+biodiversity (IUCN-WCMC 2017) are available. The SEEA EEA also includes the possibility to extend
+
+4
+
+the framework with information on the capacity of ecosystems to supply these services in a sustainable
+manner, however there is not yet a generally agreed methodology within SEEA EEA to do so.
+
+2.2
+
+Land cover and ecosystem accounting
+
+In the SEEA accounting framework, the land account includes accounts for land cover, land use or
+management (e.g. protected forest versus production forest), land tenure (e.g. public or private
+ownership), soil type, as well as for ecosystems. Land cover is often used as a proxy for ecosystem
+extent and the land accounts for Uganda (UBOS 2019) were the starting point for the work in this report
+which is consistent with the SEEA EEA (UN et al., 2014b) and Technical Recommendations (UN,
+2017). Experimental accounts for wetlands as an ecosystem, rather than wetlands as a land cover, were
+also investigated (See Section 2.3).
+The wetlands are of particular policy interest as Uganda is a signatory to the Ramsar Convention with
+some 454,000 ha is listed under the convention. The Uganda Wetland Atlas Volume II (GOU 2016)
+defines a wetland as “an area of land that is permanently or seasonally saturated with water” which is
+different from how wetlands are defined in the land cover account.
+Uganda’s has 13 land cover types1. These are: (i) Broadleaved forest plantations, (ii) Coniferous forest
+plantations, (iii) Tropical High Forests (THF) well-stocked, (iv) THF low-stocked, (v) Woodlands, (vi)
+Bushlands, (vii) Grasslands, (viii) (permanent) Wetlands, (ix) Small-scale farmlands, (x) Commercial
+farmlands, (xi) Built up areas, (xii) Open water, and (xiii) Impediments (e.g. bare earth) (UBOS 2019).
+In the case of accounting for ecosystem services in Uganda, the use of land cover types rather than
+ecosystem types is not expected to lead to major limitations, since the biophysical processes and
+properties underlying the ecosystem services of interest can be estimated from land cover data (e.g.
+standing biomass, evapotranspiration).
+Uganda’s land cover accounts were based on the National Biomass Survey (NBS) database 2017. The
+data in this database are derived from remotely sensed data and field surveys and much is available
+online2. An earlier report outlines the data sources and methods used in the survey of forests (NFA
+2009). Through joint work between the National Forestry Authority (NFA) and the Wetland
+Management Department (WMD) in the Ministry of Water and Environment (MWE) the NBS database
+was updated to include a layer on the drainage basins. The land cover accounts were then developed
+from the updated database, with data aggregated by drainage basins rather than the areas of aggregation
+shown in the previously published land accounts (UBOS 2019).
+
+1
+
+It should be noted the classification used covers aspects of both land cover and land use but for ease of
+reference this is abbreviated to “land cover accounts”.
+2
+See National Forest Monitoring System Portal – Uganda: http://154.72.199.254:8008/
+
+5
+
+Figure 1: Major river basins within Uganda
+
+Source: Adapted from MWE 2020
+The land cover accounts were produced at national scale and for each individual drainage basin (Figure
+1). The spatial organization and analysis of information was conducted with technical contributions from
+the Geographical Information System (GIS) and Inventory teams at the NFA and the WMD of the MWE.
+The drainage data were developed by the WMD, while the BSU and ET as well as the land cover and
+land use attributes were developed from the National Biomass Database by the NFA. The spatial analysis
+was used to produce physical data and maps of wetland cover and use between 1990 and 2015, as well
+as the land cover and use for forests over the same period. The accounts were compiled with Microsoft
+Excel, which allowed for the conversion of the source data into a format that is used for the compilation
+of the accounts. The physical data from the National Biomass Survey was synthesized using pivot tables
+and change matrices using the Microsoft Excel extensions of Power Pivot.
+
+2.3
+
+Accounting for wetlands and forest uses
+
+Information for the wetland accounts was drawn for the data sources underlying the Uganda Wetland
+Atlas Volumes 1 and 2 (GOU 2016) and aligned to the river basin areas and land cover classes used for
+the land cover accounts. The balancing area was included in the results. In this, the wetland accounts in
+Uganda were split into permanent and seasonal wetlands. The Uganda definition of wetlands has
+evolved overtime to reflect changes in the policy, regulations and physical measurements of the wetland
+area and its use. The 1995 National Policy for the Conservation and Management of Wetland Resources
+
+6
+
+defined wetlands in Uganda as an area where plants and animals have become adapted to temporary or
+permanent flooding by saline, brackish or fresh water. Therefore, wetlands in Uganda include
+permanently flooded areas with sedge or grass swamp, swamp forest or high-altitude mountain bog, as
+well as seasonal flood plains and depressions without flow (GoU 1995). The classification into
+permanent and seasonal wetlands is a consolidation of the Ramsar Classification of Wetland Types. The
+Ramsar classification includes 42 types of wetlands, which belong to one of the three broad categories:
+Inland wetlands; Marine/coastal wetlands; Human-made wetlands (Ramsar Convention Secretariat,
+2011). Uganda’s wetlands fall almost entirely within the Inland wetlands classification of Ramsar. It is
+important to note the wetland area, as defined in the wetlands accounts (Section 3.2), fall into in a range
+of land covers, including grasslands, wetlands, small scale farmland and open water, as defined in the
+land cover accounts (Section 3.1). This difference is discussed later in the report.
+Uganda’s forest uses are classified based on the system of administration. Forests on private land are
+forests in non-protected areas which includes private lands and public institutional lands which are not
+gazette as protected areas. Central Forest Reserves (CFRs) as defined under the National Forestry and
+Tree Planting Act (2003) are protected areas managed by the National Forestry Authority (NFA). CFRs
+represent a permanent forest estate, a component of the permanent forest estate the Local Forest
+Reserves (LFRs) is managed by District Local Governments, it is also a protected area. The forestry
+legislation also recognizes forests located in wildlife protected areas including Community Wildlife
+Area (CWA), Dual Joint Management (DJM) area a buffer zone between National Parks and CFRs,
+National Parks, Wildlife Reserves and Wildlife Sanctuaries. Wildlife protected areas are managed by
+the Uganda Wildlife Authority (UWA). With the exception of CFRs and LFRs, which are gazetted as
+forest protected areas, forest ecosystems in Uganda refers to the five forest cover classes of Broad leaved
+plantations, Coniferous plantations, Tropical High Forest (THF) well stocked, THF low stocked and
+woodlands were considered forests. The entire area under CFRs and LFRs is a forest protected area, and
+therefore a forest ecosystem based on the National Forestry and Tree Planting Act (2003). Therefore,
+CFRs and LFRs contain all 13 land cover classes.
+
+2.4
+
+Accounting for ecosystem services
+
+The physical flows relating to ecosystem services were calculated using the Integrated Valuation of
+Ecosystem Services and Tradeoffs (InVEST) model version 3.7.0, developed by the Natural Capital
+Project. InVEST is free and open-source, has relatively low data requirements, and is well suited for
+large spatial-scales (Sharp et al. 2015). Each InVEST module is functionally unique and represents
+distinct ecological and hydrological processes. The InVEST software suite is the leading tool for
+incorporating natural capital information into decisions. Between 2012 and 2014, the tool was used
+43,000 times in 104 different countries (Posner et al. 2016), and has informed decisions relating to
+spatial planning, payment for ecosystem services, climate adaptation planning, impact assessments for
+infrastructure development, corporate risk mitigation, coastal planning, and ecosystem restoration.
+Outputs of the InVEST models include maps (raster grids) which can be used to estimate the aggregate
+service provision for a region of interest, such as a watershed or administrative district. The list of the
+data sources considered is found at Annex 1.
+InVEST was used to estimate the physical flows relating to the ecosystem services of: (i) carbon storage,
+(ii) carbon sequestration; (iii) water provisioning; and (iv) sediment retention. The information on the
+supply or potential supply of these services was, subsequently, transformed into tables for the year 2015.
+In the discussion section of this report, the changes, accuracy and policy relevance of these flows are
+analyzed. It is also discussed how this information can be transformed in full physical and monetary
+accounts for the supply and use of ecosystem services. Among other things, the latter requires measuring
+the monetary valuation of ecosystem services.
+
+7
+
+For all four ecosystem services and the related physical flows, InVEST was run using a land cover map
+for each year. These land cover maps were developed by the NFA based on aerial imagery from 1990,
+2005, 2010, and 2015 (Figure 2) and is the same information used for Uganda’s national land cover
+account (UBOS 2019). Trends in physical flows over time were assessed by comparing the 2005, 2010,
+and 2015 outputs with the outputs from 1990. These trends were summarized at both the national-level
+and the basin-level. The outputs metrics for each ecosystem service model are described in Table 1.
+Note that the services were only estimated for the eight basins and not for the area covered under the
+balancing item. Therefore, the whole country is not covered by the accounts and national total is not
+provided. While the area of the balance item is small, this should be done as part of future work.
+
+Table 1. InVEST model outputs.
+InVEST Model
+
+Output Metric
+
+Description
+
+Carbon storage &
+carbon sequestration
+
+Map of carbon storage (Mg C / pixel)
+
+Sum of all carbon stocks for a given land cover
+class and net changes in these stocks
+
+Annual water yield
+
+Map of annual water yield (mm /
+pixel)
+
+Average annual precipitation, minus average annual
+evapotranspiration
+
+Sediment Delivery Ratio
+
+Map of sediment retention (tons
+sediment / pixel)
+
+Sediment retention with reference to a watershed
+where all land cover classes are converted to bare
+ground
+
+The input data required to run InVEST were gathered from a combination of local and global sources
+(see Annex 1). Land cover data are the most critical input to the model and were provided by the NFA.
+The land cover data used are shown in Figure 2 below. Note that the use of global data brings a degree
+of uncertainty in the results since these are not necessarily representative at a national scale.
+
+8
+
+Figure 2. Land use and land cover in Uganda, 1990, 2005, 2010 and 2015.
+
+The output data on the physical flows related to the four ecosystem services of carbon storage and
+sequestration, water provisioning, and erosion control are outlined below
+Carbon storage is assessed in terms of the biomass contained in the ecosystem, including both above
+ground (e.g. stem, branches, leaves) and below ground (soil carbon) biomass. Carbon sequestration is
+the net change in the carbon stored. The related ecosystem service can go by a number of names. In the
+Common International Classification of Ecosystem Services (CICES Version 5.13), which is the
+recommended in the SEEA-EEA (2014a), it is recorded under the class “Atmospheric composition and
+conditions”. It was previously known as climate regulation (CICES Version 4.3), which is the term
+adopted here. In the developing SEEA ecosystem framework the climate regulation service is recognized
+as being both the storage and sequestration of carbon.
+Estimates of carbon stocks are available for four specific years, and the changes in stocks can be assessed
+for Uganda, noting that these are net changes in stocks, i.e., they consist of carbon losses in some areas
+and carbon gains in other areas. In the SEEA EEA revision process there is as yet no final guidance on
+how to integrate sequestration and storage (or potentially avoided losses due to storage) in a single
+
+3
+
+CICES Version 5.1 https://cices.eu/
+
+9
+
+indicator of climate regulation. As such both stocks (carbon storage) and changes in stocks (carbon
+sequestration) are shown in this report.
+Since climate regulation is of benefit to all people, all of the amount of carbon stored or sequestered
+could be considered an ecosystem service. The supply of this service could be shown by the various
+land cover types or river basin, while the use could be recorded as a use by government, signifying the
+climate regulation service's collective benefit.
+Water provisioning is related to annual water yield. The yield measure is a relatively simple indicator
+that depicts the difference between annual precipitation and evapotranspiration. Potentially, specific
+landscape elements can have a higher evaporation than precipitation in case the vegetation is able to use
+surface or groundwater sources; however, this is not included in the InVEST module. Hence, the
+difference is between annual precipitation and evapotranspiration is the water that is transported to
+streams and rivers downslope or ends up in shallow aquifers or deep groundwater reservoirs. Part of the
+water that is percolating to shallow aquifers also ends up in rivers, where aquifers lead to river sources.
+As such, the difference between annual precipitation and evapotranspiration as calculated with InVEST
+is a very crude approximation of water that ends up in streams and rivers. This water, in turn, can be
+used for irrigation or hydropower, even though the specific contribution to hydropower or irrigation
+strongly depends upon the seasonal variability of water flows (inter-annual variability).
+In should also be recognized that forests act as sponges thereby reducing peak flows and sustaining dry
+season base-flows. However, evapotranspiration is high in forests relative to other ecosystems. Hence,
+higher annual water yield is correlated with deforestation. The positive contribution of forests to
+distributing water flows more evenly over the year will need to be considered when more comprehensive
+accounts for the ecosystem service of water provisioning are produced.
+Finally, water that is lost from the forest through evapotranspiration is contributing water to the
+atmosphere and thus to the generation of rainfall in other places, i.e. downwind of the forests. Hence,
+the maintenance of rainfall is an indirect flow from forests, which is disregarded when water that is
+evapo-transpired is interpreted as ‘lost’. These limitations are further discussed in chapter 4.
+As the InVEST module used only estimates annul water yield, the current estimate of flows is not enough
+to assess the ecosystem services of water provisioning, which would be the water used by people. The
+water accounts (GOU 2019) show the use of water industry and households and could be used to help
+determine the supply and use of the water provisioning service in Uganda.
+Erosion control is linked to sediment retention. InVEST estimates erosion rates, and avoided erosion,
+based on the Revised Universal Soil Loss (RUSLE) equation that was developed based on measured
+erosion rates as a function of vegetation cover, soil type, rainfall characteristics and slope properties. An
+issue with RUSLE is that even though it estimates erosion rates, it does not properly include the
+deposition of sediments on-slope. Where eroded soil is transported downstream and downstream the
+slope is less steep, and/or more vegetated, part or all of the sediments will be deposited. In this case, the
+sediments will not end up in a stream or river. Furthermore, the model only captures rill erosion
+processes4, and does not estimate other forms of erosion, such as gully or streambank erosion5 (Sharp et
+
+4
+
+Rill erosion occurs when runoff water forms small channels as it concentrates down a slope.
+These rills can be up to 0.3m deep.
+5
+
+Gully erosion is the removal of soil along drainage lines by surface water runoff. Streambank
+erosion occurs when streams cut deeper and wider channels.
+
+10
+
+al. 2015). Hence, only part of the erosion processes are measured by InVEST. It is not known how
+important rill erosion is compared to the other types of erosion in Uganda. Despite this limitation, the
+sediment retention model can still be used to detect relative changes in rill erosion. The various
+constraints are further discussed in chapter 4.
+Bearing these limits in mind, the physical flows of sediment estimated by InVEST provide an
+approximation of the avoided sedimentation in streams and rivers. The related ecosystem service of
+erosion control are gained by avoiding damage to human activity (e.g. sediments can affect functioning
+of hydropower systems by clogging up reservoirs or, in extreme cases, damaging equipment), reduction
+in agricultural output but these remain to be estimated.
+For all physical flows estimated by InVEST, it is clear that the accuracy, especially at local scale, is
+limited. Moreover, no field data has been used to validate the models. Therefore, the InVEST model,
+and consequently any ecosystem accounts that result from its use, will provide only approximations of
+the flows, and the data can only be used at aggregated (not local) scales, i.e. river basins or national.
+InVEST outputs were used to prepare tables for these physical flows relating to ecosystem services. The
+tables include the physical values for these flows in each year of the analysis, as well as changes between
+years. Given the uncertainties involved, and in line with the policy practices in Uganda, values were
+aggregated by river basin.
+
+11
+
+CHAPTER THREE: RESULTS
+3.1
+
+Land cover by river basin
+
+The accounts for land cover by drainage basin for the years 1990, 2005, 2010 and 2015 are shown in
+Appendix 2 and graphically in Figures 3 to 6. The overall trends were an increased use of land for
+agriculture and a decline of forest cover particularly for woodlands. The grasslands increased largely at
+the expense of bushlands possibly because the grasslands are used as foraging area for livestock as well
+as numbers of wildlife increasing. Between 1990 and 2015 commercial farmlands expanded by 3.8 times
+and built up areas by 3.7 times mostly at the expense of wetlands6.
+Figure 3 shows that out of Uganda’s eight drainage basins, the Lake Victoria basin was the largest with
+6.2 million hectares, equivalent to 26% of the land in Uganda. The Lake Kyoga basin was the second
+largest with 5.7 million ha or 24% of the national area. The Kidepo basin was the smallest with 318,000
+ha, equivalent to 1.3% of the national area. Descriptions of the accounts for each of the individual
+reference years are found in the following paragraphs.
+In 1990 the largest land cover class was small scale farmlands with 35% of national land cover,
+equivalent to 8.4 million ha (Figure 3). Grasslands had the second largest cover with 5.1 million ha
+equivalent to 21% of national cover. Woodlands were the third largest covering nearly 4 million ha
+(16%) while open water was at 3.7 million ha or 15% of national cover.
+Figure 3: Land cover extent by basin 1990 (1,000 ha)
+
+Land cover by drainage basin in 2005 is shown in Figure 4. The most significant increase in land cover
+was the 55 percent increase in wetlands from 484,000 ha in 1990 to 753,000 ha in 2005. Small scale
+farmers increased by 5 percent from 8.4 million ha to 8.8 million ha while bushlands doubled from 1.4
+million ha to 3.0 million ha between 1990 and 2005. In contrast woodlands and grasslands decreased by
+
+6
+
+As defined in the land cover accounts
+
+12
+
+30 percent from 4.0 million ha to 2.8 million ha while grasslands decreased by 21 percent from 5.1
+million ha to 4.0 million ha.
+Land cover by drainage basin for 2010 is shown in Figure 5. In 2010 woodlands had decreased by 42
+percent from the 1990 with woodland area of 2.3 million ha in 2010 compared to 4.0 million ha in 1990.
+Grasslands in 2010 were 30 percent less in area than 1990, decreasing from 5.1 million ha to 3.6 million
+ha. In contrast small scale farmlands were 12 percent larger in 2010 at 9.4 million hectares, more than
+the 8.4 million ha in 1990. Similarly, bushlands expanded by 2.3 times from1.4 million ha to 3.3 million
+ha in 2010. Wetlands also increase by 6 percent from 753,000 ha in 1990 to 798,000 ha in 2010.
+Figure 4: Land cover extent by basin 2005 (1,000 ha)
+
+Figure 5: Land cover extent by basin 2010 (1,000 ha)
+
+13
+
+In 2015 there was a woodland area of 1.2 million ha (Figure 6), 69 percent less than the 4.0 million ha
+in 1990. In contrast, in the same period the small-scale farmlands expanded by 22 percent from 8.4
+million ha to 10.3 million ha. The grassland cover was almost recovered from a 30 percent decrease
+between 1990 and 2010 to just 0.4 percent less than the 1990 cover in 2015. Bushlands decreased by 41
+percent while wetlands decreased by10 percent between 2010 and 2015.
+Figure 6: Land cover extent by basin 2015 (1,000 ha)
+
+3.2
+
+Wetland ecosystem extent by basin
+
+This section presents information on wetlands in Uganda using the definition aligned with Ramsar
+Convention and the listing of wetlands under government laws and regulations. The definition for
+wetlands in Uganda was developed from adapted to cover wetland cover and use, under both permanent
+and seasonal wetlands. The refined definition for wetlands as adopted by the National Environment Act
+(No.5 of 2019) states that wetlands mean areas permanently or seasonally flooded by water, where plants
+and animals have become adapted and gazetted as such. Uganda has 3,141,140 ha of wetland, which is
+equivalent to 13.0 percent of Uganda’s surface area, and the remaining land area is referred to as normal
+(dry land). These wetlands are further subdivided into permanent (732,521 ha), seasonal (2,408,619)
+wetlands and wetlands on normal (dry land). There occurrence of the permanent wetlands in the 13 land
+cover classes used in the land cover accounts by river basin for the years 1990, 2005, 2010 and 2015 is
+shown in Figures 7 to 10. Similar information for the seasonal wetlands is shown in Figures 11 to 14.
+From these it can been seen that over time the amount wetlands in each of the 13 classes of land cover
+changes. The wetland extent was designated and benchmarked in the National Policy for Conservation
+and Management of Wetland Resources (1995) based on the National Biomass Survey of 1990. In
+addition, the National Environment (Wetlands, River Banks and Lake Shores Management)
+Regulations, No. 3/2000 ensure that the Government and local governments hold in trust for the people
+and protect wetland for the common good of the citizens of Uganda, and that the wetlands shall not be
+leased out or otherwise alienate any wetland. Therefore, wetland extent was differentiated from cover
+and use, and management was differentiated manner from normal (dry land). In subsequent National
+
+14
+
+Biomass Surveys, in 2000, 2005, 2010 and 2015; however, some areas that were classed as normal (dry
+land) transformed, both intentionally and/or naturally, into permanently or seasonally flooded by water,
+where plants and animals have become adapted. The normal (dry land) areas that became transformed
+into wetlands are referred to as wetlands on dryland.
+The accounts show that by 2015 the area of seasonal wetland under small scale farmlands expanded by
+3.7 times to 868,000 ha from 232,000 ha in 1990, indicating an increase use of wetlands for agriculture
+production. Over the same period the seasonal wetlands in woodlands land cover classification
+decreased by 73 percent from 514,000 ha to 141,000 ha.
+Figure 7: Permanent wetland extent by land cover and basin in 1990 (1,000 ha)
+
+Figure 8: Permanent wetland extent by land cover class and basin in 2005 (1,000 ha)
+
+15
+
+Figure 9: Permanent wetland extent by land cover class and basin in 2010 (1,000 ha)
+
+Figure 10: Permanent wetland extent by land cover class and basin, 2015 (1,000 ha)
+
+16
+
+Figure 11: Seasonal wetland extent by land cover class and basin in 1990 (1,000 ha)
+
+Figure 12: Seasonal wetland extent by land cover and basin, 2005 (1,000 ha)
+
+17
+
+Figure 13: Seasonal wetland extent by land cover and basin, 2010 (1,000 ha)
+
+Figure 14: Seasonal wetland extent by land cover extent by basin, 2015 (1,000 ha)
+
+The permanent and seasonal wetland cover in 1990 was used retrospectively as benchmark for wetland
+extent, and normal (dry land) was separate from wetland area. Between 1990 and 2015 (Figures 15-18),
+there was an expansion of wetland area on the areas that were classified (retrospectively as normal (dry
+land) in 1990). The wetland area on dryland increased from the 0 ha benchmark in 1990 to 118,000 ha
+in 2000 before declining to 100,000 ha in 2015. This expansion of wetland on normal (dry land) area
+represents improvement; however, it is countered by the increased use of designated wetland area for
+other uses including as farmlands, forests and built up areas, among others.
+
+18
+
+Figure 15: Normal (dry land) extent by basin, including wetland extent on dryland, 1990 (1,000 ha)
+
+Figure 16: Normal (dry land) extent by basin, including wetland extent on dryland, 2005 (1,000 ha)
+
+19
+
+Figure 17: Normal (dry land) extent by basin, including wetland extent on dryland, 2010 (1,000 ha)
+
+Figure 18: Normal (dry land) extent including wetland extent on dryland by drainage basin, 2015
+(1,000 ha)
+
+20
+
+3.3
+
+Forest extent by administrative land use class
+
+Accounts for the occurrence of forests and other land cover types by administrative land use class and
+river basin can be found in Appendix 4 for the years 1990, 2005, 2010 and 2015. In this, there are the
+accounts for private land, CFR, LFR, and National Parks and Wildlife Reserves. The forest land covers
+consist of broad-leaved plantations, coniferous plantation, THF low stocked, THF well stocked and
+woodlands. Figures 15 to 18 show the forest extent on private land for the years 1990, 2005, 2010 and
+2015. The forest extent on private land has decreased by 77 percent from 3.3 million ha in 1990 to
+766,000 ha in 2015. The largest percentage decrease occurred in Aswa river basin from 834,000 ha to
+59,000 ha.
+The composition of the forest land covers on private land in 2015 was: 33,000 ha or 4 percent in broad
+leaf plantations; 13,000 ha or 2 percent in coniferous plantations; 34,000 ha or 4 percent in THF well
+stocked; 40,000ha or 5 percent in THF low stocked, and; 646,000 ha or 84 percent in woodlands (Figures
+19-22). Woodlands accounted the largest amount of forest in private land in 1990 as well, at 3.0 million
+ha or 89 percent of total.
+Figure 19: Forest extent on private land by cover class and basin in 1990 (1,000 ha)
+
+21
+
+Figure 20: Forest extent on private land by cover class and basin in 2005 (ha)
+
+Figure 21: Forest extent on private land by cover class and basin in 2010 (1,000 ha)
+
+22
+
+Figure 22: Forest extent on private land by land cover class and basin in 2015 (1,000 ha)
+
+The extent of forests in Central Forest Reserves by river basin is shown in Figures 23 to 26 for the years
+1990, 2005, 2010 and 2015. The total extent of CFR was 1.15 million ha in 1990 and did not change
+over time. Seventeen percent of the CFR area was located in the Lake Victoria basin, 16 percent in each
+of Lake Kyoga basin and the Lake Albert basin, 12 percent in the Aswa basin and the balancing area
+outside the eight basins, 11 percent in the Victoria Nile basin, and 6 percent in the Albert Nile basin
+(Figure 23).
+Figure 23: Forest extent for CFRs by land cover class and drainage basin in 1990 (1,000 ha)
+
+23
+
+Figure 24: Forest extent for CFRs by land cover class and basin in 2005 (1,000 ha)
+
+Figure 25: Forest extent for CFRs by land cover class and basin in 2010 (1,000 ha)
+
+24
+
+Figure 26: Forest extent for CFRs by land cover class and basin in 2015 (1,000 ha)
+
+The extent of Local Forest Reserves by river basin is shown in Figures 27 to 30 for the years 1900,
+2005, 2010 and 2015. The area of LFR is small and remained constant over time at 5,100 ha.
+Figure 27: Forest extent for LFRs by land cover class and basin in 1990 (1,000 ha)
+
+25
+
+Figure 28: Forest extent for LFRs by land cover class and basin in 2005 (1,000ha)
+
+Figure 29: Forest extent for LFRs by land cover class and drainage basin in 2010 (1,000ha)
+
+26
+
+Figure 30: Forest extent for LFRs by land cover class and drainage basin in 2015 (1,000 ha)
+
+National Parks and Wildlife Reserves by river basin is shown in Appendix 4 for the years 1990, 2005,
+2010 and 2015 and similar information in shown in Figures 31 to 34. The extent of forests in National
+Parks and Wildlife Reserves had decreased from the 831,000 ha in 1990 to 640,000 ha in 2015.
+The composition of forests in National Parks and Wildlife Reserves in 2015 was 53 percent woodlands,
+42 percent THF well stocked, 5 percent THF low stocked and 0.4 percent forest plantation. Between
+1990 and 2015, the THF well stocked had increased by 22 percent from 218,000 ha to 268,000 ha while
+the woodlands and THF low stocked had decreased respectively by 41 percent from 571,000 ha to
+338,000 ha and by 18 percent from 39,000 ha to 32,000 ha. The forest plantations remained stable at
+2,300 ha, over the same period.
+In 2015, 37 percent of the forests in National Parks and Wildlife Reserves were located in the Lake
+Edward basin, 29 percent in the Lake Albert basin, 15 percent in the Victoria Nile basin, 13 percent in
+the Lake Kyoga basin, 5 percent in the Albert Nile basin, 3 percent in the Lake Victoria basin, 1 percent
+in the Kidepo basin and less than 1 percent in the Aswa basin. The balancing area has a forest ecosystem
+extent of 4 percent.
+
+27
+
+Figure 31: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in
+1990 (1,000ha)
+
+Figure 32: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in
+2005 (1,000 ha)
+
+28
+
+Figure 33: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in
+2010 (1,000 ha)
+
+Figure 34: Forest extent for National Parks and Wildlife Reserves by land cover class and basin in
+2015 (1,000 ha)
+
+29
+
+3.4
+
+Physical flows and ecosystem service accounts
+
+3.4.1 Carbon storage and carbon sequestration
+Figure 35 shows the volume of carbon stored in 1990, 2005, 2010, and 2015, with values ranging from
+90 to 700 tons carbon per hectare. In all river basins, except Albert Nile, Aswa, Kidepo, and Lake Albert,
+carbon storage increased between 1990 and 2015. Between 1990 and 2015, gains in carbon storage were
+greatest in the Lake Kyoga, Lake Victoria, and Victoria Nile basins. In particular, carbon storage in the
+Lake Kyoga basin increased by 5.6 percent between 1990 and 2015. In the Lake Albert basin, carbon
+storage between 1990 and 2015 decreased by 7 percent.
+Despite the loss in forest cover between 1990 and 2015, carbon stored still increased due to the gains in
+wetland area. Wetland soils have relatively high carbon storage potential, and as such, were able to
+offset losses in tree biomass. However, as deforestation increased between 2005 and 2015, overall
+carbon storage decreased in that period. These change needs to be interpreted cautiously owing to
+questions about the accuracy of the methods used to measure the extent of wetlands and this is issue is
+discussed later (Section 4.1)
+The findings highlight importance of the baseline year that is used as a reference point for future years.
+When 1990 is used as a baseline, the amount of carbon stored is shown to increase by 2015 due to an
+increase in carbon capture in permanent wetlands. However, if 2005 is used as the baseline the increase
+in carbon storage in 2015 is much smaller. Changes in the estimates of carbon stored are related, in
+particular, to the conversion of forests and woodlands to agricultural lands, with agricultural lands
+storing less carbon.
+Figure 35. Carbon storage in Uganda, 1990, 2005, 2010 and 2015 (ton C/ha) by year.
+
+30
+
+3.4.2 Water yield
+Maps of annual water yield for the years 1990, 2005, 2010, and 2015 are shown in Figure 36. In all
+basins, except Lake Edward, Lake Kyoga, and Lake Victoria, annual water yield increased between
+1990 and 2010, with greatest gains in the Albert Nile, Aswa, Kidepo, and Lake Albert basins. In
+particular, annual water yield in the Albert Nile basin increased by 4.5 percent between 1990 and 2010.
+In the Lake Edward and Lake Kyoga basins, annual water yield remained relatively constant between
+1990 and 2015, decreasing slightly, by 0.2 percent and 0.3 percent, respectively.
+When using 1990 as the baseline year of comparison, water yield nationally decreased by 0.1 percent in
+2005, but increased by 2.2 percent and 1.9 percent in 2010 and 2015, respectively. This probably reflects
+a loss of forest cover, as forests have a relatively high evapotranspiration rate. Since forests typically
+have higher rates of evapotranspiration than other land cover types, a lower proportion of annual goes
+to runoff and infiltration. However, some evidence suggests that over long periods of time, deforestation
+can diminish the overall water budget, thus decreasing annual water yield (Bonan 2008; West et al.
+2010). Also, over seasonal or monthly time scales, increased forest cover has been shown to increase
+baseflows during periods of drought and mitigate peak flows during flood events (Brauman et al. 2007).
+In order to capture these long-term and seasonal dynamics, long-term monitoring and regional climate
+modeling is required.
+Figure 36. Annual water yield, Uganda, 1990, 2005, 2010 and 2015 (mm water / hectare / year).
+
+3.4.3 Sediment retention and exports
+Maps of sediment retention in 1990, 2005, 2010, and 2015 are shown in Figure 37, with values ranging
+from 0 to 5,000 tons of sediment retained (i.e. erosion avoided) per hectare per year. Compared to 1990,
+sediment retention nationally decreased by 0.02 percent in 2005, 1.2 percent in 2010, and 0.6 percent in
+2015. In all basins, except Kidepo, sediment retention decreased between 1990 and 2010, and between
+1990 and 2015. The greatest decreases were in the Victoria Nile, Lake Albert, and Albert Nile basins
+
+31
+
+(see Annex 2). In particular, sediment retention in the Victoria Nile basin decreased by 2.9 percent
+between 1990 and 2010. In the Kidepo basin, sediment retention increased by 0.8 percent between 1990
+and 2015. This change is related to changes in land cover, whereby land covers less capable of
+controlling erosion (e.g. farmlands) are replacing land covers (e.g. forests) that are better able to control
+erosion
+Related to sediment retention is the indicator ‘sediment export’ (e.g. Yang et al., 2003). Sediment export
+indicates a negative externality from ecosystems and such flows are not recorded in an ecosystem
+account (although they could be shown in SEEA Central Framework waste account). It is important to
+keep in mind that the amount of sediment exported is a function of land cover, slope steepness and
+length, and rainfall variables such as rainfall intensity. Hence, the relation between the two, for any
+given pixel, is expressed as follows:
+Erosion rate of bare soil (as a function of slope, soil and rainfall) = sediment eroded (as a function of
+slope, soil, rainfall and actual vegetation cover) + sediment retained (as a function of slope, soil, rainfall
+and actual vegetation cover)
+As per the equation given above, sediment export is negatively correlated with sediment retention.
+Consequently, in basins where sediment retention increased from 1990, sediment export decreased;
+conversely, sediment export increased in basins where sediment retention decreased from 1990 (Figure
+33). Given that sediment export is potentially a policy relevant indicator, it is also included in the report,
+in the form of maps (Figure 34).
+3.4.5 Ecosystem services accounts
+By combining the information on the physical flows of carbon, water and sediment with other
+information on the use of these flows by people, ecosystem service accounts can be produced. However,
+full ecosystem service accounts could not be produced. Table 2 shows the structure of the account for
+the supply and supply and use of ecosystems services related to the physical flows measured in 2015 for
+each river basin. As noted in the data sources and methods, the flows of carbon are of benefit to all
+people as they mitigate climate change and as such this use is recorded as a use by government. Annex
+3 shows an alternative tabular presentation with the supply of ecosystem services being shown by land
+cover type, rather than by river basin – no data are included in this table. It is also possible to show the
+supply and use of ecosystem services for each river basin by land cover type.
+The water accounts (Government of Uganda 2019) could be used with the information on the physical
+flows of water to estimate the use of the water provisioning service by business and households at the
+national level. In water account (Government of Uganda 2019, Table 4, p. 33) total water use (including
+groundwater) by people in 2015 was 236,994,549,748 thousand m3, while the InVest modelling show
+total flows of 28,197,881 thousand m3 (see Annex 5), which is a very large difference that requires
+further research. Potentially, an explanation is that some of the water used is from rivers flowing into
+Uganda. Information about the location of reservoirs or other water sources used to supply water to
+households and industry, as well as some assumptions about the location of agricultural activity using
+water, could be used to allocate the supply of water provisioning services to particular land covers and
+river basins. Similarly, converting the information on retention of sediment to a supply and use of an
+ecosystem services would require additional information and assumptions.
+
+32
+
+Figure 37. Sediment retention in Uganda, 1990, 2005, 2010 and 2015 (ton/ha/year).
+
+Figure 38. Sediment export in Uganda, 1990, 2005, 2010 and 2015 (ton/ha/year).
+
+33
+
+1000 t
+sediment
+
+1000 m3
+
+1000 t
+carbon
+
+1000 t
+sediment
+
+1000 t
+carbon
+1000 t
+carbon
+1000 m3
+
+275,514
+
+7,972,61
+1
+
+4,142,78
+0
+
+300,418
+
+68,685
+
+701
+
+98
+
+-42
+
+757,211
+
+935,572
+
+363,767
+
+40,766
+
+Albert Nile
+186,420
+
+3,251,70
+3
+
+336
+
+289,352
+
+Victoria Nile
+265,067
+
+4,115,19
+3
+
+217
+
+441,425
+
+Lake Albert
+447,649
+
+2,052,613
+
+-311
+
+269,066
+
+Lake Edward
+1,014,013
+
+2,286,548
+
+2168
+
+298,915
+
+Lake Victoria
+792,958
+
+4,076,015
+
+3464
+
+804,269
+
+No
+data
+
+Industry or sector
+
+Manufacturing
+
+Mining
+
+Agriculture
+
+Balancing item
+
+34
+
+Note: carbon sequestration is expressed as the net change in carbon stock, annual average over the period 2010-2015
+
+Use
+Carbon
+stored
+Carbon
+sequestration
+Water
+provisioning
+Erosion
+control
+
+Carbon
+stored
+Carbon
+sequestration
+Water
+provisioning
+Erosion
+control
+
+Kidepo
+
+River basin
+
+Lake Kyoga
+
+Aswa
+
+Supply
+
+Units
+
+Table 2. Experimental ecosystem services account, Uganda by river basin, 2015
+
+Total
+Government
+Households
+Other
+
+Water supply
+Electricity
+
+CHAPTER FOUR: DISCUSSION
+4.1
+
+Policy implications
+
+The accounts can support policy making in several ways. First, the accounts show how land cover, a
+proxy for ecosystem extent, has changed over time. In particular, the extent accounts show how forest
+cover has decreased and agricultural land has expanded by river basin. This means specific river basins
+may be targeted for action (i.e. the ones losing the largest percentage of forest) and well the management
+of forests, with much forest lost from the national park network. Similarly, wetland management may
+be targeted as many temporary wetlands have been converted to farmland. Second, the modelling of the
+physical flows shows that land cover changes have led to changes in physical flows and this will be
+related to changes in ecosystem services as well. The development of policy relating to payments for
+ecosystems could be one option to explore, particularly for forests and wetlands in private ownership.
+However, some uncertainties related to the modelling and data sources mean that caution is needed in
+interpreting the data on physical flows (see Section 4.2 below) and hence its suitability to support
+payment schemes may be limited at present.
+While noting the limits of the data and modelling, the physical measures of carbon storage and
+sequestration were able to be transformed into ecosystem services related to climate regulation.
+Beneficiaries of these service could be identified as government, recognizing the collective benefit of
+climate regulation and payments for these might be usefully further explored. Overall, carbon storage
+and sequestration is increased from 1990 to 2015 (Table A5.1) but in forests it is declining, with the
+modelling suggesting that carbon is increasingly being stored in wetlands, but this latter element needs
+to be verified.
+The loss of carbon in forests is consistent between the extent account (that shows declining forest cover)
+and the services account, that shows a decline in carbon storage from 2005 onwards. These changes in
+carbon stocks, and potential opportunities to protect and restore forests are relevant for the national
+climate change policies including the implementation of the policies leading toward reaching Nationally
+Determined Contributions (NDCs) in the context of the Paris Agreement.
+The impact of deforestation is also reflected in the annual water yield (Figure 36). It is not known how
+water distribution has changed within the years, but the loss of forest cover means a reduction in overall
+evapotranspiration, leading to an increase in water flow, in particular during the rainy season (but not
+during the dry season) and a reduction in the return of water vapor to the atmosphere where it can
+contribute to rainfall. In many areas on the planet, deforestation has been associated with a decline in
+rainfall (Creed and Van Noordwijk, 2018). Given the deforestation in Uganda and neighboring
+countries, it is likely that this will affect rainfall and thereby rain-fed agriculture at some point in the
+future. This would be highly relevant for Ugandan food security and agricultural economic activities
+and it is recommended examining this further (see Section 4.3).
+
+4.2
+
+Uncertainties and limitations
+
+Biophysical models like InVEST simplify extremely complex ecological and hydrological processes
+that vary spatially and temporally. The simplified representation of these processes within InVEST
+allows the model to be run over large spatial scales using widely available datasets. While it is clear that
+there is uncertainty in the model outputs, it not possible to quantify or qualify that uncertainty without
+more information on data sources and better understanding of the modelling platform. It is therefore
+important to be cautious when assessing the model outputs and to understand how they must be
+interpreted with caution.
+Steps can be made to enhance the models used. For example, validation of the amount of carbon stored
+and sequestered could be done using field-based measurements of carbon in the aboveground and
+35
+
+belowground biomass, dead woody biomass, and the soil. In the short term, it may also be possible to
+validate the annual water yield model based on discharge values collected by stream gages. However,
+this type of monitoring program would ideally need to occur over a period of decades, if there is to be
+reliable estimates of average annual values (Redhead et al. 2016). It is not possible to validate outputs
+from the sediment retention model. As this model only captures rill erosion processes 7, and does not
+estimate other forms of erosion, such as gully or streambank erosion8 (Sharp et al. 2015), comparing
+InVEST outputs with monitoring data would be invalid.
+One issue is the coarse temporal resolution of the water yield module used. In principle, InVEST allows
+assessing seasonal water flows, however in the case reported here only the annual water yield module
+was used. That means that water storage and release, and assessing quickflow versus baseflow, was not
+possible. In the future, models providing enhanced temporal resolution or the seasonal version of
+InVEST, or more detailed hydrological models that better allow calibration and validation (but also
+require more data and effort) could be used.
+The land cover accounts show that there is an increase in wetland area, which is subsequently leading
+to an increase in carbon stocks. It is interesting to compare the information on the land cover class
+wetlands to the other information on wetlands, which uses a different definition of wetlands. This works
+highlights the difference between land cover accounts and ecosystem accounts and show that while land
+cover may be a reasonable proxy for ecosystem type, it is not exactly the case for wetlands in Uganda.
+Regardless of the definition, Ugandan wetlands are increasingly converted to agriculture. When this
+happens the wetland areas are no longer flooded and in the future may no longer qualify as wetlands. At
+what point the change from wetland to agriculture becomes irreversible is unknown. It seems likely that
+the wetland area as defined by ecosystem type will decreases rather than increases over time. Potentially,
+an increase in the area of wetlands as picked up in the land cover accounts may reflect a positive change
+in the extent and condition wetland ecosystems due to either natural processes (e.g. rainfall and
+regeneration) or better management (e.g. limiting grazing). This aspect requires further investigation.
+
+4.3
+
+Future opportunities
+
+There are many opportunities to develop the Uganda ecosystem accounts in the future. The specific
+options selected will depend on the policy priorities of the Government of Uganda, as well as on the
+resource available, data availability and the development of account producing capacity, both the
+technical skills of staff (e.g. in modelling) and the processes used by agencies involved. Options are
+available for developing ecosystem accounting in Uganda, include:
+1. Establishment of an ongoing process for the leadership and management of ecosystem account
+production and use
+2. Developing ecosystem accounts that go beyond using land cover as an approximation for ecosystem
+extent
+3. Converting the estimates of physical flows into full accounts of ecosystem services which will
+require the identification of the users of the services
+4. Expanding the number ecosystem services included in the accounts.
+5. Undertaking economic valuations to develop monetary estimates of ecosystem services and assets.
+6. Developing ecosystem condition accounts which will require a broad set of indicators for the quality
+of wetlands, forest, water and other ecosystems.
+
+7
+
+Rill erosion occurs when runoff water forms small channels as it concentrates down a slope. These rills can be
+up to 0.3m deep.
+8
+
+Gully erosion is the removal of soil along drainage lines by surface water runoff. Streambank erosion occurs
+when streams cut deeper and wider channels.
+
+36
+
+7. Enhancing the hydrological model either by using the seasonal water yield module of InVEST, or
+by replacing the InVEST hydrological module with a regular hydrological model, such as SWAT.
+maintain dry season streamflow (i.e. baseflow).
+8. Analyzing how forests contribute to maintaining rainfall patterns in Uganda and Africa more
+generally.
+An ongoing process for the leadership and management of ecosystem account production is needed for
+Uganda. The work done to date has relied on the existing processes. Uganda’s National Plan of Action
+on Environmental Economic Accounting (NP-AEEA), provides a basis for this and is a recognized
+‘roadmap’ for systematic NCA development in Uganda. The NP-AEEA was completed before the work
+on ecosystem accounting was done and hence could be re-visited to provide a more specific plan for
+ecosystem accounting which will require the inputs from a range of government agencies and would
+benefit from the involvement of the private, NGO and academic sectors.
+Other factors to consider is possible economic instruments that could be used by government to
+encourage change in management. Payments for ecosystem services, and in particular for climate
+regulation services, would be an example of this. Such instruments could encourage international
+investment in Uganda and provide an alternative income source to small-scale farmers. Consideration
+of the economic instruments would also help with the development of economic valuations to develop
+monetary estimates of ecosystem services and assets which is a critical next step and will require greater
+integration with both Uganda’s land and national economic accounts.
+On the technical side, developing ecosystem accounts that go beyond using land cover as an
+approximation for ecosystem extent. The work on accounting for wetlands highlighted the difference is
+definitions from different data source. In is also apparent the data from remote sensing used for
+producing the land cover maps and accounts, needs to be supported by ground-based observations, that
+in addition to confirming land cover type can also assess the species and vegetation structure of sites.
+Converting the estimates of physical flows into full accounts of ecosystem services will require the
+identification of the users of the services which in turn will require the integration of data from other
+sources or even the collection of new data. In this, physical flows should be mapped to economic units
+in the economy. This could be relatively easy for large users of services, such as large-scale commercial
+water or timber suppliers, but would be harder for small scale agricultural producers or fuelwood
+suppliers.
+Expanding the number ecosystem services included in the accounts would expand the possible uses and
+users of the accounts. Currently, only four services are included. Others that could be added include the
+provisioning services for non-timber forest products not currently included in the forest accounts, flood
+retention, water purification and cultural and recreational services. For example, tourism related services
+including wildlife viewing, hiking and watersports.
+Developing ecosystem condition accounts will require a broad set of indicators on the quality of
+wetlands, forest, water and other ecosystems. These indicators need to be defined for each ecosystem,
+for example forest ecosystem indicators could include aspects such as standing biomass, biodiversity,
+quality of the forest (old growth versus degraded forests), while the quality of wetlands might depend
+on species present, soil moisture, etc.
+For the existing ecosystem services, enhancing the hydrological model either by using the seasonal water
+yield module of InVEST, or by replacing the InVEST hydrological module with a regular hydrological
+model, such as SWAT would be useful. The former has the advantage that it is fairly straightforward
+and could be achieved with relatively limited resources. The advantage of the latter is that this will allow
+a much more accurate modeling of the hydrological regulation by forests (given that the model can be
+calibrated and validated against actual streamflow data). In addition, this allows the model to indicate
+how forests maintain dry season streamflow (i.e. baseflow). A disadvantage is that this requires
+37
+
+considerable effort, data and time. Given that SWAT requires modeling entire river basins, including
+the Nile in SWAT or a comparable hydrological model may require modeling the entire Nile basin
+upstream of Uganda. Furthermore, Ugandan hydrology is complex, with multiple relatively small
+watersheds draining into Lake Victoria and a large number of wetlands that each have a specific impact
+on river hydrology depending upon their land use (and in particular depending upon if they are
+seasonally flooded or if they are closed off with a dyke so that they remain arable throughout the year).
+It is estimated that this option would take around 6 to 12 months of work and require streamflow data
+from water monitoring stations across Uganda.
+Finally, analyzing how forests contribute to maintaining rainfall patterns has clear policy relevance as
+rainfall is essential for Ugandan food production and food security. Since Uganda is located more than
+600 km from the Ocean, a major part of its rainfall is derived from the so-called secondary rainfall cycle,
+i.e. rainfall that originated from evapotranspiration by especially forests and lakes (and to a much lower
+extent other vegetation types). In other words, forests are essential to maintain rainfall in Uganda.
+Further deforestation in Eastern Africa will likely lead to reduced rainfall in Uganda. The forests that
+maintain rainfall are located not only in Uganda but also in Tanzania, the Democratic Republic of the
+Congo and Kenya. An existing model developed at Wageningen University simulates rainfall across
+Africa in daily time steps and the relation between forest cover and rainfall can be assessed with this.
+This model could test how Ugandan rainfall depends upon forests both in Uganda and in neighboring
+countries (i.e. it could be calculated by how much rainfall in Uganda would decline should all or part of
+these forests be lost). It is important to note that some of Ugandan rainfall originates from evaporation
+in Lake Victoria (which is included in the model). The model allows adding an additional regulating
+service to the account, corrects for an omission in the current InVEST modeling (that assumes that water
+leaving the ecosystem through evapotranspiration is ‘lost’) and would be highly policy relevant.
+
+38
+
+CHAPTER FIVE: CONCLUSIONS
+This report presents the work on the development of ecosystem accounts in Uganda. The report includes
+a land cover extent account, how land cover is related to wetland and forest management, estimates of
+physical measures related to four ecosystems services along with a partial ecosystem services account.
+The work was done at national scale but is also available for the eight river basins within Uganda.
+The work demonstrates that current data sources, methods and capacity enable the partial
+implementation of United Nations System of Environmental Economic Accounting (SEEA) –
+Experimental Ecosystem Accounting.
+The Extent account uses land cover to classify ecosystem types, and shows how land cover has changed
+in the period 1990 to 2015, with maps and accounting tables for the four years 1990, 2005, 2010, and
+2015. The account shows the major changes that took place by drainage basin. The most striking change
+is the strong reduction in woodlands, and the increase in small-scale farmland. There has also been an
+increase in commercial farming, but small-scale farming remains the dominant land use in Uganda.
+The partial ecosystem services account shows how estimates of physical measures for carbon storage,
+carbon sequestration, water yield and sediment retention can be transformed into an assessment of
+ecosystem services. The physical flows are shown by drainage basin and the partial ecosystem service
+account show four services: (i) carbon storage; (ii) carbon sequestration); (iii) water provisioning; and
+(iv) erosion control. The climate regulation services (carbon storage and sequestration) increased
+between 1990 and 2005, but declined in the period 2005 to 2015. This is caused, in particular, by
+deforestation including the conversion of woodland to farmland. The water yield increased over time,
+meaning that more rainwater ends up in rivers, however changes in rainfall patterns have not been
+considered in this analysis. Soil retention declined over time. This is also related to the conversion of
+woodlands into farmland, which are somewhat more prone to erosion, especially in the beginning of the
+growing season when there is still not full ground cover in the fields.
+The accounts are not complete but demonstrate the amount of effort and data needed for compiling
+accounts and how the information in the accounts could be used to support policy making. The accounts
+are, in principle, useful to support land use planning, climate change and agricultural policies, among
+others. It is possible to extend the biophysical measures with a monetary component or more detailed
+analysis of how the economy is using the physical flows and ecosystem services. Further applications
+and policy linkages are likely to be revealed as the accounts are developed, increasing their accuracy
+and coverage.
+Economic valuation to develop monetary estimates of ecosystem services and assets is a critical next
+step and will require greater integration with both Uganda’s land and national economic accounts.
+Although simple valuation is possible using, for example, the social cost of carbon, more sophisticated
+but data-intensive approaches to value ecosystem services like sediment retention would be more
+informative for decision-making.
+As the Government of Uganda plans for ambitious future policies laid forth by the Vision 2040,
+ecosystem accounts can help track progress, quantify trade-offs, and set realistic baselines from which
+to develop comprehensive and linked environmental-economic policies. Furthermore, ecosystem
+accounts can illustrate linked trends and previously unidentified trade-offs in the environment, economy,
+and human well-being of other rapidly changing African nations.
+
+39
+
+REFERENCES
+Bagstad, K.J., J. Carter Ingram, G.M. Lange, M. Masozera, Z.H. Ancona, et al., 2019. Towards
+ecosystem accounts for Rwanda: Tracking 25 years of change in flows and potential supply of ecosystem
+services. 2019, https://doi.org/10.1002/pan3.10062
+Bonan, G.B., 2008. Forests and climate change: forcings, feedbacks, and the climate benefits of forests.
+science 320: 1444-1449.
+Brauman, K.A., G.C. Daily, T.K. Duarte, H.A. Mooney, 2007. The nature and value of ecosystem
+services: An overview highlighting hydrologic services. Annual Review of Environment and Resources
+32: 67-98.
+Creed, I.F. and M. van Noordwijk, 2018. Forest and Water on a Changing Planet: Vulnerability,
+Adaptation and Governance Opportunities. A Global Assessment Report. International union of forest
+research organizations.
+Diaz, S., S. Demissew, J. Carabias, C. Joly, M. Lonsdale et al., 2015. The IPBES Conceptual Framework
+— connecting nature and people. Current Opinion in Environmental Sustainability 14, Pages 1-16
+Duku, C, H Rathjens, S J Zwart, and L Hein, 2015. “Towards Ecosystem Accounting: A Comprehensive
+Approach to Modelling Multiple Hydrological Ecosystem Services.” Hydrology and Earth System
+Sciences, 2015, 3477–3526. https://doi.org/10.5194/hessd-12-3477-2015.
+Food and Agriculture Organization, 2012. Harmonized World Soil Database. in FAO editor., Rome,
+Italy.
+GoU (Government of Uganda), 2016. Uganda Wetland Atlas Volume II, Ministry of Water and
+Environment, United Nations Environment Programme (UNEP), and the United Nations Development
+Programme (UNDP), MWE, Kampala, available at http://www.mwe.org
+GoU (Government of Uganda), 2019. Uganda Water Accounts Report 2015-2018.
+https://www.wavespartnership.org/en/knowledge-center/uganda-water-accounts-report-2015-2018
+Hamel, Perrine, Rebecca Chaplin-Kramer, Sarah Sim, and Carina Mueller, 2015. “A New Approach to
+Modeling the Sediment Retention Service (InVEST 3.0): Case Study of the Cape Fear Catchment, North
+Carolina, USA.” Science of the Total Environment 524–525 (2015): 166–77.
+Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones, A. Jarvis, 2005. Very high resolution interpolated
+climate surfaces for global land areas. International journal of climatology 25: 1965-1978.
+Leh, M.D., M.D. Matlock, E.C. Cummings, L.L. Nalley, 2013. Quantifying and mapping multiple
+ecosystem services change in West Africa. Agriculture, ecosystems & environment 165: 6-18.
+Lehner, B., K. Verdin, A. Jarvis, 2006. HydroSHEDS Technical Documentation. World Wiuldlife Fund
+US, Washington, DC.
+Millennium Ecosystem Assessment, 2005. Ecosystems and Human Well-Being. Island Press
+Washington, DC.
+Mu, Q., F.A. Heinsch, M. Zhao, S.W. Running, 2007. Development of a global evapotranspiration
+algorithm based on MODIS and global meteorology data. Remote Sensing of Environment 111: 519536.
+NFA (National Forestry Authority), 2009. National Biomass Study Technical Report 2005. NFA,
+Kampala. https://www.nfa.org.ug/images/reports/biomasstechnicalreport2009.pdf
+
+40
+
+Polasky, S., B. Bryant, P. Hawthorne, J. Johnson, B. Keeler, D. Pennington, 2015. Inclusive wealth as
+a metric of sustainable development. Annual Review of Environment and Resources 40: 445-466.
+Pomeroy, D. Tushabe, H. and Loh, J. 2017. The State of Uganda’s Biodiversity 2017. National
+Biodiversity
+Data
+Bank.
+Makerere
+University.
+Kampala.
+http://www.natureuganda.org/downloads/presentations/BD%202017%20Indicators%20Report.pdf
+Posner, S., G. Verutes, I. Koh, D. Denu, T. Ricketts, 2016. Global use of ecosystem service models.
+Ecosystem Services 17: 131-141.
+Ramsar Convention Secretariat, 2011. The Ramsar Convention Manual: a guide to the Convention on
+Wetlands (Ramsar, Iran, 1971), 5th ed. Ramsar Convention Secretariat, Gland, Switzerland.
+Redhead, J., C. Stratford, K. Sharps, L. Jones, G. Ziv, D. Clarke, T. Oliver, J. Bullock, 2016. Empirical
+validation of the InVEST water yield ecosystem service model at a national scale. Science of the Total
+Environment 569: 1418-1426.
+Sharp, R., H.T. Tallis, T. Ricketts, A.D. Guerry, S.A. Wood, E. Chaplin-Kramer, R., Nelson, D.
+Ennaanay, et al., 2018 “InVEST 3.6.0 User’s Guide”.
+UBOS (Uganda Bureau of Statistics), 2019. National Land Physical Asset Account for Uganda:
+Technical Report. Uganda National Capital Accounting Program
+UN (United Nations), 2017. Technical Recommendations in support of the System of EnvironmentalEconomic
+Accounting
+2012—
+Experimental
+Ecosystem
+Accounting.
+New
+York.
+ST/ESA/STAT/SER.M/97.
+Available
+at:
+https://seea.un.org/sites/seea.un.org/files/documents/EEA/seriesm_97e.pdf
+UN (United Nations), European Union, Food and Agriculture Organization of the United Nations,
+International Monetary Fund, Organisation for Economic Co-operation and Development and the World
+Bank, 2014a. System of Environmental-Economic Accounting 2012--Central Framework. New York.
+ST/ESA/STAT/Ser.F/109.
+UN (United Nations), European Union, Food and Agriculture Organization of the United Nations,
+Organisation for Economic Co-operation and Development, World Bank Group, 2014b. “System of
+Environmental-Economic Accounting 2012 Experimental Ecosystem Accounting”. Available at:
+https://seea.un.org/sites/seea.un.org/files/seea_eea_final_en_1.pdf
+Vrieling, A., J.C. Hoedjes, M. Van Der Velde, 2014. Towards large-scale monitoring of soil erosion in
+Africa: Accounting for the dynamics of rainfall erosivity. Global and Planetary Change 115: 33-43.
+WAVES. 2019. Uganda Adjusted Macroeconomic Indicators and Measures of Comprehensive Wealth
+- Technical Report. Macroeconomic Policy Department
+West, P.C., G.T. Narisma, C.C. Barford, C.J. Kucharik, J.A. Foley, 2010. An alternative approach for
+quantifying climate regulation by ecosystems. Frontiers in Ecology and the Environment 9: 126-133.
+Willcock, S., O.L. Phillips, P.J. Platts, A. Balmford, N.D. Burgess, J.C. Lovett, A. Ahrends, J. Bayliss,
+N. Doggart, K. Doody, 2012. Towards regional, error-bounded landscape carbon storage estimates for
+data-deficient areas of the world. PloS one 7: e44795.
+Yang, D., S. Kanae, T. Oki, T. Koike, K. Musiake, 2003. Global potential soil erosion with reference to
+land use and climate changes. Hydrological processes 17: 2913-2928.
+
+41
+
+ANNEXES
+Annex 1: Data inputs for InVEST model
+Datasets
+Dataset Name
+
+Spatial Datasets
+Land use / land
+cover
+
+Requirements for InVEST
+Models
+
+Dataset
+Acronym
+
+Dataset Description
+
+Required
+Format
+
+Required
+Units
+
+Carbon
+Storage
+
+Annual
+Water
+Yield
+
+Sediment
+Retention
+
+LULC
+
+A GIS raster dataset, with an
+integer LULC code for each
+cell. These LULC codes must
+match lucode values in
+the Biophysical table.
+A GIS raster dataset with a
+non-zero value for average
+annual precipitation for each
+cell.
+A GIS raster dataset, with an
+annual average
+evapotranspiration value for
+each cell. Reference
+evapotranspiration is the
+potential loss of water from soil
+by both evaporation from the
+soil and transpiration by
+healthy alfalfa (or grass) if
+sufficient water is available.
+A GIS raster dataset with an
+average root restricting layer
+depth value for each cell. Root
+restricting layer depth is the
+soil depth at which root
+penetration is strongly inhibited
+because of physical or
+chemical characteristics.
+A GIS raster dataset with a
+plant available water content
+value for each cell. Plant
+Available Water Content
+fraction (PAWC) is the fraction
+of water that can be stored in
+the soil profile that is available
+for plants’ use.
+Raster dataset with an elevation
+value for each cell. Make sure
+the DEM is corrected by filling
+in sinks, and compare the
+output stream maps with
+hydrographic maps of the area.
+To ensure proper flow routing,
+the DEM should extend beyond
+the watersheds of interest,
+rather than being clipped to the
+watershed edge.
+
+GeoTIFF
+Raster
+
+Categorical
+
+x
+
+x
+
+x
+
+GeoTIFF
+Raster
+
+mm
+
+Average annual
+precipitation
+
+----
+
+Average annual
+reference
+evapotranspiration
+
+ET0
+
+Root restricting
+layer depth
+
+----
+
+Plant Available
+Water Content
+
+PAWC
+
+Digital elevation
+model
+
+DEM
+
+42
+
+x
+
+mm
+
+GeoTIFF
+Raster
+
+mm
+
+x
+
+GeoTIFF
+Raster
+
+Percent (0
+to 1)
+
+x
+
+GeoTIFF
+Raster
+
+Meters
+
+x
+
+Datasets
+Dataset Name
+
+Dataset
+Acronym
+
+Rainfall Erosivity
+Index
+
+R
+
+Soil Erodibility
+
+K
+
+Watersheds
+
+----
+
+Requirements for InVEST
+Models
+
+Dataset Description
+
+Required
+Format
+
+Required
+Units
+
+Raster dataset, with an
+erosivity index value for
+each cell. This variable
+depends on the intensity
+and duration of rainfall in
+the area of interest. The
+greater the intensity and
+duration of the rain storm,
+the higher the erosion
+potential. The erosivity
+index is widely used, but
+in case of its absence,
+there are methods and
+equations to help generate
+a grid using climatic data.
+Raster dataset, with a soil
+erodibility value for each
+cell. Soil erodibility, K, is
+a measure of the
+susceptibility of soil
+particles to detachment
+and transport by rainfall
+and runoff.
+A shapefile of polygons.
+This is a layer of
+watersheds such that each
+watershed contributes to a
+point of interest where
+water quality will be
+analyzed. Format: An
+integer field
+named ws_id is required,
+with a unique integer
+value for each watershed.
+
+GeoTIFF
+Raster
+
+MJ * mm /
+(ha * h *
+yr)
+
+x
+
+GeoTIFF
+Raster
+
+Tons * ha
+* h / (ha *
+MJ * mm)
+
+x
+
+ESRI
+Shapefile
+
+N/A
+
+----
+
+Carbon density in
+aboveground biomass
+
+Mg / ha
+
+x
+
+Belowground
+carbon
+
+----
+
+Carbon density in
+belowground biomass
+
+Mg / ha
+
+x
+
+Soil carbon
+
+----
+
+Carbon density in soil
+
+Mg / ha
+
+x
+
+Dead biomass
+carbon
+
+----
+
+Carbon density in dead
+matter
+
+Floating
+point
+value
+Floating
+point
+value
+Floating
+point
+value
+Floating
+point
+value
+
+Mg / ha
+
+x
+
+Land Cover
+Coefficients
+Aboveground
+carbon
+
+43
+
+Carbon
+Storage
+
+Annual
+Water
+Yield
+
+x
+
+Sediment
+Retention
+
+x
+
+Datasets
+
+Requirements for InVEST
+Models
+
+Dataset Name
+
+Dataset
+Acronym
+
+Dataset Description
+
+Required
+Format
+
+Required
+Units
+
+Cover
+management
+factor
+
+C-factor
+
+Floating
+point
+value
+
+0 to 1
+index
+
+x
+
+Support practice
+factor
+
+P-factor
+
+x
+
+----
+
+Floating
+point
+value
+Integer
+
+0 to 1
+index
+
+Maximum root
+depth
+
+mm
+
+x
+
+Plant
+evapotranspiration
+coefficent
+
+Kc
+
+Cover-management factor
+for the USLE, a floating
+point value between 0 and
+1.
+Support practice factor for
+the USLE, a floating point
+value between 0 and 1.
+The maximum root depth
+for vegetated land use
+classes, given in integer
+millimeters. This is often
+given as the depth at
+which 95% of a vegetation
+type’s root biomass
+occurs. For land uses
+where the generic Budyko
+curve is not used (i.e.
+where evapotranspiration
+is calculated from Eq. 2),
+rooting depth is not
+needed. In these cases, the
+rooting depth field is
+ignored, and may be set as
+a value such as -1 to
+indicate the field is not
+used.
+Plant evapotranspiration
+coefficient for each LULC
+class, used to calculate
+potential
+evapotranspiration by
+using plant physiological
+characteristics to modify
+the reference
+evapotranspiration, which
+is based on alfalfa. The
+evapotranspiration
+coefficient is a decimal in
+the range of 0 to 1.5 (some
+crops evapotranspire more
+than alfalfa in some very
+wet tropical regions and
+where water is always
+available).
+
+Floating
+point
+value
+
+0 to 1.5
+index
+
+x
+
+44
+
+Carbon
+Storage
+
+Annual
+Water
+Yield
+
+Sediment
+Retention
+
+Datasets
+Dataset Name
+
+Other Parameters
+Threshold flow
+accumulation
+
+Maximum
+sediment delivery
+ratio
+
+Z parameter
+
+Dataset
+Acronym
+
+TFA
+
+SDRmax
+
+Z
+
+Requirements for InVEST
+Models
+
+Dataset Description
+
+Required
+Format
+
+Required
+Units
+
+The number of upstream
+cells that must flow into a
+cell before it is considered
+part of a stream, which is
+used to classify streams
+from the DEM. This
+threshold directly affects
+the expression of
+hydrologic connectivity
+and the sediment export
+result: when a flow path
+reaches the stream,
+sediment deposition stops
+and the sediment exported
+is assumed to reach the
+catchment outlet. It is
+important to choose this
+value carefully, so
+modeled streams come as
+close to reality as possible.
+See Appendix 1 for more
+information on choosing
+this value. Integer value,
+with no commas or
+periods - for example
+“1000”.
+The maximum SDR that a
+pixel can reach, which is a
+function of the soil
+texture. More specifically,
+it is defined as the fraction
+of topsoil particles finer
+than coarse sand (1000
+μm; Vigiak et al. 2012).
+This parameter can be
+used for calibration in
+advanced studies. Its
+default value is 0.8.
+Floating point value on
+the order of 1 to 30
+corresponding to the
+seasonal distribution of
+precipitation.
+
+Integer
+
+N pixels
+
+x
+
+Floating
+point
+value
+
+0 to 1
+index
+
+x
+
+Floating
+point
+value
+
+0 to 30
+index
+
+45
+
+Carbon
+Storage
+
+Annual
+Water
+Yield
+
+x
+
+Sediment
+Retention
+
+Annex 2. Land cover extent by drainage basin
+Table A2.1: Land cover extent by drainage basin 1990 (thousands hectares)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+2
+2
+1
+0
+781
+76
+279
+37
+859
+1
+2
+29
+0
+2,070
+
+Aswa
+
+Kidepo
+
+0
+0
+940
+135
+528
+1,153
+0
+1
+1
+1
+2,759
+
+0
+70
+42
+190
+15
+0
+0
+318
+
+Lake
+Albert
+1
+2
+247
+75
+350
+24
+282
+29
+459
+11
+1
+316
+0
+1,799
+
+Lake
+Edward
+3
+3
+223
+15
+150
+98
+352
+28
+898
+10
+3
+107
+1
+1,891
+
+Lake
+Kyoga
+6
+2
+51
+50
+451
+529
+1,600
+231
+2,444
+28
+10
+320
+1
+5,723
+
+Lake
+Victoria
+6
+3
+105
+95
+200
+262
+1,118
+89
+1,404
+9
+14
+2,861
+1
+6,166
+
+Victoria
+Nile
+1
+3
+19
+33
+870
+64
+572
+68
+1,132
+9
+5
+17
+0
+2,795
+
+Balancing
+area*
+0
+1
+4
+5
+162
+192
+193
+2
+35
+1
+0
+37
+0
+632
+
+Total
+19
+16
+651
+273
+3,974
+1,422
+5,115
+484
+8,400
+68
+37
+3,689
+4
+24,152
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A2.2: Land cover extent by drainage basin 2005 (thousand hectares)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+2
+2
+2
+0
+553
+238
+379
+54
+798
+1
+6
+33
+0
+2,070
+
+Aswa
+0
+0
+0
+512
+594
+705
+9
+919
+0
+14
+3
+2
+2,759
+
+Kidepo
+51
+67
+186
+14
+0
+0
+1
+318
+
+Lake
+Albert
+0
+1
+184
+92
+228
+172
+198
+14
+577
+11
+2
+316
+1
+1,799
+
+Lake
+Edward
+4
+2
+242
+4
+148
+133
+224
+34
+963
+27
+5
+107
+1
+1,891
+
+Lake
+Kyoga
+2
+5
+77
+9
+364
+739
+1,063
+343
+2,717
+38
+22
+343
+1
+5,723
+
+Lake
+Victoria
+4
+5
+83
+61
+174
+424
+705
+189
+1,620
+19
+32
+2,848
+1
+6,166
+
+Victoria
+Nile
+2
+3
+1
+26
+632
+411
+395
+108
+1,172
+9
+17
+18
+0
+2,795
+
+Balancing
+area*
+0
+0
+12
+116
+189
+208
+1
+67
+1
+0
+38
+0
+633
+
+Total
+15
+19
+601
+192
+2,778
+2,968
+4,063
+753
+8,847
+107
+97
+3,706
+8
+24,153
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A2.3: Land cover extent by drainage basin 2010 (thousand hectares)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert Nile
+2
+2
+1
+1
+538
+313
+229
+41
+892
+19
+5
+27
+0
+2,070
+
+Aswa
+0
+0
+355
+566
+585
+64
+1,168
+14
+5
+1
+0
+2,759
+
+Kidepo
+44
+150
+116
+0
+8
+0
+0
+318
+
+Lake
+Albert
+3
+2
+199
+75
+204
+129
+209
+22
+622
+14
+2
+317
+0
+1,798
+
+Lake
+Edward
+4
+2
+243
+17
+99
+114
+247
+24
+1,007
+21
+3
+109
+2
+1,891
+
+Lake
+Kyoga
+3
+4
+82
+18
+217
+943
+1,068
+342
+2,655
+44
+14
+332
+0
+5,723
+
+Lake
+Victoria
+8
+9
+101
+42
+201
+389
+676
+193
+1,643
+23
+19
+2,863
+0
+6,166
+
+Victoria
+Nile
+2
+9
+11
+32
+522
+503
+260
+109
+1,299
+18
+14
+16
+0
+2,795
+
+Balancing
+area*
+1
+1
+9
+1
+115
+220
+172
+3
+72
+1
+0
+38
+0
+633
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+46
+
+Total
+21
+29
+646
+185
+2,294
+3,328
+3,562
+798
+9,366
+154
+63
+3,704
+4
+24,152
+
+Table A2.4: Land cover extent by drainage basin 2015 (thousand hectares)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+4
+1
+0
+2
+166
+170
+488
+29
+1,105
+56
+12
+37
+1
+2,070
+
+Aswa
+0
+0
+91
+340
+893
+2
+1,379
+37
+12
+3
+0
+2,759
+
+Kidepo
+33
+36
+234
+14
+0
+0
+318
+
+Lake
+Albert
+8
+3
+166
+21
+137
+116
+233
+28
+743
+20
+4
+318
+1
+1,798
+
+Lake
+Edward
+8
+5
+232
+23
+76
+91
+310
+31
+964
+33
+5
+110
+3
+1,891
+
+Lake
+Kyoga
+4
+10
+75
+19
+186
+451
+1,394
+328
+2,822
+48
+32
+354
+0
+5,723
+
+Lake
+Victoria
+14
+21
+46
+30
+97
+236
+881
+181
+1,720
+30
+38
+2,872
+1
+6,166
+
+Victoria
+Nile
+5
+23
+1
+6
+336
+379
+423
+114
+1,425
+31
+33
+18
+1
+2,795
+
+Balancing
+area*
+0
+1
+9
+2
+90
+147
+242
+3
+99
+2
+0
+37
+0
+632
+
+Total
+44
+63
+529
+102
+1,213
+1,967
+5,097
+715
+10,272
+256
+136
+3,749
+8
+24,152
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A2.5: Net land cover change by drainage basin, 1990 to 2015 (thousand hectares)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+2
+-1
+-1
+2
+-615
+94
+209
+-8
+246
+55
+10
+8
+1
+0
+
+Aswa
+0
+0
+0
+0
+-849
+205
+365
+2
+226
+37
+11
+2
+-1
+0
+
+Kidepo
+0
+0
+0
+0
+-37
+-6
+44
+0
+-1
+0
+0
+0
+0
+0
+
+Lake
+Albert
+7
+1
+-81
+-54
+-213
+92
+-49
+-1
+284
+9
+3
+2
+1
+-1
+
+Lake
+Edward
+5
+2
+9
+8
+-74
+-7
+-42
+3
+66
+23
+2
+3
+2
+0
+
+Lake
+Kyoga
+-2
+8
+24
+-31
+-265
+-78
+-206
+97
+378
+20
+22
+34
+-1
+0
+
+Lake
+Victoria
+8
+18
+-59
+-65
+-103
+-26
+-237
+92
+316
+21
+24
+11
+0
+0
+
+Victoria
+Nile
+4
+20
+-18
+-27
+-534
+315
+-149
+46
+293
+22
+28
+1
+1
+0
+
+Balancing
+area*
+0
+0
+5
+-3
+-72
+-45
+49
+1
+64
+1
+0
+0
+0
+0
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+47
+
+Total
+25
+47
+-122
+-171
+-2761
+545
+-18
+231
+1872
+188
+99
+60
+4
+0
+
+Annex 3 Wetland extent by land cover class
+Table A3.1: Permanent wetland extent by land cover class and drainage basin 1990 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+1
+37
+0
+0
+38
+
+Aswa
+
+Kidepo
+
+6
+6
+
+-
+
+Lake
+Albert
+0
+4
+29
+0
+33
+
+Lake
+Edward
+5
+28
+2
+0
+35
+
+Lake
+Kyoga
+2
+1
+93
+231
+1
+5
+0
+333
+
+Lake
+Victoria
+0
+1
+3
+0
+97
+89
+1
+0
+190
+
+Victoria
+Nile
+0
+0
+0
+26
+68
+0
+0
+94
+
+Balancing
+area*
+0
+0
+1
+2
+0
+3
+
+Total
+0
+1
+5
+1
+232
+484
+4
+5
+0
+732
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A3.2: Permanent wetland extent by land cover class and drainage basin in 2005 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+2
+4
+2
+25
+1
+6
+0
+38
+
+Aswa
+1
+1
+2
+1
+1
+0
+0
+6
+
+Kidepo
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Lake
+Albert
+0
+0
+1
+4
+5
+11
+9
+3
+0
+0
+1
+33
+
+Lake
+Edward
+0
+0
+0
+0
+6
+4
+3
+14
+8
+0
+0
+1
+35
+
+Lake
+Kyoga
+0
+2
+0
+1
+13
+27
+233
+17
+6
+0
+34
+0
+333
+
+Lake
+Victoria
+0
+0
+2
+1
+5
+5
+40
+120
+12
+0
+0
+4
+0
+190
+
+Victoria
+Nile
+0
+0
+0
+3
+3
+15
+65
+5
+0
+0
+2
+94
+
+Balanci
+ng area*
+0
+0
+0
+1
+1
+1
+0
+0
+3
+
+Total
+0
+0
+4
+2
+21
+36
+101
+467
+47
+6
+1
+47
+0
+732
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A3.3: Permanent wetland extent by land cover class and drainage basin in 2010 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+1
+3
+3
+23
+1
+0
+0
+7
+0
+38
+
+Aswa
+1
+2
+2
+0
+1
+0
+0
+0
+6
+
+Kidepo
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Lake
+Albert
+0
+0
+1
+0
+3
+3
+8
+13
+4
+0
+0
+1
+0
+33
+
+Lake
+Edward
+0
+0
+0
+0
+4
+4
+3
+14
+8
+0
+0
+1
+0
+35
+
+Lake
+Kyoga
+0
+0
+2
+0
+1
+15
+20
+226
+25
+6
+0
+38
+0
+333
+
+Lake
+Victoria
+0
+0
+1
+1
+4
+6
+37
+119
+14
+1
+1
+6
+0
+190
+
+Victoria
+Nile
+0
+0
+0
+0
+3
+6
+10
+65
+7
+0
+0
+2
+0
+94
+
+Balancing
+area*
+0
+0
+0
+1
+1
+1
+0
+0
+0
+3
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+48
+
+Total
+1
+0
+4
+2
+17
+39
+83
+462
+60
+8
+1
+54
+0
+733
+
+Table A3.4: Permanent wetland extent by land cover class and drainage basin in 2015 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+1
+2
+5
+22
+1
+0
+0
+8
+0
+38
+
+Aswa
+0
+2
+1
+0
+2
+0
+0
+0
+6
+
+Kidepo
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Lake
+Albert
+0
+0
+1
+0
+2
+2
+4
+17
+6
+0
+0
+1
+0
+33
+
+Lake
+Edward
+0
+0
+1
+1
+3
+4
+3
+13
+9
+1
+0
+1
+0
+35
+
+Lake
+Kyoga
+0
+0
+2
+0
+1
+17
+13
+219
+32
+7
+0
+41
+0
+333
+
+Lake
+Victoria
+1
+0
+0
+1
+3
+7
+33
+119
+16
+2
+1
+7
+0
+190
+
+Victoria
+Nile
+0
+0
+0
+0
+3
+9
+5
+66
+8
+0
+0
+2
+0
+94
+
+Balancing
+area*
+0
+0
+0
+1
+1
+0
+0
+0
+3
+
+Total
+1
+0
+4
+2
+13
+43
+65
+458
+74
+10
+1
+62
+0
+733
+
+*The balancing item is the area of land in Uganda that is inside the national boundary but outside of the other drainage area
+
+Table A3.5: Seasonal wetland extent by land cover and drainage basin in 1990 (1,000 ha)
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+
+Aswa
+
+Kidepo
+
+Lake
+Albert
+
+35
+7
+56
+0
+3
+0
+102
+
+43
+3
+177
+6
+0
+229
+
+5
+0
+12
+17
+
+2
+7
+72
+3
+63
+0
+2
+149
+
+Lake
+Edward
+0
+4
+66
+12
+18
+9
+109
+
+Lake
+Kyoga
+0
+1
+5
+114
+35
+644
+0
+185
+3
+0
+986
+
+Lake
+Victoria
+0
+1
+1
+74
+33
+279
+0
+19
+0
+407
+
+Victoria
+Nile
+4
+96
+6
+280
+0
+8
+394
+
+Balanci
+ng area
+0
+8
+2
+3
+1
+15
+
+Total
+0
+4
+22
+514
+101
+1,533
+0
+232
+3
+0
+0
+2,408
+
+Table A3.6: Seasonal wetland extent by land cover drainage basin in 2005 (1,000 ha)
+Land cover classes
+
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+33
+26
+18
+11
+13
+0
+0
+1
+0
+102
+
+Aswa
+
+0
+19
+78
+81
+5
+43
+0
+1
+0
+229
+
+Kidepo
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Kyoga
+
+4
+1
+12
+0
+0
+17
+
+0
+0
+3
+3
+26
+12
+71
+2
+32
+0
+0
+0
+0
+149
+
+0
+0
+1
+1
+25
+23
+10
+15
+33
+0
+0
+0
+0
+109
+
+0
+0
+0
+0
+44
+207
+301
+80
+345
+6
+1
+2
+0
+986
+
+49
+
+Lake
+Victori
+a
+0
+0
+2
+3
+20
+115
+142
+26
+93
+4
+1
+0
+0
+407
+
+Victori
+a Nile
+
+Balanci
+ng area
+
+0
+0
+0
+3
+63
+102
+126
+28
+71
+0
+1
+0
+0
+394
+
+0
+5
+3
+6
+0
+1
+0
+0
+0
+0
+15
+
+Total
+
+1
+0
+7
+10
+240
+567
+766
+168
+631
+10
+3
+4
+0
+2,408
+
+Table A3.7: Seasonal wetland extent by land cover extent and drainage basin in 2010 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+0
+25
+23
+27
+6
+19
+1
+0
+0
+0
+102
+
+Aswa
+
+Kidepo
+
+0
+0
+13
+65
+84
+3
+61
+1
+0
+1
+0
+229
+
+3
+2
+12
+0
+0
+17
+
+Lake
+Albert
+0
+0
+3
+3
+20
+11
+71
+3
+38
+0
+0
+0
+0
+149
+
+Lake
+Edward
+1
+0
+2
+2
+20
+17
+17
+13
+36
+1
+0
+0
+0
+109
+
+Lake
+Kyoga
+1
+0
+0
+0
+33
+165
+315
+80
+380
+7
+2
+2
+0
+986
+
+Lake
+Victoria
+1
+0
+2
+2
+16
+84
+149
+28
+120
+3
+1
+1
+0
+407
+
+Victoria
+Nile
+0
+1
+0
+3
+55
+94
+115
+28
+94
+2
+2
+0
+0
+394
+
+Balancing
+area
+0
+0
+0
+4
+3
+6
+1
+1
+0
+0
+0
+0
+15
+
+Total
+3
+2
+7
+10
+190
+464
+796
+162
+750
+14
+5
+5
+0
+2,408
+
+Table A3.8: Seasonal wetland extent by land cover class and drainage basin in 2015 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+0
+16
+20
+36
+2
+26
+1
+0
+0
+0
+102
+
+Aswa
+
+Kidepo
+
+0
+0
+0
+0
+7
+52
+86
+1
+80
+1
+0
+1
+0
+229
+
+0
+0
+0
+0
+2
+3
+13
+0
+0
+0
+0
+0
+0
+17
+
+Lake
+Albert
+1
+0
+2
+2
+14
+10
+71
+4
+44
+1
+0
+0
+0
+149
+
+Lake
+Edward
+1
+0
+2
+4
+15
+12
+24
+12
+38
+1
+0
+0
+0
+109
+
+Lake
+Kyoga
+1
+0
+0
+0
+23
+123
+329
+80
+416
+8
+3
+3
+0
+986
+
+Lake
+Victoria
+1
+1
+2
+1
+12
+52
+156
+30
+147
+3
+1
+1
+0
+407
+
+Victoria
+Nile
+0
+2
+0
+2
+47
+87
+105
+29
+117
+3
+3
+0
+0
+0
+
+Balancing
+area
+0
+0
+0
+0
+4
+2
+7
+1
+1
+0
+0
+0
+0
+15
+
+Total
+1
+0
+7
+10
+240
+567
+766
+168
+631
+10
+3
+4
+0
+2,408
+
+Table A3.9: Net change is permarmanent wetland by land cover class and drainage basin, 1990
+to 2015 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+0
+1
+2
+4
+-15
+1
+0
+0
+8
+0
+0
+
+Aswa
+
+Kidepo
+
+0
+0
+0
+0
+0
+2
+-5
+0
+2
+0
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Lake
+Albert
+0
+0
+1
+0
+2
+2
+0
+-12
+6
+0
+0
+1
+0
+0
+
+50
+
+Lake
+Edward
+0
+0
+1
+1
+3
+4
+-2
+-15
+7
+1
+0
+1
+0
+0
+
+Lake
+Kyoga
+0
+0
+2
+0
+-1
+16
+-80
+-12
+31
+2
+0
+41
+0
+0
+
+Lake
+Victoria
+1
+0
+0
+0
+0
+7
+-64
+30
+15
+2
+1
+7
+0
+0
+
+Victoria
+Nile
+0
+0
+0
+0
+3
+9
+-21
+-2
+8
+0
+0
+2
+0
+0
+
+Balancing
+area
+0
+0
+0
+0
+0
+0
+0
+-1
+0
+0
+0
+0
+0
+0
+
+Total
+1
+0
+4
+1
+8
+42
+-167
+-26
+70
+5
+1
+62
+0
+1
+
+Table A3.10: Net change is seasonal wetland by land cover class and drainage basin, 1990 to
+2015 (1,000 ha)
+Land cover classes
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+0
+0
+0
+-19
+13
+-20
+2
+23
+1
+0
+0
+0
+0
+
+Aswa
+
+Kidepo
+
+0
+0
+0
+0
+-36
+49
+-91
+1
+74
+1
+0
+1
+0
+0
+
+0
+0
+0
+0
+-3
+3
+1
+0
+0
+0
+0
+0
+0
+0
+
+Lake
+Albert
+1
+0
+0
+-5
+-58
+7
+8
+4
+42
+1
+0
+0
+0
+0
+
+51
+
+Lake
+Edward
+1
+0
+2
+0
+-51
+0
+6
+12
+29
+1
+0
+0
+0
+0
+
+Lake
+Kyoga
+1
+0
+-1
+-5
+-91
+88
+-315
+80
+231
+5
+3
+3
+0
+0
+
+Lake
+Victoria
+1
+1
+1
+0
+-62
+19
+-123
+30
+128
+3
+1
+1
+0
+0
+
+Victoria
+Nile
+0
+2
+0
+-2
+-49
+81
+-175
+29
+109
+3
+3
+0
+0
+-394
+
+Balancing
+area
+0
+0
+0
+0
+-4
+0
+4
+1
+0
+0
+0
+0
+0
+0
+
+Total
+1
+0
+3
+-12
+-274
+466
+-767
+168
+399
+7
+3
+4
+0
+0
+
+Annex 4: Forest extent by land use
+Table A4.1: Forest extent on private land by land cover class and drainage basin in 1990 (1,000 ha)
+Broad leaved
+Coniferous
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Albert
+Nile
+1.52
+0.09
+0.00
+0.00
+630.41
+632.03
+
+Aswa
+0.04
+0.00
+834.36
+834.40
+
+Kidepo
+0.00
+38.70
+38.71
+
+Lake
+Edward
+2.66
+0.03
+9.80
+4.28
+44.18
+60.95
+
+Lake Albert
+0.67
+0.23
+90.56
+65.75
+158.29
+315.51
+
+Lake
+Kyoga
+1.49
+0.16
+4.14
+13.46
+314.98
+334.23
+
+Lake
+Victoria
+5.10
+0.07
+57.13
+65.16
+174.19
+301.65
+
+Victoria
+Nile
+0.46
+0.12
+12.28
+27.21
+703.72
+743.79
+
+Balancing
+area
+0.07
+0.00
+0.09
+0.12
+64.00
+64.29
+
+Total
+12
+1
+174
+176
+2,963
+3,326
+
+Table A4.2: Forest extent on private land by land cover class and drainage basin in 2005 (1,000 ha)
+Albert Nile
+
+Aswa
+
+Kidepo
+
+2
+0
+0
+0
+424
+425
+
+0
+0
+0
+435
+435
+
+26
+26
+
+Broad leaved
+Coniferous
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Lake
+Albert
+0
+0
+29
+79
+94
+202
+
+Lake
+Edward
+3
+0
+11
+1
+72
+87
+
+Lake
+Kyoga
+1
+1
+1
+2
+168
+173
+
+Lake
+Victoria
+2
+0
+38
+51
+142
+234
+
+Victoria
+Nile
+1
+0
+1
+20
+454
+476
+
+Balancing
+area
+0
+0
+0
+22
+22
+
+Total
+10
+2
+80
+153
+1,836
+2,081
+
+Table A4.3: Forest extent on private land by land cover class and drainage basin in 2010 (1,000 ha)
+Broad leaved 2010
+Coniferous 2010
+THF well stocked 2010
+THF low stocked 2010
+Woodlands 2010
+Total 2010
+
+Albert
+Nile
+1
+0
+0
+0
+431
+432
+
+Aswa
+
+Kidepo
+
+0
+0
+302
+302
+
+17
+17
+
+Lake
+Albert
+2
+0
+36
+67
+75
+181
+
+Lake
+Edward
+3
+1
+11
+4
+42
+61
+
+Lake
+Kyoga
+1
+1
+4
+4
+131
+141
+
+Lake
+Victoria
+6
+2
+51
+33
+157
+249
+
+Victoria
+Nile
+1
+2
+7
+25
+372
+406
+
+Balancing
+area
+0
+0
+0
+0
+38
+38
+
+Total
+15
+5
+109
+132
+1,566
+1,827
+
+Table A4.4: Forest extent on private land by land cover class and drainage basin in 2015 (1,000 ha)
+Land cover classes
+Broad leaved 2015
+Coniferous 2015
+THF well stocked 2015
+THF low stocked 2015
+Woodlands 2015
+Total 2015
+
+Albert
+Nile
+3
+0
+0
+109
+113
+
+Aswa
+
+Kidepo
+
+0
+0
+59
+59
+
+13
+13
+
+Lake
+Albert
+7
+0
+10
+10
+27
+54
+
+52
+
+Lake
+Edward
+6
+2
+7
+3
+18
+36
+
+Lake
+Kyoga
+2
+2
+2
+3
+98
+107
+
+Lake
+Victoria
+11
+4
+15
+19
+68
+117
+
+Victoria
+Nile
+3
+4
+0
+4
+229
+242
+
+Balanci
+ng area
+0
+0
+0
+0
+24
+24
+
+Total
+33
+13
+34
+40
+646
+766
+
+Table A4.5: Forest extent for CFRs by land cover class and drainage basin in 1990 (1,000 ha)
+Land cover
+classes
+Broad leaved
+plantations
+Coniferous
+plantations
+THF well
+stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale
+farmlands
+Commercial
+farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+
+Aswa
+
+Kidepo
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Kyoga
+
+Lake
+Victoria
+
+Victoria
+Nile
+
+Balancing
+area
+
+Total
+
+0
+
+0
+
+-
+
+0
+
+0
+
+4
+
+1
+
+0
+
+-
+
+6
+
+2
+
+0
+
+-
+
+2
+
+3
+
+1
+
+3
+
+2
+
+0
+
+13
+
+1
+46
+2
+14
+0
+
+81
+3
+39
+-
+
+21
+5
+8
+-
+
+118
+8
+34
+0
+12
+2
+
+60
+3
+2
+1
+6
+0
+
+24
+11
+59
+42
+26
+1
+
+48
+29
+22
+9
+43
+2
+
+7
+6
+61
+1
+25
+1
+
+0
+69
+44
+27
+0
+
+258
+58
+396
+107
+200
+6
+
+7
+
+13
+
+2
+
+6
+
+3
+
+14
+
+32
+
+23
+
+2
+
+103
+
+0
+0
+0
+73
+
+0
+0
+0
+137
+
+0
+36
+
+0
+0
+0
+184
+
+0
+0
+0
+0
+78
+
+0
+0
+0
+0
+183
+
+0
+0
+1
+0
+191
+
+0
+0
+126
+
+0
+143
+
+1
+0
+1
+0
+1,151
+
+Table A4.6: Forest extent for CFRs by land cover class and drainage basin in 2005 ((1,000 ha)
+Land cover classes
+Broad leaved
+plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+1
+
+Aswa
+
+Kidepo
+
+Lake
+Edward
+1
+
+Lake
+Kyoga
+1
+
+Lake
+Victoria
+1
+
+Victoria
+Nile
+2
+
+Balancing
+area
+0
+
+Total
+
+-
+
+Lake
+Albert
+0
+
+-
+
+2
+2
+46
+6
+7
+0
+11
+0
+0
+0
+73
+
+0
+63
+21
+35
+0
+17
+0
+0
+0
+1
+137
+
+22
+5
+9
+1
+0
+36
+
+1
+112
+13
+13
+26
+6
+2
+11
+0
+0
+0
+184
+
+2
+64
+1
+0
+3
+2
+0
+5
+1
+0
+0
+78
+
+2
+22
+7
+53
+37
+31
+1
+26
+2
+0
+0
+0
+183
+
+5
+44
+10
+25
+18
+28
+5
+53
+0
+1
+1
+0
+191
+
+2
+1
+5
+34
+33
+15
+1
+32
+0
+0
+0
+126
+
+0
+0
+53
+38
+45
+6
+143
+
+14
+244
+37
+309
+187
+178
+9
+162
+3
+1
+1
+1
+1,151
+
+5
+
+Table A4.7: Forest extent for CFRs by land cover class and drainage basin in 2010 ((1,000 ha)
+2010
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0
+1
+1
+1
+42
+7
+9
+0
+11
+0
+0
+0
+0
+73
+
+Aswa
+
+Kidepo
+
+0
+0
+51
+45
+22
+0
+18
+1
+0
+0
+0
+137
+
+20
+11
+4
+1
+36
+
+Lake
+Albert
+0
+2
+120
+6
+18
+11
+10
+2
+15
+0
+0
+0
+0
+184
+
+53
+
+Lake
+Edward
+1
+1
+60
+4
+2
+2
+3
+0
+5
+0
+0
+0
+0
+78
+
+Lake
+Kyoga
+2
+3
+25
+8
+45
+55
+20
+1
+23
+1
+0
+0
+0
+183
+
+Lake
+Victoria
+1
+7
+50
+8
+24
+14
+26
+5
+53
+1
+0
+2
+0
+191
+
+Victoria
+Nile
+1
+8
+4
+6
+25
+35
+8
+1
+37
+0
+0
+0
+126
+
+Balancing
+area
+0
+0
+0
+0
+52
+50
+30
+0
+11
+0
+143
+
+Total
+6
+23
+260
+34
+277
+229
+133
+10
+174
+3
+1
+2
+0
+1,151
+
+Table A4.8: Forest extent for CFRs by land cover class and drainage basin in 2015 (1,000 ha)
+Land cover
+classes
+Broad leaved
+plantations
+Coniferous
+plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale
+farmlands
+Commercial
+farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert Nile
+
+Aswa
+
+Kidepo
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Kyoga
+
+Lake
+Victoria
+
+Victoria
+Nile
+
+Balancing
+area
+
+Total
+
+1
+
+0
+
+-
+
+1
+
+1
+
+2
+
+3
+
+2
+
+0
+
+10
+
+1
+2
+24
+11
+19
+0
+
+0
+30
+30
+52
+0
+
+14
+9
+12
+-
+
+3
+115
+7
+9
+8
+13
+2
+
+3
+58
+5
+2
+1
+4
+0
+
+7
+23
+7
+40
+28
+38
+1
+
+17
+32
+9
+11
+13
+29
+6
+
+19
+0
+0
+15
+25
+13
+2
+
+0
+0
+0
+34
+43
+43
+0
+
+49
+227
+30
+180
+169
+223
+10
+
+15
+
+22
+
+1
+
+25
+
+3
+
+35
+
+68
+
+49
+
+23
+
+242
+
+0
+0
+0
+0
+73
+
+2
+0
+0
+0
+136
+
+36
+
+0
+0
+0
+0
+183
+
+0
+0
+0
+0
+77
+
+2
+0
+0
+0
+183
+
+1
+1
+2
+0
+192
+
+1
+0
+0
+126
+
+0
+143
+
+6
+2
+2
+0
+1150
+
+Table A4.9: Forest extent for LFRs by land cover class and drainage basin in 1990 (1,000 ha)
+1990
+
+Albert Nile
+
+Aswa
+
+Kidepo
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Kyoga
+
+Lake
+Victoria
+
+Victoria
+Nile
+
+Balancing
+area
+
+Total
+
+-
+
+0.2
+
+-
+
+0.0
+
+0.1
+
+0.2
+
+0.1
+
+0.0
+
+-
+
+0.6
+
+-
+
+0.0
+0.0
+0.1
+0.0
+
+-
+
+0.0
+0.0
+0.0
+0.0
+
+0.0
+0.0
+0.0
+
+0.0
+0.2
+0.3
+0.2
+0.2
+
+0.3
+0.2
+0.1
+0.2
+0.3
+0.0
+
+0.1
+0.0
+0.0
+0.0
+
+-
+
+0.0
+0.3
+0.2
+0.5
+0.5
+0.6
+0.2
+
+-
+
+0.6
+
+-
+
+0.1
+
+0.1
+
+0.8
+
+0.3
+
+0.1
+
+-
+
+1.9
+
+-
+
+0.0
+0.9
+
+-
+
+0.0
+0.1
+
+0.0
+0.0
+0.0
+0.2
+
+0.0
+0.0
+1.9
+
+0.0
+0.0
+1.4
+
+0.0
+0.3
+
+-
+
+0.0
+0.0
+0.0
+0.0
+5.1
+
+Broad leaved
+plantations
+Coniferous
+plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale
+farmlands
+Commercial
+farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Table A4.10: Forest extent for LFRs by land cover class and drainage basin in 2005 (1,000 ha)
+2005
+Broad leaved
+plantations
+Coniferous
+plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale
+farmlands
+Commercial
+farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0.0
+
+Aswa
+
+Kidepo
+
+Lake
+Edward
+0.1
+
+Lake
+Kyoga
+0.0
+
+Lake
+Victoria
+0.1
+
+Victoria
+Nile
+-
+
+Balancing
+area
+-
+
+Total
+
+-
+
+Lake
+Albert
+-
+
+-
+
+0.0
+
+-
+
+-
+
+-
+
+-
+
+0.0
+
+-
+
+-
+
+-
+
+0.0
+
+0.1
+0.0
+0.0
+0.7
+
+0.0
+0.0
+0.0
+0.2
+
+-
+
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+
+0.0
+0.0
+0.1
+
+0.0
+0.3
+0.1
+0.1
+1.3
+
+0.1
+0.1
+0.5
+0.1
+0.1
+0.1
+0.3
+
+0.1
+0.0
+0.0
+0.0
+0.2
+
+-
+
+0.1
+0.1
+0.6
+0.4
+0.2
+0.3
+2.9
+
+-
+
+-
+
+-
+
+0.0
+
+0.0
+
+-
+
+-
+
+-
+
+-
+
+0.0
+
+0.0
+0.9
+
+0.0
+0.3
+
+-
+
+0.0
+0.1
+
+0.0
+0.2
+
+0.0
+0.0
+1.9
+
+0.0
+0.0
+1.4
+
+0.0
+0.3
+
+-
+
+0.1
+0.0
+5.1
+
+54
+
+0.2
+
+Table A4.11: Forest extent for LFRs by land cover class and drainage basin in 2010 (1,000 ha)
+2010
+
+Albert Nile
+
+Aswa
+
+Kidepo
+
+0.1
+0.0
+0.1
+0.0
+0.0
+0.0
+0.6
+0.0
+0.0
+0.9
+
+0.0
+0.0
+0.0
+0.0
+0.2
+0.0
+0.3
+
+-
+
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Lake
+Albert
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+0.0
+0.0
+0.1
+
+Lake
+Edward
+0.0
+0.0
+0.0
+0.0
+0.1
+0.0
+0.2
+
+Lake
+Kyoga
+0.0
+0.1
+0.1
+0.3
+0.0
+0.1
+1.3
+0.0
+0.0
+0.0
+1.9
+
+Lake
+Victoria
+0.0
+0.0
+0.3
+0.1
+0.2
+0.2
+0.1
+0.1
+0.4
+0.0
+0.0
+0.0
+1.4
+
+Victoria
+Nile
+0.0
+0.1
+0.0
+0.0
+0.0
+0.2
+0.0
+0.0
+0.3
+
+Balancing
+area
+-
+
+Total
+0.2
+0.1
+0.3
+0.1
+0.5
+0.5
+0.1
+0.2
+3.0
+0.0
+0.1
+0.0
+5.1
+
+Table A4.12: Forest extent for LFRs by land cover class and drainage basin in 2015 (1,000 ha)
+2015
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Bushlands
+Grasslands
+Wetlands
+Small scale farmlands
+Commercial farmlands
+Built up areas
+Open water
+Impediments
+Total
+
+Albert
+Nile
+0.3
+0.1
+0.0
+0.0
+0.0
+0.4
+0.1
+0.0
+0.89
+
+Aswa
+
+Kidepo
+
+0.0
+0.0
+0.0
+0.2
+0.0
+0.26
+
+-
+
+Lake
+Albert
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+0.0
+0.0
+0.11
+
+Lake
+Edward
+0.0
+0.0
+0.0
+0.1
+0.0
+0.18
+
+Lake
+Kyoga
+0.0
+0.2
+0.0
+0.2
+0.0
+0.1
+1.4
+0.0
+0.0
+0.0
+1.90
+
+Lake
+Victoria
+0.0
+0.0
+0.0
+0.0
+0.2
+0.1
+0.2
+0.2
+0.6
+0.0
+0.0
+1.41
+
+Victoria
+Nile
+0.0
+0.0
+0.0
+0.0
+0.0
+0.3
+0.0
+0.34
+
+Balancing
+area
+-
+
+Total
+0.4
+0.2
+0.0
+0.0
+0.3
+0.4
+0.3
+0.2
+3.0
+0.0
+0.1
+0.0
+5.1
+
+Table A4.13: Forest extent for National Parks and Wildlife Reserves by forest land cover class
+and drainage basin in 1990 (1,000 ha)
+1990
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Albert
+Nile
+0.01
+104.1
+104.1
+
+Aswa
+
+Kidepo
+
+0.12
+0.1
+
+10.15
+10.2
+
+Lake
+Albert
+38.18
+1.18
+157.67
+197.0
+
+Lake
+Edward
+0.03
+0.78
+153.91
+7.25
+103.99
+266.0
+
+Lake
+Kyoga
+0
+0.9
+22.75
+25.83
+63.17
+112.7
+
+Lake
+Victoria
+0.01
+0.06
+3.83
+3.9
+
+Victoria
+Nile
+105.33
+105.3
+
+Balancing
+area
+0.59
+3.63
+4.5
+22.93
+31.7
+
+Total
+0.04
+2.27
+218.48
+38.83
+571.29
+830.9
+
+Table A4.14: Forest extent for National Parks and Wildlife Reserves by forest land cover class
+and drainage basin in 2005 (1,000 ha)
+2005
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Albert
+Nile
+0.9
+83.7
+84.6
+
+Aswa
+
+Kidepo
+
+0.0
+0.0
+
+3.4
+3.4
+
+Lake
+Albert
+43.7
+0.2
+120.7
+164.5
+
+55
+
+Lake
+Edward
+0.0
+0.0
+166.9
+1.6
+75.2
+243.8
+
+Lake
+Kyoga
+0.0
+2.4
+54.1
+29.1
+85.6
+
+Lake
+Victoria
+0.0
+6.2
+6.2
+
+Victoria
+Nile
+143.2
+143.2
+
+Balancing
+area
+11.3
+4.4
+15.6
+
+Total
+0.1
+2.4
+276.7
+1.8
+465.9
+746.9
+
+Table A4.15: Forest extent for National Parks and Wildlife Reserves by forest land cover class
+and drainage basin in 2010 (1,000 ha)
+Forest cover classes
+Broad leaved
+plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Albert
+Nile
+
+Aswa
+
+Kidepo
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Kyoga
+
+Lake
+Victoria
+
+Victoria
+Nile
+
+Balancing
+area
+
+Total
+
+-
+
+-
+
+-
+
+-
+
+0.1
+
+0.0
+
+0.0
+
+0.0
+
+0.3
+
+0.5
+
+0.1
+0.0
+65.2
+65.3
+
+0.1
+0.1
+
+7.4
+7.4
+
+42.5
+2.1
+109.6
+154.2
+
+0.1
+171.8
+8.8
+55.0
+235.9
+
+0.8
+53.2
+6.4
+19.7
+80.0
+
+0.0
+0.3
+20.2
+20.6
+
+0.0
+0.4
+125.0
+125.4
+
+0.3
+9.1
+1.2
+8.6
+19.5
+
+1.1
+276.6
+19.2
+410.8
+708.4
+
+Table A4.16: Forest extent for National Parks and Wildlife Reserves by forest land cover class
+and drainage basin in 2015 (1,000 ha)
+2015
+Broad leaved plantations
+Coniferous plantations
+THF well stocked
+THF low stocked
+Woodlands
+Total
+
+Albert
+Nile
+0.2
+0.1
+32.6
+32.8
+
+Aswa
+
+Kidepo
+
+0.1
+0.1
+
+6.4
+6.4
+
+Lake
+Albert
+41.3
+4.6
+100.3
+146.2
+
+56
+
+Lake
+Edward
+0.4
+0.0
+167.5
+15.0
+55.1
+238.1
+
+Lake
+Kyoga
+0.0
+1.0
+50.0
+8.3
+23.2
+82.4
+
+Lake
+Victoria
+0.1
+0.0
+0.9
+17.2
+18.2
+
+Victoria
+Nile
+0.1
+1.2
+91.9
+93.2
+
+Balancing
+area
+0.1
+0.6
+8.5
+1.6
+11.6
+22.5
+
+Total
+0.6
+1.6
+267.6
+31.7
+338.4
+639.9
+
+Annex 5. Physical flows and ecosystem services by drainage basin
+Table A5.1. Carbon stocks and carbon sequestration (net change) by drainage basin, Uganda,
+1990, 2005, 2010 and 2015 (1000 ton C)
+Aswa
+
+Lake
+Kyoga
+
+Albert
+Nile
+
+Victoria
+Nile
+
+Lake
+Albert
+
+Lake
+Edward
+
+Lake
+Victoria
+
+41,659
+
+378,993
+
+886,023
+
+306,562
+
+425,293
+
+289,599
+
+296,147
+
+768,616
+
+185
+
+-178
+
+66,243
+
+6,079
+
+19,817
+
+-14,259
+
+5,796
+
+54,111
+
+41,844
+
+378,816
+
+952,266
+
+312,641
+
+445,110
+
+275,340
+
+301,943
+
+822,727
+
+-984
+
+-9,926
+
+-10,578
+
+-15,060
+
+9,535
+
+-11,735
+
+-11,988
+
+-23,362
+
+40,860
+
+368,890
+
+941,688
+
+297,582
+
+454,645
+
+263,605
+
+289,955
+
+799,365
+
+-94
+40,766
+
+-5,122
+363,767
+
+-6,117
+935,572
+
+-8,230
+289,352
+
+-13,220
+441,425
+
+5,461
+269,066
+
+8,960
+298,915
+
+4,904
+804,269
+
+Kidepo
+Carbon stock
+1990
+Net change
+Carbon stock
+2005
+Net change
+Carbon stock
+2010
+Net change
+2015
+
+Table A5.2. Water yield and net changes in water yield by drainage basin, Uganda 1990, 2005,
+2010 and 2015 (1,000 m3 per year)
+1990
+
+289,632
+
+3,962,505
+
+Lake
+Kyoga
+7,999,751
+
+Net change
+
+663
+
+31,620
+
+-88,518
+
+29,422
+
+-21,936
+
+12,691
+
+-12,941
+
+-34,648
+
+2005
+
+290,296
+
+3,994,125
+
+7,911,232
+
+3,153,651
+
+4,064,820
+
+2,007,409
+
+2,276,171
+
+4,064,963
+
+Kidepo
+
+Aswa
+
+Albert Nile
+3,124,229
+
+Victoria
+Nile
+4,086,756
+
+Lake
+Albert
+1,994,718
+
+Lake
+Edward
+2,289,112
+
+Lake
+Victoria
+4,099,611
+
+Net change
+
+9,256
+
+137,018
+
+99,398
+
+113,268
+
+106,959
+
+54,378
+
+15,751
+
+11,867
+
+2010
+
+299,552
+
+4,131,143
+
+8,010,631
+
+3,266,919
+
+4,171,779
+
+2,061,787
+
+2,291,922
+
+4,076,830
+
+Net change
+
+866
+
+11,637
+
+-38,019
+
+-15,216
+
+-56,586
+
+-9,175
+
+-5,374
+
+-815
+
+2015
+
+300,418
+
+4,142,780
+
+7,972,611
+
+3,251,703
+
+4,115,193
+
+2,052,613
+
+2,286,548
+
+4,076,015
+
+Table A5.3. Sediment retention in Uganda by drainage basin, 1990, 2005, 2010 and 2015 (1000
+ton sediment / year).
+KIDEPO
+1990
+NET CHANGE
+2005
+NET CHANGE
+2010
+NET CHANGE
+2015
+
+LAKE
+KYOGA
+
+ASWA
+
+ALBERT
+NILE
+
+VICTORIA
+NILE
+
+LAKE
+ALBERT
+
+LAKE
+EDWARD
+
+LAKE
+VICTORIA
+
+68,329
+
+276,888
+
+763,370
+
+189,327
+
+271,623
+
+455,853
+
+1,012,712
+
+794,028
+
+557
+
+771
+
+-2,827
+
+-648
+
+-3,062
+
+657
+
+233
+
+-241
+
+68,886
+
+277,659
+
+760,543
+
+188,680
+
+268,562
+
+456,510
+
+1,012,945
+
+793,787
+
+7
+
+-2,636
+
+-6,836
+
+-3,939
+
+-4,577
+
+-7,307
+
+-9,774
+
+-18,149
+
+68,893
+
+275,023
+
+753,707
+
+184,741
+
+263,984
+
+449,203
+
+1,003,171
+
+775,638
+
+-208
+
+491
+
+3,504
+
+1,679
+
+1,083
+
+-1,554
+
+10,841
+
+17,320
+
+68,685
+
+275,514
+
+757,211
+
+186,420
+
+265,067
+
+447,649
+
+1,014,013
+
+792,958
+
+57
+
+Figure A5.1. Percent change in water yield from 1990, by drainage basin. The color of the bars
+indicates the year for the change is estimated.
+
+Figure A5.2. Percent change in sediment retention from 1990, by drainage basin. The color of
+the bars indicates the year for the change is estimated.
+
+58
+
+Figure A5.3. Percent change in sediment export from 1990, by drainage basin. The color of the
+bars indicates the year for the change is estimated.
+
+59
+
+
