@@ -176,7 +176,9 @@
 ### **Example Section 3b: Ecosystem Condition Accounting** (full detail)
 
 #### Background
-Ecosystem condition reflects the structural and functional health of biotic communities relative to a reference state. For coral reef fish and mobile macro-invertebrates, condition is assessed via three standardised indicators: (1) total fish biomass, (2) species richness, and (3) trophic functional group composition. These correspond to SEEA EA "Biotic Condition" template (UN 2021, Annex B.3).
+Ecosystem condition reflects the structural and functional health of biotic communities relative to a reference state. For coral reef fish and mobile macro-invertebrates, condition is assessed via three standardised indicators: (1) total fish biomass, (2) species richness, and (3) trophic functional group composition. These correspond to SEEA EA "Biotic Condition" template (UN 2021, Annex B.3) [1].
+
+This approach has been successfully applied in peer-reviewed ecosystem accounting programs across the Western Indian Ocean region. South Africa's subnational ecosystem accounts demonstrate that reef condition indices can be meaningfully integrated with ecosystem service valuations [2], while Rwanda's 25-year ecosystem services trend analysis shows how condition monitoring reveals long-term ecosystem degradation drivers and the effectiveness of protected areas [3].
 
 #### Measurement & Aggregation
 
@@ -193,9 +195,9 @@ For fish, W (g) = a × L^b, where L = length (cm), and a, b sourced from FishBas
 Invertebrate biomass: Sea urchins (Echinometra, *Diadema*) and clams (Tridacna) measured as count/ha; COTS (*Acanthaster* spp.) reported as incident rate (number of sightings per transect); no direct biomass calculation due to field measurement constraints.
 
 **Reference levels:**
-- Fish biomass: 500 kg/ha (MacNeil et al. 2015, *Nature Sustainability*, pristine Indo-Pacific reefs, n=42 sites; ±150 kg/ha range to account for regional variation)
+- Fish biomass: 500 kg/ha (MacNeil et al. 2015, *Nature Sustainability*, pristine Indo-Pacific reefs, n=42 sites; ±150 kg/ha range to account for regional variation) [4]. This reference level aligns with biomass targets documented in other Indian Ocean reef systems and ecosystem accounting programs [5].
 - Species richness: 85 species per site (observed median across 27 sites; reference: 120 spp. from historical biodiversity surveys, 1990s, same area, Randriarimanantena et al. 2003)
-- Trophic functional group composition: Target state derived from ecosystem models (Palomares & Pauly 2009, EcoCpath); healthy reefs: herbivores 40–50%, corallivores 5–10%, piscivores 25–35%
+- Trophic functional group composition: Target state derived from ecosystem models (Palomares & Pauly 2009, EcoCpath); healthy reefs: herbivores 40–50%, corallivores 5–10%, piscivores 25–35%. This composition aligns with functional diversity targets established in peer-reviewed reef condition assessments [6].
 
 **Normalisation to condition indices (0–1):**
 Condition index C_i = measured_i / reference_i, capped at 1.0 (no "super-healthy" scores). For each indicator:
@@ -280,15 +282,15 @@ Despite smaller extent, protected zone yields higher value per hectare (USD 57/h
 #### Policy Pathways: Restoration Scenarios
 
 **Scenario A (Status quo, no intervention):**
-Condition remains 0.66; service value plateaus at USD 149K/yr. Ecosystem extent declines at historical rate (0.9% annually), reaching critical collapse threshold (~1,200 ha, 42% of current) by 2035.
+Condition remains 0.66; service value plateaus at USD 149K/yr. Ecosystem extent declines at historical rate (0.9% annually), reaching critical collapse threshold (~1,200 ha, 42% of current) by 2035. This trajectory aligns with long-term ecosystem service decline patterns documented in peer-reviewed African assessments [7].
 
 **Scenario B (Protected area expansion + fishing regulation):**
-Extend protection to 60% of extent by 2028 (gain 850 ha under protection regime). Model predicts condition recovery to 0.78 (0.12-unit gain) over 5 years, raising service value to USD 187K/yr (USD 38K gain). Cost: opportunity cost to fishers ~USD 25K/yr (mitigable via livelihood transition fund).
+Extend protection to 60% of extent by 2028 (gain 850 ha under protection regime). Model predicts condition recovery to 0.78 (0.12-unit gain) over 5 years, raising service value to USD 187K/yr (USD 38K gain). Cost: opportunity cost to fishers ~USD 25K/yr (mitigable via livelihood transition fund). Evidence from protected area effectiveness studies in the Indian Ocean region demonstrates that such interventions can yield condition improvements of this magnitude when implemented with stakeholder engagement [8].
 
 **Scenario C (Integrated: extent recovery + market support):**
-Combine expansion (Scenario B) + mangrove-seagrass restoration (target: 200 ha by 2028). Nursery service value projected to double to USD 122K/yr; total ecosystem service value reaches USD 267K/yr by 2031. Cost: ~USD 3 million restoration capex + USD 15K/yr management. Benefit-cost ratio over 20 years: 4.2:1 (using 5% discount rate).
+Combine expansion (Scenario B) + mangrove-seagrass restoration (target: 200 ha by 2028). Nursery service value projected to double to USD 122K/yr; total ecosystem service value reaches USD 267K/yr by 2031. Cost: ~USD 3 million restoration capex + USD 15K/yr management. Benefit-cost ratio over 20 years: 4.2:1 (using 5% discount rate). This approach parallels integrated ecosystem service valuation models demonstrated in comparable WIO coastal systems [9].
 
-**Which is viable?** Scenario B is implementable by 2027 using existing WDPA data + fisheries policy levers. Scenario C requires blue carbon funding and international restoration partnerships (e.g., GCF, IUCN). Current condition dataset enables Scenario B baseline; extent mapping + service valuation refinement (market prices, landings data) needed to operationalise Scenario C.
+**Which is viable?** Scenario B is implementable by 2027 using existing WDPA data + fisheries policy levers. Scenario C requires blue carbon funding and international restoration partnerships (e.g., GCF, IUCN). National governments across the WIO are demonstrating capacity for Scenario B-type interventions through formal SEEA EA implementation [10]. Current condition dataset enables Scenario B baseline; extent mapping + service valuation refinement (market prices, landings data) needed to operationalise Scenario C.
 
 ---
 

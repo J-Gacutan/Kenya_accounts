@@ -38,12 +38,19 @@ AFRICA - accounts/
 │   ├── 03_outputs/
 │   │   └── *.csv                                  # Condition accounts & site-level results
 │   └── docs/
-│       ├── skills/                                # 8 standardised operating procedures
-│       ├── cond_reef_fish_invert_plan.md          # Canonical status tracker
-│       ├── template_seea_publication.md           # Madagascar-adapted publication template
-│       ├── policy_rag_schema.md                   # Madagascar-specific policy linking
-│       ├── ACADEMIC_RAG_*.md                      # Academic evidence-linking system
-│       └── [other methodology & policy docs]
+│       ├── skills/                                # 8 standardised operating procedures (SOPs)
+│       ├── rag/                                   # Retrieval-Augmented Generation systems
+│       │   ├── academic/                          # Evidence-linking (18+ literature sources)
+│       │   ├── policy/                            # Policy-commitment semantic linking
+│       │   └── wdpa/                              # Protected area WDPA RAG pipeline
+│       ├── accounts/                              # Account methodology & status
+│       │   ├── cond_reef_fish_invert_plan.md      # Canonical status tracker
+│       │   ├── data_flow_condition_to_services.md # Service valuation linkages
+│       │   └── SEEA_EA_policy_integration_summary.md
+│       ├── briefs/                                # Policy briefs
+│       │   └── POLICY_BRIEF_Madagascar_CoralReef.md
+│       └── templates/
+│           └── template_seea_publication.md       # Madagascar-adapted publication template
 │
 └── Mozambique/                        # Mangrove extent accounts (M2.1)
     ├── 01_inputs/
@@ -54,11 +61,15 @@ AFRICA - accounts/
     ├── 03_outputs/
     │   └── FINDINGS_OVERVIEW.md                   # Preliminary findings
     └── docs/
-        ├── skills/
+        ├── skills/                                # Standardised operating procedures
         │   └── skill_extent_mangrove_m13_mozambique.md  # Extent SOP
-        ├── template_seea_publication.md           # Mozambique-adapted publication template
-        ├── policy_rag_schema.md                   # Mozambique-specific policy linking
-        └── POLICY_BRIEF_*.md                      # Policy brief outlines
+        ├── rag/                                   # RAG systems
+        │   └── policy/
+        │       └── policy_rag_schema.md           # Policy-commitment linking
+        ├── briefs/
+        │   └── POLICY_BRIEF_Mozambique_Mangroves_Outline.md
+        └── templates/
+            └── template_seea_publication.md       # Mozambique-adapted publication template
 ```
 
 ## Key Conventions
@@ -102,8 +113,9 @@ AFRICA - accounts/
 
 ### Madagascar-Specific
 - Metadata files (`01_inputs/metadata/*.md`) are auto-generated summaries of raw Excel data — use these instead of re-reading Excel
-- `docs/cond_reef_fish_invert_plan.md` is the canonical status tracker — update when analysis steps change
+- `docs/accounts/cond_reef_fish_invert_plan.md` is the canonical status tracker — update when analysis steps change
 - `docs/skills/` contains 8 detailed SOPs covering condition, extent, and services accounts
+- `docs/rag/` contains 3 RAG systems (academic, policy, WDPA) for evidence & policy linking
 - The R script (`02_analysis/fish_invert_condition.R`) uses `rstudioapi` with `tryCatch` fallback to `getwd()` for portability
 - Update `change_log.md` at the end of each session
 
