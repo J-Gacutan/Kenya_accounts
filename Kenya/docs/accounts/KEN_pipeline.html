@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya Coastal Ecosystem Accounts Pipeline</title>
+<style>
+  :root {
+    --blue-dark: #1a3a5c;
+    --blue-mid: #2b6cb0;
+    --blue-light: #bee3f8;
+    --green-dark: #276749;
+    --green-mid: #38a169;
+    --green-light: #c6f6d5;
+    --amber-dark: #975a16;
+    --amber-mid: #d69e2e;
+    --amber-light: #fefcbf;
+    --grey-50: #f7fafc;
+    --grey-100: #edf2f7;
+    --grey-200: #e2e8f0;
+    --grey-600: #718096;
+    --grey-800: #2d3748;
+    --red-dark: #9b2c2c;
+    --red-light: #fed7d7;
+    --coral: #e11d48;
+    --coral-light: #ffe4e6;
+    --emerald: #059669;
+    --emerald-light: #d1fae5;
+    --sky: #0284c7;
+    --sky-light: #e0f2fe;
+    --indigo: #4f46e5;
+    --indigo-light: #e0e7ff;
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --teal: #0d9488;
+    --teal-light: #ccfbf1;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--grey-50);
+    color: var(--grey-800);
+    line-height: 1.5;
+    padding: 2rem;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .header h1 {
+    font-size: 1.75rem;
+    color: var(--blue-dark);
+    margin-bottom: 0.25rem;
+  }
+  .header .subtitle {
+    font-size: 1rem;
+    color: var(--grey-600);
+  }
+  .header .framework {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--blue-dark);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* ---- pipeline layout ---- */
+  .pipeline {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* connector arrow between steps */
+  .connector {
+    display: flex;
+    justify-content: center;
+    padding: 0.15rem 0;
+  }
+  .connector svg { display: block; }
+
+  /* ---- section divider ---- */
+  .section-divider {
+    max-width: 960px;
+    margin: 1.5rem auto 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .section-coral { background: var(--coral-light); color: var(--coral); border: 2px solid var(--coral); }
+  .section-mangrove { background: var(--emerald-light); color: var(--emerald); border: 2px solid var(--emerald); }
+  .section-seagrass { background: var(--sky-light); color: var(--sky); border: 2px solid var(--sky); }
+  .section-fisheries { background: var(--indigo-light); color: var(--indigo); border: 2px solid var(--indigo); }
+  .section-assembly { background: var(--purple-light); color: var(--purple); border: 2px solid var(--purple); }
+
+  /* ---- step card ---- */
+  .step {
+    background: #fff;
+    border: 1px solid var(--grey-200);
+    border-left: 5px solid var(--blue-mid);
+    border-radius: 8px;
+    padding: 1.1rem 1.4rem;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s;
+  }
+  .step:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+  .step.green  { border-left-color: var(--green-mid); }
+  .step.amber  { border-left-color: var(--amber-mid); }
+  .step.red    { border-left-color: var(--red-dark); }
+  .step.coral  { border-left-color: var(--coral); }
+  .step.emerald { border-left-color: var(--emerald); }
+  .step.sky    { border-left-color: var(--sky); }
+  .step.indigo { border-left-color: var(--indigo); }
+  .step.purple { border-left-color: var(--purple); }
+
+  .step-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .step-number {
+    flex-shrink: 0;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--blue-mid);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+  .step.green .step-number  { background: var(--green-mid); }
+  .step.amber .step-number  { background: var(--amber-mid); }
+  .step.red   .step-number  { background: var(--red-dark); }
+  .step.coral .step-number  { background: var(--coral); }
+  .step.emerald .step-number { background: var(--emerald); }
+  .step.sky .step-number    { background: var(--sky); }
+  .step.indigo .step-number { background: var(--indigo); }
+  .step.purple .step-number { background: var(--purple); }
+
+  .step-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+  }
+
+  .step-body {
+    margin-left: 42px;
+    font-size: 0.88rem;
+    color: var(--grey-800);
+  }
+
+  .step-body ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-top: 0.25rem;
+  }
+  .step-body li { margin-bottom: 0.15rem; }
+
+  .tag {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+  }
+  .tag-done    { background: var(--green-light); color: var(--green-dark); }
+  .tag-blocked { background: var(--red-light); color: var(--red-dark); }
+  .tag-script  { background: var(--blue-light); color: var(--blue-dark); }
+  .tag-prov    { background: var(--amber-light); color: var(--amber-dark); }
+  .tag-wip     { background: var(--amber-light); color: var(--amber-dark); }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+    margin-top: 0.4rem;
+  }
+  .detail-grid .col-label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--grey-600);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  /* ---- sites summary strip ---- */
+  .sites-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .site-card {
+    background: var(--grey-100);
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+  }
+  .site-card h4 {
+    font-size: 0.85rem;
+    color: var(--blue-dark);
+    margin-bottom: 0.25rem;
+  }
+  .site-card p {
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+
+  /* ---- reference table ---- */
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.4rem;
+    font-size: 0.82rem;
+  }
+  .ref-table th {
+    background: var(--blue-dark);
+    color: #fff;
+    text-align: left;
+    padding: 0.35rem 0.6rem;
+    font-weight: 600;
+  }
+  .ref-table td {
+    padding: 0.3rem 0.6rem;
+    border-bottom: 1px solid var(--grey-200);
+  }
+  .ref-table tr:nth-child(even) td { background: var(--grey-100); }
+
+  /* ---- formula block ---- */
+  .formula-block {
+    background: #f1f5f9;
+    border-left: 3px solid var(--teal);
+    padding: 0.35rem 0.7rem;
+    margin: 0.3rem 0;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.78rem;
+    border-radius: 0 4px 4px 0;
+    white-space: pre-wrap;
+  }
+
+  /* ---- outputs list ---- */
+  .output-files {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem 1.5rem;
+    margin-top: 0.35rem;
+    font-size: 0.82rem;
+  }
+  .output-files code {
+    background: var(--grey-100);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.78rem;
+  }
+
+  /* ---- branch layout ---- */
+  .branch-container {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.4rem;
+  }
+  .branch-box {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+  }
+
+  /* ---- legend ---- */
+  .legend {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 0.82rem;
+    color: var(--grey-600);
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .legend-swatch {
+    width: 14px; height: 14px;
+    border-radius: 3px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--grey-600);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 1rem; }
+    .detail-grid, .sites-strip, .output-files, .branch-container { grid-template-columns: 1fr; flex-direction: column; }
+    .step-body { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Kenya Coastal Ecosystem Accounts</h1>
+  <div class="subtitle">Production Pipeline &mdash; Coral Reef M1.3, Mangrove MFT1.2, Seagrass M1.1 &mdash; Kilifi County</div>
+  <span class="framework">UN SEEA EA &middot; Accounting Period 2024&ndash;2025</span>
+</div>
+
+<!-- ============================================================ -->
+<!--  A. CORAL REEF CONDITION                                      -->
+<!-- ============================================================ -->
+<div class="section-divider section-coral">A. Coral Reef Condition (Fish + Coral/Invertebrate)</div>
+
+<div class="pipeline">
+
+  <!-- A1 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A1</div>
+      <div class="step-title">Raw Data Acquisition &mdash; Fish UVC <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <p>Underwater visual census (UVC) fish surveys &mdash; 2 monitoring programmes, Kilifi County</p>
+      <div class="sites-strip">
+        <div class="site-card">
+          <h4>KLF Programme (Nov 2024)</h4>
+          <p>698 fish records across Watamu MPA, Malindi MPA, Community CPA, Open access sites</p>
+        </div>
+        <div class="site-card">
+          <h4>COMRED Programme (Jul 2025)</h4>
+          <p>343 fish records &middot; Post-2024 bleaching event (~15 months post)</p>
+        </div>
+      </div>
+      <p style="margin-top:0.4rem">Transect: 50 m &times; 5 m belt (250 m&sup2;)</p>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A2 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A2</div>
+      <div class="step-title">Fish QA/QC <span class="tag tag-done">DONE</span> <span class="tag tag-script">coral_reef_fish_condition.R</span></div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>Filter template rows (date = NA, species = "0")</li>
+        <li><code>fix_gps()</code>: validate lat &minus;5 to &minus;1, lon 38&ndash;42</li>
+        <li><code>standardise_site()</code> via SITE_NAME_MAP</li>
+        <li>Taxonomy: <code>str_to_sentence(species)</code>, <code>str_to_title(family)</code></li>
+        <li><code>parse_size_mid()</code>: "5&ndash;10" &rarr; 7.5 cm</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A3 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A3</div>
+      <div class="step-title">Fish Biomass + Trophic Assignment <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="formula-block">W = a &times; L^b &times; count (species match, then family fallback)
+biomass_kg_ha = (sum(W_g) / 1000) / (250 m&sup2; / 10000)
+TROPHIC_LOOKUP: Herbivore, Piscivore, Carnivore, Corallivore, Omnivore, Planktivore</div>
+      <p>Source: <code>fishbase_params_kenya.csv</code> (species-level a, b parameters)</p>
+      <p>Aggregate: transect &rarr; site (mean &plusmn; SE), per survey_period &times; site</p>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A4 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A4</div>
+      <div class="step-title">Fish Normalisation + SEEA Export <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="formula-block">CI_biomass = min(biomass / 1150, 1.0)   [McClanahan 2016, HIGH]
+CI_richness = min(richness / max_obs, 1.0)   [dataset-internal, MEDIUM]</div>
+      <p>PA disaggregation: Watamu MPA, Malindi MPA, Community CPA, Open access</p>
+      <div class="output-files">
+        <div><code>KEN_fish_condition_site.csv</code></div>
+        <div><code>KEN_fish_seea_rows.csv</code></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A5 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A5</div>
+      <div class="step-title">Coral + Invertebrate Data Acquisition <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <p>3 monitoring programmes, 6 source files:</p>
+      <div class="sites-strip">
+        <div class="site-card">
+          <h4>CCVA Invertebrates</h4>
+          <p>279 rows &mdash; urchins, COTS, <em>Tridacna</em>, sea cucumber</p>
+        </div>
+        <div class="site-card">
+          <h4>PU-GOAP + COMRED Coral</h4>
+          <p>PU-GOAP: 4,884 rows (4 sheets) &middot; COMRED: 2,611 + 770 rows (3 sheets)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A6 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A6</div>
+      <div class="step-title">Coral/Invertebrate QA/QC <span class="tag tag-done">DONE</span> <span class="tag tag-script">coral_reef_coral_invert_condition.R</span></div>
+    </div>
+    <div class="step-body">
+      <p>5 sub-pipelines:</p>
+      <ul>
+        <li><strong>Invertebrates:</strong> <code>standardise_site()</code>, <code>fix_gps()</code>, taxonomy</li>
+        <li><strong>Coral condition:</strong> <code>rename_with()</code> for column variants; coerce health to numeric</li>
+        <li><strong>Adult size:</strong> detect size-bin columns by ADULT_SIZE_PATTERN regex</li>
+        <li><strong>Recruits:</strong> detect recruit-bin columns by RECRUIT_SIZE_PATTERN regex</li>
+        <li><strong>Benthic cover:</strong> year &rarr; survey_period mapping; <code>str_to_upper(benthic_cat)</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#e11d48" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#e11d48"/></svg></div>
+
+  <!-- A7 -->
+  <div class="step coral">
+    <div class="step-header">
+      <div class="step-number">A7</div>
+      <div class="step-title">Coral Structural Indicators <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="branch-container">
+        <div class="branch-box" style="background:var(--coral-light)">
+          <strong>Benthic Cover</strong><br>
+          LIT/PIT (COMRED) + quadrat (PU-GOAP). Live coral %, dead %, macroalgae %, rubble %.
+        </div>
+        <div class="branch-box" style="background:var(--coral-light)">
+          <strong>Coral Health</strong><br>
+          Colony counts: healthy, pale, bleached, diseased, dead. pct_healthy = n_healthy / n_total &times; 100.
+        </div>
+        <div class="branch-box" style="background:var(--coral-light)">
+          <strong>Size Structure</strong><br>
+          6 size bins (11&ndash;320+ cm). pct_large = colonies &gt;80 cm / total.
+        </div>
+        <div class="branch-box" style="background:var(--coral-light)">
+          <strong>Recruitment</strong><br>
+          1 m&sup2; quadrats, 3 size bins. mean_recruits_m&sup2; &plusmn; SE per site.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#38a169" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#38a169"/></svg></div>
+
+  <!-- A8 -->
+  <div class="step green">
+    <div class="step-header">
+      <div class="step-number">A8</div>
+      <div class="step-title">Normalisation &mdash; 7 Coral/Invertebrate Indicators <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <table class="ref-table">
+        <thead>
+          <tr><th>Indicator</th><th>Formula</th><th>Reference</th><th>Confidence</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Live Coral Cover</td><td>min(cover / 30, 1.0)</td><td>GCRMN 2021</td><td>MEDIUM</td></tr>
+          <tr><td>Bleaching</td><td>max(1 &minus; bleach% / 5, 0)</td><td>Hoegh-Guldberg 1999</td><td>MEDIUM</td></tr>
+          <tr><td>Disease</td><td>max(1 &minus; disease% / 2, 0)</td><td>Bourne et al. 2009</td><td>MEDIUM</td></tr>
+          <tr><td>Colony Health</td><td>min(healthy% / 95, 1.0)</td><td>Hoegh-Guldberg 1999</td><td>MEDIUM</td></tr>
+          <tr><td>Recruitment</td><td>min(recruits_m&sup2; / 1.0, 1.0)</td><td>Hughes et al. 2010</td><td>LOW-MED</td></tr>
+          <tr><td>COTS Density</td><td>max(1 &minus; cots_ha / 15, 0)</td><td>Dulvy et al. 2021</td><td>MEDIUM</td></tr>
+          <tr><td>Urchin Density</td><td>max(1 &minus; |urchin &minus; 1.75| / 1.75, 0)</td><td>McClanahan 1987+</td><td>LOW</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#38a169" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#38a169"/></svg></div>
+
+  <!-- A9 -->
+  <div class="step green">
+    <div class="step-header">
+      <div class="step-number">A9</div>
+      <div class="step-title">SEEA EA Condition Account &mdash; Coral Reef <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>PA disaggregation: mean CI per pa_type &times; period</li>
+        <li>Multi-period comparison: matched sites (Nov 2024 + Jul 2025) for change analysis</li>
+        <li>Context note: Jul 2025 = ~15 months post-2024 bleaching event</li>
+        <li>21 condition indicator rows for coral reef ecosystem</li>
+      </ul>
+      <div class="output-files" style="margin-top:0.5rem">
+        <div><code>KEN_seea_condition_account.csv</code></div>
+        <div><code>KEN_condition_by_pa.csv</code></div>
+        <div><code>KEN_multiperiod_comparison.csv</code></div>
+        <div><code>KEN_coral_health_site.csv</code></div>
+        <div><code>KEN_benthic_cover_site.csv</code></div>
+        <div><code>KEN_coral_recruitment_site.csv</code></div>
+        <div><code>KEN_invertebrate_condition_site.csv</code></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end coral pipeline -->
+
+<!-- ============================================================ -->
+<!--  B. MANGROVE CONDITION + EXTENT                               -->
+<!-- ============================================================ -->
+<div class="section-divider section-mangrove">B. Mangrove Condition + Extent</div>
+
+<div class="pipeline">
+
+  <!-- B1 -->
+  <div class="step emerald">
+    <div class="step-header">
+      <div class="step-number">B1</div>
+      <div class="step-title">Raw Data Acquisition <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <p><code>All_mangrove_field_data.xlsx</code> &mdash; 2,095 rows, 36 plots, 22 sites across Kilifi County</p>
+      <div class="sites-strip">
+        <div class="site-card">
+          <h4>Part 1 (Patricia/Kisilu)</h4>
+          <p>Full species names, numeric quality scores</p>
+        </div>
+        <div class="site-card">
+          <h4>Part 2 (Marvin/Gilbert)</h4>
+          <p>Abbreviated species names, text quality labels</p>
+        </div>
+      </div>
+      <p style="margin-top:0.4rem">4 canonical areas: Mida Creek, Kilifi Creek, Takaungu, Dabaso</p>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#059669" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#059669"/></svg></div>
+
+  <!-- B2 -->
+  <div class="step emerald">
+    <div class="step-header">
+      <div class="step-number">B2</div>
+      <div class="step-title">QA/QC &mdash; 8 Sub-Steps <span class="tag tag-done">DONE</span> <span class="tag tag-script">mangrove_condition.R</span></div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>Species: RM/Rm/rm &rarr; <em>Rhizophora mucronata</em> (4 species standardised)</li>
+        <li>Area: "Debaso" &rarr; "Mida Creek" (4 canonical areas)</li>
+        <li>Coordinates: DMS strings &rarr; decimal degrees via <code>parse_coord_dd()</code></li>
+        <li>Sub-branches: identify (a/A, b/B, c/C); 541 sub-branches flagged</li>
+        <li>DBH: recalculate = Circumference / &pi; (fixes shifted column issue)</li>
+        <li>Survey phase: date &lt; 2025-12-01 &rarr; "reconnaissance"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#059669" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#059669"/></svg></div>
+
+  <!-- B3 -->
+  <div class="step emerald">
+    <div class="step-header">
+      <div class="step-number">B3</div>
+      <div class="step-title">Plot-Level Metrics &mdash; 5 Indicators <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="branch-container">
+        <div class="branch-box" style="background:var(--emerald-light)">
+          <strong>Stem Density</strong><br>Main stems / 0.01 ha = trees/ha
+        </div>
+        <div class="branch-box" style="background:var(--emerald-light)">
+          <strong>Mean DBH</strong><br>All stems incl. sub-branches (cm)
+        </div>
+        <div class="branch-box" style="background:var(--emerald-light)">
+          <strong>Mean Height</strong><br>All stems (m); exclude &lt;0.3 or &gt;20
+        </div>
+        <div class="branch-box" style="background:var(--emerald-light)">
+          <strong>Canopy Cover</strong><br>Class &rarr; midpoint %
+        </div>
+        <div class="branch-box" style="background:var(--emerald-light)">
+          <strong>Quality Index</strong><br>n(quality=1) / n_total
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#38a169" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#38a169"/></svg></div>
+
+  <!-- B4 -->
+  <div class="step green">
+    <div class="step-header">
+      <div class="step-number">B4</div>
+      <div class="step-title">Normalisation + Composite Score <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="formula-block">CI = clamp((value - poor) / (pristine - poor), 0, 1)
+Stem density:  poor = 200,  pristine = 3,000 trees/ha  [MEDIUM]
+DBH:           poor = 3,    pristine = 20 cm            [MEDIUM]
+Height:        poor = 2,    pristine = 12 m             [MEDIUM]
+Canopy cover:  poor = 30,   pristine = 90%              [LOW]
+Quality:       direct 0&ndash;1                              [LOW]
+Composite = mean(5 CIs)</div>
+      <p>PA comparison: Mida Creek MNR (CI = 0.455) vs Unprotected (CI = 0.370)</p>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#38a169" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#38a169"/></svg></div>
+
+  <!-- B5 -->
+  <div class="step green">
+    <div class="step-header">
+      <div class="step-number">B5</div>
+      <div class="step-title">SEEA EA Condition + Extent Export <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <p>6 condition indicator rows for mangrove ecosystem.</p>
+      <div class="detail-grid">
+        <div>
+          <div class="col-label">Condition Outputs</div>
+          <div class="output-files" style="grid-template-columns:1fr">
+            <div><code>KEN_mangrove_condition_by_plot.csv</code></div>
+            <div><code>KEN_mangrove_condition_by_site.csv</code></div>
+            <div><code>KEN_mangrove_condition_by_pa.csv</code></div>
+            <div><code>KEN_seea_condition_account_mangrove.csv</code></div>
+          </div>
+        </div>
+        <div>
+          <div class="col-label">Extent Account (ArcGIS Pro)</div>
+          <ul>
+            <li>Total mangrove (2025): <strong>5,742 ha</strong></li>
+            <li>Protected: 3,806 ha &middot; Unprotected: 1,935 ha</li>
+            <li>GMW 2020 baseline: 6,083 ha</li>
+            <li>Change: +589 ha additions, &minus;928 ha reductions</li>
+            <li>Net: &minus;341 ha (&minus;5.6%)</li>
+          </ul>
+          <div class="output-files" style="grid-template-columns:1fr;margin-top:0.25rem">
+            <div><code>KEN_Mangrove_extent_change_2020_2025.csv</code></div>
+            <div><code>KEN_Mangrove_extent_protected_and_non-protected_areas.csv</code></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end mangrove pipeline -->
+
+<!-- ============================================================ -->
+<!--  C. SEAGRASS CONDITION                                        -->
+<!-- ============================================================ -->
+<div class="section-divider section-seagrass">C. Seagrass Condition</div>
+
+<div class="pipeline">
+
+  <!-- C1 -->
+  <div class="step sky">
+    <div class="step-header">
+      <div class="step-number">C1</div>
+      <div class="step-title">Raw Data Acquisition <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="sites-strip">
+        <div class="site-card">
+          <h4>Seagrass Cover Sheet</h4>
+          <p>1,604 rows &middot; 10 areas &middot; Quadrat-level species cover</p>
+        </div>
+        <div class="site-card">
+          <h4>Seagrass Health Sheet</h4>
+          <p>1,436 rows &middot; 11 areas &middot; Shoot density, canopy height</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#0284c7" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#0284c7"/></svg></div>
+
+  <!-- C2 -->
+  <div class="step sky">
+    <div class="step-header">
+      <div class="step-number">C2</div>
+      <div class="step-title">QA/QC <span class="tag tag-done">DONE</span> <span class="tag tag-script">seagrass_condition.R</span></div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>Date parsing: multi-format (ymd, dmy, Excel serial)</li>
+        <li>Taxonomy: Halophilia &rarr; <em>Halophila</em>, Thelassia &rarr; <em>Thalassia</em>, Halodulle &rarr; <em>Halodule</em></li>
+        <li>Coordinates: force lat negative; validate Kilifi bounding box</li>
+        <li>Exclude Sand rows from species calculations</li>
+        <li>Canopy height: flag &gt;100 cm as outliers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#0284c7" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#0284c7"/></svg></div>
+
+  <!-- C3 -->
+  <div class="step sky">
+    <div class="step-header">
+      <div class="step-number">C3</div>
+      <div class="step-title">Cover + Health Aggregation <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="detail-grid">
+        <div>
+          <div class="col-label">Cover</div>
+          <ul>
+            <li>Sum species covers within sub-quadrat (cap at 100%)</li>
+            <li>Mean across sub-quadrats per site</li>
+            <li>Species richness and composition per site</li>
+          </ul>
+        </div>
+        <div>
+          <div class="col-label">Health</div>
+          <ul>
+            <li>shoots_per_m&sup2; = raw_count / 0.0225 m&sup2;</li>
+            <li>Mean shoots &plusmn; SE per site &times; species</li>
+            <li>Zone breakdown: Near shore, Middle, Near reef</li>
+            <li>Canopy height mean per site &times; species</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#38a169" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#38a169"/></svg></div>
+
+  <!-- C4 -->
+  <div class="step green">
+    <div class="step-header">
+      <div class="step-number">C4</div>
+      <div class="step-title">Normalisation + SEEA Export <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="formula-block">CI_cover   = min(cover / 60, 1.0)         [Duarte 1991, MEDIUM]
+CI_richness = richness / max_obs          [in-sample, LOW]
+CI_density  = min(density / 800, 1.0)     [Bandeira 2014, LOW-MED]
+Composite   = mean(CI_cover, CI_richness, CI_density)</div>
+      <p>3 condition indicator rows for seagrass ecosystem.</p>
+      <div class="output-files">
+        <div><code>KEN_seagrass_cover_site.csv</code></div>
+        <div><code>KEN_seagrass_health_site.csv</code></div>
+        <div><code>KEN_seagrass_health_zone.csv</code></div>
+        <div><code>KEN_seea_condition_account_seagrass.csv</code></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end seagrass pipeline -->
+
+<!-- ============================================================ -->
+<!--  D. FISHERIES PROVISIONING SERVICE                            -->
+<!-- ============================================================ -->
+<div class="section-divider section-fisheries">D. Wild Fish Provisioning Service</div>
+
+<div class="pipeline">
+
+  <!-- D1 -->
+  <div class="step indigo">
+    <div class="step-header">
+      <div class="step-number">D1</div>
+      <div class="step-title">KeFS Landings Data (2020&ndash;2024) <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <p>Source: <code>Fisheries Data.xlsx</code> &mdash; 5 annual sheets, ~37 species groups per year</p>
+      <ul>
+        <li>Standardise species group names across years (fix "Scarvenger", "Littla mackerels", etc.)</li>
+        <li>5-year panel for trend analysis</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#4f46e5" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#4f46e5"/></svg></div>
+
+  <!-- D2 -->
+  <div class="step indigo">
+    <div class="step-header">
+      <div class="step-number">D2</div>
+      <div class="step-title">Habitat Attribution <span class="tag tag-done">DONE</span> <span class="tag tag-script">fisheries_provisioning.R</span></div>
+    </div>
+    <div class="step-body">
+      <p>37-group attribution table (reef_pct 0&ndash;90%, verified against FishBase):</p>
+      <ul>
+        <li>Key reef-dependent: Snapper 90%, Parrot fish 90%, Rock cod 90%, Rabbit fish 80%</li>
+        <li>Non-reef: Sardines 0%, Prawns 0%</li>
+      </ul>
+      <div class="formula-block">reef_catch_mt = catch_mt &times; reef_pct / 100
+Unreported adjustment: &times; 1.30 (central; range 1.20&ndash;1.40)</div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#4f46e5" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#4f46e5"/></svg></div>
+
+  <!-- D3 -->
+  <div class="step indigo">
+    <div class="step-header">
+      <div class="step-number">D3</div>
+      <div class="step-title">Monetary Valuation &mdash; Resource Rent <span class="tag tag-done">DONE</span></div>
+    </div>
+    <div class="step-body">
+      <div class="formula-block">Deflate: nominal KES &times; GDP deflator &rarr; constant 2024 KES
+Convert: 2024 KES / 134.82 &rarr; USD
+Resource Rent = Revenue &times; (1 - cost_ratio)
+  Central: 62% | Lower: 55% | Upper: 70%</div>
+      <p>Sensitivity: 3 &times; 3 grid (reef_fraction &times; cost_ratio)</p>
+      <div class="output-files">
+        <div><code>KEN_fisheries_supply_physical.csv</code></div>
+        <div><code>KEN_fisheries_supply_monetary.csv</code></div>
+        <div><code>KEN_fisheries_attribution_table.csv</code></div>
+        <div><code>KEN_fisheries_sensitivity_resource_rent_2024.csv</code></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end fisheries pipeline -->
+
+<!-- ============================================================ -->
+<!--  E. FINAL ASSEMBLY                                            -->
+<!-- ============================================================ -->
+<div class="section-divider section-assembly">E. Final Assembly</div>
+
+<div class="pipeline">
+
+  <!-- E1 -->
+  <div class="step purple">
+    <div class="step-header">
+      <div class="step-number">E1</div>
+      <div class="step-title">Multi-Ecosystem Account Assembly <span class="tag tag-done">DONE</span> <span class="tag tag-script">_assemble_final_accounts.R</span></div>
+    </div>
+    <div class="step-body">
+      <p>Combine all ecosystem outputs into unified SEEA EA tables:</p>
+      <div class="detail-grid">
+        <div>
+          <div class="col-label">Condition Account</div>
+          <ul>
+            <li>Coral reef: 21 indicator rows</li>
+            <li>Mangrove: 6 indicator rows</li>
+            <li>Seagrass: 3 indicator rows</li>
+            <li><strong>Total: 30 condition rows</strong></li>
+          </ul>
+        </div>
+        <div>
+          <div class="col-label">Extent Account</div>
+          <ul>
+            <li>Mangrove: Opening / Additions / Reductions / Closing</li>
+            <li>Seagrass + Coral reef extent: TBD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="output-files" style="margin-top:0.5rem">
+        <div><code>KEN_SEEA_EA_condition_account_final.csv</code></div>
+        <div><code>KEN_SEEA_EA_extent_account_final.csv</code></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><svg width="24" height="28"><line x1="12" y1="0" x2="12" y2="20" stroke="#9b2c2c" stroke-width="2"/><polygon points="6,18 12,28 18,18" fill="#9b2c2c"/></svg></div>
+
+  <!-- E2 -->
+  <div class="step red">
+    <div class="step-header">
+      <div class="step-number">E2</div>
+      <div class="step-title">Data Gaps + Validation <span class="tag tag-blocked">BLOCKED</span> <span class="tag tag-prov">PROVISIONAL</span></div>
+    </div>
+    <div class="step-body">
+      <p>Outstanding requirements before publication:</p>
+      <ul>
+        <li><strong>Coral reef extent mapping</strong> &mdash; HIGH risk; Sentinel-2 classification or GCRMN spatial data needed</li>
+        <li><strong>Seagrass extent mapping</strong> &mdash; HIGH risk; no spatial coverage baseline</li>
+        <li><strong>Urchin reference level validation</strong> &mdash; LOW confidence; no WIO consensus benchmark</li>
+        <li><strong>Canopy cover reference</strong> (mangrove) &mdash; LOW confidence; provisional thresholds</li>
+        <li><strong>Market price survey</strong> (fisheries) &mdash; MEDIUM risk; validate KeFS price data</li>
+        <li><strong>Post-bleaching resurvey</strong> &mdash; MEDIUM risk; Jul 2025 data provisional</li>
+      </ul>
+      <p style="margin-top:0.35rem">Upgrade accounts from PROVISIONAL to CONFIRMED upon completion of extent mapping and reference level validation.</p>
+    </div>
+  </div>
+
+</div><!-- end assembly pipeline -->
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--coral-light);border:1px solid var(--coral)"></div> Coral Reef</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--emerald-light);border:1px solid var(--emerald)"></div> Mangrove</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--sky-light);border:1px solid var(--sky)"></div> Seagrass</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--indigo-light);border:1px solid var(--indigo)"></div> Fisheries</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--purple-light);border:1px solid var(--purple)"></div> Assembly</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--green-mid)"></div> Analysis</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--red-dark)"></div> Blocked</div>
+  <div class="legend-item"><span class="tag tag-done" style="margin:0">DONE</span></div>
+  <div class="legend-item"><span class="tag tag-blocked" style="margin:0">BLOCKED</span></div>
+  <div class="legend-item"><span class="tag tag-prov" style="margin:0">PROVISIONAL</span></div>
+</div>
+
+<div class="footer">
+  Kenya Coastal Ecosystems &middot; Kilifi County &middot; UN SEEA EA Condition + Extent + Service Accounts &middot; 2026
+</div>
+
+</body>
+</html>

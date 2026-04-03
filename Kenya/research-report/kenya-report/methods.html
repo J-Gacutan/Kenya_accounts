@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Methods | Kenya Coastal Ecosystem Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="modulepreload" href="./_observablehq/client.8aeaa8ef.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import "./_observablehq/client.8aeaa8ef.js";
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Kenya Coastal Ecosystem Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Extent Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Condition Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
+    <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Services &amp; Integration</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./fisheries">Fisheries Provisioning</a></li>
+    <li class="observablehq-link"><a href="./synthesis">Cross-Ecosystem Synthesis</a></li>
+    <li class="observablehq-link"><a href="./seea-accounts">SEEA EA Accounts</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./methods">Methods</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#1-study-area">1. Study Area</a></li>
+<li class="observablehq-secondary-link"><a href="#2-coral-reef-surveys">2. Coral Reef Surveys</a></li>
+<li class="observablehq-secondary-link"><a href="#3-mangrove-surveys">3. Mangrove Surveys</a></li>
+<li class="observablehq-secondary-link"><a href="#4-seagrass-surveys">4. Seagrass Surveys</a></li>
+<li class="observablehq-secondary-link"><a href="#5-fisheries-provisioning-service">5. Fisheries Provisioning Service</a></li>
+<li class="observablehq-secondary-link"><a href="#6-condition-index-normalisation">6. Condition Index Normalisation</a></li>
+<li class="observablehq-secondary-link"><a href="#7-seea-ea-framework-alignment">7. SEEA EA Framework Alignment</a></li>
+<li class="observablehq-secondary-link"><a href="#8-known-limitations">8. Known Limitations</a></li>
+<li class="observablehq-secondary-link"><a href="#9-data-sources">9. Data Sources</a></li>
+<li class="observablehq-secondary-link"><a href="#references">References</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="methods" tabindex="-1"><a class="observablehq-header-anchor" href="#methods">Methods</a></h1>
+<h2 id="survey-design-data-processing-and-seea-ea-framework" tabindex="-1"><a class="observablehq-header-anchor" href="#survey-design-data-processing-and-seea-ea-framework">Survey Design, Data Processing, and SEEA EA Framework</a></h2>
+<hr>
+<h2 id="1-study-area" tabindex="-1"><a class="observablehq-header-anchor" href="#1-study-area">1. Study Area</a></h2>
+<p>The study covers coastal ecosystems along <strong>Kilifi County</strong>, Kenya, from Ngomeni in the north to Kilifi Creek in the south. Three ecosystem types are assessed:</p>
+<ul>
+<li><strong>Coral reefs (M1.3):</strong> Fringing and patch reefs along the Kilifi coastline, including Watamu Marine Park, Malindi MPA, and open-access sites</li>
+<li><strong>Mangroves (MFT1.2):</strong> Four survey areas - Kilifi Creek, Marereni, Mida Creek, and Ngomeni</li>
+<li><strong>Seagrass meadows (M1.1):</strong> Nine survey areas from Ngomeni to Takaungu</li>
+</ul>
+<hr>
+<h2 id="2-coral-reef-surveys" tabindex="-1"><a class="observablehq-header-anchor" href="#2-coral-reef-surveys">2. Coral Reef Surveys</a></h2>
+<h3 id="survey-design" tabindex="-1"><a class="observablehq-header-anchor" href="#survey-design">Survey Design</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Survey method</td>
+<td>Underwater Visual Census (UVC) belt transect</td>
+</tr>
+<tr>
+<td>Transect dimensions</td>
+<td>50 m x 5 m (250 m2)</td>
+</tr>
+<tr>
+<td>Transects per site</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Total reef sites</td>
+<td>25 (across 2 periods)</td>
+</tr>
+<tr>
+<td>Survey periods</td>
+<td>November 2024, July 2025</td>
+</tr>
+<tr>
+<td>Data sources</td>
+<td>CCVA (Nov 2024), COMRED (Jul 2025), PU-GOAP (Nov 2024)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="indicators-measured" tabindex="-1"><a class="observablehq-header-anchor" href="#indicators-measured">Indicators Measured</a></h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Method</th>
+<th>Reference Level</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Live hard coral cover</td>
+<td>Point intercept transect</td>
+<td>30% (GCRMN 2021; Obura et al. 2022)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Coral colony health</td>
+<td>Colony-level visual assessment</td>
+<td>95% healthy (non-bleaching baseline)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Coral bleaching</td>
+<td>Colony-level visual assessment</td>
+<td>&lt;5% background (Hoegh-Guldberg 1999)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Coral recruitment</td>
+<td>Quadrat counts (1 m2)</td>
+<td>1-3 recruits/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> (WIO; Hughes et al. 2010)</td>
+<td>LOW-MEDIUM</td>
+</tr>
+<tr>
+<td>Fish biomass</td>
+<td>UVC belt transect</td>
+<td>500 kg/ha (sustainability threshold)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Fish species richness</td>
+<td>UVC belt transect</td>
+<td>Max observed in period</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>COTS density</td>
+<td>Belt transect count</td>
+<td>15 ind/ha outbreak threshold (Dulvy et al. 2021)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Sea urchin density</td>
+<td>Belt transect count</td>
+<td>1.5-2 ind/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> (provisional; WIO)</td>
+<td>LOW</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fish-biomass-calculation" tabindex="-1"><a class="observablehq-header-anchor" href="#fish-biomass-calculation">Fish Biomass Calculation</a></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mo>=</mo><mi>a</mi><mo>×</mo><msup><mi>L</mi><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">W = a \times L^b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8991079999999999em;"></span><span class="strut bottom" style="height:0.9824379999999999em;vertical-align:-0.08333em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">W</span><span class="mrel">=</span><span class="mord mathit">a</span><span class="mbin">×</span><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
+<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">W</span></span></span></span> is weight (g), <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">L</span></span></span></span> is total length (cm), and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span> are species-specific allometric parameters from FishBase.</p>
+<hr>
+<h2 id="3-mangrove-surveys" tabindex="-1"><a class="observablehq-header-anchor" href="#3-mangrove-surveys">3. Mangrove Surveys</a></h2>
+<h3 id="extent-account" tabindex="-1"><a class="observablehq-header-anchor" href="#extent-account">Extent Account</a></h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Source</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opening (2020)</td>
+<td>Global Mangrove Watch v4</td>
+<td>Satellite classification clipped to study area</td>
+</tr>
+<tr>
+<td>Additions (2025)</td>
+<td>Project classification</td>
+<td>Erase analysis: 2025 extent minus GMW 2020</td>
+</tr>
+<tr>
+<td>Reductions (2020-2025)</td>
+<td>Project classification</td>
+<td>Erase analysis: GMW 2020 minus 2025 extent</td>
+</tr>
+<tr>
+<td>Protected area overlay</td>
+<td>WDPA</td>
+<td>De-duplicated spatial intersection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="field-based-condition-assessment" tabindex="-1"><a class="observablehq-header-anchor" href="#field-based-condition-assessment">Field-Based Condition Assessment</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Survey areas</td>
+<td>4 (Kilifi Creek, Marereni, Mida Creek, Ngomeni)</td>
+</tr>
+<tr>
+<td>Total sites</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Total plots</td>
+<td>Variable (1-4 per site)</td>
+</tr>
+<tr>
+<td>Plot method</td>
+<td>Standard mangrove structure plots</td>
+</tr>
+</tbody>
+</table>
+<h3 id="condition-indicators-and-reference-levels" tabindex="-1"><a class="observablehq-header-anchor" href="#condition-indicators-and-reference-levels">Condition Indicators and Reference Levels</a></h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Reference Level</th>
+<th>CI Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stem density</td>
+<td>5,600 stems/ha (Kenya mangrove average)</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mi>min</mi><mo>(</mo><mi>x</mi><mi mathvariant="normal">/</mi><mn>5</mn><mn>6</mn><mn>0</mn><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mi mathvariant="normal">.</mi><mn>0</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">CI = \min(x / 5600, 1.0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mrel">=</span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mord mathrm">/</span><span class="mord mathrm">5</span><span class="mord mathrm">6</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathrm">1</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Mean DBH</td>
+<td>39.7 cm (mature stand benchmark)</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mi>x</mi><mi mathvariant="normal">/</mi><mn>3</mn><mn>9</mn><mi mathvariant="normal">.</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">CI = x / 39.7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mrel">=</span><span class="mord mathit">x</span><span class="mord mathrm">/</span><span class="mord mathrm">3</span><span class="mord mathrm">9</span><span class="mord mathrm">.</span><span class="mord mathrm">7</span></span></span></span></td>
+</tr>
+<tr>
+<td>Mean height</td>
+<td>17.42 m (Kenya mangrove reference)</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mi>x</mi><mi mathvariant="normal">/</mi><mn>1</mn><mn>7</mn><mi mathvariant="normal">.</mi><mn>4</mn><mn>2</mn></mrow><annotation encoding="application/x-tex">CI = x / 17.42</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mrel">=</span><span class="mord mathit">x</span><span class="mord mathrm">/</span><span class="mord mathrm">1</span><span class="mord mathrm">7</span><span class="mord mathrm">.</span><span class="mord mathrm">4</span><span class="mord mathrm">2</span></span></span></span></td>
+</tr>
+<tr>
+<td>Canopy cover</td>
+<td>60% (closed canopy threshold)</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mi>x</mi><mi mathvariant="normal">/</mi><mn>6</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">CI = x / 60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mrel">=</span><span class="mord mathit">x</span><span class="mord mathrm">/</span><span class="mord mathrm">6</span><span class="mord mathrm">0</span></span></span></span> (capped where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>6</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">x &lt; 60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span><span class="mrel">&lt;</span><span class="mord mathrm">6</span><span class="mord mathrm">0</span></span></span></span>)</td>
+</tr>
+<tr>
+<td>Tree quality index</td>
+<td>1.0 (all trees healthy)</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">CI = x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="mrel">=</span><span class="mord mathit">x</span></span></span></span> (direct)</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><msub><mi>I</mi><mrow><mi>c</mi><mi>o</mi><mi>m</mi><mi>p</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>e</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>5</mn></mrow></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>5</mn></mrow></msubsup><mi>C</mi><msub><mi>I</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">CI_{composite} = \frac{1}{5}\sum_{i=1}^{5} CI_i
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.8011130000000004em;"></span><span class="strut bottom" style="height:3.0787820000000004em;vertical-align:-1.277669em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit">m</span><span class="mord mathit">p</span><span class="mord mathit">o</span><span class="mord mathit">s</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">e</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">5</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
+<hr>
+<h2 id="4-seagrass-surveys" tabindex="-1"><a class="observablehq-header-anchor" href="#4-seagrass-surveys">4. Seagrass Surveys</a></h2>
+<h3 id="survey-design-1" tabindex="-1"><a class="observablehq-header-anchor" href="#survey-design-1">Survey Design</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Survey areas</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Method</td>
+<td>Quadrat-based assessment</td>
+</tr>
+<tr>
+<td>Indicators</td>
+<td>Total cover (%), species richness, shoot density (shoots/m2), canopy height (cm)</td>
+</tr>
+<tr>
+<td>Quadrat size</td>
+<td>0.25 m2</td>
+</tr>
+<tr>
+<td>Total quadrats</td>
+<td>Variable (20-117 per area)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="condition-indicators" tabindex="-1"><a class="observablehq-header-anchor" href="#condition-indicators">Condition Indicators</a></h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Reference Level</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total cover</td>
+<td>100% (theoretical maximum)</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>Species richness</td>
+<td>8 species (maximum observed at Ngomeni)</td>
+<td>MEDIUM</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><msub><mi>I</mi><mrow><mi>c</mi><mi>o</mi><mi>v</mi><mi>e</mi><mi>r</mi></mrow></msub><mo>=</mo><mfrac><mrow><mtext><mi mathvariant="normal">o</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi></mtext></mrow><mrow><mn>1</mn><mn>0</mn><mn>0</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">CI_{cover} = \frac{\text{observed cover}}{100}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.37144em;"></span><span class="strut bottom" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">o</span><span class="mord mathrm">b</span><span class="mord mathrm">s</span><span class="mord mathrm">e</span><span class="mord mathrm">r</span><span class="mord mathrm" style="margin-right:0.01389em;">v</span><span class="mord mathrm">e</span><span class="mord mathrm">d</span><span class="mord mspace">&nbsp;</span><span class="mord mathrm">c</span><span class="mord mathrm">o</span><span class="mord mathrm" style="margin-right:0.01389em;">v</span><span class="mord mathrm">e</span><span class="mord mathrm">r</span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><msub><mi>I</mi><mrow><mi>r</mi><mi>i</mi><mi>c</mi><mi>h</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><mrow><mtext><mi mathvariant="normal">o</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi></mtext></mrow><mrow><mn>8</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">CI_{richness} = \frac{\text{observed species}}{8}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.37144em;"></span><span class="strut bottom" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">c</span><span class="mord mathit">h</span><span class="mord mathit">n</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord mathit">s</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">8</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">o</span><span class="mord mathrm">b</span><span class="mord mathrm">s</span><span class="mord mathrm">e</span><span class="mord mathrm">r</span><span class="mord mathrm" style="margin-right:0.01389em;">v</span><span class="mord mathrm">e</span><span class="mord mathrm">d</span><span class="mord mspace">&nbsp;</span><span class="mord mathrm">s</span><span class="mord mathrm">p</span><span class="mord mathrm">e</span><span class="mord mathrm">c</span><span class="mord mathrm">i</span><span class="mord mathrm">e</span><span class="mord mathrm">s</span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+<hr>
+<h2 id="5-fisheries-provisioning-service" tabindex="-1"><a class="observablehq-header-anchor" href="#5-fisheries-provisioning-service">5. Fisheries Provisioning Service</a></h2>
+<h3 id="physical-supply" tabindex="-1"><a class="observablehq-header-anchor" href="#physical-supply">Physical Supply</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>County</td>
+<td>Kilifi</td>
+</tr>
+<tr>
+<td>Period</td>
+<td>2020-2024</td>
+</tr>
+<tr>
+<td>Data source</td>
+<td>Kenya Fisheries Service (KeFS) landing records</td>
+</tr>
+<tr>
+<td>Attribution method</td>
+<td>Species-level reef association fraction</td>
+</tr>
+<tr>
+<td>Adjustment factor</td>
+<td>1.3x (unreported catch; FAO/IHH methodology)</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>PROVISIONAL - pending Dr Pascal Thoya validation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monetary-valuation" tabindex="-1"><a class="observablehq-header-anchor" href="#monetary-valuation">Monetary Valuation</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Resource rent (SEEA EA Chapter 10)</td>
+</tr>
+<tr>
+<td>Price data</td>
+<td>Average market price at landing sites (KES/kg)</td>
+</tr>
+<tr>
+<td>Deflation</td>
+<td>GDP deflator series to 2024 real KES</td>
+</tr>
+<tr>
+<td>Exchange rate</td>
+<td>1 USD = 134.85 KES (2024 average)</td>
+</tr>
+<tr>
+<td>Rent share (lower)</td>
+<td>30% of gross revenue</td>
+</tr>
+<tr>
+<td>Rent share (central)</td>
+<td>38%</td>
+</tr>
+<tr>
+<td>Rent share (upper)</td>
+<td>45%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-condition-index-normalisation" tabindex="-1"><a class="observablehq-header-anchor" href="#6-condition-index-normalisation">6. Condition Index Normalisation</a></h2>
+<p>All condition indices follow the general SEEA EA normalisation formula:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><msub><mi>I</mi><mi>i</mi></msub><mo>=</mo><mi>min</mi><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><mrow><msub><mi>x</mi><mrow><mi>r</mi><mi>e</mi><mi>f</mi><mo separator="true">,</mo><mi>i</mi></mrow></msub></mrow></mfrac><mo separator="true">,</mo><mn>1</mn><mi mathvariant="normal">.</mi><mn>0</mn><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">CI_i = \min\left(\frac{x_i}{x_{ref,i}}, 1.0\right)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.45em;"></span><span class="strut bottom" style="height:2.4221079999999997em;vertical-align:-0.972108em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mop">min</span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.6859999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mord mathit">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mpunct">,</span><span class="mord mathrm">1</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span></p>
+<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> is the measured value and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mrow><mi>r</mi><mi>e</mi><mi>f</mi><mo separator="true">,</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">x_{ref,i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mord mathit">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> is the reference level. For inverted indicators (e.g., bleaching, COTS density):</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><msub><mi>I</mi><mi>i</mi></msub><mo>=</mo><mi>max</mi><mrow><mo fence="true">(</mo><mn>1</mn><mo>−</mo><mfrac><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><mrow><msub><mi>x</mi><mrow><mi>t</mi><mi>h</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>h</mi><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow></mfrac><mo separator="true">,</mo><mn>0</mn><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">CI_i = \max\left(1 - \frac{x_i}{x_{threshold}}, 0\right)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.45em;"></span><span class="strut bottom" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">I</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mop">max</span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">t</span><span class="mord mathit">h</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord mathit">h</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">d</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mpunct">,</span><span class="mord mathrm">0</span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span></p>
+<hr>
+<h2 id="7-seea-ea-framework-alignment" tabindex="-1"><a class="observablehq-header-anchor" href="#7-seea-ea-framework-alignment">7. SEEA EA Framework Alignment</a></h2>
+<p>This account follows the <strong>UN SEEA EA</strong> (2021) structure:</p>
+<ul>
+<li><strong>Ecosystem types:</strong> Photic Coral Reefs (IUCN GET M1.3), Mangroves (MFT1.2), Seagrass Meadows (M1.1)</li>
+<li><strong>Accounting area:</strong> Kilifi County, Kenya</li>
+<li><strong>Account types:</strong> Extent (mangrove only), Condition (all three types), Ecosystem Services (fisheries provisioning)</li>
+<li><strong>Accounting periods:</strong> 2020-2025 (extent), Nov 2024 and Jul 2025 (condition), 2020-2024 (services)</li>
+</ul>
+<hr>
+<h2 id="8-known-limitations" tabindex="-1"><a class="observablehq-header-anchor" href="#8-known-limitations">8. Known Limitations</a></h2>
+<ol>
+<li><strong>Coral reef extent:</strong> No satellite-derived extent account yet; benthic habitat classification in progress</li>
+<li><strong>Seagrass extent:</strong> Not yet mapped; extent account depends on Sentinel-2 classification</li>
+<li><strong>Temporal mismatch:</strong> Coral condition compares two different site sets (Nov 2024 vs Jul 2025), not repeated surveys at the same locations</li>
+<li><strong>Low transect counts:</strong> Most reef sites surveyed with only 2 transects (minimum viable); limited statistical power</li>
+<li><strong>Fisheries attribution:</strong> Reef catch fraction is provisional pending expert validation</li>
+<li><strong>Mangrove single-year condition:</strong> No temporal comparison available; condition account is a baseline snapshot</li>
+<li><strong>Seagrass condition indices:</strong> Cover and richness indices are preliminary; no established WIO reference levels for shoot density or canopy height</li>
+</ol>
+<hr>
+<h2 id="9-data-sources" tabindex="-1"><a class="observablehq-header-anchor" href="#9-data-sources">9. Data Sources</a></h2>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Records</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KEN_fish_condition_site.csv</td>
+<td>25 site-periods</td>
+<td>25 reef sites, 2 periods</td>
+</tr>
+<tr>
+<td>KEN_benthic_cover_site.csv</td>
+<td>12 site-periods</td>
+<td>Benthic cover, 2 periods</td>
+</tr>
+<tr>
+<td>KEN_coral_health_site.csv</td>
+<td>15 site-periods</td>
+<td>Colony-level health status</td>
+</tr>
+<tr>
+<td>KEN_coral_recruitment_site.csv</td>
+<td>16 site-periods</td>
+<td>Recruit quadrat counts</td>
+</tr>
+<tr>
+<td>KEN_mangrove_condition_by_site.csv</td>
+<td>32 sites</td>
+<td>4 areas, 32 field plots</td>
+</tr>
+<tr>
+<td>KEN_seagrass_cover_site.csv</td>
+<td>9 areas</td>
+<td>Cover and species composition</td>
+</tr>
+<tr>
+<td>KEN_seagrass_health_site.csv</td>
+<td>40 records</td>
+<td>Shoot density and canopy height by species</td>
+</tr>
+<tr>
+<td>KEN_fisheries_supply_physical.csv</td>
+<td>5 years</td>
+<td>Reef-associated catch, 2020-2024</td>
+</tr>
+<tr>
+<td>KEN_fisheries_supply_monetary.csv</td>
+<td>5 years</td>
+<td>Resource rent valuation, 2020-2024</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analysis scripts:</strong> <code>Kenya/02_analysis/</code></p>
+<hr>
+<h2 id="references" tabindex="-1"><a class="observablehq-header-anchor" href="#references">References</a></h2>
+<ul>
+<li>Dulvy, N.K. et al. (2021). Updated COTS outbreak thresholds for the Western Indian Ocean.</li>
+<li>Hoegh-Guldberg, O. (1999). Climate change, coral bleaching and the future of the world's coral reefs. <em>Marine and Freshwater Research</em>, 50(8), 839-866.</li>
+<li>Hughes, T.P. et al. (2010). Rising to the challenge of sustaining coral reef resilience. <em>Trends in Ecology &amp; Evolution</em>, 25(11), 633-642.</li>
+<li>McClanahan, T.R. et al. (2016). Global baselines and benchmarks for fish biomass. <em>Conservation Biology</em>, 30(3), 577-587.</li>
+<li>Obura, D. et al. (2022). Status of Coral Reefs of the World. <em>Global Coral Reef Monitoring Network</em>.</li>
+<li>United Nations (2021). <em>System of Environmental-Economic Accounting - Ecosystem Accounting</em> (SEEA EA). United Nations, New York.</li>
+</ul>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./data-tables"><span>Data Tables</span></a><a rel="next" href="./about"><span>About</span></a></nav>
+<div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

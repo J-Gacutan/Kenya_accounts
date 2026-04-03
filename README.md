@@ -30,6 +30,13 @@ This repository documents ecosystem condition, extent, and service valuations fo
 - **Outputs:** Mangrove extent maps, habitat change analysis
 - **Location:** [`Mozambique/`](Mozambique/)
 
+#### 🇰🇪 **Kenya** — [Ecosystem Type TBD] (Setup)
+- **Ecosystem:** [To be determined — e.g., seagrass, mangroves, kelp forests]
+- **Status:** Pilot setup ⚙️ | Scope definition in progress
+- **Data:** [To be sourced]
+- **Outputs:** [To be determined]
+- **Location:** [`Kenya/`](Kenya/)
+
 ---
 
 ## Repository Structure
@@ -61,17 +68,32 @@ AFRICA - accounts/
 │       ├── ACADEMIC_RAG_*.md         # Academic evidence-linking system
 │       └── [other methodology docs]
 │
-└── Mozambique/                        # Secondary pilot: mangrove extent
+├── Mozambique/                        # Secondary pilot: mangrove extent
+│   ├── 01_inputs/
+│   │   ├── raw_data/                 # Mangrove extent CSVs (GMW 2020 + field surveys)
+│   │   └── metadata/                 # Data summaries
+│   ├── 03_outputs/
+│   │   └── FINDINGS_OVERVIEW.md      # Preliminary extent findings
+│   └── docs/
+│       ├── skills/                   # Extent SOP for mangroves
+│       ├── template_seea_publication.md  # Mozambique-adapted publication template
+│       ├── policy_rag_schema.md      # Mozambique policy-commitment linking schema
+│       └── [other methodology docs]
+│
+└── Kenya/                             # Tertiary pilot: [ecosystem TBD] (setup)
     ├── 01_inputs/
-    │   ├── raw_data/                 # Mangrove extent CSVs (GMW 2020 + field surveys)
+    │   ├── raw_data/                 # Raw data files (to be populated)
     │   └── metadata/                 # Data summaries
+    ├── 02_analysis/
+    │   └── [analysis scripts TBD]
     ├── 03_outputs/
-    │   └── FINDINGS_OVERVIEW.md      # Preliminary extent findings
+    │   └── [results TBD]
     └── docs/
-        ├── skills/                   # Extent SOP for mangroves
-        ├── template_seea_publication.md  # Mozambique-adapted publication template
-        ├── policy_rag_schema.md      # Mozambique policy-commitment linking schema
-        └── [other methodology docs]
+        ├── skills/                   # SOPs for Kenya accounts (to be created)
+        ├── rag/                       # RAG systems (academic, policy)
+        ├── accounts/                  # Account methodology docs
+        ├── briefs/                    # Policy briefs
+        └── templates/                 # Adapted publication templates (shared copies)
 ```
 
 ---

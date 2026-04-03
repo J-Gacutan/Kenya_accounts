@@ -1,0 +1,8 @@
+// Madagascar SEEA EA condition account (M1.3 Coral Reef, 2025-2026)
+export default `calendar_year,ecosystem_type,condition_indicator,reference_level,measured_value,condition_index
+2025,Coral reef (M1.3),Fish biomass,500 kg/ha,1928.9 kg/ha,1.00
+2025,Coral reef (M1.3),Fish species richness,94 species (max observed),55 species,0.59
+2025,Coral reef (M1.3),COTS density,0 ind/ha (ideal),6.7 ind/ha,0.82
+2026,Coral reef (M1.3),Fish biomass,500 kg/ha,1775.1 kg/ha,1.00
+2026,Coral reef (M1.3),Fish species richness,103 species (max observed),56 species,0.54
+2026,Coral reef (M1.3),COTS density,0 ind/ha (ideal),0.0 ind/ha,1.00`;

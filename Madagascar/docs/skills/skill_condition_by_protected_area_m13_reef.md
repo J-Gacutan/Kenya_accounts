@@ -364,7 +364,9 @@ Create accompanying file: `Madagascar/03_outputs/condition_by_pa_metadata.txt`
 1. UNEP-WCMC & IUCN. (2024). *Protected Planet: The World Database of Protected Areas (WDPA).* https://www.protectedplanet.net/
 2. UNEP-WCMC. (2019). *User Manual for the World Database on Protected Areas and other effective area-based conservation measures: 1.6.* https://www.protectedplanet.net/download
 3. UN SEEA EA. (2021). *System of Environmental-Economic Accounting — Ecosystem Accounting.* https://seea.un.org/
-4. MacNeil, M. A., et al. (2015). "Recovery potential of the world's coral reef fishes." *Nature*, 520(7547), 341–344. [Reference level for fish biomass benchmarking]
+4. McClanahan, T. R., et al. (2016). "Modeling reef fish biomass, recovery potential, and management priorities in the Western Indian Ocean." *PLOS ONE*, 11(5), e0154585. [Primary reference level for fish biomass: 1,150 kg/ha WIO conservation target; 600 kg/ha sustainability floor]
+5. MacNeil, M. A., et al. (2015). "Recovery potential of the world's coral reef fishes." *Nature*, 520(7547), 341–344. [Supplementary: unfished Indo-Pacific B0 ~1,000 kg/ha]
+6. Dulvy, N. K., et al. (2021). "Fish predators control outbreaks of Crown-of-Thorns Starfish." *Nature Communications*. [COTS outbreak threshold 15 ind/ha; background <1 ind/ha]
 
 ---
 

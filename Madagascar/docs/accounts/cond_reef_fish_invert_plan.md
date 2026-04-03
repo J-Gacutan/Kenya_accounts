@@ -126,7 +126,7 @@
 
 | Indicator | Reference Level | Measured Value | CI (0–1) |
 |-----------|----------------|----------------|----------|
-| Fish biomass | 500 kg/ha | 1,854 kg/ha | 1.00 |
+| Fish biomass | 1,150 kg/ha (WIO; McClanahan 2016) | 1,854 kg/ha | 1.00 |
 | Fish species richness | 103 (max observed) | 56 species | 0.54 |
 | COTS density | 0 ind/ha (ideal) | 7.4 ind/ha | 0.89 (inverted) |
 
@@ -146,29 +146,28 @@
 
 ## Open Questions / Review Items
 
-### 1. Transect area (HIGH PRIORITY)
-- **Current assumption:** 20 m × 5 m = 100 m² (standard UVC belt)
-- **Alternative:** 20 m × 20 m = 400 m² (as stated in coral skill for benthic quadrats)
-- **Impact:** If 400 m², all biomass and density values divide by 4 (mean biomass → ~464 kg/ha, CI → 0.93)
-- **Action needed:** Confirm with field team (Laza / Maka)
+### 1. Transect area — RESOLVED
 
-### 2. Fish biomass reference level
-- **Current:** 500 kg/ha (MacNeil et al. 2015 — unfished reef, target species)
-- **Issue:** UVC includes all species (damselfishes, blennies, etc.), inflating total biomass above the target-species-only benchmark
-- **Options:**
-  - (a) Filter to target/commercial families only before biomass calculation
-  - (b) Use a higher total-reef-fish reference (~1,500–2,000 kg/ha)
-  - (c) Keep as-is and note the comparison is conservative
+- **Confirmed:** 50 m × 5 m = 250 m² — confirmed with field team (Laza / Maka)
+
+### 2. Fish biomass reference level — RESOLVED (2026-03-16)
+- **Updated to:** 1,150 kg/ha (McClanahan et al. 2016 *PLOS ONE* — WIO conservation target, 15 countries); sustainability floor: 600 kg/ha
+- **Previous:** 500 kg/ha (MacNeil et al. 2015 — unfished reef, target species only; now used as supplementary context)
+- **Measured value:** 1,854 kg/ha → CI = 1.00 (exceeds WIO conservation target; note: includes all species, not target-only)
+- **Source:** Phase 1 systematic literature search (2026-03-16); see `BASELINE_REFERENCE_TABLE.md`
 
 ### 3. COTS scaling sensitivity
 - Only 3 of 27 sites had any COTS (1–2 individuals each)
-- Scaling 1 individual from 200 m² to 1 ha = 50 ind/ha (exceeds 30/ha outbreak threshold)
-- **Recommendation:** Report COTS as presence/absence or count per site rather than scaled density, given the small transect area
+- Scaling 1 individual from 200 m² to 1 ha = 50 ind/ha
+- **Outbreak threshold updated to:** 15 ind/ha (Dulvy et al. 2021 *Nature Communications*; replaces 30/ha convention)
+- Madagascar observed: 7.4 ind/ha → elevated background; not outbreak; CI = 0.51 (1 - 7.4/15)
+- **Recommendation:** Continue reporting scaled density with updated threshold; flag low site-level replication
 
-### 4. Sea urchin reference level
+### 4. Sea urchin reference level — PROVISIONAL (2026-03-16)
 - Mean density: 1.83 ind/m² (range 0–15.6 ind/m² across sites)
-- No standard reference level established — left as descriptive for now
-- **Action needed:** Literature review for Western Indian Ocean urchin density benchmarks
+- **Provisional reference:** 1.5–2 ind/m² outer reef (*Echinometra mathaei*; Kenya/WIO studies; LOW confidence)
+- No formal WIO reference condition published; remains a critical gap
+- **Next action:** Consult GCRMN East Africa (Tim McClanahan, WCS) for unpublished long-term data
 
 ---
 

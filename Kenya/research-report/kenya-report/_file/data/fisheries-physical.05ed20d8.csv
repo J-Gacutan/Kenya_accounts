@@ -1,0 +1,6 @@
+year,total_county_catch_mt,reef_catch_mt,reef_fraction_pct,reef_catch_adjusted_mt,reef_catch_lower_mt,reef_catch_upper_mt,attribution_status,yr2023_note
+2020,4449,1723.55,38.74016632951225,2240.6150000000002,2068.2599999999998,2412.97,PROVISIONAL — pending Dr. Pascal Thoya validation,NA
+2021,4592,2072.15,45.12521777003485,2693.795,2486.58,2901.0099999999998,PROVISIONAL — pending Dr. Pascal Thoya validation,NA
+2022,9306.869,3410.1515,36.641232405871406,4433.1969500000005,4092.1818,4774.2121,PROVISIONAL — pending Dr. Pascal Thoya validation,NA
+2023,9706,3456.15,35.60838656501134,4492.995,4147.38,4838.61,PROVISIONAL — pending Dr. Pascal Thoya validation,2023 values are estimates in KeFS source
+2024,12095,3963.099999999999,32.76643241008681,5152.029999999999,4755.719999999998,5548.339999999998,PROVISIONAL — pending Dr. Pascal Thoya validation,NA

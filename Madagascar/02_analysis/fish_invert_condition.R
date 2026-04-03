@@ -28,7 +28,7 @@ FISH_FILE  <- file.path(INPUT_DIR, "Fishdata_OASIS_M.xlsx")
 INVERT_FILE <- file.path(INPUT_DIR, "Invertebrate_0ASIS_M.xlsx")
 
 # Transect dimensions (standard UVC belt transect)
-TRANSECT_LENGTH_M <- 20
+TRANSECT_LENGTH_M <- 50
 TRANSECT_WIDTH_M  <- 5
 TRANSECT_AREA_M2  <- TRANSECT_LENGTH_M * TRANSECT_WIDTH_M
 TRANSECT_AREA_HA  <- TRANSECT_AREA_M2 / 10000
@@ -38,8 +38,9 @@ SIZE_MIDPOINTS <- c("5_10" = 7.5, "10_20" = 15, "20_30" = 25,
                     "30_40" = 35, "40_50" = 45, "50_60" = 55)
 
 # Reference levels
-REF_FISH_BIOMASS_KG_HA <- 500   # MacNeil et al. (2015) unfished Indo-Pacific
-REF_COTS_OUTBREAK_HA   <- 30    # AIMS LTMP outbreak threshold (per ha equivalent)
+REF_FISH_BIOMASS_KG_HA <- 1150  # McClanahan et al. (2016) PLOS ONE — WIO conservation target (15 countries); sustainability floor: 600 kg/ha
+REF_FISH_BIOMASS_FLOOR <- 600   # McClanahan et al. (2016) — WIO sustainability floor
+REF_COTS_OUTBREAK_HA   <- 15    # Dulvy et al. (2021) Nat.Commun. / Indo-Pacific consensus; background <1 ind/ha; intervention threshold 10–15 ind/ha
 
 # Species and functional group constants (avoid stringly-typed code)
 SPECIES_COTS <- "Acanthaster planci"
@@ -60,12 +61,12 @@ SEEA_IND_FISH_RICHNESS <- "Fish species richness"
 SEEA_IND_COTS_DENSITY <- "COTS density"
 
 # Output files
-OUT_SITE_FG_CSV <- file.path(OUTPUT_DIR, "fish_invert_site_fg_condition.csv")
-OUT_SITE_CSV    <- file.path(OUTPUT_DIR, "fish_invert_site_condition.csv")
-OUT_SEEA_CSV    <- file.path(OUTPUT_DIR, "fish_invert_seea_condition.csv")
-OUT_CONDITION_RAW_CSV <- file.path(OUTPUT_DIR, "fish_invert_condition_account_raw.csv")
-OUT_CONDITION_NORM_CSV <- file.path(OUTPUT_DIR, "fish_invert_condition_account_normalized.csv")
-OUT_SEEA_SITE_CSV <- file.path(OUTPUT_DIR, "fish_invert_seea_condition_per_site.csv")
+OUT_SITE_FG_CSV <- file.path(OUTPUT_DIR, "MDG_fish_invert_site_fg_condition.csv")
+OUT_SITE_CSV    <- file.path(OUTPUT_DIR, "MDG_fish_invert_site_condition.csv")
+OUT_SEEA_CSV    <- file.path(OUTPUT_DIR, "MDG_fish_invert_seea_condition.csv")
+OUT_CONDITION_RAW_CSV <- file.path(OUTPUT_DIR, "MDG_fish_invert_condition_account_raw.csv")
+OUT_CONDITION_NORM_CSV <- file.path(OUTPUT_DIR, "MDG_fish_invert_condition_account_normalized.csv")
+OUT_SEEA_SITE_CSV <- file.path(OUTPUT_DIR, "MDG_fish_invert_seea_condition_per_site.csv")
 
 
 # =============================================================================
@@ -743,7 +744,7 @@ normalized_values_list[[1]] <- site_oc %>%
       CI_Change < -0.05 ~ "Declining",
       TRUE ~ "Stable"
     ),
-    Reference_Level = "500 kg/ha"
+    Reference_Level = "1,150 kg/ha (WIO conservation target; McClanahan et al. 2016)"
   ) %>%
   select(Sites, Indicator, Opening_Year, CI_Opening, Closing_Year,
          CI_Closing, CI_Change, Interpretation, Reference_Level)

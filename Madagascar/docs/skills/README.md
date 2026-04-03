@@ -67,7 +67,7 @@ Each skill file provides:
 |---------|-------|
 | **Scope** | Photic coral reefs (M1.3) ecosystem condition framework |
 | **Indicators** | Fish biomass, richness, COTS (inverted), seagrass, habitat composition |
-| **Reference levels** | Fish: 500 kg/ha (unfished); COTS: 0.3 ind/100m² outbreak threshold |
+| **Reference levels** | Fish: 1,150 kg/ha (WIO conservation target; McClanahan 2016); COTS: 15 ind/ha outbreak threshold (Dulvy 2021) |
 | **Expected 2025 values** | Biomass: 1,929 kg/ha (CI: 1.0); Richness: 55 spp (CI: 0.53); COTS: 6.7 ind/ha (CI: 0.98) |
 | **Composite CI (2025)** | 0.84 (moderate-to-good condition) |
 | **Integration** | Links fish/invertebrate data to benthic habitat (extent) and ecosystem services |
@@ -76,7 +76,7 @@ Each skill file provides:
 **When to use:** Compiling the condition account; understanding reference levels and normalization methods; comparing across years (2025 vs. 2026).
 
 **Key data QA/QC reminders:**
-- Transect area: **100 m² (20 m × 5 m)** — CONFIRM with field team; may be 400 m² (20×20)
+- Transect area: **250 m² (50 m × 5 m)** — confirmed with field team
 - GPS fixes: 17 lat, 18 lon values need decimal point correction
 - Functional group harmonisation: 17 raw → 7 standard groups (see skill_condition_biotic_fish_invert.md)
 

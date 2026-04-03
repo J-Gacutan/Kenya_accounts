@@ -2,7 +2,7 @@
 
 **Ecosystem:** Mangrove Forests, Southern Mozambique
 **Accounting Period:** 2026–2027 (Planned)
-**Status:** OUTLINE / PLANNING PHASE
+**Status:** OUTLINE / PLANNING PHASE -- SUPERSEDED by POLICY_BRIEF_Mozambique_Mangroves_v2.md (carbon figures in this outline use uncorrected GMW 2020 extents)
 **Audience:** Ministry of Sea, Inland Waterways & Fisheries (MSMIF), Ministry of Environment, Parliamentary committees, Regional authorities, Donor organizations
 
 ---
@@ -59,7 +59,7 @@ Mozambique's mangrove forests are critical natural capital: they support artisan
 - **Carbon stock:** 5.15 Mg C/ha (baseline: ~8,630 Mg C total across site)
 - **Spatial homogeneity:** Three assets nearly identical (10–11 Mg/ha biomass, 4.6–5.1% canopy cover). Suggests uniformly sparse woodland—likely stressed by salinity or upstream dam regulation.
 
-**Policy implication:** Save Estuary is larger and more carbon-rich, but heterogeneous (mosaic of productive + degraded patches amenable to targeted restoration). Morrumbene is smaller and uniformly stressed (indicates systemic pressure—possibly freshwater deficit from Limpopo dam).
+**Policy implication:** Save Estuary is larger and more carbon-rich, but heterogeneous (mosaic of productive + degraded patches amenable to targeted restoration). Morrumbene is smaller and uniformly stressed (indicates systemic pressure—possibly freshwater deficit from Limpopo dam). Both sites have canopy heights (5–6 m) well below the intact mangrove reference for eastern Africa (15 m), reflecting structurally simplified, low-biomass forest.
 
 ---
 

@@ -1,0 +1,128 @@
+"ecosystem_type","geographic_scope","survey_period","site","pa_name","pa_type","condition_indicator","unit","measured_value","condition_index","reference_level","confidence","note"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Richard Bennett","Watamu Marine Park","No-take MPA","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Richard Bennett","Watamu Marine Park","No-take MPA","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Richard Bennett","Watamu Marine Park","No-take MPA","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Richard Bennett","Watamu Marine Park","No-take MPA","Healthy coral colonies","% colonies",96,1,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Richard Bennett","Watamu Marine Park","No-take MPA","Live hard coral cover","%",29.36,0.979,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Roka","Unprotected","Open access","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Roka","Unprotected","Open access","Coral recruit density","recruits/m2",0.006,0.006,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Roka","Unprotected","Open access","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Roka","Unprotected","Open access","Healthy coral colonies","% colonies",100,1,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Roka 1","Unprotected","Open access","Live hard coral cover","%",8.08,0.269,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Turtle Reef","Watamu Marine Park","No-take MPA","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Turtle Reef","Watamu Marine Park","No-take MPA","Coral recruit density","recruits/m2",0.031,0.031,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Turtle Reef","Watamu Marine Park","No-take MPA","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Turtle Reef","Watamu Marine Park","No-take MPA","Healthy coral colonies","% colonies",95.833,1,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Turtle Reef","Watamu Marine Park","No-take MPA","Live hard coral cover","%",19.6,0.653,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Uyombo","Unprotected","Open access","Live hard coral cover","%",30.4,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Healthy coral colonies","% colonies",91.489,0.963,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Live hard coral cover","%",22.48,0.749,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Wesa","Unprotected","Open access","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Wesa","Unprotected","Open access","Coral recruit density","recruits/m2",0.142,0.142,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Wesa","Unprotected","Open access","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Wesa","Unprotected","Open access","Healthy coral colonies","% colonies",100,1,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Whale island/Uyombo","Watamu Marine Park","No-take MPA","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Whale island/Uyombo","Watamu Marine Park","No-take MPA","Coral recruit density","recruits/m2",0.142,0.142,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Whale island/Uyombo","Watamu Marine Park","No-take MPA","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Jul_2025","Whale island/Uyombo","Watamu Marine Park","No-take MPA","Healthy coral colonies","% colonies",85.393,0.899,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Bamsa","Unknown","Unknown","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Bamsa","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Bamsa","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Bofa","Unprotected","Open access","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Bofa","Unprotected","Open access","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Boso","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Boso","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Chipopo","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Chipopo","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Chole","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Chole","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Inner","Unknown","Unknown","Bleached coral colonies","% colonies",3.571,0.286,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Inner","Unknown","Unknown","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Inner","Unknown","Unknown","Healthy coral colonies","% colonies",85.714,0.902,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Iweni","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Iweni","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Jumba Ruins","Unprotected","Open access","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Jumba Ruins","Unprotected","Open access","Sea urchin density","ind/m2",0.036,0.021,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kadhikia Kuru","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kadhikia Kuru","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kanamai","Unknown","Unknown","Live hard coral cover","%",47.5,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kanamai Community Park","Kanamai Community Park","Community CPA","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kanamai Community Park","Kanamai Community Park","Community CPA","Sea urchin density","ind/m2",0.012,0.007,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kilifi","Unknown","Unknown","Live hard coral cover","%",48.333,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kui","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kui","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kuruwitu Community Park","Kuruwitu Community Park","Community CPA","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Kuruwitu Community Park","Kuruwitu Community Park","Community CPA","Sea urchin density","ind/m2",0.064,0.037,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster Reef","Unknown","Unknown","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster Reef","Unknown","Unknown","Coral recruit density","recruits/m2",0.02,0.02,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster Reef","Unknown","Unknown","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster Reef","Unknown","Unknown","Healthy coral colonies","% colonies",66.667,0.702,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster reef","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Lobster reef","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Makadhikia ya ziwayuu","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Makadhikia ya ziwayuu","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Malindi Coral Garden","Malindi MPA","Managed MPA","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Malindi Coral Garden","Malindi MPA","Managed MPA","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Malindi MPA","Unknown","Unknown","Live hard coral cover","%",46.429,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Maliwai","Unknown","Unknown","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Matewa Ziwayuu","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Matewa Ziwayuu","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mike Inn","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mike Inn","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mkomanga ziwayuu","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mkomanga ziwayuu","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mtwapa","Unknown","Unknown","Live hard coral cover","%",45.909,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Muhindi","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Muhindi","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mwaluai","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Mwaluai","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ndothi","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ndothi","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ngololo","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ngololo","Unknown","Unknown","Sea urchin density","ind/m2",0.2,0.114,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ngomeni Outer","Malindi MPA","Managed MPA","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ngomeni Outer","Malindi MPA","Managed MPA","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ngomeni Outer","Malindi MPA","Managed MPA","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Nyali coral garden","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Nyali coral garden","Unknown","Unknown","Sea urchin density","ind/m2",0.026,0.015,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Outer","Unknown","Unknown","Bleached coral colonies","% colonies",28.571,0,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Outer","Unknown","Unknown","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Outer","Unknown","Unknown","Healthy coral colonies","% colonies",71.429,0.752,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Punju Ziwayuu","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Punju Ziwayuu","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ras Kitau","Unknown","Unknown","Live hard coral cover","%",12.857,0.429,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ras Ngomeni Inner","Unknown","Unknown","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ras ngomeni","Unknown","Unknown","Live hard coral cover","%",39,1,">30% (GCRMN 2021; Obura et al. 2022)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ras watine","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Ras watine","Unknown","Unknown","Sea urchin density","ind/m2",0.002,0.001,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Roka","Unprotected","Open access","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Roka","Unprotected","Open access","Sea urchin density","ind/m2",0.068,0.039,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Roka 2","Unprotected","Open access","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Sagafu","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Sagafu","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Serena Beach  Navy","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Serena Beach  Navy","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Shimo la tewa","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Shimo la tewa","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Starfish","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Starfish","Unknown","Unknown","Sea urchin density","ind/m2",0.22,0.126,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Tenewi","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Tenewi","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Bleached coral colonies","% colonies",0,1,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Coral recruit density","recruits/m2",0,0,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Healthy coral colonies","% colonies",70.833,0.746,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Watamu Coral Garden","Watamu Marine Park","No-take MPA","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Bleached coral colonies","% colonies",0.73,0.854,"<5% background (Hoegh-Guldberg 1999)","MEDIUM","Jul 2025 data = post-2024 bleaching event; interpret with caution"
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Coral recruit density","recruits/m2",0.061,0.061,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Diseased coral colonies","% colonies",0,1,"<2% background (Bourne et al. 2009)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Healthy coral colonies","% colonies",89.781,0.945,"95% healthy (non-bleaching year baseline)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa","Unprotected","Open access","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","Wesa 1","Unprotected","Open access","Coral recruit density","recruits/m2",0.008,0.008,"1-3 recruits/m2 (WIO healthy; Hughes et al. 2010)","LOW-MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","ngomeni inn","Unknown","Unknown","Crown-of-thorns density","ind/ha",0,1,"Outbreak threshold: 15 ind/ha (Dulvy et al. 2021)","MEDIUM",NA
+"Coral reef (M1.3)","Kilifi County, Kenya","Nov_2024","ngomeni inn","Unknown","Unknown","Sea urchin density","ind/m2",0,0,"1.5-2 ind/m2 optimum (provisional; WIO; LOW confidence)","LOW",NA

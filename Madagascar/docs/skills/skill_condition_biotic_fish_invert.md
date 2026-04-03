@@ -34,8 +34,14 @@ Columns `5_10`, `10_20`, `20_30`, `30_40`, `40_50`, `50_60` record the **count o
 
 | Type | Source | Use |
 |---|---|---|
-| Unfished reef fish biomass | MacNeil et al. (2015) *Nature* | Reference level for fish biomass (~500 kg/ha) |
-| COTS outbreak threshold | AIMS Long-Term Monitoring Programme | Outbreak density >0.3 individuals per survey tow |
+| Fish biomass — WIO conservation target | McClanahan et al. (2016) *PLOS ONE* | Reference level for fish biomass: 1,150 kg/ha (conservation target); 600 kg/ha (sustainability floor) |
+| Fish biomass — WIO benchmark (closures) | McClanahan et al. (2020) *Aquatic Conservation* | High-compliance closure benchmark: ~910 kg/ha (95% CI 823–989); remote reefs: ~2,450 kg/ha |
+| Fish biomass — unfished B0 (global) | MacNeil et al. (2015) *Nature* | Unfished baseline ~1,000 kg/ha Indo-Pacific (supplementary context; replaced as primary reference) |
+| Fish species richness — WIO per-site range | Samoilys et al. (2019) *Ecology and Evolution* | 82–152 spp. per 50 m x 5 m transect across WIO (51 sites, 4 countries incl. Madagascar) |
+| Fish species richness — SW Madagascar | Chabanet et al. (2005) *WIOJMS* / Blue Ventures | ~187 spp. per assemblage survey (Andavadoaka); contemporary fished baseline for SW Madagascar |
+| COTS density — background level | Dulvy et al. (2021) *Nature Communications*; AIMS | Background / predator-controlled: <1 ind/ha; threshold for concern: 10–15 ind/ha; outbreak: >15–30 ind/ha |
+| Sea urchin density — provisional WIO reference | Kenya studies (McClanahan 1987+; Scientific Reports 2024) | Outer reef *Echinometra mathaei*: ~1.5–2 ind/m² (Kenya/WIO); no formal WIO reference published (LOW confidence) |
+| Clam abundance — Indian Ocean reference | Apte et al. (2010) *Marine Biodiversity Records* | *Tridacna maxima* at relatively undisturbed Lakshadweep reefs: 122–141 ind/ha (LOW-MEDIUM confidence; no SW Madagascar baseline) |
 | IUCN Global Ecosystem Typology (GET) | IUCN | Ecosystem type classification code M1.3 |
 
 ---
@@ -173,12 +179,14 @@ For spatial context within the BSU framework, see [skill_condition_biotic_coral.
 
 ### Reference Levels
 
-| Indicator | Reference Level | Source | Rationale |
-|---|---|---|---|
-| Fish biomass | 500 kg/ha | MacNeil et al. (2015) *Nature* | Median unfished reef biomass across Indo-Pacific sites; widely used benchmark |
-| COTS density | 0 individuals/ha (ideal); outbreak = >30/ha | AIMS LTMP; Moran & De'ath (1992) | Healthy reefs have low COTS density; outbreaks cause mass coral mortality |
-| Sea urchin density | Regional healthy-reef mean (TBD from data) | Literature review required | Moderate urchin density maintains algal control; very high = bioerosion |
-| Fish species richness | Regional species pool estimate (TBD from data) | Site with highest richness as proxy | Proportion of regional pool present |
+| Indicator | Reference Level | Source | Confidence | Rationale |
+|---|---|---|---|---|
+| Fish biomass | 1,150 kg/ha (primary); 600 kg/ha (sustainability floor) | McClanahan et al. (2016) *PLOS ONE* | HIGH | WIO-specific conservation target (15 countries); replaces 500 kg/ha global benchmark |
+| Fish species richness | 82–152 spp. per site (WIO range) | Samoilys et al. (2019) *Ecol. Evol.* | MEDIUM | WIO per-site range from 51 sites incl. Madagascar; use midpoint ~117 spp. as reference if single value required |
+| Trophic composition | Herbivore + invertivore ~56% of standing biomass; piscivore ~13% | Hicks et al. (2023) *Proc. R. Soc. B* | MEDIUM | Best available global reference; no WIO-specific empirical benchmarks published |
+| COTS density | Background: <1 ind/ha (ideal); concern: 10–15 ind/ha; outbreak: >15–30 ind/ha | Dulvy et al. (2021) *Nat. Commun.*; AIMS | HIGH | Indo-Pacific consensus; background level predator-controlled; replaces single 30/ha threshold |
+| Sea urchin density | Provisional: ~1.5–2 ind/m² outer reef (*Echinometra mathaei*) | Kenya/WIO studies (McClanahan 1987+) | LOW | No formal WIO reference condition published; provisional value from nearest regional analogue |
+| Clam abundance | 122–141 ind/ha (*Tridacna maxima*) | Apte et al. (2010) *Marine Biodiversity Records* | LOW-MEDIUM | Indian Ocean reference (Lakshadweep); WIO populations severely depleted (>90% decline); no SW Madagascar baseline |
 
 ### Formulae
 
@@ -188,18 +196,26 @@ For spatial context within the BSU framework, see [skill_condition_biotic_coral.
 Condition Index = ─────────────────    (capped at 1.0)
                    Reference Level
 
-Example: CI_fish_biomass = 150 kg/ha / 500 kg/ha = 0.30
+Example: CI_fish_biomass = 690 kg/ha / 1,150 kg/ha = 0.60
+         (using WIO conservation target of 1,150 kg/ha)
 ```
 
-**Inverted (higher = worse):**
+**Inverted (higher = worse, COTS):**
 ```
                          Measured Value
 Condition Index = 1  −  ─────────────────    (capped at [0, 1])
-                         Maximum Value
+                         Outbreak Threshold
 
-Example: CI_COTS = 1 − (5/ha / 30/ha) = 0.83
+Example: CI_COTS = 1 − (7.4/ha / 15/ha) = 0.51
+         (7.4 ind/ha from Madagascar 2025-26; threshold 15 ind/ha)
          (low COTS = high condition)
 ```
+
+**Note on COTS three-zone interpretation:**
+
+- CI = 1.0 (background <1 ind/ha — predator-controlled)
+- CI = 0.5–0.9 (elevated background 1–15 ind/ha — monitor closely)
+- CI < 0.5 (near or at outbreak threshold — management intervention warranted)
 
 ---
 
@@ -211,18 +227,21 @@ Example: CI_COTS = 1 − (5/ha / 30/ha) = 0.83
 │  Fish & Invertebrate Community Condition                    │
 │  Survey coverage: 27 sites across accounting area           │
 │                                                             │
-│  ┌───────────────────┬────────┬──────────┬────────────────┐ │
-│  │ Condition         │ Ref.   │ Measured │ Condition      │ │
-│  │ Indicator         │ Level  │ Value    │ Index (0–1)    │ │
-│  ├───────────────────┼────────┼──────────┼────────────────┤ │
-│  │ Fish biomass      │ 500    │ TBD      │ TBD            │ │
-│  │                   │ kg/ha  │          │                │ │
-│  │ Fish species      │ max    │ TBD      │ TBD            │ │
-│  │ richness          │ obs.   │          │                │ │
-│  │ COTS density      │ 0/ha   │ TBD      │ TBD (inv.)    │ │
-│  │ Sea urchin        │ TBD    │ TBD      │ TBD            │ │
-│  │ density           │        │          │                │ │
-│  └───────────────────┴────────┴──────────┴────────────────┘ │
+│  ┌───────────────────┬──────────────┬──────────┬────────────────┐ │
+│  │ Condition         │ Ref. Level   │ Measured │ Condition      │ │
+│  │ Indicator         │              │ Value    │ Index (0–1)    │ │
+│  ├───────────────────┼──────────────┼──────────┼────────────────┤ │
+│  │ Fish biomass      │ 1,150 kg/ha  │ TBD      │ TBD            │ │
+│  │                   │ (WIO target) │          │                │ │
+│  │ Fish species      │ 82–152 spp.  │ TBD      │ TBD            │ │
+│  │ richness          │ (WIO range)  │          │                │ │
+│  │ COTS density      │ <1 ind/ha    │ TBD      │ TBD (inv.)     │ │
+│  │                   │ (bkg. level) │          │                │ │
+│  │ Sea urchin        │ 1.5–2 ind/m² │ TBD      │ TBD            │ │
+│  │ density           │ (provisional)│          │                │ │
+│  │ Clam abundance    │ 122–141/ha   │ TBD      │ TBD            │ │
+│  │ (Tridacna)        │ (Lakshadweep)│          │                │ │
+│  └───────────────────┴──────────────┴──────────┴────────────────┘ │
 │                                                             │
 │  Note: Values calculated by fish_invert_condition.R from    │
 │  field survey data; populate this table with script output  │
@@ -282,7 +301,9 @@ Each table presents opening (Year 1, earliest survey) and closing (Year 2, lates
 | High null counts in invertebrate data (557–753 nulls per column) | Many rows are empty/padding | Filter to rows with non-null species and abundance before analysis |
 | Sea urchin abundance stored as formula strings | Values not computed in spreadsheet | Parse and evaluate formulas in R during QA/QC |
 | No stereo-video (BRUV) validation | Fish size estimates from visual census have known bias | Report as Tier 2 accuracy limitation; recommend BRUV calibration |
-| Global reference level for fish biomass | May not reflect local baseline | Binding constraint on accuracy tier; recommend regional calibration |
+| Fish biomass reference level (WIO, McClanahan 2016) | Better than global 500 kg/ha benchmark; still not Madagascar-specific | Reference upgraded to WIO conservation target (1,150 kg/ha); recommend further validation against SW Madagascar monitoring data |
+| Sea urchin reference level (provisional) | No formal WIO reference published; provisional value from Kenya studies | Report as LOW confidence; flag in publication methods; consult GCRMN East Africa for unpublished long-term data |
+| Clam abundance reference level | Lakshadweep reference (Indian Ocean); no SW Madagascar baseline | WIO populations >90% depleted; Lakshadweep reference may overestimate healthy state; report as LOW-MEDIUM confidence |
 
 ---
 
@@ -293,7 +314,7 @@ Each table presents opening (Year 1, earliest survey) and closing (Year 2, lates
 - [ ] **Calculate** fish biomass per species per transect using W = a × L^b
 - [ ] **Aggregate** biomass and abundance by site × functional group × calendar year; compute transect-level variance
 - [ ] **Calculate** invertebrate indicator values (COTS density, urchin density, clam abundance)
-- [ ] **Derive** reference levels (500 kg/ha fish biomass; max observed richness; COTS outbreak threshold)
+- [ ] **Derive** reference levels (1,150 kg/ha WIO fish biomass target; 82–152 spp. WIO richness range; COTS background <1 ind/ha / outbreak >15 ind/ha; sea urchin provisional 1.5–2 ind/m²; clam 122–141 ind/ha)
 - [ ] **Normalise** measured values against reference levels to condition indices (0–1)
 - [ ] **Compile** fish and invertebrate rows in SEEA EA condition account table
 - [ ] **Export** site-level summary and condition account tables as CSV
@@ -308,21 +329,23 @@ Each table presents opening (Year 1, earliest survey) and closing (Year 2, lates
 |---|---|---|---|---|
 | Field survey design (UVC) | Rapid survey, <10 sites, no size-class data | Replicated transects at 10–30 sites with size-class bins (this skill — 27 sites, 2 transects/station) | Permanent monitoring with >30 sites, stereo-video BRUVs, >3 transects/station | 2 / 2 / 2 |
 | Biomass estimation method | Literature-based average biomass (no field data) | Allometric conversion from visual size estimates (this skill — W = aL^b) | Stereo-BRUV validated length estimates with species-specific L-W from local calibration | 2 / 1–2 / 2 |
-| Reference level setting | Global average (500 kg/ha from MacNeil et al., this skill's current approach) | Regional published benchmarks from same biogeographic province | Locally established historical reference from long-term monitoring or paleoecological records | 1 / 1 / 1 |
+| Reference level setting | Global average (e.g., MacNeil et al. 2015 500 kg/ha) | Regional published benchmarks from same biogeographic province (this skill's current approach — McClanahan 2016 WIO; Samoilys 2019 WIO richness) | Locally established historical reference from long-term monitoring or paleoecological records | 2 / 2 / 1 |
 | Invertebrate indicators | Presence/absence only | Abundance counts with outbreak thresholds (this skill — COTS, urchin density) | Quantitative biomass with validated density–impact relationships | 2 / 1–2 / 2 |
 | Temporal monitoring | Single snapshot (this skill) | Biennial surveys at fixed sites | Annual permanent monitoring stations | 1 / 1 / 1 |
 
 ### Binding Constraint Analysis
 
-The current fish and invertebrate condition assessment is **Tier 2 on A: Feasibility** (27 sites with replicated UVC and allometric biomass estimation) but **Tier 1 on B: Accuracy** for reference levels (global 500 kg/ha benchmark does not account for local species composition, reef geomorphology, or fishing pressure history). Temporal monitoring is also Tier 1 (single snapshot).
+The current fish and invertebrate condition assessment is **Tier 2 on A: Feasibility** (27 sites with replicated UVC and allometric biomass estimation) and **Tier 2 on B: Accuracy** for reference levels (WIO-specific conservation targets from McClanahan et al. 2016, 2020 and Samoilys et al. 2019 now replace the global 500 kg/ha benchmark). Temporal monitoring remains Tier 1 (single snapshot). Sea urchin and clam reference levels are provisional (LOW confidence) and remain a binding constraint on indicator reliability for those two indicators.
 
-The **reference level sub-procedure (B=1) is the binding constraint** on accuracy. The global 500 kg/ha benchmark from MacNeil et al. (2015) applies broadly to unfished Indo-Pacific reefs but may overestimate or underestimate the appropriate reference for southwest Madagascar's reef systems, which have distinct biogeographic affinities (Western Indian Ocean province) and varying fishing pressure gradients.
+The **binding constraint** has shifted from fish biomass reference levels (now Tier 2) to **(1) temporal monitoring** (single-snapshot, Tier 1 for all indicators) and **(2) sea urchin and clam reference levels** (no formal WIO baseline; provisional values only).
 
 ### Progression Pathway
 
-To reach **Tier 2 on B-accuracy**: derive regional fish biomass reference levels from Western Indian Ocean monitoring programmes (e.g., WCS Madagascar reef monitoring, CORDIO East Africa); validate visual size estimates against stereo-BRUV measurements at a subset of stations; establish COTS density thresholds calibrated to local coral mortality data.
+To reach **Tier 2 on B-accuracy for sea urchin and clam**: consult GCRMN East Africa (Tim McClanahan, WCS) for unpublished long-term urchin density data; contact MPRH Madagascar and IHSM (University of Toliara) for historical Tridacna records; validate provisional Kenya-derived urchin reference against local SW Madagascar reef zone data.
 
-To reach **Tier 3 on B-accuracy**: implement permanent transect resurveys at >30 stations annually; calibrate species-specific length-weight parameters from local specimens; establish locally derived unfished biomass baselines from fully protected marine reserves within the accounting area; validate invertebrate density–impact relationships through experimental or long-term monitoring data.
+To reach **Tier 2 on C: Temporal monitoring**: resurvey fixed transects at a minimum subset of sites (10–15) within 18–24 months; use permanent markers at high-priority sites (e.g., inside MPAs and at key OASIS reference sites).
+
+To reach **Tier 3**: implement permanent transect resurveys at >30 stations annually; calibrate species-specific length-weight parameters from local specimens; establish locally derived unfished biomass baselines from fully protected marine reserves within the accounting area; validate invertebrate density–impact relationships through experimental or long-term monitoring data.
 
 ---
 

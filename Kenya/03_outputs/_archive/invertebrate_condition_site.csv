@@ -1,0 +1,35 @@
+"survey_period","site","mean_urchin_m2","se_urchin_m2","mean_cots_ha","se_cots_ha","mean_tridacna_ha","mean_cucumber_ha","tridacna_present","n_transects"
+"Nov_2024","Bamsa",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Bofa",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Boso",0,0,0,0,80,0,TRUE,2
+"Nov_2024","Chipopo",0,0,0,0,20,0,TRUE,2
+"Nov_2024","Chole",0,0,0,0,140,0,TRUE,2
+"Nov_2024","Iweni",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Jumba Ruins",0.036,0.012,0,0,140,0,TRUE,2
+"Nov_2024","Kadhikia Kuru",0,0,0,0,20,0,TRUE,2
+"Nov_2024","Kanamai Community Park",0.012,0.012,0,0,20,20,TRUE,2
+"Nov_2024","Kui",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Kuruwitu Community Park",0.064,0.02,0,0,20,60,TRUE,2
+"Nov_2024","Lobster reef",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Makadhikia ya ziwayuu",0,NA,0,NA,0,120,FALSE,1
+"Nov_2024","Malindi Coral Garden",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Matewa Ziwayuu",0,0,0,0,0,60,FALSE,2
+"Nov_2024","Mike Inn",0,NA,0,NA,0,0,FALSE,1
+"Nov_2024","Mkomanga ziwayuu",0,0,0,0,0,20,FALSE,2
+"Nov_2024","Muhindi",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Mwaluai",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Ndothi",0,0,0,0,0,0,FALSE,2
+"Nov_2024","Ngololo",0.2,0.016,0,0,20,0,TRUE,2
+"Nov_2024","Ngomeni Outer",0,NA,0,NA,0,0,FALSE,1
+"Nov_2024","Nyali coral garden",0.026,0.002,0,0,0,0,FALSE,2
+"Nov_2024","Punju Ziwayuu",0,0,0,0,0,20,FALSE,2
+"Nov_2024","Ras watine",0.002,0.002,0,0,40,0,TRUE,2
+"Nov_2024","Roka",0.068,0.068,0,0,0,20,FALSE,2
+"Nov_2024","Sagafu",0,0,0,0,20,0,TRUE,2
+"Nov_2024","Serena Beach  Navy",0,NA,0,NA,0,120,FALSE,1
+"Nov_2024","Shimo la tewa",0,0,0,0,60,0,TRUE,2
+"Nov_2024","Starfish",0.22,0.06,0,0,120,60,TRUE,2
+"Nov_2024","Tenewi",0,NA,0,NA,0,0,FALSE,1
+"Nov_2024","Watamu Coral Garden",0,0,0,0,20,0,TRUE,2
+"Nov_2024","Wesa",0,0,0,0,0,0,FALSE,2
+"Nov_2024","ngomeni inn",0,0,0,0,0,0,FALSE,2

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mozambique SEEA EA -- Analytical Process Graph</title>
+<style>
+  :root {
+    --bg:#f8f9fa;--card:#fff;--border:#dee2e6;
+    --blue:#2563eb;--blue-light:#dbeafe;--blue-dark:#1e40af;
+    --green:#16a34a;--green-light:#dcfce7;
+    --amber:#d97706;--amber-light:#fef3c7;
+    --red:#dc2626;--red-light:#fee2e2;
+    --purple:#7c3aed;--purple-light:#ede9fe;
+    --gray:#6b7280;--gray-light:#f3f4f6;
+    --teal:#0d9488;--teal-light:#ccfbf1;
+    --emerald:#059669;--emerald-light:#d1fae5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:#1f2937;line-height:1.5;padding:2rem}
+  h1{font-size:1.75rem;font-weight:700;margin-bottom:.25rem}
+  .subtitle{color:var(--gray);margin-bottom:2rem;font-size:.95rem}
+  .legend{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:8px}
+  .legend-item{display:flex;align-items:center;gap:.4rem;font-size:.8rem}
+  .legend-dot{width:14px;height:14px;border-radius:3px;flex-shrink:0}
+  .pipeline{display:flex;flex-direction:column;gap:0;position:relative}
+  .connector{width:2px;height:18px;background:var(--border);margin:0 auto}
+  .connector-arrow{text-align:center;color:var(--gray);font-size:.7rem;margin:-2px 0}
+  .connector-split{display:flex;justify-content:center;gap:0;align-items:flex-end}
+  .connector-split-line{width:2px;height:18px;background:var(--border)}
+  .branch-container{display:flex;gap:.75rem;align-items:stretch}
+  .branch-container>.step{flex:1}
+  .step{background:var(--card);border:2px solid var(--border);border-radius:10px;padding:.85rem 1rem;position:relative;transition:box-shadow .2s}
+  .step:hover{box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .step-num{position:absolute;top:-10px;left:12px;background:var(--emerald);color:#fff;font-size:.65rem;font-weight:700;padding:1px 8px;border-radius:10px}
+  .step h3{font-size:.88rem;font-weight:600;margin-bottom:.3rem;padding-right:2rem}
+  .step p,.step ul{font-size:.78rem;color:#374151}
+  .step ul{padding-left:1.1rem}
+  .step ul li{margin-bottom:.1rem}
+  .tag{display:inline-block;font-size:.62rem;font-weight:600;padding:1px 6px;border-radius:4px;margin-left:4px;vertical-align:middle}
+  .tag-input{background:var(--blue-light);color:var(--blue-dark)}
+  .tag-output{background:var(--green-light);color:var(--green)}
+  .tag-decision{background:var(--amber-light);color:var(--amber)}
+  .tag-pending{background:var(--red-light);color:var(--red)}
+  .tag-ref{background:var(--purple-light);color:var(--purple)}
+  .tag-formula{background:var(--teal-light);color:var(--teal)}
+  .io-row{display:flex;gap:.4rem;margin-top:.35rem;flex-wrap:wrap}
+  .io-box{font-size:.68rem;padding:2px 7px;border-radius:4px;border:1px solid}
+  .io-in{border-color:var(--blue);background:var(--blue-light);color:var(--blue-dark)}
+  .io-out{border-color:var(--green);background:var(--green-light);color:var(--green)}
+  .section-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--gray);padding:.6rem 0 .2rem;border-top:2px dashed var(--border);margin-top:.8rem}
+  .formula-block{background:#f1f5f9;border-left:3px solid var(--teal);padding:.35rem .7rem;margin:.3rem 0;font-family:'SF Mono','Fira Code',monospace;font-size:.72rem;border-radius:0 4px 4px 0;white-space:pre-wrap}
+  .note{font-size:.72rem;color:var(--amber);font-style:italic;margin-top:.25rem}
+  .status-done{border-left:4px solid var(--green)}
+  .status-pending{border-left:4px solid var(--amber)}
+  .status-blocked{border-left:4px solid var(--red)}
+  .asset-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.3rem;margin-top:.4rem;font-size:.7rem}
+  .asset-card{padding:.3rem .5rem;border-radius:4px;border:1px solid var(--border)}
+  .asset-high{background:var(--green-light);border-color:var(--green)}
+  .asset-mod{background:var(--amber-light);border-color:var(--amber)}
+  .asset-low{background:var(--red-light);border-color:var(--red)}
+  @media(max-width:700px){.branch-container{flex-direction:column}body{padding:1rem}.asset-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<h1>Mozambique -- Mangrove Condition &amp; Carbon Account Process Graph</h1>
+<p class="subtitle">SEEA EA | Mangrove Forests (MFT1.2) | Save Estuary + Morrumbene Estuary | NASA GEDI LiDAR | 2025-2026</p>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--blue-light);border:1px solid var(--blue)"></div> Input</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--green-light);border:1px solid var(--green)"></div> Output / HIGH conf.</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--amber-light);border:1px solid var(--amber)"></div> MODERATE conf. / Decision</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--red-light);border:1px solid var(--red)"></div> LOW conf. / Blocked</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--teal-light);border:1px solid var(--teal)"></div> Formula</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--purple-light);border:1px solid var(--purple)"></div> Reference level</div>
+</div>
+
+<div class="pipeline">
+
+<!-- STEP 1 -->
+<div class="step status-done">
+  <span class="step-num">1</span>
+  <h3>Data Ingestion (4 CSV files from archive)</h3>
+  <div class="branch-container" style="margin-top:.4rem">
+    <div style="flex:1">
+      <p style="font-weight:600;font-size:.8rem">Save Estuary (Gaza)</p>
+      <div class="io-row">
+        <span class="io-box io-in">Save_assets_condition_stats.csv (8 assets, 84 GEDI footprints)</span>
+        <span class="io-box io-in">Save_area_condition_stats.csv (1 site aggregate)</span>
+      </div>
+      <p style="font-size:.72rem;margin-top:.2rem">area_ha pre-computed from ArcGIS shapefiles</p>
+    </div>
+    <div style="flex:1">
+      <p style="font-weight:600;font-size:.8rem">Morrumbene Estuary (Inhambane)</p>
+      <div class="io-row">
+        <span class="io-box io-in">morrumbene_by_asset.csv (3 assets, 195 GEDI footprints)</span>
+        <span class="io-box io-in">Morrumbene_area_condition_stats.csv (1 site aggregate)</span>
+      </div>
+      <p style="font-size:.72rem;margin-top:.2rem">Shape_Area in sq degrees (requires conversion)</p>
+    </div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 2 -->
+<div class="step status-done">
+  <span class="step-num">2</span>
+  <h3>QA/QC</h3>
+  <ul>
+    <li>Validate Point_Count is numeric and non-NA</li>
+    <li>Flag Save Assets 2 &amp; 4 (1-2 GEDI footprints each) <span class="tag tag-pending">LOW confidence</span></li>
+    <li>Note AGBD standard errors ~126-129% of mean (very high relative uncertainty)</li>
+    <li>Note very low canopy cover values (4-9%) -- possible GEDI measurement artefact</li>
+  </ul>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 3 -->
+<div class="step status-done">
+  <span class="step-num">3</span>
+  <h3>Area Conversion</h3>
+  <div class="branch-container" style="margin-top:.4rem">
+    <div style="flex:1;padding:.4rem;background:var(--green-light);border-radius:6px;font-size:.75rem">
+      <strong>Save:</strong> area_ha pre-computed from ArcGIS polygon geometry. No conversion needed.<br>
+      <strong>Total: 1,877.54 ha</strong> (8 assets)
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--amber-light);border-radius:6px;font-size:.75rem">
+      <strong>Morrumbene:</strong> Shape_Area (sq degrees) converted in R:
+      <div class="formula-block" style="margin:.2rem 0">lat = -23.5 deg S
+area_factor = (111000 &times; cos(lat &times; &pi;/180) &times; 111000) / 10000
+area_ha = Shape_Area &times; area_factor</div>
+      <strong>Total: 1,068.76 ha</strong> (3 assets)
+    </div>
+  </div>
+  <p class="note">Cross-check: Mozambique/02_analysis/check_areas.R. Asset polygon areas &lt; GMW 2020 estuary extents (Save 12,085 ha; Morrumbene 1,677 ha).</p>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 4 -->
+<div class="section-label">Normalisation to Condition Indices (0-1)</div>
+<div class="step status-done">
+  <span class="step-num">4</span>
+  <h3>Normalise 4 GEDI Indicators <span class="tag tag-formula">Linear rescaling</span></h3>
+  <div class="formula-block">CI = clamp((observed - poor) / (pristine - poor), 0, 1)</div>
+  <div class="branch-container" style="margin-top:.5rem">
+    <div style="flex:1;padding:.4rem;background:var(--green-light);border-radius:6px;font-size:.72rem">
+      <strong>Canopy Height</strong> <span class="tag tag-ref">poor=3 m, pristine=15 m</span><br>
+      Confidence: <strong>HIGH</strong><br>
+      <em>Fatoyinbo 2008; Lagomasino 2015; Sitoe 2016 (WIO/Mozambique)</em>
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--red-light);border-radius:6px;font-size:.72rem">
+      <strong>Canopy Cover</strong> <span class="tag tag-ref">poor=0.30, pristine=0.70</span><br>
+      Confidence: <strong>LOW</strong><br>
+      <em>Provisional; no published WIO benchmark</em><br>
+      <span style="font-weight:600">Both sites below poor threshold &rarr; CI = 0</span>
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--amber-light);border-radius:6px;font-size:.72rem">
+      <strong>AGBD</strong> <span class="tag tag-ref">poor=5, pristine=100 Mg/ha</span><br>
+      Confidence: <strong>MEDIUM</strong><br>
+      <em>Godoy &amp; De Lacerda 2015 (degraded); general tropical (pristine)</em>
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--red-light);border-radius:6px;font-size:.72rem">
+      <strong>Plant Area Index</strong> <span class="tag tag-ref">poor=0.05, pristine=2.0</span><br>
+      Confidence: <strong>LOW</strong><br>
+      <em>Provisional; no published WIO benchmark</em>
+    </div>
+  </div>
+  <p class="note">Carbon density (mean_L4A_carbono_mgha) is NOT normalised -- carried through as raw value for carbon account only.</p>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 5 -->
+<div class="step status-done">
+  <span class="step-num">5</span>
+  <h3>Composite Condition Index per Asset</h3>
+  <div class="formula-block">CCI = mean(CI_height, CI_cover, CI_agbd, CI_pai)   [equal weight]</div>
+  <p style="margin-top:.3rem;font-size:.78rem"><strong>GEDI confidence flag</strong> propagated to all CCI rows:</p>
+  <div class="asset-grid">
+    <div class="asset-card asset-mod"><strong>Save 1</strong><br>841 ha | 17 fp | CCI 0.059</div>
+    <div class="asset-card asset-low"><strong>Save 2</strong><br>27 ha | 2 fp | CCI 0.061</div>
+    <div class="asset-card asset-low"><strong>Save 3</strong><br>104 ha | 3 fp | CCI <strong>0.427</strong></div>
+    <div class="asset-card asset-low"><strong>Save 4</strong><br>6 ha | 1 fp | CCI 0.066</div>
+    <div class="asset-card asset-mod"><strong>Save 5</strong><br>117 ha | 17 fp | CCI 0.126</div>
+    <div class="asset-card asset-high"><strong>Save 6</strong><br>248 ha | 31 fp | CCI 0.045</div>
+    <div class="asset-card asset-mod"><strong>Save 7</strong><br>236 ha | 7 fp | CCI 0.066</div>
+    <div class="asset-card asset-mod"><strong>Save 8</strong><br>299 ha | 6 fp | CCI <strong>0.279</strong></div>
+    <div class="asset-card asset-high"><strong>Morr 1</strong><br>512 ha | 85 fp | CCI 0.070</div>
+    <div class="asset-card asset-high"><strong>Morr 2</strong><br>448 ha | 95 fp | CCI 0.073</div>
+    <div class="asset-card asset-mod"><strong>Morr 3</strong><br>109 ha | 15 fp | CCI 0.081</div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 6 -->
+<div class="step status-done">
+  <span class="step-num">6</span>
+  <h3>Area-Weighted Site Aggregation</h3>
+  <div class="formula-block">CCI_site = sum(CCI_i &times; area_ha_i) / sum(area_ha_i)</div>
+  <table style="width:100%;font-size:.78rem;border-collapse:collapse;margin-top:.4rem">
+    <tr style="background:var(--gray-light)"><th style="text-align:left;padding:4px">Site</th><th>Assets</th><th>Total Area</th><th>CI Height</th><th>CI Cover</th><th>CI AGBD</th><th>CI PAI</th><th style="font-weight:700">CCI</th></tr>
+    <tr><td style="padding:4px">Save Estuary</td><td style="text-align:center">8</td><td style="text-align:center">1,878 ha</td><td style="text-align:center">0.187</td><td style="text-align:center">0.018</td><td style="text-align:center">0.095</td><td style="text-align:center">0.171</td><td style="text-align:center;font-weight:700">0.118</td></tr>
+    <tr><td style="padding:4px">Morrumbene</td><td style="text-align:center">3</td><td style="text-align:center">1,069 ha</td><td style="text-align:center">0.190</td><td style="text-align:center">0.000</td><td style="text-align:center">0.063</td><td style="text-align:center">0.036</td><td style="text-align:center;font-weight:700">0.072</td></tr>
+  </table>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 7 -->
+<div class="section-label">Carbon Account</div>
+<div class="step status-done">
+  <span class="step-num">7</span>
+  <h3>Carbon Stock Calculation</h3>
+  <div class="formula-block">total_carbon_MgC = mean_L4A_carbono_mgha &times; area_ha
+CO2_equivalent = total_carbon_MgC &times; 3.664 (44/12)
+uncertainty_MgC = mean_L4A_agbd_se &times; 0.47 &times; area_ha</div>
+  <table style="width:100%;font-size:.78rem;border-collapse:collapse;margin-top:.4rem">
+    <tr style="background:var(--gray-light)"><th style="text-align:left;padding:4px">Site</th><th>Carbon Density</th><th>Asset Area</th><th>Total Carbon</th><th>CO2 Equivalent</th></tr>
+    <tr><td style="padding:4px">Save Estuary</td><td style="text-align:center">5.94 Mg C/ha</td><td style="text-align:center">1,878 ha</td><td style="text-align:center;font-weight:600">~11,150 Mg C</td><td style="text-align:center">~40,850 Mg CO2</td></tr>
+    <tr><td style="padding:4px">Morrumbene</td><td style="text-align:center">5.15 Mg C/ha</td><td style="text-align:center">1,069 ha</td><td style="text-align:center;font-weight:600">~5,500 Mg C</td><td style="text-align:center">~20,150 Mg CO2</td></tr>
+    <tr style="font-weight:700"><td style="padding:4px">Combined</td><td style="text-align:center">5.64 Mg C/ha</td><td style="text-align:center">2,946 ha</td><td style="text-align:center">~16,650 Mg C</td><td style="text-align:center">~61,000 Mg CO2</td></tr>
+  </table>
+  <p class="note">All carbon values use asset polygon areas (not full GMW 2020 estuary extents). Report with uncertainty bounds (mean &plusmn; 1 SE).</p>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 8 -->
+<div class="section-label">SEEA EA Export</div>
+<div class="step status-done">
+  <span class="step-num">8</span>
+  <h3>SEEA EA Condition Account Table</h3>
+  <p>One row per asset (11 total): ecosystem_type, site, asset_id, area_ha, 4 CIs, CCI, gedi_confidence, year=2025.</p>
+  <p>All values labelled <strong>PROVISIONAL</strong> pending field validation.</p>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 9 -->
+<div class="step status-done">
+  <span class="step-num">9</span>
+  <h3>Disaggregate &amp; Export <span class="tag tag-output">8 files</span></h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:.4rem;font-size:.72rem;margin-top:.4rem">
+    <div style="font-weight:600;grid-column:span 2;color:var(--gray)">Combined (MOZ_ prefix)</div>
+    <div class="io-box io-out">MOZ_mangrove_condition_by_asset.csv (11 rows)</div>
+    <div class="io-box io-out">MOZ_mangrove_condition_by_site.csv (2 rows)</div>
+    <div class="io-box io-out">MOZ_mangrove_carbon_account.csv (11 rows)</div>
+    <div class="io-box io-out">MOZ_mangrove_seea_condition_account.csv (11 rows)</div>
+    <div style="font-weight:600;grid-column:span 2;color:var(--gray);margin-top:.3rem">Per-site subfolders</div>
+    <div class="io-box io-out">Save/ (4 CSVs: condition_by_asset, condition_by_site, carbon_account, seea_condition)</div>
+    <div class="io-box io-out">Morrumbene/ (4 CSVs: same structure)</div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 10 (BLOCKED) -->
+<div class="section-label">Downstream (Blocked / Pending)</div>
+<div class="branch-container">
+  <div class="step status-blocked">
+    <span class="step-num" style="background:var(--red)">B1</span>
+    <h3>Field Validation <span class="tag tag-pending">BLOCKED</span></h3>
+    <p>Planned Mar-May 2026. Min 3 plots per asset.</p>
+    <ul>
+      <li>Canopy height (clinometer vs GEDI rh100)</li>
+      <li>DBH all stems &ge; 2.5 cm in 10 m radius</li>
+      <li>Stem density, species composition</li>
+      <li>Regeneration density (&lt; 1.3 m)</li>
+    </ul>
+    <p class="note">Until complete: ALL values remain PROVISIONAL.</p>
+  </div>
+  <div class="step status-pending">
+    <span class="step-num" style="background:var(--amber)">B2</span>
+    <h3>Sentinel-2 Cross-Validation <span class="tag tag-decision">PENDING</span></h3>
+    <p>GEDI canopy cover (4-9%) may be artefact. Derive independent cover estimate from Sentinel-2 NDVI/fractional cover classification.</p>
+  </div>
+  <div class="step status-pending">
+    <span class="step-num" style="background:var(--amber)">B3</span>
+    <h3>Future Work</h3>
+    <ul>
+      <li>Multi-period GEDI (2026-2027) for change detection</li>
+      <li>Species mapping (high-res optical or field)</li>
+      <li>Ecosystem services (carbon market, nursery, coastal protection)</li>
+      <li>Extent trends (GMW update 2025-2026)</li>
+    </ul>
+  </div>
+</div>
+
+</div><!-- end pipeline -->
+
+<!-- EXTENT SIDEBAR -->
+<div style="margin-top:2rem;padding:1rem;background:var(--card);border:2px solid var(--emerald);border-radius:10px">
+  <h3 style="color:var(--emerald);margin-bottom:.4rem;font-size:.9rem">Extent Account (GIS, parallel workflow)</h3>
+  <p style="font-size:.78rem">GMW 2020 mangrove polygons intersected with admin boundaries (QGIS/ArcGIS). Area calculated per admin unit (province/district).</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.4rem;margin-top:.5rem;font-size:.72rem">
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px;text-align:center">
+      <strong>Step 1</strong><br>Intersect GMW &times; Admin L3
+    </div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px;text-align:center">
+      <strong>Step 2</strong><br>Calculate area_ha per polygon
+    </div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px;text-align:center">
+      <strong>Step 3</strong><br>Summarise by admin unit (SUM)
+    </div>
+  </div>
+  <p style="font-size:.72rem;margin-top:.3rem;color:var(--gray)">Output: mangrove_extent_by_adminL3_summary.csv. Asset-level condition integrated via Asset_ID join.</p>
+</div>
+
+<p style="margin-top:2rem;font-size:.75rem;color:var(--gray)">
+  Generated for AFRICA-accounts project | Mozambique Mangrove (MFT1.2) | mangrove_condition.R + check_areas.R | 2026-03-29
+</p>
+
+</body>
+</html>

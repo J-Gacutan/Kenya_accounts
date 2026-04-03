@@ -1,0 +1,2 @@
+FREQUENCY,SUM_area_ha_true,Reference_year,Source,Notes
+,3806.46,2025,True_protected_area (mangrove_WDPA intersected with WDPA_dissolve),De-duplicated; accounts for overlapping WDPA/WDOECM polygons; larger than sum of Mangrove_WDPA_statistics.csv because that table shows only 8 named sites — additional PA areas contribute to the dissolved total

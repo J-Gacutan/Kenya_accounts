@@ -1,0 +1,4 @@
+Category,Area_ha,Pct_of_total,Reference_year,Source
+Total mangroves,5741.64,100.0,2025,Total_mangrove_area_statistics.csv
+Within protected areas (de-duplicated),3806.46,66.3,2025,True_protected_area_statistics.csv
+Outside protected areas,1935.18,33.7,2025,Calculated: Total minus Protected

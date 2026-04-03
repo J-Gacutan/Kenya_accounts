@@ -1,0 +1,8 @@
+Component,Year,Polygons,Area_ha,Source,Notes
+Opening extent (GMW 2020),2020,349,6083.04,gmw_mng_2020_v4019_statistics.csv,Global Mangrove Watch v4.019 clipped to Kenya study area
+Additions (in 2025 not in 2020),2020-2025,886,589.10,Mangrove_additions_2025-2020.shp,Erase(mangroveextent_2025 minus gmw_2020)
+Reductions (in 2020 not in 2025),2020-2025,332,927.84,Mangrove_reductions_2020-2025.shp,Erase(gmw_2020 minus mangroveextent_2025)
+Closing extent (2025 classification),2025,914,5741.64,Total_mangrove_area_statistics.csv,Project mangrove classification
+Net change,2020-2025,,-341.40,Calculated,Closing minus Opening; -5.6% over 5 years
+Closing -- within protected areas,2025,259,3806.46,True_protected_area_statistics.csv,De-duplicated WDPA overlay; 66.3% of total
+Closing -- outside protected areas,2025,,1935.18,Calculated,Total minus Protected; 33.7% of total

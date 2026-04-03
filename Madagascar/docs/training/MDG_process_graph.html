@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madagascar SEEA EA -- Analytical Process Graph</title>
+<style>
+  :root {
+    --bg: #f8f9fa; --card: #fff; --border: #dee2e6;
+    --blue: #2563eb; --blue-light: #dbeafe; --blue-dark: #1e40af;
+    --green: #16a34a; --green-light: #dcfce7;
+    --amber: #d97706; --amber-light: #fef3c7;
+    --red: #dc2626; --red-light: #fee2e2;
+    --purple: #7c3aed; --purple-light: #ede9fe;
+    --gray: #6b7280; --gray-light: #f3f4f6;
+    --teal: #0d9488; --teal-light: #ccfbf1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #1f2937; line-height: 1.5; padding: 2rem; }
+  h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .subtitle { color: var(--gray); margin-bottom: 2rem; font-size: 0.95rem; }
+  .legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; padding: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 8px; }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; }
+  .legend-dot { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+  .pipeline { display: flex; flex-direction: column; gap: 0; position: relative; }
+  .connector { width: 2px; height: 20px; background: var(--border); margin: 0 auto; }
+  .connector-arrow { text-align: center; color: var(--gray); font-size: 0.7rem; margin: -2px 0; }
+  .branch-container { display: flex; gap: 1rem; align-items: stretch; }
+  .branch-container > .step { flex: 1; }
+  .step { background: var(--card); border: 2px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; position: relative; transition: box-shadow 0.2s; }
+  .step:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .step-num { position: absolute; top: -10px; left: 12px; background: var(--blue); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .step h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; padding-right: 2rem; }
+  .step p, .step ul { font-size: 0.82rem; color: #374151; }
+  .step ul { padding-left: 1.2rem; }
+  .step ul li { margin-bottom: 0.15rem; }
+  .tag { display: inline-block; font-size: 0.65rem; font-weight: 600; padding: 1px 6px; border-radius: 4px; margin-left: 4px; vertical-align: middle; }
+  .tag-input { background: var(--blue-light); color: var(--blue-dark); }
+  .tag-output { background: var(--green-light); color: var(--green); }
+  .tag-decision { background: var(--amber-light); color: var(--amber); }
+  .tag-pending { background: var(--red-light); color: var(--red); }
+  .tag-ref { background: var(--purple-light); color: var(--purple); }
+  .tag-formula { background: var(--teal-light); color: var(--teal); }
+  .io-row { display: flex; gap: 0.5rem; margin-top: 0.4rem; flex-wrap: wrap; }
+  .io-box { font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; border: 1px solid; }
+  .io-in { border-color: var(--blue); background: var(--blue-light); color: var(--blue-dark); }
+  .io-out { border-color: var(--green); background: var(--green-light); color: var(--green); }
+  .section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray); padding: 0.75rem 0 0.25rem; border-top: 2px dashed var(--border); margin-top: 1rem; }
+  .formula-block { background: #f1f5f9; border-left: 3px solid var(--teal); padding: 0.4rem 0.75rem; margin: 0.4rem 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.75rem; border-radius: 0 4px 4px 0; white-space: pre-wrap; }
+  .status-done { border-left: 4px solid var(--green); }
+  .status-pending { border-left: 4px solid var(--amber); }
+  .status-blocked { border-left: 4px solid var(--red); }
+  .note { font-size: 0.75rem; color: var(--amber); font-style: italic; margin-top: 0.3rem; }
+  @media (max-width: 700px) { .branch-container { flex-direction: column; } body { padding: 1rem; } }
+</style>
+</head>
+<body>
+
+<h1>Madagascar -- Coral Reef Condition Account Process Graph</h1>
+<p class="subtitle">SEEA EA Ecosystem Condition Accounts | Photic Coral Reefs (M1.3) | SW Madagascar, 27 sites | 2025-2026</p>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--blue-light);border:1px solid var(--blue)"></div> Input</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--green-light);border:1px solid var(--green)"></div> Output</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--amber-light);border:1px solid var(--amber)"></div> Decision / Pending</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--teal-light);border:1px solid var(--teal)"></div> Formula</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--purple-light);border:1px solid var(--purple)"></div> Reference level</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--red-light);border:1px solid var(--red)"></div> Blocked / Critical</div>
+</div>
+
+<div class="pipeline">
+
+<!-- STEP 1 -->
+<div class="step status-done">
+  <span class="step-num">1</span>
+  <h3>Data Ingestion</h3>
+  <p>Load raw Excel files into R with <code>readxl::read_excel()</code></p>
+  <div class="io-row">
+    <span class="io-box io-in">Fishdata_OASIS_M.xlsx (5,186 rows)</span>
+    <span class="io-box io-in">Invertebrate_0ASIS_M.xlsx Sheet 1 (999 rows)</span>
+    <span class="io-box io-in">Invertebrate_0ASIS_M.xlsx Sheet 2 (999 rows)</span>
+  </div>
+  <div class="io-row">
+    <span class="io-box io-out">fish_raw</span>
+    <span class="io-box io-out">invert_raw</span>
+    <span class="io-box io-out">urchin_raw</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 2 -->
+<div class="section-label">QA/QC Pipeline</div>
+<div class="branch-container">
+  <div class="step status-done">
+    <span class="step-num">2a</span>
+    <h3>Fish QA/QC</h3>
+    <ul>
+      <li>Fix GPS coordinates (lat -30 to -15, lon 40-55; 17 lat + 18 lon fixes)</li>
+      <li>Trim whitespace; fix family typos ("Mulidae" &rarr; "Mullidae")</li>
+      <li>Standardise functional groups: 17 variants &rarr; 7 categories</li>
+      <li>Remove rows with missing species or species = "0"</li>
+    </ul>
+    <div class="io-row"><span class="io-box io-out">fish (5,186 rows cleaned)</span></div>
+  </div>
+  <div class="step status-done">
+    <span class="step-num">2b</span>
+    <h3>Invertebrate QA/QC</h3>
+    <ul>
+      <li>Fix GPS coordinates (same bounds)</li>
+      <li>Fix misplaced transect values</li>
+      <li>Remove rows with missing species</li>
+      <li>Coerce Abundance to numeric</li>
+    </ul>
+    <div class="io-row"><span class="io-box io-out">invert (434 rows; 565 removed)</span></div>
+  </div>
+  <div class="step status-done">
+    <span class="step-num">2c</span>
+    <h3>Sea Urchin QA/QC</h3>
+    <ul>
+      <li>Fix GPS coordinates</li>
+      <li>Parse 36 formula strings (e.g., "=(10*48)" &rarr; 480)</li>
+      <li>Remove padding rows</li>
+    </ul>
+    <div class="io-row"><span class="io-box io-out">urchin (264 rows; 728 removed)</span></div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 3 -->
+<div class="step status-done">
+  <span class="step-num">3</span>
+  <h3>Extract Calendar Year</h3>
+  <p>Parse Excel serial dates &rarr; <code>as.Date()</code> &rarr; extract Year (2025 or 2026)</p>
+  <div class="io-row">
+    <span class="io-box io-in">fish, invert, urchin (Date columns)</span>
+  </div>
+  <div class="io-row">
+    <span class="io-box io-out">Year column added to all 3 dataframes</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 4 -->
+<div class="section-label">Biomass Calculation</div>
+<div class="step status-done">
+  <span class="step-num">4</span>
+  <h3>Fish Biomass: Allometric Conversion <span class="tag tag-formula">W = a &times; L<sup>b</sup></span></h3>
+  <p>For each fish record, calculate individual weight from size-class midpoint and species-specific allometric parameters (124 unique <em>a</em>, 55 unique <em>b</em> values).</p>
+  <div class="formula-block">Size midpoints: 5-10=7.5, 10-20=15, 20-30=25, 30-40=35, 40-50=45, 50-60=55 cm
+W_grams = a &times; L^b &times; count
+biomass_kg_ha = (sum(W_grams) / 1000) / TRANSECT_AREA_HA</div>
+  <p class="note">CRITICAL: TRANSECT_AREA = 100 m2 assumed (20&times;5 m). If 400 m2 (20&times;20 m), all values &divide; 4. <span class="tag tag-pending">PENDING</span></p>
+  <div class="io-row">
+    <span class="io-box io-out">fish$biomass_g, fish$total_count per record</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 5 -->
+<div class="section-label">Aggregation Hierarchy</div>
+<div class="step status-done">
+  <span class="step-num">5</span>
+  <h3>Fish Aggregation: Record &rarr; Transect &rarr; Site</h3>
+  <p>Four-level aggregation producing parallel outputs:</p>
+  <ul>
+    <li><strong>5a.</strong> Transect &times; Functional Group &times; Year: sum biomass_g, scale to kg/ha</li>
+    <li><strong>5b.</strong> Transect totals (all groups): sum biomass, count species_richness</li>
+    <li><strong>5c.</strong> Site &times; FG &times; Year: mean &plusmn; variance across transects</li>
+    <li><strong>5d.</strong> Site &times; Year totals: mean biomass, mean abundance, richness</li>
+  </ul>
+  <div class="io-row">
+    <span class="io-box io-out">fish_transect_fg</span>
+    <span class="io-box io-out">fish_transect_total</span>
+    <span class="io-box io-out">fish_site_fg</span>
+    <span class="io-box io-out">fish_site</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 6 -->
+<div class="step status-done">
+  <span class="step-num">6</span>
+  <h3>Trophic Composition</h3>
+  <p>Calculate % biomass per functional group per site-year.</p>
+  <div class="formula-block">pct_biomass = mean_biomass_kg_ha(group) / total_biomass(site) &times; 100</div>
+  <p>Results (pooled 2025-2026): Herbivore 40.6%, Carnivore 30.0%, Planktivore 15.2%, Corallivore 8.7%, Omnivore 5.5%</p>
+  <div class="io-row">
+    <span class="io-box io-out">trophic (by site &times; FG)</span>
+    <span class="io-box io-out">trophic_overall (by year)</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 7 -->
+<div class="section-label">Invertebrate Processing</div>
+<div class="branch-container">
+  <div class="step status-done">
+    <span class="step-num">7a</span>
+    <h3>Macroinvertebrate Metrics</h3>
+    <ul>
+      <li>Transect-level: sum COTS count, Tridacna count, total abundance, species richness</li>
+      <li>Site-level: mean &plusmn; variance across transects</li>
+      <li>Scale: cots_density_ha = count / TRANSECT_AREA_HA</li>
+    </ul>
+    <div class="io-row">
+      <span class="io-box io-out">invert_transect</span>
+      <span class="io-box io-out">invert_site</span>
+    </div>
+  </div>
+  <div class="step status-done">
+    <span class="step-num">7b</span>
+    <h3>Sea Urchin Metrics</h3>
+    <ul>
+      <li>Transect-level: sum abundance, Diadema count, Echinometra count</li>
+      <li>Site-level: mean &plusmn; variance; max richness</li>
+      <li>Scale: urchin_density_m2 = count / TRANSECT_AREA_M2</li>
+    </ul>
+    <div class="io-row">
+      <span class="io-box io-out">urchin_transect</span>
+      <span class="io-box io-out">urchin_site</span>
+    </div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 8 -->
+<div class="section-label">Normalisation to Condition Indices (0-1)</div>
+<div class="step status-done">
+  <span class="step-num">8</span>
+  <h3>Normalisation <span class="tag tag-formula">3 indicators</span></h3>
+  <div class="branch-container" style="margin-top:0.5rem">
+    <div style="flex:1;padding:0.5rem;background:var(--blue-light);border-radius:6px">
+      <strong>Fish Biomass CI</strong> <span class="tag tag-ref">1,150 kg/ha</span>
+      <div class="formula-block">CI = min(measured / 1150, 1.0)</div>
+      <p style="font-size:0.75rem">McClanahan et al. 2016 WIO target. Confidence: HIGH</p>
+    </div>
+    <div style="flex:1;padding:0.5rem;background:var(--blue-light);border-radius:6px">
+      <strong>Fish Richness CI</strong> <span class="tag tag-ref">103 spp (max obs)</span>
+      <div class="formula-block">CI = richness / max(richness)</div>
+      <p style="font-size:0.75rem">Dataset-internal maximum. Confidence: MEDIUM</p>
+    </div>
+    <div style="flex:1;padding:0.5rem;background:var(--amber-light);border-radius:6px">
+      <strong>COTS Density CI (inverted)</strong> <span class="tag tag-ref">15 ind/ha</span>
+      <div class="formula-block">CI = max(1 - density / 15, 0)</div>
+      <p style="font-size:0.75rem">Dulvy et al. 2021 outbreak threshold. Confidence: MEDIUM</p>
+    </div>
+  </div>
+  <p class="note" style="margin-top:0.5rem">Sea urchin density (1.83 ind/m2) reported descriptively only -- reference level PROVISIONAL (LOW confidence). Not included in formal CI.</p>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 9 -->
+<div class="step status-done">
+  <span class="step-num">9</span>
+  <h3>Accounting-Area Summary by Year</h3>
+  <p>Calculate mean &plusmn; SE across all sites for each year (2025: 15 sites; 2026: 12 sites).</p>
+  <table style="width:100%;font-size:0.78rem;border-collapse:collapse;margin-top:0.5rem">
+    <tr style="background:var(--gray-light)"><th style="text-align:left;padding:4px">Indicator</th><th>2025 CI</th><th>2026 CI</th></tr>
+    <tr><td style="padding:4px">Fish biomass</td><td style="text-align:center">1.00</td><td style="text-align:center">1.00</td></tr>
+    <tr><td style="padding:4px">Fish richness</td><td style="text-align:center">0.54</td><td style="text-align:center">0.54</td></tr>
+    <tr><td style="padding:4px">COTS density</td><td style="text-align:center">0.55</td><td style="text-align:center">1.00</td></tr>
+    <tr style="font-weight:600"><td style="padding:4px">Composite</td><td style="text-align:center">0.70</td><td style="text-align:center">0.85</td></tr>
+  </table>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 10 -->
+<div class="step status-done">
+  <span class="step-num">10</span>
+  <h3>Opening / Closing Condition Accounts (per Site)</h3>
+  <ul>
+    <li><strong>Raw values table:</strong> Pivot min_year (opening) vs max_year (closing); calculate Absolute_Change and Percent_Change per variable per site</li>
+    <li><strong>Normalised values table:</strong> CI_Opening vs CI_Closing; classify as Improving (&gt;0.05), Declining (&lt;-0.05), or Stable</li>
+  </ul>
+  <div class="io-row">
+    <span class="io-box io-out">condition_account_raw (81 rows)</span>
+    <span class="io-box io-out">condition_account_normalized (81 rows)</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 11 -->
+<div class="step status-done">
+  <span class="step-num">11</span>
+  <h3>SEEA EA Condition Table Assembly</h3>
+  <p>Create standard SEEA EA rows: ecosystem_type, site, indicator, measured_value, condition_index, reference_level, confidence, notes.</p>
+  <div class="io-row">
+    <span class="io-box io-out">seea_condition_rows (long format)</span>
+    <span class="io-box io-out">seea_condition_per_site (81 rows)</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- STEP 12 -->
+<div class="section-label">Export</div>
+<div class="step status-done">
+  <span class="step-num">12</span>
+  <h3>CSV Export <span class="tag tag-output">6 files</span></h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;margin-top:0.4rem;font-size:0.78rem">
+    <div class="io-box io-out">MDG_fish_invert_site_condition.csv</div>
+    <div class="io-box io-out">MDG_fish_invert_site_fg_condition.csv</div>
+    <div class="io-box io-out">MDG_fish_invert_seea_condition.csv</div>
+    <div class="io-box io-out">MDG_fish_invert_seea_condition_per_site.csv</div>
+    <div class="io-box io-out">MDG_fish_invert_condition_account_raw.csv</div>
+    <div class="io-box io-out">MDG_fish_invert_condition_account_normalized.csv</div>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<!-- DOWNSTREAM -->
+<div class="section-label">Downstream (Pending / Blocked)</div>
+<div class="branch-container">
+  <div class="step status-pending">
+    <span class="step-num">P1</span>
+    <h3>Extent Mapping <span class="tag tag-pending">IN PROGRESS</span></h3>
+    <p>Sentinel-2 SAM classification (10 m) by Yves Amoros Mitondrasoa, IHSM.</p>
+    <p>~12,085 ha preliminary. Needed for per-ha service calculations.</p>
+  </div>
+  <div class="step status-pending">
+    <span class="step-num">P2</span>
+    <h3>Nursery Service <span class="tag tag-pending">PRELIMINARY</span></h3>
+    <p>LRR method (31% enhancement). ~$61K/yr. Needs market price survey + extent.</p>
+  </div>
+  <div class="step status-pending">
+    <span class="step-num">P3</span>
+    <h3>Provisioning Service <span class="tag tag-pending">PRELIMINARY</span></h3>
+    <p>Resource rent method. ~$88K/yr. Needs catch data from MPRH + fisher cost survey.</p>
+  </div>
+</div>
+
+<div class="connector"></div>
+
+<div class="step status-blocked">
+  <span class="step-num">B1</span>
+  <h3>Critical Blockers <span class="tag tag-pending">RESOLVE BEFORE PUBLICATION</span></h3>
+  <ul>
+    <li><strong>Transect area:</strong> 100 m2 or 400 m2? All biomass/density values change by 4&times; <span class="tag tag-pending">CONFIRM</span></li>
+    <li><strong>CSV reference level:</strong> Files still use 500 kg/ha; re-run with 1,150 kg/ha <span class="tag tag-pending">RE-EXPORT</span></li>
+    <li><strong>PA stratification:</strong> Not yet implemented; 27 sites span multiple PAs <span class="tag tag-pending">PLANNED</span></li>
+  </ul>
+</div>
+
+</div><!-- end pipeline -->
+
+<p style="margin-top:2rem;font-size:0.75rem;color:var(--gray)">
+  Generated for AFRICA-accounts project | Madagascar Coral Reef (M1.3) | fish_invert_condition.R (962 lines) | 2026-03-29
+</p>
+
+</body>
+</html>

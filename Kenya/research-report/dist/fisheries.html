@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Fisheries Provisioning | Kenya Coastal Ecosystem Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.8aeaa8ef.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.8aeaa8ef.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775023339720,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775023339669,"size":864});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "a1a6f7ed", inputs: ["FileAttachment"], outputs: ["physData","monData"], body: async (FileAttachment) => {
+const physData = await FileAttachment("./data/fisheries-physical.csv").csv({typed: true});
+const monData = await FileAttachment("./data/fisheries-monetary.csv").csv({typed: true});
+return {physData,monData};
+}});
+
+define({id: "2d31f297", inputs: ["Plot","physData","display"], body: async (Plot,physData,display) => {
+display(await(
+Plot.plot({
+  title: "Reef-associated fish catch, 2020-2024 (metric tonnes)",
+  subtitle: "Central estimate with uncertainty bounds; attribution fraction = 30-38% of county catch",
+  width: 800,
+  height: 400,
+  x: {label: "Year", tickFormat: "d"},
+  y: {label: "Reef catch (mt)", grid: true},
+  marks: [
+    Plot.areaY(physData, {
+      x: "year",
+      y1: "reef_catch_lower_mt",
+      y2: "reef_catch_upper_mt",
+      fill: "#2a9d8f",
+      fillOpacity: 0.2
+    }),
+    Plot.lineY(physData, {
+      x: "year",
+      y: "reef_catch_adjusted_mt",
+      stroke: "#2a9d8f",
+      strokeWidth: 2.5
+    }),
+    Plot.dot(physData, {
+      x: "year",
+      y: "reef_catch_adjusted_mt",
+      fill: "#2a9d8f",
+      r: 5,
+      tip: true,
+      title: d => `${d.year}\nReef catch: ${d.reef_catch_adjusted_mt.toLocaleString("en-US", {maximumFractionDigits: 0})} mt\nFraction: ${d.reef_fraction_pct.toFixed(1)}%\nTotal county: ${d.total_county_catch_mt.toLocaleString()} mt`
+    }),
+    Plot.ruleY([0])
+  ]
+})
+))
+}});
+
+define({id: "f72ea01a", mode: "inline", inputs: ["physData","display"], body: async (physData,display) => {
+display(await(
+physData[physData.length - 1].reef_catch_adjusted_mt.toLocaleString("en-US", {maximumFractionDigits: 0})
+))
+}});
+
+define({id: "b347f962", mode: "inline", inputs: ["d3","physData","display"], body: async (d3,physData,display) => {
+display(await(
+d3.mean(physData, d => d.reef_catch_adjusted_mt).toLocaleString("en-US", {maximumFractionDigits: 0})
+))
+}});
+
+define({id: "18803792", mode: "inline", inputs: ["physData","display"], body: async (physData,display) => {
+display(await(
+physData[physData.length - 1].reef_fraction_pct.toFixed(1)
+))
+}});
+
+define({id: "c2e77f3e", inputs: ["Inputs","physData","display"], body: async (Inputs,physData,display) => {
+display(await(
+Inputs.table(physData.map(d => ({
+  Year: d.year,
+  "County catch (mt)": d.total_county_catch_mt.toLocaleString(),
+  "Reef catch (mt)": d.reef_catch_adjusted_mt.toLocaleString("en-US", {maximumFractionDigits: 0}),
+  "Reef fraction (%)": d.reef_fraction_pct.toFixed(1),
+  "Lower bound (mt)": d.reef_catch_lower_mt.toLocaleString("en-US", {maximumFractionDigits: 0}),
+  "Upper bound (mt)": d.reef_catch_upper_mt.toLocaleString("en-US", {maximumFractionDigits: 0}),
+  Status: d.attribution_status
+})), {
+  columns: ["Year", "County catch (mt)", "Reef catch (mt)", "Reef fraction (%)", "Lower bound (mt)", "Upper bound (mt)", "Status"],
+  width: {Status: 200}
+})
+))
+}});
+
+define({id: "b922d161", inputs: ["monData"], outputs: ["monDataM"], body: (monData) => {
+const monDataM = monData.map(d => ({
+  ...d,
+  rent_lower_m: d.resource_rent_lower_usd / 1e6,
+  rent_central_m: d.resource_rent_central_usd / 1e6,
+  rent_upper_m: d.resource_rent_upper_usd / 1e6,
+  revenue_m: d.reef_revenue_real_2024_usd / 1e6
+}));
+return {monDataM};
+}});
+
+define({id: "f7f7097d", inputs: ["Plot","monDataM","display"], body: async (Plot,monDataM,display) => {
+display(await(
+Plot.plot({
+  title: "Reef fisheries resource rent, 2020-2024",
+  subtitle: "Central estimate with sensitivity bounds (lower = 30% rent share, upper = 45%)",
+  width: 800,
+  height: 400,
+  marginLeft: 60,
+  x: {label: "Year", tickFormat: "d"},
+  y: {label: "Resource rent (USD millions)", grid: true},
+  marks: [
+    Plot.areaY(monDataM, {
+      x: "year",
+      y1: "rent_lower_m",
+      y2: "rent_upper_m",
+      fill: "#264653",
+      fillOpacity: 0.2
+    }),
+    Plot.lineY(monDataM, {
+      x: "year",
+      y: "rent_central_m",
+      stroke: "#264653",
+      strokeWidth: 2.5
+    }),
+    Plot.dot(monDataM, {
+      x: "year",
+      y: "rent_central_m",
+      fill: "#264653",
+      r: 5,
+      tip: true,
+      title: d => `${d.year}\nResource rent: USD ${d.rent_central_m.toFixed(2)}M\nRevenue: USD ${d.revenue_m.toFixed(2)}M`
+    }),
+    Plot.ruleY([0])
+  ]
+})
+))
+}});
+
+define({id: "032b0fbe", mode: "inline", inputs: ["monData","display"], body: async (monData,display) => {
+display(await(
+(monData[monData.length - 1].resource_rent_central_usd / 1e6).toFixed(2)
+))
+}});
+
+define({id: "ffc458ac", mode: "inline", inputs: ["monData","display"], body: async (monData,display) => {
+display(await(
+(monData[monData.length - 1].reef_revenue_real_2024_usd / 1e6).toFixed(2)
+))
+}});
+
+define({id: "66ae6c9f", mode: "inline", inputs: ["d3","monData","display"], body: async (d3,monData,display) => {
+display(await(
+(d3.mean(monData, d => d.resource_rent_central_usd) / 1e6).toFixed(2)
+))
+}});
+
+define({id: "9621d30e", inputs: ["Inputs","monData","display"], body: async (Inputs,monData,display) => {
+display(await(
+Inputs.table(monData.map(d => ({
+  Year: d.year,
+  "Revenue (USD M)": (+d.reef_revenue_real_2024_usd / 1e6).toFixed(2),
+  "Rent lower (USD M)": (+d.resource_rent_lower_usd / 1e6).toFixed(2),
+  "Rent central (USD M)": (+d.resource_rent_central_usd / 1e6).toFixed(2),
+  "Rent upper (USD M)": (+d.resource_rent_upper_usd / 1e6).toFixed(2),
+  Notes: d.notes
+})), {
+  columns: ["Year", "Revenue (USD M)", "Rent lower (USD M)", "Rent central (USD M)", "Rent upper (USD M)", "Notes"],
+  width: {Notes: 200}
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Kenya Coastal Ecosystem Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Extent Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Condition Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
+    <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Services &amp; Integration</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./fisheries">Fisheries Provisioning</a></li>
+    <li class="observablehq-link"><a href="./synthesis">Cross-Ecosystem Synthesis</a></li>
+    <li class="observablehq-link"><a href="./seea-accounts">SEEA EA Accounts</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#physical-supply-account">Physical Supply Account</a></li>
+<li class="observablehq-secondary-link"><a href="#physical-supply-table">Physical Supply Table</a></li>
+<li class="observablehq-secondary-link"><a href="#monetary-supply-account">Monetary Supply Account</a></li>
+<li class="observablehq-secondary-link"><a href="#monetary-supply-table">Monetary Supply Table</a></li>
+<li class="observablehq-secondary-link"><a href="#methodology-notes">Methodology Notes</a></li>
+<li class="observablehq-secondary-link"><a href="#interpretation-and-next-steps">Interpretation and Next Steps</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="fisheries-provisioning" tabindex="-1"><a class="observablehq-header-anchor" href="#fisheries-provisioning">Fisheries Provisioning</a></h1>
+<h2 id="reef-associated-fisheries-supply-and-use-account-2020-2024" tabindex="-1"><a class="observablehq-header-anchor" href="#reef-associated-fisheries-supply-and-use-account-2020-2024">Reef-Associated Fisheries Supply and Use Account, 2020-2024</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:a1a6f7ed:--></div>
+<p>This account quantifies the ecosystem service of wild fish provisioning attributable to coral reef ecosystems in Kilifi County. The physical supply account records reef-associated catch in metric tonnes; the monetary account values this catch using the resource rent method<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
+<p>All values are <strong>provisional</strong>, pending validation of the reef attribution fraction by Dr Pascal Thoya (Kenya Fisheries Service).</p>
+<hr>
+<h2 id="physical-supply-account" tabindex="-1"><a class="observablehq-header-anchor" href="#physical-supply-account">Physical Supply Account</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:2d31f297:--></div>
+<div class="grid grid-cols-3">
+<div class="card">
+<h3>2024 Reef Catch</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:f72ea01a:--> mt</p>
+</div>
+<div class="card">
+<h3>5-Year Mean</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:b347f962:--> mt/yr</p>
+</div>
+<div class="card">
+<h3>Reef Fraction (2024)</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:18803792:-->%</p>
+</div>
+</div>
+<hr>
+<h2 id="physical-supply-table" tabindex="-1"><a class="observablehq-header-anchor" href="#physical-supply-table">Physical Supply Table</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:c2e77f3e:--></div>
+<hr>
+<h2 id="monetary-supply-account" tabindex="-1"><a class="observablehq-header-anchor" href="#monetary-supply-account">Monetary Supply Account</a></h2>
+<p>The monetary account values reef-associated catch using the <strong>resource rent method</strong> - the return to the natural capital input after deducting produced capital and labour costs. Values are in real 2024 USD, deflated from nominal KES using GDP deflators.</p>
+<div class="observablehq observablehq--block"><!--:b922d161:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f7f7097d:--></div>
+<div class="grid grid-cols-3">
+<div class="card">
+<h3>2024 Resource Rent</h3>
+<p class="big-sm">USD <observablehq-loading></observablehq-loading><!--:032b0fbe:-->M</p>
+</div>
+<div class="card">
+<h3>2024 Gross Revenue</h3>
+<p class="big-sm">USD <observablehq-loading></observablehq-loading><!--:ffc458ac:-->M</p>
+</div>
+<div class="card">
+<h3>5-Year Mean Rent</h3>
+<p class="big-sm">USD <observablehq-loading></observablehq-loading><!--:66ae6c9f:-->M/yr</p>
+</div>
+</div>
+<hr>
+<h2 id="monetary-supply-table" tabindex="-1"><a class="observablehq-header-anchor" href="#monetary-supply-table">Monetary Supply Table</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9621d30e:--></div>
+<hr>
+<h2 id="methodology-notes" tabindex="-1"><a class="observablehq-header-anchor" href="#methodology-notes">Methodology Notes</a></h2>
+<ul>
+<li><strong>Attribution fraction:</strong> Reef-associated catch is estimated as the proportion of total Kilifi County marine catch attributable to reef ecosystems, based on species composition analysis of landing site records</li>
+<li><strong>Adjustment factor:</strong> Raw attribution is scaled by 1.3x to account for unreported catch (FAO/IHH methodology)</li>
+<li><strong>Deflation:</strong> Nominal KES revenues deflated to 2024 real values using Kenya GDP deflator series; converted to USD at 2024 average rate (1 USD = 134.85 KES)</li>
+<li><strong>Resource rent:</strong> Calculated as 30% (lower), 38% (central), and 45% (upper) of gross revenue, following SEEA EA guidance for artisanal fisheries where factor-share data are unavailable</li>
+</ul>
+<hr>
+<h2 id="interpretation-and-next-steps" tabindex="-1"><a class="observablehq-header-anchor" href="#interpretation-and-next-steps">Interpretation and Next Steps</a></h2>
+<p>The reef-associated fisheries account demonstrates that Kilifi County's coral reef ecosystems generate a measurable and significant economic return. Even under the most conservative assumptions (30% reef attribution, 30% rent share), the annual resource rent exceeds USD 2 million - a figure that provides an empirical basis for reef conservation investment decisions.</p>
+<p>Two actions would materially improve account confidence: (1) validation of the reef attribution fraction by Dr Pascal Thoya, which would narrow the physical supply uncertainty bounds; and (2) a local fisher cost survey at Ngomeni and Kilifi Creek landing sites, which would replace the literature-derived cost ratio (30-45%) with an empirically grounded estimate. Both are targeted for Q2 2026.</p>
+<p>The 172% increase in total county catch between 2020 and 2024 warrants careful interpretation. It may reflect genuine stock recovery, improved reporting coverage by KeFS, or shifts in fishing effort - the current data cannot distinguish between these drivers. The condition account (fish biomass at most sites below the 500 kg/ha sustainability threshold) suggests caution in attributing the catch increase to improved reef health.</p>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.big-sm {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>United Nations (2021). SEEA EA, Chapter 10: Monetary valuation of ecosystem services. Resource rent = gross output - intermediate consumption - compensation of employees - user cost of produced assets. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./seagrass"><span>Seagrass Condition</span></a><a rel="next" href="./synthesis"><span>Cross-Ecosystem Synthesis</span></a></nav>
+<div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

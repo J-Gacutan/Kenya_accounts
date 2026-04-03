@@ -1,0 +1,55 @@
+Area,Zone,Species,Mean_Shoots_m2,Mean_Canopy_height_cm,n_quadrats
+Bofa,Near reef,Thalassodendron ciliatum,1235.5555555555557,38.7,10
+Bofa,Near shore,Cymodocea rotundata,2922.222222222222,16.25,4
+Bofa,Near shore,Halodule uninervis,5333.333333333334,7,1
+Bofa,Near shore,Syringodium isoetifolium,3466.666666666667,17.6,5
+Bofa,Near shore,Thalassia hemprichii,1288.888888888889,12.5,2
+Bofa,Near shore,Thalassodendron ciliatum,1266.6666666666667,41.5,2
+Bofa,middle,Thalassodendron ciliatum,1906.6666666666667,44.2,10
+Jumba ruins,Near reef,Thalassodendron ciliatum,644.4444444444445,16.7,10
+Jumba ruins,Near shore,Cymodocea serrulata,2240,8.2,5
+Jumba ruins,Near shore,Syringodium isoetifolium,13511.111111111113,7.5,2
+Jumba ruins,Near shore,Thalassia hemprichii,1925.925925925926,6.666666666666667,3
+Kanamai,Near reef,Halodule wrightii,5333.333333333334,8,1
+Kanamai,Near reef,Halophila stipulacea,4770.37037037037,4,3
+Kanamai,Near reef,Thalassia hemprichii,1542.857142857143,10.857142857142858,7
+Kanamai,Near shore,Cymodocea rotundata,1674.0740740740741,13.666666666666666,3
+Kanamai,Near shore,Halodule uninervis,2666.666666666667,6,1
+Kanamai,Near shore,Halodule wrightii,11244.444444444445,10,1
+Kanamai,Near shore,Halophila stipulacea,355.55555555555554,5,1
+Kanamai,Near shore,Thalassia hemprichii,1748.1481481481483,13.333333333333334,3
+Kanamai,Near shore,Thalassodendron ciliatum,1488.8888888888891,15.5,2
+Kanamai,middle,Halodule uninervis,14222.222222222223,7,1
+Kanamai,middle,Thalassia hemprichii,1713.5802469135804,10.11111111111111,9
+Kikambala,Near reef,Thalassia hemprichii,1200,11,12
+Kikambala,Near shore,Thalassia hemprichii,1555.5555555555557,14.083333333333334,12
+Kuruwitu,Near shore,Cymodocea rotundata,1666.6666666666665,9,2
+Kuruwitu,Near shore,Halodule uninervis,2257.777777777778,9,5
+Kuruwitu,Near shore,Thalassia hemprichii,1301.5873015873017,9.428571428571429,7
+Kuruwitu,middle,Cymodocea rotundata,2888.8888888888887,12,2
+Kuruwitu,middle,Halodule wrightii,7200,9.5,2
+Kuruwitu,middle,Thalassia hemprichii,1866.6666666666667,14.333333333333334,6
+Malindi marine park,Near reef,Thalassodendron ciliatum,1417.7777777777778,33.075,40
+Marereni,Near reef,Thalassodendron ciliatum,791.1111111111111,12.3,10
+Marereni,middle,Cymodocea rotundata,622.2222222222223,17,1
+Marereni,middle,Halodule uninervis,4333.333333333334,12.625,8
+Marereni,middle,Halophila ovalis,2231.1111111111113,2.8,5
+Marereni,middle,Syringodium isoetifolium,2044.4444444444443,15.666666666666666,3
+Ngomeni,Near reef,Enhalus acoroides,477.77777777777777,57.5,4
+Ngomeni,Near reef,Syringodium isoetifolium,3540.740740740741,31,3
+Ngomeni,Near reef,Thalassodendron ciliatum,995.5555555555555,30,5
+Ngomeni,Near shore,Cymodocea rotundata,1051.851851851852,13.333333333333334,3
+Ngomeni,Near shore,Halodule uninervis,1942.2222222222222,14.1,10
+Ngomeni,middle,Cymodocea serrulata,1007.4074074074074,20.666666666666668,3
+Ngomeni,middle,Halodule uninervis,1288.8888888888891,10,2
+Ngomeni,middle,Halophila ovalis,2844.4444444444443,4,1
+Roka,Near reef,Cymodocea rotundata,1244.4444444444446,16,1
+Roka,Near reef,Thalassia hemprichii,1415.873015873016,11.571428571428571,7
+Roka,Near reef,Thalassodendron ciliatum,977.7777777777778,17.333333333333332,3
+Roka,middle,Thalassodendron ciliatum,2240,44.1,10
+Takaungu,Near reef,Thalassodendron ciliatum,1364.4444444444446,20,10
+Wesa,Near reef,Thalassia hemprichii,2133.3333333333335,11.666666666666666,6
+Wesa,Near reef,Thalassodendron ciliatum,1377.7777777777778,22.25,4
+Wesa,middle,Cymodocea rotundata,1177.7777777777778,11.5,2
+Wesa,middle,Thalassia hemprichii,977.7777777777778,14,1
+Wesa,middle,Thalassodendron ciliatum,1494.4444444444446,26.875,8

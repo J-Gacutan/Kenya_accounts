@@ -91,7 +91,7 @@ This study presents the first ecosystem extent and condition accounts for Mozamb
 - State which SEEA EA Condition Account template applies (e.g., mangrove forest structural integrity, hydrological connectivity, biotic structure)
 - Define measurement indicators (e.g., canopy height, species composition, prop-root density, seedling recruitment) and justify against SEEA EA typology
 - Explain standardisation pathway: field measurements → species/structural metrics → normalisation to condition indices (0–1)
-- Disclose reference levels (target/pristine baselines) with citations (e.g., "Mean canopy height 12–15 m from FAO mangrove density standards")
+- Disclose reference levels (target/pristine baselines) with citations (e.g., "Canopy height pristine reference = 15 m for East African estuarine mangroves; Fatoyinbo et al. 2008, Lagomasino et al. 2015, Sitoe et al. 2016; poor threshold = 3 m based on De Pous et al. 2022 degraded urban sites")
 - If applicable: identify functional groups or species composition targets
 
 **Data/output expectations:**
@@ -144,25 +144,25 @@ Mozambique's mangrove forests cover **406,597 ha** (±8% classification uncertai
 
 | Indicator | Mean | Std Dev | Min | Max | n Footprints | Unit | Reference Level | Condition Index (0–1) |
 |---|---|---|---|---|---|---|---|---|
-| **Canopy Height (RH100)** | 5.07 | 1.2 | 4.3 | 7.8 | 84 | m | 12–15 m (intact reference) | 0.34 |
+| **Canopy Height (RH100)** | 5.07 | 1.2 | 4.3 | 7.8 | 84 | m | 15 m pristine (Fatoyinbo et al. 2008; Lagomasino et al. 2015); 3 m poor (De Pous et al. 2022) | 0.17 |
 | **Aboveground Biomass (AGBD)** | 12.63 | 15.96 | 9.1 | 27.3 | 84 | Mg/ha | 25–30 Mg/ha (healthy reference) | 0.42–0.51 |
 | **Canopy Cover (L2B)** | 0.088 | — | 0.015 | 0.434 | 84 | fraction (0–1) | 0.70–0.85 (closed-canopy reference) | 0.10–0.13 |
 | **Plant Area Index (PAI)** | 0.287 | — | 0.032 | 1.742 | 84 | m²/m² | 3.0–4.0 (dense forest reference) | 0.07–0.10 |
 | **Carbon Stock** | 5.94 | — | 4.3 | 12.8 | 84 | Mg C/ha | 12–15 Mg C/ha (intact reference) | 0.40 |
 
-**Interpretation:** Save Estuary exhibits moderate condition across GEDI-derived structural indicators. Canopy height (5.07 m) and carbon stock (5.94 Mg C/ha) are 33–40% of intact mangrove reference levels, indicating structurally simplified forest (low stature, low biomass density). High internal variation (SD canopy height 1.2 m; AGBD SE ±15.96 Mg/ha) reflects heterogeneous asset composition: two dense patches (Assets 3–7: 20–27 Mg/ha, 30–43% canopy cover) and five sparse patches (Assets 1–2, 4–6: 9–12 Mg/ha, <10% canopy cover).
+**Interpretation:** Save Estuary exhibits low-to-moderate condition across GEDI-derived structural indicators. Canopy height condition index = 0.17: heights of 5.07 m lie 17% of the way between the poor threshold (3 m; degraded urban sites) and pristine reference (15 m; Fatoyinbo et al. 2008; Lagomasino et al. 2015). Carbon stock (5.94 Mg C/ha) is approximately 40% of a healthy 15 Mg C/ha reference, indicating structurally simplified forest (low stature, low biomass density). High internal variation (SD canopy height 1.2 m; AGBD SE ±15.96 Mg/ha) reflects heterogeneous asset composition: two dense patches (Assets 3–7: 20–27 Mg/ha, 30–43% canopy cover) and five sparse patches (Assets 1–2, 4–6: 9–12 Mg/ha, <10% canopy cover).
 
 **Morrumbene Estuary (aggregated across all assets):**
 
 | Indicator | Mean | Std Dev | Min | Max | n Footprints | Unit | Reference Level | Condition Index (0–1) |
 |---|---|---|---|---|---|---|---|---|
-| **Canopy Height (RH100)** | 5.27 | 0.4 | 5.2 | 5.8 | 195 | m | 12–15 m (intact reference) | 0.35 |
+| **Canopy Height (RH100)** | 5.27 | 0.4 | 5.2 | 5.8 | 195 | m | 15 m pristine (Fatoyinbo et al. 2008; Lagomasino et al. 2015); 3 m poor (De Pous et al. 2022) | 0.19 |
 | **Aboveground Biomass (AGBD)** | 10.95 | 14.16 | 10.2 | 11.3 | 195 | Mg/ha | 25–30 Mg/ha (healthy reference) | 0.36–0.44 |
 | **Canopy Cover (L2B)** | 0.049 | — | 0.046 | 0.051 | 195 | fraction (0–1) | 0.70–0.85 (closed-canopy reference) | 0.06–0.07 |
 | **Plant Area Index (PAI)** | 0.120 | — | 0.115 | 0.125 | 195 | m²/m² | 3.0–4.0 (dense forest reference) | 0.03 |
 | **Carbon Stock** | 5.15 | — | 4.8 | 5.3 | 195 | Mg C/ha | 12–15 Mg C/ha (intact reference) | 0.34 |
 
-**Interpretation:** Morrumbene exhibits very uniform, low-condition structure across all three assets. Consistency (low standard deviation: canopy height SD 0.4 m) indicates system-wide stress rather than patchiness. Condition indices (0.34–0.44 for biomass; 0.03 for PAI) are among the lowest observed, suggesting severely degraded woodland. Canopy height (5.3 m) and biomass (11 Mg/ha) are 35–44% of reference levels. PAI (0.12 m²/m²) is 3–4% of closed-forest target, consistent with open, light woodland lacking dense leaf/stem area.
+**Interpretation:** Morrumbene exhibits very uniform, low-condition structure across all three assets. Consistency (low standard deviation: canopy height SD 0.4 m) indicates system-wide stress rather than patchiness. Canopy height condition index = 0.19: heights of 5.27 m lie 19% of the way between the poor threshold (3 m) and pristine reference (15 m). Biomass condition indices (0.36–0.44) and PAI (0.03) are among the lowest observed, suggesting severely degraded woodland. PAI (0.12 m²/m²) is 3–4% of closed-forest target, consistent with open, light woodland lacking dense leaf/stem area.
 
 **Carbon inventory comparison:**
 
@@ -182,7 +182,7 @@ Mozambique's mangrove forests cover **406,597 ha** (±8% classification uncertai
 
 **Two contrasting mangrove systems:** The GEDI-derived condition indices reveal fundamentally different mangrove trajectories. Save Estuary exhibits **mosaic heterogeneity**—productive refugia (Assets 3–7: mean 22 Mg/ha, 30%+ canopy closure) interspersed with degraded patches (Assets 1–2, 4–6: mean 11 Mg/ha, <10% canopy cover). This patchiness is consistent with selective logging history (high-value trees removed; dense remnants protected) or flood-driven disturbance creating a landscape mosaic. Morrumbene's **uniform low condition** across all three assets suggests system-wide stressor: likely salinity extremes (upstream Limpopo dam reducing freshwater pulses, raising soil salinity) or recent cyclone damage (uniform canopy senescence post-storm).
 
-**Reference level implications:** Both sites show condition indices of 0.34–0.51 (biomass) and 0.03–0.10 (PAI), well below intact mangrove reference of 0.90–1.0 (using 25–30 Mg/ha biomass and 3–4 m²/m² PAI as regional intact targets). This indicates both sites are **structurally degraded relative to regional potential**, though Save's high-biomass patches suggest restoration potential is not foreclosed.
+**Reference level implications:** Both sites show canopy height condition indices of 0.17–0.19 (using 15 m pristine reference, 3 m poor threshold; Fatoyinbo et al. 2008; Lagomasino et al. 2015; Sitoe et al. 2016), biomass indices of 0.36–0.51, and PAI indices of 0.03–0.10, all well below intact mangrove targets. This indicates both sites are **structurally degraded relative to regional potential**, though Save's high-biomass patches suggest restoration potential is not foreclosed.
 
 #### 5.2 Drivers: Aquaculture, Dams, and Climate
 
@@ -200,7 +200,7 @@ Mozambique's mangrove forests cover **406,597 ha** (±8% classification uncertai
 | **GEDI canopy cover estimates (very low: 4–9%)** | Uncertainty if gaps are real structural feature or GEDI misclassification; optical remote sensing (Sentinel-2) has different sensitivity to sparse vegetation | Sentinel-2 canopy cover derived independently (NDVI-based); cross-validation planned for Q2 2026 |
 | **No species composition in GEDI data** | Cannot distinguish *Avicennia*-dominated from *Rhizophora*-dominated stands, limiting ecosystem service valuation (species differ in productivity, carbon rates, fish recruitment potential) | Spectral unmixing of Sentinel-2 bands underway; field species surveys planned Q2 2026; provisional species breakouts available for draft valuation |
 | **Single-year baseline (2020–2025)** | No temporal trend; cannot distinguish degradation (ongoing loss) from stable low condition | 2026 field validation + repeat GEDI acquisition planned for 2027; Landsat time series (2015–2025) will be processed for pre-GEDI change context |
-| **Reference level uncertainty** | FAO regional mangrove reference (12–15 m canopy height; 25–30 Mg/ha biomass) may not reflect Mozambique-specific potential; intact mangroves in region may have different structure | Mozambique-specific reference levels to be established post-field validation; global literature suggests 10–20 m range for tropical mangroves, so FAO estimates reasonable for order-of-magnitude purposes |
+| **Reference level uncertainty** | Canopy height pristine reference (15 m) is literature-supported (Fatoyinbo et al. 2008; Lagomasino et al. 2015; Sitoe et al. 2016) but represents national/delta-scale data; Morrumbene-specific reference uncertain. Biomass reference (25–30 Mg/ha) draws on global tropical mangrove literature; Mozambique-specific validation pending field surveys | Phase 1 literature search (2026-03-16) confirmed 15 m as defensible conservative estimate for East African estuarine mangroves; canopy density and regeneration density remain LOW confidence; see BASELINE_REFERENCE_TABLE.md |
 | **Uneven GEDI coverage by asset** | Save assets 2 & 4 have only 1–2 footprints; uncertainty very high (±17 Mg/ha ≈ ±150% of estimate) | Field validation will include 4 transects per site; confidence in asset-level estimates will improve post-field work; asset-level results flagged with appropriate uncertainty ranges |
 
 #### 5.4 Data Gaps & Acquisition Timeline
@@ -320,7 +320,7 @@ Mozambique's mangrove forests cover 406,597 ha, concentrated in northern provinc
 **Data gap:** Temporal trend analysis (2010–2020 or 2020–2026 change detection) requires historical GMW classification (1996, 2000 available; processing planned Q2 2026) or new Sentinel-2 time-series processing. Current dataset provides single-year extent baseline.
 
 **Ecosystem condition (field validation, 12 sites):**
-Mean canopy height across validation sites: 9.8 m (±2.1 SD; range 6.2–14.1 m). Canopy condition index (normalized to 12–15 m reference standard): **0.82 ± 0.18**, indicating moderate-to-good condition. Seedling recruitment density: 1,200 seedlings/ha (±560 SD), below target threshold (1,500/ha) in 7 of 12 sites, suggesting stress from salinity extremes or recent storm damage.
+Mean canopy height across validation sites: 9.8 m (±2.1 SD; range 6.2–14.1 m). Canopy condition index (normalized to 15 m pristine reference, 3 m poor threshold: (value − 3) / (15 − 3)): **0.57 ± 0.18**, indicating moderate condition. Seedling recruitment density: 1,200 seedlings/ha (±560 SD), below target threshold (1,500/ha) in 7 of 12 sites, suggesting stress from salinity extremes or recent storm damage.
 
 Species composition: Predominantly *Avicennia marina* (65%) and *Rhizophora mucronata* (28%) at Morrumbene; *Avicennia marina* dominant (78%) at Save Estuary with reduced *Rhizophora* presence (8%), consistent with lower freshwater influence post-dam construction.
 
@@ -351,7 +351,7 @@ Mozambique's mangrove ecosystems generate approximately USD 225,000 annually in 
 | Assumption | Base value | Sensitivity range | Impact on extent estimate | Notes |
 |---|---|---|---|---|
 | GMW classification accuracy | 82% overall | ±8% (global range) | ±3,100 ha | Mangrove class user's accuracy 79%; may confuse with other tree species in low-salinity zones |
-| Reference canopy height | 12–15 m | 10–17 m (regional variation) | ±0.15 condition index | Mozambique-specific standard not yet established; using FAO regional estimate |
+| Reference canopy height (pristine max) | 15 m | 12–17 m (regional variation) | ±0.25 condition index | Supported by Fatoyinbo et al. 2008, Lagomasino et al. 2015, Sitoe et al. 2016; poor threshold 3 m (De Pous et al. 2022 degraded urban sites) |
 | Carbon sequestration rate | 4.6 tC/ha/yr | 2.0–6.5 tC/ha/yr | ±39% service value | Depends on mangrove type (*Rhizophora* vs. *Avicennia*); species-specific rates needed |
 | Carbon market price | USD 10/tC | USD 5–20/tC | ±100% on carbon service | Reflects voluntary carbon market range; regulated market (EU ETS) 2–3x higher |
 

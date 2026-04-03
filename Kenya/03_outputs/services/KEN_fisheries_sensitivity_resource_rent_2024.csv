@@ -1,0 +1,10 @@
+reef_fraction,cost_ratio,reef_fraction_label,cost_ratio_label,gross_revenue_usd,resource_rent_usd
+0.3,0.55,low,low,6859174,3086629
+0.4,0.55,central,low,9145566,4115505
+0.55,0.55,high,low,12575153,5658819
+0.3,0.62,low,central,6859174,2606486
+0.4,0.62,central,central,9145566,3475315
+0.55,0.62,high,central,12575153,4778558
+0.3,0.7,low,high,6859174,2057752
+0.4,0.7,central,high,9145566,2743670
+0.55,0.7,high,high,12575153,3772546

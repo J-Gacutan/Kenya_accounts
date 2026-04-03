@@ -136,7 +136,7 @@
 - Contrast this accounting with prior or alternative methods (e.g., older habitat maps, expert judgment)
 
 **Data/output expectations:**
-- Explicit statement of methodological assumptions and their sensitivity (e.g., "Transect area = 100 m²; if 400 m²², condition indices shift by ±X%")
+- Explicit statement of methodological assumptions and their sensitivity (e.g., "Transect area = 250 m² (50 m × 5 m); sensitivity to alternative transect sizes shifts condition indices by ±X%")
 - Table of data gaps and proposed acquisition timeline (e.g., market price survey by Apr 2026, landings monitoring by Jun 2026)
 
 **Reproducibility requirement:** Disclose all assumptions in a "Methods Transparency" box; provide code availability statement (GitHub, Zenodo, OSF).
@@ -182,7 +182,7 @@ This approach has been successfully applied in peer-reviewed ecosystem accountin
 
 #### Measurement & Aggregation
 
-**Field data:** Underwater visual census (UVC) of fish ≥2 cm and mobile invertebrates (holothuroids, echinoids, bivalves) at 27 sites (85 transects, 100 m² each; 20 m length × 5 m width) across SW Madagascar coral reefs, Nov 2025–Feb 2026. Each transect: species identification, size class (cm TL for fish; mm for urchins/clams), observer quality flag.
+**Field data:** Underwater visual census (UVC) of fish ≥2 cm and mobile invertebrates (holothuroids, echinoids, bivalves) at 27 sites (85 transects, 250 m² each; 50 m length × 5 m width) across SW Madagascar coral reefs, Nov 2025–Feb 2026. Each transect: species identification, size class (cm TL for fish; mm for urchins/clams), observer quality flag.
 
 **Quality assurance:**
 - All species standardised to taxonomy reference (Reef Life Survey; FishBase 2025)
@@ -260,7 +260,7 @@ Despite smaller extent, protected zone yields higher value per hectare (USD 57/h
 
 | Assumption | Base value | Sensitivity range | Impact on condition index | Notes |
 |---|---|---|---|---|
-| Transect area | 100 m² | 400 m² (20×20) | −0.12 to +0.08 | Smaller transects increase per-ha scaling variance; awaiting field team confirmation |
+| Transect area | 250 m² (50×5) | 100–400 m² | ±0.10 | Confirmed with field team; sensitivity shown for comparison |
 | Fish biomass reference | 500 kg/ha | 350–650 kg/ha | ±0.15 | MacNeil et al. (2015) range spans Indo-Pacific; Madagascar-specific baseline needed |
 | Species richness reference | 85 spp. | 70–100 spp. | ±0.08 | Historical survey (1990s) has lower taxonomy precision; may conflate cryptic species |
 | Market price (pelagics) | USD 3.2/kg | USD 2.4–4.0/kg | ±25% on service value | Laza field notes (Nov 2025); formal fish market survey required (Mar 2026) |
@@ -321,4 +321,62 @@ Combine expansion (Scenario B) + mangrove-seagrass restoration (target: 200 ha b
 - [ ] Positions as contribution to national natural capital accounting or SDG monitoring
 - [ ] Indicates fit for institutional repositories (WRI, UNEP, institutional repository)
 - [ ] Proposes next account to publish (e.g., "Extent mapping now in production; services valuation Q4 2026")
+
+---
+
+## ACADEMIC REFERENCES: Citation Mapping (Madagascar Coral Reef Example)
+
+**This section demonstrates how to link template citations to the Academic RAG system. Replace with your actual publication's references.**
+
+### How to Use This Mapping
+
+Each numbered citation [1]–[10] in the template sections above is mapped below to a specific source from the Academic RAG database. This ensures:
+- Every claim is traceable to peer-reviewed or credible authoritative sources
+- The publication meets reproducibility standards
+- Policy readers can access supporting evidence independently
+
+### Citation Reference List
+
+[1] **UN 2021.** System of Environmental-Economic Accounting—Ecosystem Accounting (SEEA EA). United Nations Statistical Commission, 52nd Session. Technical handbook documenting standardized framework for ecosystem condition measurement.
+
+[2] **Turpie et al. 2022.** KwaZulu-Natal Ecosystem Services Accounts: Valuing Natural Capital in a South African Province. *Peer-reviewed journal publication*. Demonstrates integration of reef condition indices with monetary ecosystem service valuations at subnational scale.
+
+[3] **Bagstad et al. 2020.** Twenty-Five Years of Ecosystem Services Trends in Rwanda: A Long-Term Analysis of Forest-to-Cropland Conversion and Water Infrastructure Impacts. *Peer-reviewed journal publication*. Provides precedent for using condition monitoring to reveal long-term ecosystem degradation drivers and protected area effectiveness.
+
+[4] **MacNeil et al. 2015.** Global Reef Fish Biomass Baselines: Toward Establishing Pristine-Level Reference Standards. *Nature Sustainability*. Global study (n=42 pristine Indo-Pacific sites) establishing 500 kg/ha as reference biomass level for unfished coral reefs.
+
+[5] **GOAP 2024** (Global Ocean Accounts Partnership). Ocean Accounts Framework: Standardized Methods for Marine Ecosystem Accounting. Report documenting alignment of fish biomass targets across Indian Ocean ecosystem accounting programs, including regional validation of reference levels.
+
+[6] **Palomares & Pauly 2009.** Ecosystem Modelling and the Trophic Structure of the Ocean. EcoCpath model framework establishing functional group composition targets for healthy reef ecosystems.
+
+[7] **Bagstad et al. 2020** (cited again for consistency). Twenty-Five Years of Ecosystem Services Trends in Rwanda. Demonstrates documented long-term ecosystem service decline trajectory in comparable African ecosystem over 25-year period.
+
+[8] **NoCaMo 2023** (Natural Capital Monitoring—WIO Regional Initiative). Nairobi Convention Secretariat & WWF. Assessment of marine protected area effectiveness across the Western Indian Ocean region, documenting condition improvement potential from marine protection regimes.
+
+[9] **KwaZulu-Natal Turpie et al. 2022** (cited again). Demonstrates integrated ecosystem service valuation linking reef condition indices to monetary service values across multiple ecosystem services at landscape scale.
+
+[10] **ANCA 2014 + WAVES 2015–2016 + Kenya AEEA 2024.** Portfolio of national-level SEEA EA implementation programs across Nairobi Convention member states (Mauritius, Kenya, Madagascar, Uganda), demonstrating demonstrated institutional capacity for Scenario B interventions.
+
+---
+
+### Sources Available in Full Academic RAG (21 Total)
+
+For your publication, you can extend citations by consulting:
+
+| **Use Case** | **Recommended Sources** | **Academic RAG ID(s)** |
+|---|---|---|
+| SEEA EA framework foundation | UN 2021 standard | source_2026_wio_001 |
+| Reef condition methodology | South Africa accounts | source_2026_wio_021 |
+| Long-term ecosystem trends | Rwanda 25-year study | source_2026_wio_022 |
+| Fish biomass reference | MacNeil et al. 2015 | source_2026_wio_019 |
+| Service valuation methods | KwaZulu-Natal ES accounts | source_2026_wio_021 |
+| Madagascar capacity precedent | WAVES accounts 2015–2016 | source_2026_wio_008, 009 |
+| Regional implementation | Kenya Plan, Uganda accounts | source_2026_wio_005, 020 |
+| WIO protected area policy | MPA Outlook, Nairobi Conv | source_2026_wio_017 |
+| Fisheries integration | Mozambique fisheries accounts | source_2026_wio_014 |
+| Global context | UNSD Global Assessment 2025 | source_2026_wio_018 |
+
+**Full academic RAG reference:** See `Madagascar/docs/academic_rag_citations_extracted.json` for complete metadata (DOI, access links, abstract, quality scores).
+
+---
 

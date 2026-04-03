@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Trophic Composition | Madagascar Coral Reef Condition Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="modulepreload" href="./_observablehq/client.a0083439.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.a0083439.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/functional-groups.csv.js", {"name":"./data/functional-groups.csv.js","mimeType":"text/javascript","path":"./_file/data/functional-groups.csv.e5d2c6dd.js","lastModified":1774931828702,"size":5312});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "4be09ad8", inputs: ["FileAttachment","d3"], outputs: ["fgRaw","fgData"], body: async (FileAttachment,d3) => {
+const fgRaw = await FileAttachment("./data/functional-groups.csv.js").text();
+const fgData = d3.csvParse(fgRaw.replace(/^export default `|`;$/g, "").trim(), d3.autoType);
+return {fgRaw,fgData};
+}});
+
+define({id: "da751f0d", inputs: ["d3","fgData"], outputs: ["fgTotals","grandTotal","fgPct"], body: (d3,fgData) => {
+const fgTotals = d3.rollups(fgData, v => d3.sum(v, d => d.mean_biomass_kg_ha), d => d.Functional_Group_Std)
+  .map(([group, total]) => ({group, total}))
+  .sort((a, b) => b.total - a.total);
+const grandTotal = d3.sum(fgTotals, d => d.total);
+const fgPct = fgTotals.map(d => ({...d, pct: (d.total / grandTotal * 100).toFixed(1)}));
+return {fgTotals,grandTotal,fgPct};
+}});
+
+define({id: "4a25ce07", inputs: ["Plot","fgTotals","display"], body: async (Plot,fgTotals,display) => {
+display(await(
+Plot.plot({
+  title: "Trophic composition -- all sites pooled (% biomass)",
+  width: 800,
+  height: 300,
+  marginLeft: 120,
+  x: {label: "Total biomass (kg/ha)", grid: true},
+  y: {label: null},
+  color: {
+    domain: ["Herbivore", "Carnivore", "Planktivore", "Corallivore", "Omnivore", "Piscivore", "Detritivore"],
+    range: ["#2a9d8f", "#264653", "#e9c46a", "#e76f51", "#a8dadc", "#457b9d", "#f4a261"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(fgTotals, {
+      x: "total",
+      y: "group",
+      fill: "group",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "ac422f8d", inputs: ["fgData","d3"], outputs: ["fg2025","siteTotals2025","siteTotalMap2025","fg2025pct"], body: (fgData,d3) => {
+const fg2025 = fgData.filter(d => d.Year === 2025);
+const siteTotals2025 = d3.rollups(fg2025, v => d3.sum(v, d => d.mean_biomass_kg_ha), d => d.Sites)
+  .map(([site, total]) => ({site, total}));
+const siteTotalMap2025 = new Map(siteTotals2025.map(d => [d.site, d.total]));
+const fg2025pct = fg2025.map(d => ({
+  ...d,
+  pct_biomass: d.mean_biomass_kg_ha / siteTotalMap2025.get(d.Sites) * 100
+}));
+return {fg2025,siteTotals2025,siteTotalMap2025,fg2025pct};
+}});
+
+define({id: "f9317981", inputs: ["Plot","fg2025pct","display"], body: async (Plot,fg2025pct,display) => {
+display(await(
+Plot.plot({
+  title: "Trophic composition by site -- 2025 opening period",
+  subtitle: "Stacked proportion of fish biomass by functional group",
+  width: 800,
+  height: 500,
+  marginLeft: 120,
+  x: {label: "% of total biomass", domain: [0, 100]},
+  y: {label: null},
+  color: {
+    domain: ["Herbivore", "Carnivore", "Planktivore", "Corallivore", "Omnivore", "Piscivore", "Detritivore"],
+    range: ["#2a9d8f", "#264653", "#e9c46a", "#e76f51", "#a8dadc", "#457b9d", "#f4a261"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(fg2025pct, Plot.stackX({
+      x: "pct_biomass",
+      y: "Sites",
+      fill: "Functional_Group_Std",
+      order: ["Herbivore", "Carnivore", "Planktivore", "Corallivore", "Omnivore", "Piscivore", "Detritivore"],
+      tip: true
+    })),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "70a0718c", inputs: ["fgData","d3"], outputs: ["fg2026","siteTotals2026","siteTotalMap2026","fg2026pct"], body: (fgData,d3) => {
+const fg2026 = fgData.filter(d => d.Year === 2026);
+const siteTotals2026 = d3.rollups(fg2026, v => d3.sum(v, d => d.mean_biomass_kg_ha), d => d.Sites)
+  .map(([site, total]) => ({site, total}));
+const siteTotalMap2026 = new Map(siteTotals2026.map(d => [d.site, d.total]));
+const fg2026pct = fg2026.map(d => ({
+  ...d,
+  pct_biomass: d.mean_biomass_kg_ha / siteTotalMap2026.get(d.Sites) * 100
+}));
+return {fg2026,siteTotals2026,siteTotalMap2026,fg2026pct};
+}});
+
+define({id: "92198c8a", inputs: ["Plot","fg2026pct","display"], body: async (Plot,fg2026pct,display) => {
+display(await(
+Plot.plot({
+  title: "Trophic composition by site -- 2026 closing period",
+  subtitle: "Stacked proportion of fish biomass by functional group",
+  width: 800,
+  height: 450,
+  marginLeft: 120,
+  x: {label: "% of total biomass", domain: [0, 100]},
+  y: {label: null},
+  color: {
+    domain: ["Herbivore", "Carnivore", "Planktivore", "Corallivore", "Omnivore", "Piscivore", "Detritivore"],
+    range: ["#2a9d8f", "#264653", "#e9c46a", "#e76f51", "#a8dadc", "#457b9d", "#f4a261"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(fg2026pct, Plot.stackX({
+      x: "pct_biomass",
+      y: "Sites",
+      fill: "Functional_Group_Std",
+      order: ["Herbivore", "Carnivore", "Planktivore", "Corallivore", "Omnivore", "Piscivore", "Detritivore"],
+      tip: true
+    })),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "e451fd9c", inputs: ["fgData"], outputs: ["herbData"], body: (fgData) => {
+const herbData = fgData.filter(d => d.Functional_Group_Std === "Herbivore");
+return {herbData};
+}});
+
+define({id: "9298de9d", inputs: ["Plot","herbData","display"], body: async (Plot,herbData,display) => {
+display(await(
+Plot.plot({
+  title: "Herbivore biomass by site (kg/ha)",
+  subtitle: "Colour by survey year",
+  width: 800,
+  height: 600,
+  marginLeft: 120,
+  x: {label: "Herbivore biomass (kg/ha)", grid: true},
+  y: {label: null},
+  color: {
+    domain: [2025, 2026],
+    range: ["#264653", "#2a9d8f"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(herbData, {
+      x: "mean_biomass_kg_ha",
+      y: "Sites",
+      fill: "Year",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Madagascar Coral Reef Condition Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./condition-analysis">Condition Analysis</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./trophic-composition">Trophic Composition</a></li>
+    <li class="observablehq-link"><a href="./site-comparison">Site Comparison</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#accounting-area-trophic-composition">Accounting-Area Trophic Composition</a></li>
+<li class="observablehq-secondary-link"><a href="#trophic-composition-by-site-2025">Trophic Composition by Site (2025)</a></li>
+<li class="observablehq-secondary-link"><a href="#trophic-composition-by-site-2026">Trophic Composition by Site (2026)</a></li>
+<li class="observablehq-secondary-link"><a href="#herbivore-biomass-by-site">Herbivore Biomass by Site</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="trophic-composition" tabindex="-1"><a class="observablehq-header-anchor" href="#trophic-composition">Trophic Composition</a></h1>
+<h2 id="functional-group-breakdown-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#functional-group-breakdown-by-site">Functional Group Breakdown by Site</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:4be09ad8:--></div>
+<p>Trophic composition provides insight into reef community structure and fishing pressure. Healthy WIO reefs typically show herbivore dominance (30--50% of biomass), with carnivores as the second-largest group. Reduced herbivore biomass or absence of large carnivores may indicate selective fishing.</p>
+<hr>
+<h2 id="accounting-area-trophic-composition" tabindex="-1"><a class="observablehq-header-anchor" href="#accounting-area-trophic-composition">Accounting-Area Trophic Composition</a></h2>
+<div class="observablehq observablehq--block"><!--:da751f0d:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4a25ce07:--></div>
+<hr>
+<h2 id="trophic-composition-by-site-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#trophic-composition-by-site-2025">Trophic Composition by Site (2025)</a></h2>
+<div class="observablehq observablehq--block"><!--:ac422f8d:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f9317981:--></div>
+<hr>
+<h2 id="trophic-composition-by-site-2026" tabindex="-1"><a class="observablehq-header-anchor" href="#trophic-composition-by-site-2026">Trophic Composition by Site (2026)</a></h2>
+<div class="observablehq observablehq--block"><!--:70a0718c:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:92198c8a:--></div>
+<hr>
+<h2 id="herbivore-biomass-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#herbivore-biomass-by-site">Herbivore Biomass by Site</a></h2>
+<p>Herbivore biomass is a key indicator of reef resilience. Herbivorous fish control macroalgal overgrowth, enabling coral recruitment and recovery after disturbance events.</p>
+<div class="observablehq observablehq--block"><!--:e451fd9c:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9298de9d:--></div>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./condition-analysis"><span>Condition Analysis</span></a><a rel="next" href="./site-comparison"><span>Site Comparison</span></a></nav>
+<div>Madagascar Coral Reef Condition Accounts -- UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

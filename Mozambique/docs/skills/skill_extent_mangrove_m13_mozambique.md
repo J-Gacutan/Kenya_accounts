@@ -279,15 +279,21 @@ Convert raw condition variables to normalized indices (0 = poor; 1 = pristine) f
 Normalized Index = (Value − Minimum) / (Maximum − Minimum)
 ```
 
-**Reference values (to be calibrated with field team):**
+**Reference values (updated 2026-03-16 following Phase 1 literature search; see `docs/rag/academic/BASELINE_REFERENCE_TABLE.md`):**
 
-| Variable | Poor (Min) | Pristine (Max) | Unit |
-| --- | --- | --- | --- |
-| **Canopy density** | 0.3 | 0.95 | (0–1) |
-| **Canopy height** | 3.0 | 12.0 | m |
-| **DBH (mean)** | 5.0 | 20.0 | cm |
-| **Regeneration density** | 0.0 | 0.50 | plants/m² |
-| **Disturbance frequency** | 0.50 | 0.0 | (inverted: 1 − raw frequency) |
+| Variable | Poor (Min) | Pristine (Max) | Unit | Confidence | Key Source |
+| --- | --- | --- | --- | --- | --- |
+| **Canopy density** | 0.3 | 0.70 | (0–1) | LOW — no East Africa empirical data found | Expert estimate (provisional; revised downward from 0.95) |
+| **Canopy height** | 3.0 | **15.0** | m | HIGH | Fatoyinbo et al. 2008; Lagomasino et al. 2015; Sitoe et al. 2016 |
+| **DBH (mean)** | 5.0 | 20.0 | cm | HIGH | Mwihaki et al. 2024 (Kenya); Godoy & De Lacerda 2015 (Morrumbene); Bosire et al. 2022 (Tanzania) |
+| **Regeneration density** | 0.0 | 0.50 | plants/m² | LOW — species-specific (Rhizophora: 0.04–0.30/m²; Avicennia: 1–5/m²) | Patel et al. 2019 (Indo-Pacific analog) |
+| **Disturbance frequency** | 0.50 | 0.0 | (inverted: 1 − raw frequency) | MEDIUM | Zockler et al. 2021 (visual scale 1–6 for Indo-W Pacific) |
+
+**Notes:**
+- Canopy height pristine reference revised from 12 m to **15 m** (Mozambique national max 27 m; Zambezi Delta tall class; Maputo Reserve LiDAR intact sites >20 m)
+- DBH values are confirmed by literature: most degraded/urban Mozambique/Kenya stands average 6–9 cm; undisturbed Tanzania stands show distribution to 42 cm
+- Regeneration density is highly species-dependent; apply species-specific ranges where stand composition is known
+- Disturbance frequency: Score 6 on Zockler 2021 rapid visual scale corresponds to <5% plots disturbed; Score 1–2 to >50% disturbed
 
 ### 4.2 Example Normalization
 
@@ -295,8 +301,8 @@ Normalized Index = (Value − Minimum) / (Maximum − Minimum)
 
 | Variable | Raw Value | Min | Max | Normalized Index |
 | --- | --- | --- | --- | --- |
-| Canopy density | 0.71 | 0.3 | 0.95 | (0.71 − 0.3) / (0.95 − 0.3) = **0.65** |
-| Canopy height | 8.2 | 3.0 | 12.0 | (8.2 − 3.0) / (12.0 − 3.0) = **0.58** |
+| Canopy density | 0.71 | 0.3 | 0.70 | (0.71 − 0.3) / (0.70 − 0.3) = 1.025 → clamped to **1.00** |
+| Canopy height | 8.2 | 3.0 | 15.0 | (8.2 − 3.0) / (15.0 − 3.0) = **0.43** |
 | DBH | 14.9 | 5.0 | 20.0 | (14.9 − 5.0) / (20.0 − 5.0) = **0.66** |
 | Regeneration density | 0.17 | 0.0 | 0.50 | (0.17 − 0.0) / (0.50 − 0.0) = **0.34** |
 | Disturbance frequency | 0.142 | 0.0 | 0.50 | 1 − (0.142 / 0.50) = **0.72** |
@@ -304,7 +310,7 @@ Normalized Index = (Value − Minimum) / (Maximum − Minimum)
 **Composite Condition Index (mean of normalized variables):**
 
 ```text
-Condition = (0.65 + 0.58 + 0.66 + 0.34 + 0.72) / 5 = 0.59
+Condition = (0.65 + 0.43 + 0.66 + 0.34 + 0.72) / 5 = 0.56
 ```
 
 ---
@@ -315,16 +321,116 @@ Condition = (0.65 + 0.58 + 0.66 + 0.34 + 0.72) / 5 = 0.59
 
 | Ecosystem Type | Geographic Unit | Condition Index | Year | Unit |
 | --- | --- | --- | --- | --- |
-| Mangrove Forest (MFT1.2) | Morrumbene District | 0.59 | 2025 | (0–1 scale) |
+| Mangrove Forest (MFT1.2) | Morrumbene District | 0.56 | 2025 | (0–1 scale) |
 | Mangrove Forest (MFT1.2) | Save District | 0.52 | 2025 | (0–1 scale) |
 | Mangrove Forest (MFT1.2) | Inhambane Province | 0.55 | 2025 | (0–1 scale) |
 | Mangrove Forest (MFT1.2) | Mozambique (total) | 0.56 | 2025 | (0–1 scale) |
 
 ---
 
-## 6. GIS Workflow Summary
+## 6. Multi-Period Extent Account (Change Detection)
 
-### 6.1 Extent Analysis (Section 2)
+### 6.1 Overview
+
+To produce a SEEA EA multi-period extent account, compare mangrove extent between two time points (e.g., GMW 2020 baseline vs. a closing-period classification). This requires identifying areas of gain (additions) and loss (reductions) between periods.
+
+### 6.2 Step 1: Baseline Extent (Opening Period)
+
+**Objective:** Calculate total mangrove area from the opening-period dataset (e.g., GMW 2020), clipped to the Mozambique study area.
+
+**Process:**
+
+1. Clip GMW 2020 mangrove layer to study area boundary (Morrumbene + Save, or national extent)
+2. Add field `area_ha` (Double); calculate geodesic area in hectares
+3. Run Summary Statistics: SUM of `area_ha`
+4. Output: `gmw_2020_baseline_statistics.csv`
+
+### 6.3 Step 2: Change Detection (Erase Analysis)
+
+**Objective:** Identify mangrove gain and loss polygons between opening and closing periods.
+
+**Process:**
+
+1. **Additions (areas gained by closing period):**
+   - Run Erase: Input = closing-period extent; Erase feature = opening-period extent
+   - Output: `Mangrove_additions.shp`
+   - Add field `area_ha`; calculate geodesic area in hectares
+
+2. **Reductions (areas lost by closing period):**
+   - Run Erase: Input = opening-period extent; Erase feature = closing-period extent
+   - Output: `Mangrove_reductions.shp`
+   - Add field `area_ha`; calculate geodesic area in hectares
+
+**Quality check:** Opening + Additions - Reductions should approximate Closing extent. Flag residual > 5% of net change for investigation (slivers from Erase operation and geodesic rounding).
+
+### 6.4 Step 3: Disaggregate Additions and Reductions by Area
+
+**Objective:** Determine where gains and losses occurred by intersecting change polygons with administrative or study area boundaries.
+
+**Process:**
+
+1. Intersect `Mangrove_additions.shp` with admin L3 boundaries (or study area polygons)
+2. Intersect `Mangrove_reductions.shp` with admin L3 boundaries (or study area polygons)
+3. Recalculate `area_ha` on intersected fragments
+4. Run Summary Statistics grouped by admin unit / study area name
+5. Output: `additions_by_area.csv`, `reductions_by_area.csv`
+
+### 6.5 SEEA EA Extent Account Table
+
+**If only one time period is available (single-period, no change detection):**
+
+| Entry | Units | Morrumbene | Save Estuary | Totals |
+| --- | --- | --- | --- | --- |
+| Extent (YYYY) | ha | [value] | [value] | [value] |
+
+**If multiple time periods are available (multi-period, with change detection):**
+
+**Example format (single ecosystem type, multiple areas):**
+
+| Entry | Units | Morrumbene | Save Estuary | Totals |
+| --- | --- | --- | --- | --- |
+| Opening (YYYY) | ha | [value] | [value] | [value] |
+| Additions | ha | [value] | [value] | [value] |
+| Reductions | ha | -[value] | -[value] | -[value] |
+| Closing (YYYY) | ha | [value] | [value] | [value] |
+| Net change | ha | [value] | [value] | [value] |
+| Net change (%) | % | [value] | [value] | [value] |
+
+**Example format (multiple ecosystem types, single area -- matches SEEA EA standard):**
+
+| Entry | Units | Mangrove | Seagrass | Coral Reef | Other Substrate | Totals |
+| --- | --- | --- | --- | --- | --- | --- |
+| Opening (YYYY) | ha | [value] | [value] | [value] | [value] | [value] |
+| Additions | ha | [value] | [value] | [value] | [value] | [value] |
+| Reductions | ha | -[value] | -[value] | -[value] | -[value] | -[value] |
+| Closing (YYYY) | ha | [value] | [value] | [value] | [value] | [value] |
+| Net change | ha | [value] | [value] | [value] | [value] | [value] |
+| Net change (%) | % | [value] | [value] | [value] | [value] | [value] |
+
+**Notes:**
+- Reductions are shown as negative values
+- Opening + Additions + Reductions = Closing (accounting identity)
+- Column structure depends on disaggregation: by ecosystem type (standard SEEA EA) or by geographic area
+- Opening and closing years must be clearly labelled in row headers
+
+### 6.6 Output Files (Multi-Period)
+
+| File | Source step | Description |
+| --- | --- | --- |
+| gmw_2020_baseline_statistics.csv | Step 1 | Opening-period mangrove area (ha) |
+| Mangrove_additions.shp | Step 2 | Gain polygons (areas in closing but not opening) |
+| Mangrove_reductions.shp | Step 2 | Loss polygons (areas in opening but not closing) |
+| additions_by_area.csv | Step 3 | Additions disaggregated by admin unit / study area |
+| reductions_by_area.csv | Step 3 | Reductions disaggregated by admin unit / study area |
+| mangrove_extent_change.csv | Step 3 | Multi-period SEEA EA extent account table |
+
+Store outputs in: `Mozambique/03_outputs/` (CSVs) and `Mozambique/01_inputs/raw_data/` (shapefiles).
+
+---
+
+## 7. GIS Workflow Summary
+
+### 7.1 Extent Analysis (Section 2)
 
 ```text
 GMW 2020 mangrove layer
@@ -339,7 +445,7 @@ GMW 2020 mangrove layer
         └── Output: mangrove_extent_by_adminL3_summary.csv
 ```
 
-**Final extent output:**
+**Final extent output (single-period, by admin unit):**
 
 | Province/District | Area (ha) |
 | --- | --- |
@@ -348,7 +454,7 @@ GMW 2020 mangrove layer
 | Sofala | 12,456 |
 | **Total** | **55,368** |
 
-### 6.2 Condition Analysis (Section 3)
+### 7.2 Condition Analysis (Section 3)
 
 ```text
 Field condition points (2025–2026 survey)
@@ -368,13 +474,13 @@ Field condition points (2025–2026 survey)
 
 | Area | Canopy Density | Canopy Height | DBH | Regeneration | Disturbance | Composite |
 | --- | --- | --- | --- | --- | --- | --- |
-| Morrumbene + Save | 0.65 | 0.58 | 0.66 | 0.34 | 0.72 | **0.59** |
+| Morrumbene + Save | 0.65 | 0.43 | 0.66 | 0.34 | 0.72 | **0.56** |
 
 ---
 
-## 7. Data Quality & Limitations
+## 8. Data Quality & Limitations
 
-### 7.1 Known Limitations
+### 8.1 Known Limitations
 
 | Issue | Mitigation |
 | --- | --- |
@@ -384,7 +490,7 @@ Field condition points (2025–2026 survey)
 | **Admin boundary discrepancies** | Verify boundary files with national GIS authority; flag disputed/overlapping boundaries |
 | **Condition reference levels** | Min/Max values (Section 4.1) are provisional; calibrate with expert consensus |
 
-### 7.2 Data Lineage
+### 8.2 Data Lineage
 
 | Dataset | Source | Version | Access Date | Notes |
 | --- | --- | --- | --- | --- |
@@ -394,7 +500,7 @@ Field condition points (2025–2026 survey)
 
 ---
 
-## 8. File Organization
+## 9. File Organization
 
 ```text
 Mozambique/
@@ -417,7 +523,7 @@ Mozambique/
 
 ---
 
-## 9. Software Requirements
+## 10. Software Requirements
 
 | Tool | Version | Purpose | License |
 | --- | --- | --- | --- |
@@ -428,7 +534,7 @@ Mozambique/
 
 ---
 
-## 10. Workflow Timeline & Responsibility
+## 11. Workflow Timeline & Responsibility
 
 | Phase | Activity | Timeline | Responsibility | Deliverables |
 | --- | --- | --- | --- | --- |
@@ -441,7 +547,7 @@ Mozambique/
 
 ---
 
-## 11. References
+## 12. References
 
 1. Giri, C., et al. (2011). Status and distribution of mangroves of the world using earth observation satellite data. *Global Ecology and Biogeography*, 20(1), 154–159.
 2. Global Mangrove Watch (2020). Mangrove extent dataset, version 4.0. [https://www.globalmangrovewatch.org/](https://www.globalmangrovewatch.org/)
@@ -451,9 +557,9 @@ Mozambique/
 
 ---
 
-## 12. Technical Guidance & Best Practices
+## 13. Technical Guidance & Best Practices
 
-### 12.1 Projection & Coordinate System Best Practices
+### 13.1 Projection & Coordinate System Best Practices
 
 **Critical issue:** All spatial layers **MUST use the same coordinate reference system (CRS)** before any geoprocessing operation.
 
@@ -483,7 +589,7 @@ Expected output: All layers should show same EPSG code (e.g., EPSG:32736)
 
 ---
 
-### 12.2 Attribute Table Naming Conventions
+### 13.2 Attribute Table Naming Conventions
 
 Follow consistent naming to avoid errors in summarization and reporting:
 
@@ -508,7 +614,7 @@ Follow consistent naming to avoid errors in summarization and reporting:
 
 ---
 
-### 12.3 Handling Common GIS Issues
+### 13.3 Handling Common GIS Issues
 
 #### Issue 1: "Shapefile has invalid geometry"
 
@@ -562,7 +668,7 @@ SELECT ogc_fid FROM mangroves WHERE NOT ST_IsValid(geometry);
 
 ---
 
-### 12.4 Validation Checklist for Each Step
+### 13.4 Validation Checklist for Each Step
 
 #### Step 1: Intersect Mangroves with Admin Boundaries
 
@@ -599,12 +705,12 @@ SELECT ogc_fid FROM mangroves WHERE NOT ST_IsValid(geometry);
 - [ ] Spatial join or summarize nearby executed without errors
 - [ ] Output table has one row per asset with condition statistics
 - [ ] For each asset: `n_points > 0` (if any asset has 0 points, flag for follow-up field work)
-- [ ] Mean values are within expected range (e.g., canopy density 0–1, height 2–12 m)
+- [ ] Mean values are within expected range (e.g., canopy density 0–1, height 2–15 m)
 - [ ] No NULLs in summary fields
 
 ---
 
-### 12.5 Documenting Your Analysis
+### 13.5 Documenting Your Analysis
 
 **For reproducibility, save the following with final outputs:**
 
@@ -682,7 +788,7 @@ SELECT ogc_fid FROM mangroves WHERE NOT ST_IsValid(geometry);
 
 ---
 
-## 13. Troubleshooting & Common Questions
+## 14. Troubleshooting & Common Questions
 
 **Q: How do I know if my admin boundary file is correct?**
 
@@ -720,7 +826,7 @@ A: Use 25 m (matches GMW raster resolution; condition points should fall near as
 
 ---
 
-## 14. Integration with Madagascar Skills Library
+## 15. Integration with Madagascar Skills Library
 
 This Mozambique SOP follows the same methodology structure as:
 
@@ -743,13 +849,15 @@ This Mozambique SOP follows the same methodology structure as:
 
 ---
 
-## 15. Change Log
+## 16. Change Log
 
 | Date | Version | Changes | Author |
 | --- | --- | --- | --- |
 | 2026-03-15 | 1.0 | Initial SOP draft | Claude Code |
 | 2026-03-15 | 1.1 | Expanded with technical guidance, troubleshooting, validation checklists | Claude Code |
 | 2026-03-15 | 1.2 | Fixed markdown formatting, corrected section numbering, wrapped URLs | Claude Code |
+| 2026-03-16 | 1.3 | Updated canopy height pristine max 12.0 m → 15.0 m (Phase 1 literature: Fatoyinbo 2008, Lagomasino 2015, Sitoe 2016); recalculated example normalization (0.58 → 0.43) and composite index (0.59 → 0.56) in Sections 4.2, 5.1, 6.2; updated validation checklist height range | Claude Code |
+| 2026-03-28 | 1.4 | Added Section 6: Multi-period extent account (change detection workflow, Erase analysis, additions/reductions by area); added SEEA EA extent account table format (single-period and multi-period templates); renumbered sections 7-16 | Claude Code |
 
 ---
 

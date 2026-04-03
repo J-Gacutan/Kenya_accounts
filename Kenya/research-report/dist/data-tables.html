@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Data Tables | Kenya Coastal Ecosystem Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.8aeaa8ef.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.8aeaa8ef.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775023338984,"size":857});
+registerFile("./data/coral-health-site.csv", {"name":"./data/coral-health-site.csv","mimeType":"text/csv","path":"./_file/data/coral-health-site.3b1a3c2f.csv","lastModified":1775023339068,"size":1208});
+registerFile("./data/coral-recruitment-site.csv", {"name":"./data/coral-recruitment-site.csv","mimeType":"text/csv","path":"./_file/data/coral-recruitment-site.df20a218.csv","lastModified":1775023339149,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.0766e5f5.csv","lastModified":1775023338918,"size":1815});
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775023339720,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775023339669,"size":864});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775023339333,"size":5198});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.f97ad15a.csv","lastModified":1775023339396,"size":1141});
+registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775023339453,"size":2402});
+registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.10b37ebc.csv","lastModified":1775023339508,"size":1733});
+registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.784a9379.csv","lastModified":1775023339621,"size":1523});
+registerFile("./data/seea-extent-final.csv", {"name":"./data/seea-extent-final.csv","mimeType":"text/csv","path":"./_file/data/seea-extent-final.2f63103d.csv","lastModified":1775023339565,"size":298});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "dc5866fb", inputs: ["FileAttachment"], outputs: ["fishData","benthicData","healthData","recruitData","mangroveData","coverData","healthSg","condFinal","extFinal","condSummary","physData","monData"], body: async (FileAttachment) => {
+const fishData = await FileAttachment("./data/fish-condition-site.csv").csv({typed: true});
+const benthicData = await FileAttachment("./data/benthic-cover-site.csv").csv({typed: true});
+const healthData = await FileAttachment("./data/coral-health-site.csv").csv({typed: true});
+const recruitData = await FileAttachment("./data/coral-recruitment-site.csv").csv({typed: true});
+const mangroveData = await FileAttachment("./data/mangrove-condition-site.csv").csv({typed: true});
+const coverData = await FileAttachment("./data/seagrass-cover-site.csv").csv({typed: true});
+const healthSg = await FileAttachment("./data/seagrass-health-site.csv").csv({typed: true});
+const condFinal = await FileAttachment("./data/seea-condition-final.csv").csv({typed: true});
+const extFinal = await FileAttachment("./data/seea-extent-final.csv").csv({typed: true});
+const condSummary = await FileAttachment("./data/seea-condition-summary.csv").csv({typed: true});
+const physData = await FileAttachment("./data/fisheries-physical.csv").csv({typed: true});
+const monData = await FileAttachment("./data/fisheries-monetary.csv").csv({typed: true});
+return {fishData,benthicData,healthData,recruitData,mangroveData,coverData,healthSg,condFinal,extFinal,condSummary,physData,monData};
+}});
+
+define({id: "65bc96f5", mode: "inline", inputs: ["fishData","display"], body: async (fishData,display) => {
+display(await(
+new Set(fishData.map(d => d.site)).size
+))
+}});
+
+define({id: "582ba5a1", mode: "inline", inputs: ["mangroveData","display"], body: async (mangroveData,display) => {
+display(await(
+mangroveData.length
+))
+}});
+
+define({id: "13b45dd2", mode: "inline", inputs: ["coverData","display"], body: async (coverData,display) => {
+display(await(
+coverData.length
+))
+}});
+
+define({id: "377a5f9b", mode: "inline", inputs: ["physData","display"], body: async (physData,display) => {
+display(await(
+physData.length
+))
+}});
+
+define({id: "e569f63f", inputs: ["Inputs","condFinal","display"], body: async (Inputs,condFinal,display) => {
+display(await(
+Inputs.table(condFinal, {
+  columns: ["Entry", "Units", "Coral_Reef", "Mangrove", "Seagrass"],
+  header: {Coral_Reef: "Coral Reef"},
+  width: {Entry: 300}
+})
+))
+}});
+
+define({id: "6636969d", inputs: ["Inputs","extFinal","display"], body: async (Inputs,extFinal,display) => {
+display(await(
+Inputs.table(extFinal, {
+  columns: ["Entry", "Units", "Mangrove", "Seagrass", "Coral_Reef", "Totals"],
+  header: {Coral_Reef: "Coral Reef"},
+  width: {Entry: 180}
+})
+))
+}});
+
+define({id: "33b2fa7e", inputs: ["Inputs","condSummary","display"], body: async (Inputs,condSummary,display) => {
+display(await(
+Inputs.table(condSummary, {
+  columns: ["survey_period", "condition_indicator", "unit", "mean_value", "se_value", "mean_ci", "n_sites", "confidence"],
+  header: {
+    survey_period: "Period",
+    condition_indicator: "Indicator",
+    mean_value: "Mean",
+    se_value: "SE",
+    mean_ci: "CI",
+    n_sites: "N",
+    confidence: "Confidence"
+  }
+})
+))
+}});
+
+define({id: "50d8f10b", inputs: ["Inputs","fishData","display"], body: async (Inputs,fishData,display) => {
+display(await(
+Inputs.table(fishData, {
+  columns: ["survey_period", "site", "mean_biomass_kg_ha", "se_biomass_kg_ha", "mean_abundance_ha", "mean_richness", "n_transects"],
+  header: {
+    survey_period: "Period",
+    mean_biomass_kg_ha: "Biomass (kg/ha)",
+    se_biomass_kg_ha: "SE",
+    mean_abundance_ha: "Abundance (/ha)",
+    mean_richness: "Richness",
+    n_transects: "Transects"
+  },
+  sort: "site"
+})
+))
+}});
+
+define({id: "19ddf2bb", inputs: ["Inputs","benthicData","display"], body: async (Inputs,benthicData,display) => {
+display(await(
+Inputs.table(benthicData, {
+  columns: ["survey_period", "site", "live_coral_pct", "dead_coral_pct", "macroalgae_pct", "rubble_pct", "bleached_pct", "n_transects", "source"],
+  header: {
+    survey_period: "Period",
+    live_coral_pct: "Live coral (%)",
+    dead_coral_pct: "Dead coral (%)",
+    macroalgae_pct: "Macroalgae (%)",
+    rubble_pct: "Rubble (%)",
+    bleached_pct: "Bleached (%)",
+    n_transects: "Transects"
+  },
+  sort: "site"
+})
+))
+}});
+
+define({id: "34370480", inputs: ["healthData","Inputs"], outputs: ["healthClean"], body: (healthData,Inputs) => {
+const healthClean = healthData.filter(d => d.site != null);
+Inputs.table(healthClean, {
+  columns: ["survey_period", "site", "n_total", "pct_healthy", "pct_pale", "pct_bleached", "pct_diseased", "pct_dead"],
+  header: {
+    survey_period: "Period",
+    n_total: "N colonies",
+    pct_healthy: "Healthy (%)",
+    pct_pale: "Pale (%)",
+    pct_bleached: "Bleached (%)",
+    pct_diseased: "Diseased (%)",
+    pct_dead: "Dead (%)"
+  },
+  sort: "site"
+})
+return {healthClean};
+}});
+
+define({id: "58e064dd", inputs: ["recruitData","Inputs"], outputs: ["recruitClean"], body: (recruitData,Inputs) => {
+const recruitClean = recruitData.filter(d => d.site != null);
+Inputs.table(recruitClean, {
+  columns: ["survey_period", "site", "mean_recruits_m2", "se_recruits_m2", "n_quadrats"],
+  header: {
+    survey_period: "Period",
+    mean_recruits_m2: "Recruits/m2",
+    se_recruits_m2: "SE",
+    n_quadrats: "Quadrats"
+  },
+  sort: "site"
+})
+return {recruitClean};
+}});
+
+define({id: "ebfc18bf", inputs: ["Inputs","mangroveData","display"], body: async (Inputs,mangroveData,display) => {
+display(await(
+Inputs.table(mangroveData, {
+  columns: ["area", "site", "n_plots", "mean_stem_density_ha", "mean_dbh_cm", "mean_height_m", "mean_canopy_cover_pct", "ci_composite", "pa_status"],
+  header: {
+    mean_stem_density_ha: "Stems/ha",
+    mean_dbh_cm: "DBH (cm)",
+    mean_height_m: "Height (m)",
+    mean_canopy_cover_pct: "Cover (%)",
+    ci_composite: "CI composite",
+    pa_status: "PA status",
+    n_plots: "Plots"
+  },
+  sort: "area"
+})
+))
+}});
+
+define({id: "3612e721", inputs: ["Inputs","coverData","display"], body: async (Inputs,coverData,display) => {
+display(await(
+Inputs.table(coverData, {
+  columns: ["Area", "Total_Cover_pct", "Species_Richness", "n_quadrats_cover"],
+  header: {
+    Total_Cover_pct: "Total cover (%)",
+    Species_Richness: "Spp richness",
+    n_quadrats_cover: "Quadrats"
+  },
+  sort: "Area"
+})
+))
+}});
+
+define({id: "fb2a88f6", inputs: ["Inputs","healthSg","display"], body: async (Inputs,healthSg,display) => {
+display(await(
+Inputs.table(healthSg, {
+  columns: ["Area", "Species", "Mean_Shoots_m2", "Mean_Canopy_height_cm", "n_quadrats"],
+  header: {
+    Mean_Shoots_m2: "Shoots/m2",
+    Mean_Canopy_height_cm: "Height (cm)",
+    n_quadrats: "Quadrats"
+  },
+  sort: "Area"
+})
+))
+}});
+
+define({id: "3fdab71e", inputs: ["Inputs","physData","display"], body: async (Inputs,physData,display) => {
+display(await(
+Inputs.table(physData, {
+  columns: ["year", "total_county_catch_mt", "reef_catch_adjusted_mt", "reef_fraction_pct", "reef_catch_lower_mt", "reef_catch_upper_mt"],
+  header: {
+    total_county_catch_mt: "County catch (mt)",
+    reef_catch_adjusted_mt: "Reef catch (mt)",
+    reef_fraction_pct: "Reef %",
+    reef_catch_lower_mt: "Lower (mt)",
+    reef_catch_upper_mt: "Upper (mt)"
+  }
+})
+))
+}});
+
+define({id: "a2e36fff", inputs: ["Inputs","monData","display"], body: async (Inputs,monData,display) => {
+display(await(
+Inputs.table(monData, {
+  columns: ["year", "reef_revenue_real_2024_usd", "resource_rent_lower_usd", "resource_rent_central_usd", "resource_rent_upper_usd"],
+  header: {
+    reef_revenue_real_2024_usd: "Revenue (USD)",
+    resource_rent_lower_usd: "Rent lower",
+    resource_rent_central_usd: "Rent central",
+    resource_rent_upper_usd: "Rent upper"
+  }
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Kenya Coastal Ecosystem Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Extent Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Condition Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
+    <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Services &amp; Integration</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./fisheries">Fisheries Provisioning</a></li>
+    <li class="observablehq-link"><a href="./synthesis">Cross-Ecosystem Synthesis</a></li>
+    <li class="observablehq-link"><a href="./seea-accounts">SEEA EA Accounts</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#dataset-summary">Dataset Summary</a></li>
+<li class="observablehq-secondary-link"><a href="#seea-ea-condition-account-final">SEEA EA Condition Account (Final)</a></li>
+<li class="observablehq-secondary-link"><a href="#seea-ea-extent-account-final">SEEA EA Extent Account (Final)</a></li>
+<li class="observablehq-secondary-link"><a href="#condition-summary-accounting-area-means">Condition Summary (Accounting-Area Means)</a></li>
+<li class="observablehq-secondary-link"><a href="#fish-condition-by-site">Fish Condition by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#benthic-cover-by-site">Benthic Cover by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#coral-health-by-site">Coral Health by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#coral-recruitment-by-site">Coral Recruitment by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#mangrove-condition-by-site">Mangrove Condition by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#seagrass-cover-by-area">Seagrass Cover by Area</a></li>
+<li class="observablehq-secondary-link"><a href="#seagrass-health-shoot-density-and-canopy-height">Seagrass Health (Shoot Density &amp; Canopy Height)</a></li>
+<li class="observablehq-secondary-link"><a href="#fisheries-physical-supply">Fisheries Physical Supply</a></li>
+<li class="observablehq-secondary-link"><a href="#fisheries-monetary-supply">Fisheries Monetary Supply</a></li>
+<li class="observablehq-secondary-link"><a href="#export">Export</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="data-tables" tabindex="-1"><a class="observablehq-header-anchor" href="#data-tables">Data Tables</a></h1>
+<h2 id="interactive-data-explorer" tabindex="-1"><a class="observablehq-header-anchor" href="#interactive-data-explorer">Interactive Data Explorer</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:dc5866fb:--></div>
+<hr>
+<h2 id="dataset-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#dataset-summary">Dataset Summary</a></h2>
+<div class="grid grid-cols-4">
+<div class="card">
+<h3>Reef Sites</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:65bc96f5:--></p>
+</div>
+<div class="card">
+<h3>Mangrove Sites</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:582ba5a1:--></p>
+</div>
+<div class="card">
+<h3>Seagrass Areas</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:13b45dd2:--></p>
+</div>
+<div class="card">
+<h3>Fisheries Years</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:377a5f9b:--></p>
+</div>
+</div>
+<hr>
+<h2 id="seea-ea-condition-account-final" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-condition-account-final">SEEA EA Condition Account (Final)</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:e569f63f:--></div>
+<hr>
+<h2 id="seea-ea-extent-account-final" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-extent-account-final">SEEA EA Extent Account (Final)</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6636969d:--></div>
+<hr>
+<h2 id="condition-summary-accounting-area-means" tabindex="-1"><a class="observablehq-header-anchor" href="#condition-summary-accounting-area-means">Condition Summary (Accounting-Area Means)</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:33b2fa7e:--></div>
+<hr>
+<h2 id="fish-condition-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#fish-condition-by-site">Fish Condition by Site</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:50d8f10b:--></div>
+<hr>
+<h2 id="benthic-cover-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#benthic-cover-by-site">Benthic Cover by Site</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:19ddf2bb:--></div>
+<hr>
+<h2 id="coral-health-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-health-by-site">Coral Health by Site</a></h2>
+<div class="observablehq observablehq--block"><!--:34370480:--></div>
+<hr>
+<h2 id="coral-recruitment-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-recruitment-by-site">Coral Recruitment by Site</a></h2>
+<div class="observablehq observablehq--block"><!--:58e064dd:--></div>
+<hr>
+<h2 id="mangrove-condition-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#mangrove-condition-by-site">Mangrove Condition by Site</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ebfc18bf:--></div>
+<hr>
+<h2 id="seagrass-cover-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-cover-by-area">Seagrass Cover by Area</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3612e721:--></div>
+<hr>
+<h2 id="seagrass-health-shoot-density-and-canopy-height" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-health-shoot-density-and-canopy-height">Seagrass Health (Shoot Density &amp; Canopy Height)</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:fb2a88f6:--></div>
+<hr>
+<h2 id="fisheries-physical-supply" tabindex="-1"><a class="observablehq-header-anchor" href="#fisheries-physical-supply">Fisheries Physical Supply</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3fdab71e:--></div>
+<hr>
+<h2 id="fisheries-monetary-supply" tabindex="-1"><a class="observablehq-header-anchor" href="#fisheries-monetary-supply">Fisheries Monetary Supply</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:a2e36fff:--></div>
+<hr>
+<h2 id="export" tabindex="-1"><a class="observablehq-header-anchor" href="#export">Export</a></h2>
+<p>To export any table as CSV, right-click the table and select "Copy" or use the download buttons provided by Observable's table component.</p>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./seea-accounts"><span>SEEA EA Accounts</span></a><a rel="next" href="./methods"><span>Methods</span></a></nav>
+<div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

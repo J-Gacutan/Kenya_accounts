@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Environmental accounting project for African coastal/marine ecosystems under the **UN SEEA EA** (System of Environmental-Economic Accounting — Ecosystem Accounting) framework. Currently includes two country pilots: **Madagascar coral reef (M1.3)** condition accounts (advanced) and **Mozambique mangrove (M2.1)** extent accounts (early-stage).
+Environmental accounting project for African coastal/marine ecosystems under the **UN SEEA EA** (System of Environmental-Economic Accounting — Ecosystem Accounting) framework. Currently includes three country pilots: **Madagascar coral reef (M1.3)** condition accounts (advanced), **Mozambique mangrove (M2.1)** extent accounts (early-stage), and **Kenya** (setup phase, ecosystem type TBD).
 
 ## Repository Structure
 
@@ -52,24 +52,44 @@ AFRICA - accounts/
 │       └── templates/
 │           └── template_seea_publication.md       # Madagascar-adapted publication template
 │
-└── Mozambique/                        # Mangrove extent accounts (M2.1)
+├── Mozambique/                        # Mangrove extent accounts (M2.1)
+│   ├── 01_inputs/
+│   │   ├── raw_data/
+│   │   │   └── *.csv                              # Mangrove extent data (GMW 2020 + field surveys)
+│   │   └── metadata/
+│   │       └── *_metadata.md                      # Data summaries
+│   ├── 03_outputs/
+│   │   └── FINDINGS_OVERVIEW.md                   # Preliminary findings
+│   └── docs/
+│       ├── skills/                                # Standardised operating procedures
+│       │   └── skill_extent_mangrove_m13_mozambique.md  # Extent SOP
+│       ├── rag/                                   # RAG systems
+│       │   └── policy/
+│       │       └── policy_rag_schema.md           # Policy-commitment linking
+│       ├── briefs/
+│       │   └── POLICY_BRIEF_Mozambique_Mangroves_Outline.md
+│       └── templates/
+│           └── template_seea_publication.md       # Mozambique-adapted publication template
+│
+└── Kenya/                             # [Ecosystem TBD] — Setup phase
     ├── 01_inputs/
-    │   ├── raw_data/
-    │   │   └── *.csv                              # Mangrove extent data (GMW 2020 + field surveys)
-    │   └── metadata/
-    │       └── *_metadata.md                      # Data summaries
+    │   ├── raw_data/                              # Raw data files (TBD)
+    │   └── metadata/                              # Data summaries (TBD)
+    ├── 02_analysis/
+    │   └── [analysis scripts TBD]
     ├── 03_outputs/
-    │   └── FINDINGS_OVERVIEW.md                   # Preliminary findings
+    │   └── [results TBD]
     └── docs/
-        ├── skills/                                # Standardised operating procedures
-        │   └── skill_extent_mangrove_m13_mozambique.md  # Extent SOP
-        ├── rag/                                   # RAG systems
-        │   └── policy/
-        │       └── policy_rag_schema.md           # Policy-commitment linking
-        ├── briefs/
-        │   └── POLICY_BRIEF_Mozambique_Mangroves_Outline.md
+        ├── skills/                                # SOPs (to be created)
+        ├── rag/
+        │   ├── academic/                          # Academic evidence linking (TBD)
+        │   └── policy/                            # Policy-commitment linking (TBD)
+        ├── accounts/                              # Account methodology (TBD)
+        ├── briefs/                                # Policy briefs (TBD)
         └── templates/
-            └── template_seea_publication.md       # Mozambique-adapted publication template
+            ├── template_seea_publication.md       # Shared template (adapted)
+            ├── policy_rag_schema.md               # Shared template (adapted)
+            └── POLICY_BRIEF_TEMPLATE.md           # Shared template (adapted)
 ```
 
 ## Key Conventions
@@ -80,6 +100,8 @@ AFRICA - accounts/
 - **Analysis language:** R (readxl, dplyr, tidyr, stringr)
 - **Methodology reference:** `skill_condition_biotic_fish_invert.md` in the Accounting bot repo
 - **Never use icons** — all outputs should use plain text formatting only
+- **Country codes in output files:** All output files (CSVs, tables, exports) must include the ISO 3166-1 alpha-3 country code in the filename: **KEN** (Kenya), **MOZ** (Mozambique), **MDG** (Madagascar)
+- **Publications vs. Policy Briefs:** Academic publications (SEEA EA standard format) include full academic citations to evidence sources; policy briefs do NOT include academic citations. Policy briefs are for decision-makers and should use plain language, data, and policy anchors without scholarly apparatus.
 - **Policy brief framing (Multi-country work):** When developing policy briefs for ecosystems with data from individual countries (e.g., Mozambique mangroves), consider framing at the **Western Indian Ocean regional level** in headline and opening sections, rather than identifying a specific country. This enables the brief to be shared across WIO states, positions local data within broader regional context, and reduces country-specific sensitivities. Country-specific details can appear in data sections; regional framing in situational context.
 
 ## Data Providers
@@ -100,10 +122,10 @@ AFRICA - accounts/
 
 ## Open Review Items
 
-- **Transect area assumption:** 100 m² (20×5) vs 400 m² (20×20) — confirm with field team
-- **Fish biomass reference level:** 500 kg/ha (MacNeil et al. 2015) may underestimate for total reef fish
-- **COTS scaling sensitivity:** Very low counts scaled to per-ha may be misleading
-- **Sea urchin reference level:** No standard established; currently descriptive only
+- **Transect area:** 250 m² (50 m x 5 m) — confirmed with field team
+- **Fish biomass reference level:** RESOLVED — updated to 1,150 kg/ha (McClanahan et al. 2016 WIO conservation target); sustainability floor 600 kg/ha
+- **COTS scaling sensitivity:** Very low counts scaled to per-ha may be misleading; updated outbreak threshold to 15 ind/ha (Dulvy et al. 2021)
+- **Sea urchin reference level:** PROVISIONAL — 1.5–2 ind/m² (*Echinometra mathaei* outer reef, Kenya/WIO; LOW confidence); no formal WIO baseline published
 
 ## Working With This Project
 

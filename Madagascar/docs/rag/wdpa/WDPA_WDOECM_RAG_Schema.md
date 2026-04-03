@@ -175,7 +175,7 @@ High-priority fields for **thorough analysis**:
 - **Not Reported:** Unverified data (quality variable; may be removed before public release)
 
 ### 5.2 Known Data Issues & Limitations
-**Transect area assumption:** Field validates against **100 m² transect** (20×5 m) assumption from Madagascar fish/invertebrate condition accounts; some PAs may use larger transects (20×20 m = 400 m²) — impacts scaling to per-hectare metrics.
+**Transect area:** Field confirms **250 m² transect** (50 m × 5 m) for Madagascar fish/invertebrate condition accounts; some PAs may use different transect sizes — impacts scaling to per-hectare metrics.
 
 **Fish biomass reference level:** 500 kg/ha (MacNeil et al. 2015) may underestimate for total reef fish in less-impacted reefs.
 

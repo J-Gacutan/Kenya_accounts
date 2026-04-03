@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benefit-Sharing Waterfall</title>
+<style>
+  :root {
+    --blue-900: #1a3a5c;
+    --blue-700: #2b6cb0;
+    --blue-400: #63b3ed;
+    --blue-100: #bee3f8;
+    --green-700: #276749;
+    --green-500: #38a169;
+    --green-100: #c6f6d5;
+    --amber-700: #975a16;
+    --amber-500: #d69e2e;
+    --amber-100: #fefcbf;
+    --purple-700: #553c9a;
+    --purple-500: #805ad5;
+    --purple-100: #e9d8fd;
+    --grey-50: #f7fafc;
+    --grey-100: #edf2f7;
+    --grey-200: #e2e8f0;
+    --grey-500: #a0aec0;
+    --grey-600: #718096;
+    --grey-800: #2d3748;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #fff;
+    color: var(--grey-800);
+    padding: 2.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.5rem; color: var(--blue-900); margin-bottom: 0.2rem; }
+  .subtitle { font-size: 0.9rem; color: var(--grey-600); margin-bottom: 2rem; }
+
+  .model-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border: 1px solid var(--grey-200);
+    border-radius: 6px;
+    overflow: hidden;
+    width: fit-content;
+  }
+  .model-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: var(--grey-50);
+    color: var(--grey-600);
+    transition: all 0.2s;
+  }
+  .model-btn.active {
+    background: var(--blue-900);
+    color: #fff;
+  }
+
+  /* waterfall chart */
+  .waterfall {
+    position: relative;
+    padding: 0 0 0 0;
+  }
+
+  .wf-row {
+    display: grid;
+    grid-template-columns: 170px 1fr 100px;
+    align-items: center;
+    min-height: 56px;
+    border-bottom: 1px solid var(--grey-100);
+  }
+
+  .wf-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+  .wf-label .wf-sub {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--grey-600);
+  }
+
+  .wf-bar-area {
+    position: relative;
+    height: 36px;
+    padding: 0 0.5rem;
+  }
+  .wf-bar {
+    position: absolute;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.4s ease;
+  }
+  .wf-bar.gross { background: var(--blue-700); }
+  .wf-bar.state { background: var(--purple-500); }
+  .wf-bar.community { background: var(--green-500); }
+  .wf-bar.developer { background: var(--amber-500); }
+  .wf-bar.transaction { background: var(--grey-500); }
+
+  .wf-amount {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-right: 0.25rem;
+  }
+
+  /* connector lines */
+  .wf-connector {
+    grid-column: 2;
+    height: 12px;
+    position: relative;
+    padding: 0 0.5rem;
+  }
+  .wf-connector-line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-right: 1px dashed var(--grey-500);
+  }
+
+  /* annotations */
+  .annotation-strip {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .annotation {
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .annotation.legal {
+    background: var(--purple-100);
+    color: var(--purple-700);
+    border-left: 4px solid var(--purple-500);
+  }
+  .annotation.model {
+    background: var(--green-100);
+    color: var(--green-700);
+    border-left: 4px solid var(--green-500);
+  }
+  .annotation strong { display: block; margin-bottom: 0.2rem; }
+
+  .legend {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    font-size: 0.78rem;
+    color: var(--grey-600);
+    flex-wrap: wrap;
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.3rem; }
+  .legend-swatch { width: 14px; height: 10px; border-radius: 2px; }
+
+  .footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--grey-500);
+  }
+
+  @media (max-width: 640px) {
+    .annotation-strip { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Carbon Credit Revenue: Benefit-Sharing Waterfall</h1>
+<div class="subtitle">How gross credit revenue is distributed under Mozambique's legal framework and the MozBlue precedent</div>
+
+<div class="model-toggle">
+  <button class="model-btn active" onclick="setModel('mozblue')">MozBlue Model (33/33/33)</button>
+  <button class="model-btn" onclick="setModel('minimum')">Decree 81/2023 Minimum</button>
+</div>
+
+<div class="waterfall" id="waterfall">
+  <!-- Populated by JS -->
+</div>
+
+<div class="annotation-strip">
+  <div class="annotation legal">
+    <strong>Decree 81/2023 -- Legal floor</strong>
+    Minimum 20% of gross credit revenue to communities. Minimum 15% to the state. A Benefit-Sharing Agreement (BSA) is a legal prerequisite for carbon credit validation. DUAT and customary occupation rights form the foundation on which the BSA is built.
+  </div>
+  <div class="annotation model">
+    <strong>MozBlue precedent -- Operational benchmark</strong>
+    33.3% to communities via community fishing councils, exceeding the legal minimum. 7,500+ direct beneficiaries, 50% women. This tripartite model (developer / government / communities) has become the standard for blue carbon in Mozambique.
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--blue-700)"></div> Gross revenue</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--grey-500)"></div> Transaction fee (EDEA)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--purple-500)"></div> State share</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--green-500)"></div> Community share</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:var(--amber-500)"></div> Developer / project costs</div>
+</div>
+
+<div class="footer">
+  Based on indicative mid-point revenue of USD 67,500/yr (Save measured assets) | Decree 81/2023 | EDEA 2024-2033
+</div>
+
+<script>
+const models = {
+  mozblue: {
+    gross: 67500,
+    items: [
+      { label: 'Gross credit revenue', sub: 'Save measured assets (mid-point estimate)', pct: 100, type: 'gross' },
+      { label: 'EDEA transaction fee', sub: '2% of gross credit value', pct: 2, type: 'transaction' },
+      { label: 'State share', sub: '33.3% of net (exceeds 15% minimum)', pct: 32.6, type: 'state' },
+      { label: 'Community share', sub: '33.3% via fishing councils (exceeds 20% min)', pct: 32.6, type: 'community' },
+      { label: 'Developer / project costs', sub: '33.3% for operations, MRV, management', pct: 32.6, type: 'developer' },
+    ]
+  },
+  minimum: {
+    gross: 67500,
+    items: [
+      { label: 'Gross credit revenue', sub: 'Save measured assets (mid-point estimate)', pct: 100, type: 'gross' },
+      { label: 'EDEA transaction fee', sub: '2% of gross credit value', pct: 2, type: 'transaction' },
+      { label: 'State share', sub: '15% of gross (Decree 81/2023 minimum)', pct: 14.7, type: 'state' },
+      { label: 'Community share', sub: '20% of gross (Decree 81/2023 minimum)', pct: 19.6, type: 'community' },
+      { label: 'Developer / project costs', sub: 'Remainder after mandatory allocations', pct: 63.7, type: 'developer' },
+    ]
+  }
+};
+
+let current = 'mozblue';
+
+function setModel(m) {
+  current = m;
+  document.querySelectorAll('.model-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  render();
+}
+
+function render() {
+  const data = models[current];
+  const container = document.getElementById('waterfall');
+  let html = '';
+  let runningLeft = 0;
+
+  data.items.forEach((item, i) => {
+    const w = item.pct;
+    const amt = Math.round(data.gross * item.pct / 100);
+    const amtStr = 'USD ' + amt.toLocaleString();
+
+    if (i === 0) {
+      // gross bar - full width
+      html += `
+        <div class="wf-row">
+          <div class="wf-label">${item.label}<span class="wf-sub">${item.sub}</span></div>
+          <div class="wf-bar-area">
+            <div class="wf-bar ${item.type}" style="left:0; width:100%">${amtStr}</div>
+          </div>
+          <div class="wf-amount">${amtStr}</div>
+        </div>`;
+    } else {
+      // allocation bars - positioned from left
+      html += `
+        <div class="wf-row">
+          <div class="wf-label">${item.label}<span class="wf-sub">${item.sub}</span></div>
+          <div class="wf-bar-area">
+            <div class="wf-bar ${item.type}" style="left:${runningLeft}%; width:${w}%">${w > 10 ? amtStr : ''}</div>
+          </div>
+          <div class="wf-amount">${amtStr}</div>
+        </div>`;
+      runningLeft += w;
+    }
+  });
+
+  container.innerHTML = html;
+}
+
+render();
+</script>
+
+</body>
+</html>

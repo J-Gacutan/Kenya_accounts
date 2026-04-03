@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya SEEA EA -- Analytical Process Graph</title>
+<style>
+  :root {
+    --bg:#f8f9fa;--card:#fff;--border:#dee2e6;
+    --blue:#2563eb;--blue-light:#dbeafe;--blue-dark:#1e40af;
+    --green:#16a34a;--green-light:#dcfce7;
+    --amber:#d97706;--amber-light:#fef3c7;
+    --red:#dc2626;--red-light:#fee2e2;
+    --purple:#7c3aed;--purple-light:#ede9fe;
+    --gray:#6b7280;--gray-light:#f3f4f6;
+    --teal:#0d9488;--teal-light:#ccfbf1;
+    --coral:#e11d48;--coral-light:#ffe4e6;
+    --emerald:#059669;--emerald-light:#d1fae5;
+    --sky:#0284c7;--sky-light:#e0f2fe;
+    --indigo:#4f46e5;--indigo-light:#e0e7ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:#1f2937;line-height:1.5;padding:2rem}
+  h1{font-size:1.75rem;font-weight:700;margin-bottom:.25rem}
+  h2{font-size:1.2rem;font-weight:600;margin:1.5rem 0 .5rem;padding-bottom:.3rem;border-bottom:2px solid var(--border)}
+  .subtitle{color:var(--gray);margin-bottom:2rem;font-size:.95rem}
+  .legend{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;padding:1rem;background:var(--card);border:1px solid var(--border);border-radius:8px}
+  .legend-item{display:flex;align-items:center;gap:.4rem;font-size:.8rem}
+  .legend-dot{width:14px;height:14px;border-radius:3px;flex-shrink:0}
+  .pipeline{display:flex;flex-direction:column;gap:0;position:relative}
+  .connector{width:2px;height:16px;background:var(--border);margin:0 auto}
+  .connector-arrow{text-align:center;color:var(--gray);font-size:.7rem;margin:-2px 0}
+  .branch-container{display:flex;gap:.75rem;align-items:stretch}
+  .branch-container>.step{flex:1}
+  .step{background:var(--card);border:2px solid var(--border);border-radius:10px;padding:.85rem 1rem;position:relative;transition:box-shadow .2s}
+  .step:hover{box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .step-num{position:absolute;top:-10px;left:12px;color:#fff;font-size:.65rem;font-weight:700;padding:1px 8px;border-radius:10px}
+  .step h3{font-size:.88rem;font-weight:600;margin-bottom:.3rem;padding-right:2rem}
+  .step p,.step ul{font-size:.78rem;color:#374151}
+  .step ul{padding-left:1.1rem}
+  .step ul li{margin-bottom:.1rem}
+  .tag{display:inline-block;font-size:.62rem;font-weight:600;padding:1px 6px;border-radius:4px;margin-left:4px;vertical-align:middle}
+  .tag-input{background:var(--blue-light);color:var(--blue-dark)}
+  .tag-output{background:var(--green-light);color:var(--green)}
+  .tag-decision{background:var(--amber-light);color:var(--amber)}
+  .tag-pending{background:var(--red-light);color:var(--red)}
+  .tag-ref{background:var(--purple-light);color:var(--purple)}
+  .tag-formula{background:var(--teal-light);color:var(--teal)}
+  .io-row{display:flex;gap:.4rem;margin-top:.35rem;flex-wrap:wrap}
+  .io-box{font-size:.68rem;padding:2px 7px;border-radius:4px;border:1px solid}
+  .io-in{border-color:var(--blue);background:var(--blue-light);color:var(--blue-dark)}
+  .io-out{border-color:var(--green);background:var(--green-light);color:var(--green)}
+  .section-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--gray);padding:.6rem 0 .2rem;border-top:2px dashed var(--border);margin-top:.8rem}
+  .formula-block{background:#f1f5f9;border-left:3px solid var(--teal);padding:.35rem .7rem;margin:.3rem 0;font-family:'SF Mono','Fira Code',monospace;font-size:.72rem;border-radius:0 4px 4px 0;white-space:pre-wrap}
+  .eco-header{display:flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border-radius:8px;font-weight:700;font-size:.9rem;margin-top:1.5rem}
+  .eco-coral{background:var(--coral-light);color:var(--coral);border:2px solid var(--coral)}
+  .eco-mangrove{background:var(--emerald-light);color:var(--emerald);border:2px solid var(--emerald)}
+  .eco-seagrass{background:var(--sky-light);color:var(--sky);border:2px solid var(--sky)}
+  .eco-fish{background:var(--indigo-light);color:var(--indigo);border:2px solid var(--indigo)}
+  .eco-assembly{background:var(--purple-light);color:var(--purple);border:2px solid var(--purple)}
+  .num-coral{background:var(--coral)}
+  .num-mangrove{background:var(--emerald)}
+  .num-seagrass{background:var(--sky)}
+  .num-fish{background:var(--indigo)}
+  .num-assembly{background:var(--purple)}
+  .note{font-size:.72rem;color:var(--amber);font-style:italic;margin-top:.25rem}
+  @media(max-width:700px){.branch-container{flex-direction:column}body{padding:1rem}}
+</style>
+</head>
+<body>
+
+<h1>Kenya -- Multi-Ecosystem SEEA EA Process Graph</h1>
+<p class="subtitle">3 ecosystem types (Coral Reef M1.3, Mangrove MFT1.2, Seagrass M1.1) + Fisheries Provisioning Service + Final Assembly | Kilifi County | 2024-2025</p>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--coral-light);border:1px solid var(--coral)"></div> Coral Reef</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--emerald-light);border:1px solid var(--emerald)"></div> Mangrove</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--sky-light);border:1px solid var(--sky)"></div> Seagrass</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--indigo-light);border:1px solid var(--indigo)"></div> Fisheries Service</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--purple-light);border:1px solid var(--purple)"></div> Assembly</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--teal-light);border:1px solid var(--teal)"></div> Formula</div>
+</div>
+
+<!-- ==================== CORAL REEF ==================== -->
+<div class="eco-header eco-coral">A. Coral Reef Condition (2 scripts: Fish + Coral/Invertebrate)</div>
+
+<div class="pipeline">
+
+<div class="section-label">A1. Fish Condition Pipeline (coral_reef_fish_condition.R)</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A1.1</span>
+  <h3>Ingest Fish UVC Data (2 programmes)</h3>
+  <div class="io-row">
+    <span class="io-box io-in">KLF-FISH-DATA (Nov 2024, 698 rows)</span>
+    <span class="io-box io-in">COMRED-FISH-DATA (Jul 2025, 343 rows)</span>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A1.2</span>
+  <h3>Fish QA/QC: clean_fish_uvc()</h3>
+  <ul>
+    <li>Filter template rows (date = NA, species = "0")</li>
+    <li>fix_gps(): lat -5 to -1, lon 38-42</li>
+    <li>standardise_site() via SITE_NAME_MAP</li>
+    <li>Taxonomy: str_to_sentence(species), str_to_title(family)</li>
+    <li>parse_size_mid(): "5--10" &rarr; 7.5 cm</li>
+  </ul>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A1.3</span>
+  <h3>FishBase Parameters <span class="tag tag-decision">CONDITIONAL</span></h3>
+  <div class="io-row"><span class="io-box io-in">fishbase_params_kenya.csv (species, family, a, b)</span></div>
+  <p>If file missing: Steps A1.4-A1.5 SKIPPED with warning. Coral/invert pipeline continues.</p>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A1.4</span>
+  <h3>Fish Biomass + Trophic Assignment</h3>
+  <div class="formula-block">W = a &times; L^b &times; count (species match, then family fallback)
+biomass_kg_ha = (sum(W_g)/1000) / (250 m2 / 10000)
+TROPHIC_LOOKUP: Herbivore, Piscivore, Carnivore, Corallivore, Omnivore, Planktivore</div>
+  <p>Aggregate: transect &rarr; site (mean &plusmn; SE). Per survey_period &times; site.</p>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A1.5</span>
+  <h3>Normalise + PA Join + SEEA Rows</h3>
+  <div class="formula-block">CI_biomass = min(biomass / 1150, 1.0)  [ref: McClanahan 2016, HIGH]
+CI_richness = min(richness / max_obs, 1.0)  [ref: dataset-internal, MEDIUM]</div>
+  <p>Join PA_CLASSIFICATION (Watamu MPA, Malindi MPA, Community CPA, Open access).</p>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_fish_condition_site.csv</span>
+    <span class="io-box io-out">KEN_fish_seea_rows.csv</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+<div class="section-label">A2. Coral + Invertebrate Pipeline (coral_reef_coral_invert_condition.R)</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.1</span>
+  <h3>Ingest Coral + Invert Data (3 programmes, 6 files)</h3>
+  <div class="io-row">
+    <span class="io-box io-in">CCVA Inverts (279 rows)</span>
+    <span class="io-box io-in">PU-GOAP Coral (4,884 rows, 4 sheets)</span>
+    <span class="io-box io-in">COMRED Coral (2,611+770 rows, 3 sheets)</span>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.2</span>
+  <h3>QA/QC: 5 sub-pipelines</h3>
+  <ul>
+    <li><strong>Invertebrates:</strong> standardise_site(), fix_gps(), taxonomy</li>
+    <li><strong>Coral condition:</strong> rename_with() for column variants; coerce health to numeric</li>
+    <li><strong>Adult size:</strong> detect size-bin columns by ADULT_SIZE_PATTERN regex</li>
+    <li><strong>Recruits:</strong> detect recruit-bin columns by RECRUIT_SIZE_PATTERN regex</li>
+    <li><strong>Benthic cover:</strong> year &rarr; survey_period mapping; str_to_upper(benthic_cat)</li>
+  </ul>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.3</span>
+  <h3>Coral Structural Indicators (4 types)</h3>
+  <div class="branch-container">
+    <div style="flex:1;padding:.4rem;background:var(--coral-light);border-radius:6px;font-size:.75rem">
+      <strong>Benthic Cover</strong><br>
+      LIT/PIT (COMRED) + quadrat (PU-GOAP).<br>
+      Live coral %, dead %, macroalgae %, rubble %.
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--coral-light);border-radius:6px;font-size:.75rem">
+      <strong>Coral Health</strong><br>
+      Colony counts: healthy, pale, bleached, diseased, dead.<br>
+      pct_healthy = n_healthy / n_total &times; 100.
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--coral-light);border-radius:6px;font-size:.75rem">
+      <strong>Size Structure</strong><br>
+      6 size bins (11-320+ cm).<br>
+      pct_large = colonies &gt;80 cm / total.
+    </div>
+    <div style="flex:1;padding:.4rem;background:var(--coral-light);border-radius:6px;font-size:.75rem">
+      <strong>Recruitment</strong><br>
+      1 m2 quadrats; 3 size bins.<br>
+      mean_recruits_m2 &plusmn; SE per site.
+    </div>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.4</span>
+  <h3>Invertebrate Metrics</h3>
+  <p>Species lists: urchin (Diadema, Echinometra), COTS (Acanthaster), Tridacna, sea cucumber. Match by exact name + regex fallback.</p>
+  <p>Scale: density_ha, urchin_density_m2 per transect, then site-level mean &plusmn; SE.</p>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.5</span>
+  <h3>Normalisation: 7 Indicators</h3>
+  <div class="formula-block">CI_cover = min(live_coral% / 30, 1.0)          [GCRMN 2021, MEDIUM]
+CI_bleach = max(1 - bleach% / 5, 0)             [Hoegh-Guldberg 1999, MEDIUM]
+CI_disease = max(1 - disease% / 2, 0)           [Bourne et al. 2009, MEDIUM]
+CI_healthy = min(healthy% / 95, 1.0)            [Hoegh-Guldberg 1999, MEDIUM]
+CI_recruit = min(recruits_m2 / 1.0, 1.0)        [Hughes et al. 2010, LOW-MED]
+CI_cots = max(1 - cots_ha / 15, 0)              [Dulvy et al. 2021, MEDIUM]
+CI_urchin = max(1 - |urchin - 1.75| / 1.75, 0)  [McClanahan 1987+, LOW]</div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--coral)">
+  <span class="step-num num-coral">A2.6</span>
+  <h3>PA Disaggregation + Multi-Period + Export</h3>
+  <ul>
+    <li>Join PA_CLASSIFICATION; compute mean CI per pa_type &times; period</li>
+    <li>Filter matched sites (both Nov 2024 + Jul 2025) for change analysis</li>
+    <li>Add post-bleaching note: "Jul 2025 = ~15 months post-2024 bleaching event"</li>
+  </ul>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_seea_condition_account.csv</span>
+    <span class="io-box io-out">KEN_condition_by_pa.csv</span>
+    <span class="io-box io-out">KEN_multiperiod_comparison.csv</span>
+    <span class="io-box io-out">KEN_coral_health_site.csv</span>
+    <span class="io-box io-out">KEN_benthic_cover_site.csv</span>
+    <span class="io-box io-out">KEN_coral_recruitment_site.csv</span>
+    <span class="io-box io-out">KEN_invertebrate_condition_site.csv</span>
+  </div>
+</div>
+
+</div><!-- end coral pipeline -->
+
+<!-- ==================== MANGROVE ==================== -->
+<div class="eco-header eco-mangrove">B. Mangrove Condition + Extent (mangrove_condition.R + ArcGIS)</div>
+
+<div class="pipeline">
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B.1</span>
+  <h3>Ingest + Batch Split</h3>
+  <div class="io-row"><span class="io-box io-in">All_mangrove_field_data.xlsx (2,095 rows, 36 plots, 22 sites)</span></div>
+  <p>Split Part 1 (Patricia/Kisilu: full names, numeric quality) vs Part 2 (Marvin/Gilbert: abbreviations, text quality). Harmonise quality_num (1/2/3).</p>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B.2</span>
+  <h3>QA/QC: 8 sub-steps</h3>
+  <ul>
+    <li>Species: RM/Rm/rm &rarr; Rhizophora mucronata (4 species)</li>
+    <li>Area: "Debaso" &rarr; "Mida Creek" (4 canonical areas)</li>
+    <li>Coordinates: DMS strings &rarr; decimal degrees via parse_coord_dd()</li>
+    <li>Sub-branches: identify (a/A, b/B, c/C); 541 sub-branches flagged</li>
+    <li>DBH: recalculate = Circumference / &pi; (always, to fix shifted column)</li>
+    <li>Survey phase: date &lt; 2025-12-01 &rarr; "reconnaissance"</li>
+  </ul>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B.3</span>
+  <h3>Plot-Level Metrics (5 indicators)</h3>
+  <div class="branch-container">
+    <div style="flex:1;padding:.3rem;background:var(--emerald-light);border-radius:6px;font-size:.72rem">
+      <strong>Stem density</strong><br>Main stems only &divide; 0.01 ha = trees/ha
+    </div>
+    <div style="flex:1;padding:.3rem;background:var(--emerald-light);border-radius:6px;font-size:.72rem">
+      <strong>Mean DBH</strong><br>All stems (incl. sub-branches); cm
+    </div>
+    <div style="flex:1;padding:.3rem;background:var(--emerald-light);border-radius:6px;font-size:.72rem">
+      <strong>Mean height</strong><br>All stems; m (exclude &lt;0.3 or &gt;20)
+    </div>
+    <div style="flex:1;padding:.3rem;background:var(--emerald-light);border-radius:6px;font-size:.72rem">
+      <strong>Canopy cover</strong><br>Class &rarr; midpoint %
+    </div>
+    <div style="flex:1;padding:.3rem;background:var(--emerald-light);border-radius:6px;font-size:.72rem">
+      <strong>Quality index</strong><br>n(quality=1) / n_total
+    </div>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B.4</span>
+  <h3>Normalise (linear rescaling) + Composite</h3>
+  <div class="formula-block">CI = clamp((value - poor) / (pristine - poor), 0, 1)
+Stem density: poor=200, pristine=3000 trees/ha [MEDIUM]
+DBH: poor=3, pristine=20 cm [MEDIUM]
+Height: poor=2, pristine=12 m [MEDIUM]
+Cover: poor=30, pristine=90% [LOW]
+Quality: direct 0-1 [LOW]
+Composite = mean(5 CIs)</div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B.5</span>
+  <h3>Aggregate + PA Join + Export</h3>
+  <p>Plot &rarr; Site (unweighted mean). PA: Mida Creek MNR (CI=0.455) vs Unprotected (CI=0.370).</p>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_mangrove_condition_by_plot.csv</span>
+    <span class="io-box io-out">KEN_mangrove_condition_by_site.csv</span>
+    <span class="io-box io-out">KEN_mangrove_condition_by_pa.csv</span>
+    <span class="io-box io-out">KEN_seea_condition_account_mangrove.csv</span>
+  </div>
+</div>
+
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+<div class="section-label">B-EXT. Mangrove Extent Account (ArcGIS Pro, 7 steps)</div>
+
+<div class="step" style="border-color:var(--emerald)">
+  <span class="step-num num-mangrove">B-EXT</span>
+  <h3>GIS Extent Pipeline</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:.4rem;font-size:.72rem;margin-top:.3rem">
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>1.</strong> Total mangrove area (2025): 5,742 ha</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>2.</strong> Per-WDPA site: Intersect + Summary Statistics</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>3.</strong> True protected area: Dissolve + Intersect (3,806 ha)</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>4.</strong> Unprotected: Total - Protected (1,935 ha)</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>5.</strong> GMW 2020 baseline: 6,083 ha</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px"><strong>6.</strong> Change: +589 ha additions, -928 ha reductions</div>
+    <div style="padding:.3rem;background:var(--emerald-light);border-radius:4px;grid-column:span 2"><strong>7.</strong> SEEA EA extent table: Opening 6,083 &rarr; Closing 5,742 ha (net -341 ha, -5.6%)</div>
+  </div>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_Mangrove_extent_change_2020_2025.csv</span>
+    <span class="io-box io-out">KEN_Mangrove_extent_protected_and_non-protected_areas.csv</span>
+  </div>
+</div>
+
+</div><!-- end mangrove pipeline -->
+
+<!-- ==================== SEAGRASS ==================== -->
+<div class="eco-header eco-seagrass">C. Seagrass Condition (seagrass_condition.R)</div>
+
+<div class="pipeline">
+
+<div class="step" style="border-color:var(--sky)">
+  <span class="step-num num-seagrass">C.1</span>
+  <h3>Ingest 2 Sheets</h3>
+  <div class="io-row">
+    <span class="io-box io-in">SEAGRASS COVER (1,604 rows, 10 areas)</span>
+    <span class="io-box io-in">SEAGRASS HEALTH (1,436 rows, 11 areas)</span>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--sky)">
+  <span class="step-num num-seagrass">C.2</span>
+  <h3>QA/QC</h3>
+  <ul>
+    <li>Date parsing: multi-format (ymd, dmy, Excel serial)</li>
+    <li>Taxonomy: fix Halophilia &rarr; Halophila, Thelassia &rarr; Thalassia, Halodulle &rarr; Halodule</li>
+    <li>Coordinates: force lat negative; validate Kilifi bounding box</li>
+    <li>Exclude Sand rows from species calculations</li>
+    <li>Canopy height: flag &gt;100 cm as outliers</li>
+  </ul>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="branch-container">
+  <div class="step" style="border-color:var(--sky)">
+    <span class="step-num num-seagrass">C.3</span>
+    <h3>Cover Aggregation</h3>
+    <ul>
+      <li>Sum species covers within sub-quadrat (cap at 100%)</li>
+      <li>Mean across sub-quadrats per site</li>
+      <li>Species richness per site</li>
+      <li>Composition: species % of total</li>
+    </ul>
+    <div class="io-row"><span class="io-box io-out">cover_site (10 areas)</span></div>
+  </div>
+  <div class="step" style="border-color:var(--sky)">
+    <span class="step-num num-seagrass">C.4</span>
+    <h3>Health Metrics</h3>
+    <ul>
+      <li>shoots_per_m2 = raw_count / 0.0225 m2</li>
+      <li>Mean shoots &plusmn; SE per site &times; species</li>
+      <li>Zone breakdown (Near shore, Middle, Near reef)</li>
+      <li>Canopy height mean per site &times; species</li>
+    </ul>
+    <div class="io-row"><span class="io-box io-out">health_site, health_zone</span></div>
+  </div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--sky)">
+  <span class="step-num num-seagrass">C.5</span>
+  <h3>Normalise + SEEA Export</h3>
+  <div class="formula-block">CI_cover = min(cover / 60, 1.0)  [Duarte 1991, MEDIUM]
+CI_richness = richness / max_obs  [in-sample, LOW]
+CI_density(Th) = min(density / 800, 1.0)  [Bandeira 2014, LOW-MED]
+Composite = mean(CI_cover, CI_richness, CI_density)</div>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_seagrass_cover_site.csv</span>
+    <span class="io-box io-out">KEN_seagrass_health_site.csv</span>
+    <span class="io-box io-out">KEN_seea_condition_account_seagrass.csv</span>
+  </div>
+</div>
+
+</div><!-- end seagrass pipeline -->
+
+<!-- ==================== FISHERIES ==================== -->
+<div class="eco-header eco-fish">D. Wild Fish Provisioning Service (fisheries_provisioning.R)</div>
+
+<div class="pipeline">
+
+<div class="step" style="border-color:var(--indigo)">
+  <span class="step-num num-fish">D.1</span>
+  <h3>Ingest KeFS Landings (2020-2024)</h3>
+  <div class="io-row"><span class="io-box io-in">Fisheries Data.xlsx (5 annual sheets, ~37 species groups/yr)</span></div>
+  <p>Standardise species group names across years (fix "Scarvenger", "Littla mackerels", etc.).</p>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--indigo)">
+  <span class="step-num num-fish">D.2</span>
+  <h3>Habitat Attribution</h3>
+  <p>Join 37-group attribution table (reef_pct 0-90%, verified against FishBase). Key groups: Snapper 90%, Parrot fish 90%, Rock cod 90%, Rabbit fish 80%, Sardines 0%, Prawns 0%.</p>
+  <div class="formula-block">reef_catch_mt = catch_mt &times; reef_pct / 100
+Unreported adjustment: &times; 1.30 (central; range 1.20-1.40)</div>
+</div>
+<div class="connector"></div><div class="connector-arrow">&#9660;</div>
+
+<div class="step" style="border-color:var(--indigo)">
+  <span class="step-num num-fish">D.3</span>
+  <h3>Monetary Valuation: Resource Rent</h3>
+  <div class="formula-block">Deflate: nominal KES &times; GDP deflator &rarr; constant 2024 KES
+Convert: 2024 KES / 134.82 &rarr; USD
+Resource Rent = Revenue &times; (1 - cost_ratio)
+  Central: 62% | Lower: 55% | Upper: 70%</div>
+  <p>Sensitivity: 3&times;3 grid (reef_fraction &times; cost_ratio).</p>
+  <div class="io-row">
+    <span class="io-box io-out">KEN_fisheries_supply_physical.csv</span>
+    <span class="io-box io-out">KEN_fisheries_supply_monetary.csv</span>
+    <span class="io-box io-out">KEN_fisheries_attribution_table.csv</span>
+    <span class="io-box io-out">KEN_fisheries_sensitivity_resource_rent_2024.csv</span>
+  </div>
+</div>
+
+</div><!-- end fisheries pipeline -->
+
+<!-- ==================== ASSEMBLY ==================== -->
+<div class="eco-header eco-assembly">E. Final Assembly (_assemble_final_accounts.R)</div>
+
+<div class="pipeline">
+
+<div class="step" style="border-color:var(--purple)">
+  <span class="step-num num-assembly">E.1</span>
+  <h3>Assemble Multi-Ecosystem Accounts</h3>
+  <div class="io-row">
+    <span class="io-box io-in">Coral reef outputs (A1 + A2)</span>
+    <span class="io-box io-in">Mangrove outputs (B)</span>
+    <span class="io-box io-in">Seagrass outputs (C)</span>
+    <span class="io-box io-in">Extent data (B-EXT, hardcoded)</span>
+  </div>
+  <ul style="margin-top:.3rem">
+    <li><strong>Condition:</strong> 30 rows total (coral reef 21 + mangrove 6 + seagrass 3)</li>
+    <li><strong>Extent:</strong> Mangrove only (Opening/Additions/Reductions/Closing); seagrass + reef TBD</li>
+  </ul>
+  <div class="io-row" style="margin-top:.5rem">
+    <span class="io-box io-out" style="font-weight:700">KEN_SEEA_EA_condition_account_final.csv</span>
+    <span class="io-box io-out" style="font-weight:700">KEN_SEEA_EA_extent_account_final.csv</span>
+  </div>
+</div>
+
+</div><!-- end assembly -->
+
+<p style="margin-top:2rem;font-size:.75rem;color:var(--gray)">
+  Generated for AFRICA-accounts project | Kenya Multi-Ecosystem SEEA EA | 6 R scripts + ArcGIS | 2026-03-29
+</p>
+
+</body>
+</html>

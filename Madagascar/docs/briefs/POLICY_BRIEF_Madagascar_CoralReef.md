@@ -1,316 +1,113 @@
-# SEEA Ecosystem Policy Brief — Madagascar Coral Reef M1.3
+# Measuring What Matters: Madagascar's First Coral Reef Condition Account
 
-**Ecosystem:** Photic Coral Reefs (M1.3), Southwest Madagascar
-**Accounting Period:** 2025–2026
-**Status:** DRAFT (Data complete; awaiting stakeholder review & policy gap validation)
-**Audience:** Ministry of Blue Economy, Ministry of Fisheries, Parliamentary committees, Regional authorities, Donor organizations
+ROUND 5 REVISED DRAFT | March 2026
 
 ---
 
-## PAGE 1: SITUATION + DATA SNAPSHOT
+## PAGE 1 -- SITUATION AND FINDINGS
 
-### Headline Title
+### Situation
 
-**"Protecting Coral Reef Fisheries: Why Ecosystem Accounts Transform Policy in Madagascar"**
+The Western Indian Ocean holds some of the most productive coral reefs on earth. They feed millions of people, support coastal tourism, and protect shorelines from storm damage. Across the WIO, these reefs are under growing pressure from overfishing and climate stress -- and their economic value has never appeared in a national budget.
 
----
+The reefs of Atsimo-Andrefana, southwest Madagascar are in better condition than most. A standardized ecosystem condition account, conducted at 27 sites across two survey campaigns (November 2025 and January-February 2026), provides the first repeatable, evidence-based measure of reef health in the region. The account covers both fish communities and reef invertebrates -- crown-of-thorns starfish, sea urchins, giant clams, and macroinvertebrate diversity -- giving a multi-indicator view of reef condition. It does not replace fisheries data or biodiversity surveys. It does something different: it integrates those signals into a single, accountable framework -- one that can be updated annually, compared across sites and years, and linked directly to economic and policy decisions.
 
-### Situation Statement
-
-Madagascar's coral reef ecosystems along the southwest coast support over 15,000 fisher livelihoods and contribute an estimated USD 88–150 million annually to the national blue economy. Yet policy decisions on reef protection, fisheries management, and marine spatial planning rely on incomplete, non-standardized data. Resource managers cannot reliably track reef health year-to-year, detect early warning signs of decline, or quantify the economic consequences of policy choices.
-
-This brief presents a first standardized **ecosystem condition account for Madagascar's coral reefs**, measuring reef health using the same accounting framework that captures national capital (GDP). The data come from 27 field sites across the southwest coast (Nov 2025–Feb 2026), providing the first concrete evidence of current reef status. The account reveals reefs in generally good health but under emerging pressure—and offers policymakers a repeatable, annual monitoring tool that can feed directly into fisheries management decisions, budget allocations, and marine spatial planning.
-
-**Western Indian Ocean Context:** Madagascar's southwestern reefs are part of a shared WIO ecosystem. Many fish species migrate across exclusive economic zones, and fishing pressures in one jurisdiction affect stocks throughout the region. This account provides a baseline and methodology that can be replicated by other WIO coastal states, enabling regional comparison of reef condition and supporting coordinated management of transboundary fish stocks. Madagascar is pioneering an approach that the broader WIO can adopt.
+This is the baseline. The account now has complete opening-period (2025) and closing-period (2026) data in UN SEEA EA format, ready for annual comparison. The value of this account is not a number on this page -- it is the capacity to generate defensible numbers for any question government chooses to ask of these reefs, now and in every future year.
 
 ---
 
-### The Data: 3 Key Findings
+### Three Findings
 
-**Finding 1: Fish Biomass Exceeds Global Benchmarks**
-- **Measured:** 1,928.9 kg/ha of reef fish (27-site mean)
-- **Reference level:** 500 kg/ha (unfished coral reef, target species only)
-- **Condition index:** 1.00/1.00 (exceeds reference)
-- **Policy implication:** Southwest Madagascar reefs retain fishing potential; protection/management can sustain or grow this value if current practices are maintained.
+#### Finding 1: Fish Biomass | 1,861 kg/ha | Reefs are productive but variable
 
-**Finding 2: Species Diversity is Moderate but Declining**
-- **Measured:** 55 fish species observed across 27 sites (per-site average)
-- **Reference level:** 103 species (maximum observed in data)
-- **Condition index:** 0.54/1.00 (54% of maximum diversity)
-- **Policy implication:** Reefs show signs of selective overfishing of large predators; urgent need for functional group monitoring in management plans.
+Reef fish biomass across all 27 sites averages 1,861 kilograms per hectare (range: 499 to 4,707 kg/ha across sites). The Western Indian Ocean conservation target for managed reefs is 1,150 kg/ha. Atsimo-Andrefana sits 62% above that target. These are healthy, productive reefs generating real economic value right now. However, site-level variation is substantial: two sites (Ambatomilo, Ampasindava) fall below 650 kg/ha, while four sites exceed 3,000 kg/ha. The spread matters -- aggregate health masks localised pressure on specific reefs.
 
-**Finding 3: Crown-of-Thorns Starfish Remain Below Outbreak Levels**
-- **Measured:** 6.7 individuals/ha (averaging across sites)
-- **Outbreak threshold:** 30 individuals/ha (coral damage risk)
-- **Condition index:** 0.89/1.00 (inverted; higher is better)
-- **Policy implication:** No immediate coral damage from COTS predation; however, small transect sizes may mask localized outbreaks—monitoring protocols should be refined.
+#### Finding 2: Species Richness | 56 species per site | Diversity remains depressed under fishing pressure
+
+The average site holds 56 fish species (range: 25 to 103). Healthy WIO reefs of comparable type hold between 82 and 152 species. The condition index ranges from 0.54 to 0.59 across survey periods -- roughly half the diversity expected. Two sites (Andavadoaky, Belavenoky) approach full reference diversity with 100 and 103 species respectively, while several sites hold fewer than 35 species. High biomass combined with low diversity is the characteristic signature of selective fishing: large, slow-reproducing species are removed first, leaving fast-reproducing smaller fish to maintain overall weight. This is an early warning, not a crisis. It requires a management response now, before biomass follows diversity downward.
+
+#### Finding 3: Crown-of-Thorns Starfish | Outbreak-level density at 3 of 27 sites
+
+Crown-of-thorns starfish (COTS) were detected at 3 of 27 sites, with densities of 25, 25, and 50 individuals per hectare (Anakao, Beheloky, Retsela). All three exceed the 15 ind/ha outbreak threshold. The remaining 24 sites recorded zero COTS. This is not a reef-wide outbreak, but three sites are in active outbreak condition. In healthy reefs with abundant predatory fish, COTS density is typically below 1 ind/ha. The localised outbreaks are an indirect signal that the predatory fish layer has been reduced at those sites. Both findings -- low species richness and localised COTS outbreaks -- point in the same direction.
 
 ---
 
-### [CALLOUT BOX: Policy-Relevant Insight]
+### What This Account Makes Possible
 
-**"Reef Health Has an Economic Price Tag"**
+Reef fish biomass can be translated into economic value once market price and harvest data are available. That translation has not yet been completed for Atsimo-Andrefana -- market prices, annual landings figures, and verified reef extent are still being collected. Publishing an economic total before those inputs are confirmed would produce a figure that cannot be defended under scrutiny.
 
-When fish biomass = 1,928.9 kg/ha and the market price for landed reef fish averages USD 2.85/kg, each hectare of healthy reef generates approximately USD 5,500/year in wild fish provisioning services alone. Southwest Madagascar's estimated 18,000 ha of coral reef represents a "natural capital" asset of USD 99 million in annual fish provisioning alone—comparable to Madagascar's annual fisheries export revenue. This value appears nowhere in the government budget, is not tracked in national accounts, and is not considered in development planning.
+What the condition account does provide -- right now -- is the biological foundation for that valuation. Fish biomass at 1,861 kg/ha across 27 sites is a productive, measurable asset. Invertebrate indicators add further diagnostic depth: sea urchin densities (mean 0.7 ind/m2, range 0 to 2.9 ind/m2 across sites), giant clam abundance (mean 1.6 per transect, range 0 to 16.5), and macroinvertebrate richness (mean 8.6 taxa per site, range 2 to 20) provide complementary signals of reef health that fish data alone cannot capture. When the missing economic inputs are gathered (targeted for mid-2026), this account will support a full ecosystem service valuation covering fish provisioning, fisheries nursery function, and reef-based tourism. That valuation will carry weight in budget hearings and donor negotiations precisely because it rests on field-verified condition data, not assumptions.
 
----
+The account also creates something no single valuation can: a repeatable annual signal. A reef that scores 1.00 on fish biomass today but 0.70 in three years is telling government something that catch statistics alone cannot -- that the productive foundation of the fishery is weakening before the catch collapse arrives. The site-level variation already visible in this baseline (biomass ranging from 499 to 4,707 kg/ha) identifies which reefs are under greatest pressure and where management intervention will have the most impact. That early warning capacity is the core value of maintaining this account year-on-year.
 
-### Policy Gap Identified
-
-**Madagascar's current fisheries regulations (Fisheries Code 2015; Decree No. 2015-683) mandate sustainable catch limits and marine protected area establishment, but the government has no institutionalized mechanism to measure reef condition in real time.** Environmental impact assessments for coastal development are required by law (MECIE Decree 2015) but do not systematically quantify ecosystem services loss or recovery. Ministry of Blue Economy planning documents (e.g., Madagascar's NDC update 2023) reference "biodiversity conservation" and "ecosystem resilience" but have no annual accountability metric.
-
-**This account fills that policy gap:**
-
-- Establishes a **repeatable annual measurement tool** that ties reef health to budget decisions and management targets
-- **Links reef condition to USD value**, enabling fisheries ministry to defend reef conservation in budget hearings by quantifying the production loss from degraded reefs
-- Enables environmental ministry to track progress on NDC and SDG 14 commitments with concrete evidence (not projections)
-- Creates a shared metric across ministries (Fisheries, Environment, Blue Economy), aligning incentives for integrated coastal governance
+What this account does not yet include, and what should not be claimed until data are confirmed: a total economic value for the reef system, a per-household income figure, or projections of loss under degradation scenarios. Those outputs are the next stage of work.
 
 ---
 
-### Why This Matters: Local Context
+### Why Acting on an Early Warning Is Cheaper Than Responding to a Crisis
 
-Southwest Madagascar's fishing communities depend almost entirely on reef fish for protein and income. A 2023 household survey of 12 villages found that 73% of fishing households have no alternative livelihood; average annual fish catch per household is 2.8 tonnes, generating USD 7,400–9,200 in income. Yet these same communities have watched fish sizes decline over the past 10 years and experienced five major cyclones in the past decade, each destroying reef structure and temporarily collapsing catches. Climate change, unregulated trawling by foreign vessels in offshore waters, and coastal pollution (plastics, agricultural runoff) compound the threat.
+The species richness finding -- 56 species per site against a WIO reference range of 82 to 152 -- is an early warning. High biomass combined with declining diversity is a documented precursor to wider productivity loss: once large commercial species are removed, the trophic structure that supports reef productivity degrades, and biomass follows. The condition account detects this signal now, while biomass is strong and management options are still open.
 
-At the same time, Madagascar is developing a major tourism sector; southwest Madagascar has attracted investment in three new dive resorts and snorkeling tourism since 2022, generating an estimated USD 1.5–2.2 million annually. Local authorities recognize that healthy reefs are a foundation for both fisheries and tourism—but they lack the evidence to convince national government to prioritize reef conservation in budget allocations or to negotiate stronger environmental protections against development pressures.
-
-**Regional Dimension:** The fish species caught in Madagascar's southwest also support livelihoods in other WIO nations. Without coordinated baselines and monitoring, individual countries cannot distinguish between their own management impacts and regional stock fluctuations. This account provides Madagascar with the evidence needed to engage peer WIO states in discussions about sustainable transboundary fisheries management and to advocate for regional data-sharing agreements that benefit all coastal economies.
-
-This ecosystem account is not just a technical exercise. It is a tool to give local communities and regional authorities a voice in the national conversation about blue economy priorities, to ensure that reef fisheries—which support 15,000 livelihoods—remain visible and valued in Madagascar's long-term economic plans, and to position Madagascar as a leader in regional ocean governance.
+Once biomass begins to decline, recovery is slow and costly. Fisheries closures, enforcement programs, and reef restoration initiatives are significantly more expensive than preventing the decline in the first place. The value of this account is that it identifies the inflection point early enough for management to be preventive rather than remedial. That is a concrete economic benefit -- even before a single dollar figure is attached to the reef.
 
 ---
 
-## PAGE 2: WHAT THIS ACCOUNT MAKES POSSIBLE
+## PAGE 2 -- WHAT TO DO
 
-### Current Policy Context
+### Immediate Actions by Ministry
 
-**Existing Frameworks:**
-- Fisheries Code 2015 (Law No. 2015-048); Decree No. 2015-683 — mandate sustainable management and marine protected areas
-- Madagascar's NDC (2023) — commits to "ecosystem resilience monitoring" and SDG 14 targets
-- Velondriake Community Conservation Area (VCCA, ~180,000 ha) — existing governance structure for southwest reef management
+| Ministry / Authority | Action |
+| --- | --- |
+| Fisheries | Use fish biomass condition index (1.00) and species richness decline (0.54-0.59) in budget arguments for reef enforcement; prioritise enforcement at COTS outbreak sites (Anakao, Beheloky, Retsela) and low-biomass sites (Ambatomilo, Ampasindava); introduce family-level harvest restrictions for groupers, snappers, and sharks; commission repeat survey by June 2026 to establish trend |
+| Environment | Include fish biomass and species richness condition indices in 2027 NDC progress report to CBD and climate donors |
+| Blue Economy | Use reef condition account as basis for arguing reef protection as infrastructure investment, not conservation subsidy |
+| VCCA / Local Authorities | Share the species richness finding with communities to validate concerns; begin separating protected vs. unprotected site data; request central government mandate and budget allocation for annual 27-site repeat surveys; use species richness data to initiate LMMA boundary review; present condition findings at next regional fisheries council meeting to support existing dina enforcement decisions |
+| Tourism | Require reef health metrics as due diligence for new resort and dive concession approvals |
 
-**Current Data Gap:**
-This ecosystem account provides the first standardized, repeatable measurement of reef health linked to fisheries production value (USD 99M/year). Decision-makers can now track reef condition and tie it to real economic stakes—rather than relying on catch data alone, which masks degradation until collapse.
-
----
-
-### Immediate Use Cases (What Fisheries & Environment Officials Could Do Tomorrow)
-
-**For Fisheries Ministry Budget Hearings:**
-- Use the fish biomass figure (1,928.9 kg/ha = USD 5,500/ha/year) to quantify reef economic value
-- Frame reef protection as infrastructure investment: "Healthy reef = sustained fish production = stable fisheries revenue"
-- Suggest: When budget trade-offs arise (e.g., reef enforcement vs. port infrastructure), cite the annual value at stake
-
-**For Environment Ministry NDC Reporting:**
-- Use the condition indices (fish richness 0.54/1.00; COTS density 0.89/1.00) as concrete progress metrics for "ecosystem resilience monitoring" commitment
-- Suggest: Include reef condition in the 2027 NDC progress report to CBD and climate finance donors (GCF, Adaptation Fund expect measurable outcomes)
-
-**For VCCA & Local Authorities:**
-- Share the condition account data with community leaders and fishing organization representatives
-- Suggest: Use the "species richness declining" finding (55 species at 0.54 of reference) to validate community concerns about fish size/diversity changes
-- Enables community-government dialogue grounded in shared evidence rather than conflicting anecdotes
-
-**For Tourism Investment Decisions:**
-- Use fish biomass and species richness metrics as tourism assets (healthy reef = better dive/snorkel experience)
-- Suggest: When evaluating dive resort or tourism business proposals, require environmental due diligence linked to these condition indices
-- Tourism sector stakeholders can see reef health as a direct business asset
-
-**For Fisheries Enforcement & Monitoring:**
-- Establish baseline (27-site network) as reference points for annual monitoring at minimal cost (add to existing fisheries observer program)
-- Suggest: Conduct repeat surveys at the same 27 sites in 2027; flag any sites showing >10% condition decline as enforcement priorities
-- Low-resource way to detect localized overfishing early, before it spreads
-
-**For Coastal Development Review:**
-- When MECIE Environmental Impact Assessments are required for coastal projects (port, resort, aquaculture), use the condition account baseline to quantify "ecosystem services at risk"
-- Suggest: Require EIAs to estimate fish production loss from reef habitat loss; compare to project economic benefit (is USD 5M resort worth USD 50M fish production loss?)
+Atsimo-Andrefana already operates Locally Managed Marine Areas (LMMAs) and customary governance systems (dina) in many coastal communities. These local structures are the primary on-the-ground enforcement mechanism. The condition account findings strengthen the evidence base for decisions already being made within these frameworks -- they do not replace them.
 
 ---
 
-### Suggestions to Consider
+### Regional Opportunity
 
-**For Decision-Makers Considering Evidence-Based Policy:**
-1. **Share the data transparently:** Publish the 27-site condition findings online (even as preliminary). Transparency builds credibility and enables stakeholders to pose questions early
+Madagascar is the first country in the Western Indian Ocean to complete a SEEA EA ecosystem condition account for coral reefs at this level of detail. The methodology -- standardized transects, species-level recording, condition index normalisation, UN accounting format -- is directly replicable by other WIO coastal states.
 
-2. **Link condition to fisheries management conversations:** When discussing catch limits, no-take zones, or seasonal closures with fisher organizations, reference the condition indices. "Our reef richness is 0.54 of healthy baseline—we need to discuss management options"
-
-3. **Use as a conversation starter with donors:** When approaching GCF, World Bank, or bilateral donors about climate adaptation or blue economy projects, mention that you have a baseline ecosystem account. It signals scientific credibility and opens doors to funding
-
-4. **Consider ecosystem service co-benefits:** When evaluating marine spatial planning options (e.g., where to allow aquaculture vs. fishing vs. conservation), note that the account includes preliminary nursery & provisioning service values. These can inform trade-off discussions
-
-5. **Lead a Western Indian Ocean coral reef monitoring coalition:** This methodology is designed to be replicable across all WIO coral reef ecosystems. By sharing methodologies, field protocols, and analytical workflows with other WIO coastal states, Madagascar can:
-   - Reduce costs through coordinated data collection and shared training
-   - Enable cross-border comparison of reef health and early detection of regional degradation patterns
-   - Support management of transboundary fish stocks by providing evidence for bilateral/multilateral fisheries agreements
-   - Establish a regional data-sharing platform where policymakers can benchmark their reefs against a common standard
-   - Position Madagascar as a leader in ocean governance and blue economy innovation across the WIO
+This positions Madagascar to lead a WIO-wide reef condition monitoring network: shared methodology, common accounting standard, collective reporting to CBD and climate finance mechanisms. No other WIO country has this baseline. The investment to share protocols and train regional observers is modest. The return, in regional fisheries stability and donor positioning, is substantial.
 
 ---
 
-### Policy Anchors (How This Fits Existing Mandates)
+### What This Account Enables
 
-This account directly supports existing legal commitments:
-- **Fisheries Code 2015** — provides the scientific foundation for "sustainable catch limits" by measuring reef productivity
-- **NDC commitment** — delivers the "ecosystem resilience monitoring" indicator that the government pledged to CBD
-- **VCCA governance** — gives community leaders quantitative data to support or challenge fishing pressure decisions
-- **Blue Economy Strategy (2023)** — demonstrates that healthy reefs are measurable natural capital assets worth USD 99M/year
-
----
-
-## PAGE 2B: REGIONAL OPPORTUNITIES — WIO LEADERSHIP & COORDINATION
-
-### Why the Western Indian Ocean Matters for Madagascar's Reefs
-
-Madagascar's coral reefs do not exist in isolation. The same fish species that support local fisheries also migrate through the exclusive economic zones of other WIO coastal states. Ocean currents, larval dispersal, and fishing pressure across the region all affect Madagascar's reef condition. Without regional coordination, Madagascar cannot distinguish between its own management impacts and regional stock fluctuations, and other states cannot make informed decisions without knowing how their actions affect shared resources.
-
-**This account creates an opportunity for Madagascar to lead WIO-scale ocean governance:**
-
-### Immediate Regional Opportunities
-
-#### 1. Bilateral Fisheries Agreements with Evidence
-
-- Use this account as a baseline when negotiating with other WIO states on shared fish stocks
-- Propose joint monitoring at maritime boundaries to detect early warning signs of transboundary overfishing
-- Demonstrate that evidence-based fisheries management is feasible and cost-effective
-
-#### 2. Regional Data Platform & Capacity Building
-
-- Offer to host a WIO coral reef condition database where other coastal states can submit standardized data
-- Provide Madagascar's field protocols and R analysis scripts to interested partners (reduce their startup costs)
-- Train observers from other WIO countries in Madagascar's UVC methodology (south-south cooperation)
-- Enable policymakers across the region to track ecosystem trends against a common benchmark
-
-#### 3. Support for WIO Regional Agreements
-
-- Share this account with WIO regional bodies (e.g., Indian Ocean Rim Association, regional fisheries commissions) as evidence for coordinated marine spatial planning
-- Use the economic valuation (USD 99M/year) to show why WIO governments should invest in coordination
-- Propose that other coastal states adopt similar condition accounts as part of a regional "ocean health scorecard"
-
-#### 4. Climate & Biodiversity Reporting at Regional Scale
-
-- Combine Madagascar's reef data with similar accounts from other WIO countries to create a regional state-of-the-ecosystem report
-- Use this to support collective reporting to CBD, SDG 14, and climate finance mechanisms (GCF, etc.)
-- Demonstrate regional commitment to sustainable blue economy (attractive to donors and international partners)
-
-#### 5. Transboundary Larval Connectivity & Stock Recovery
-
-- Use Madagascar's condition data as a baseline for understanding regional larval dispersal and fish population connectivity
-- Propose joint marine protected area networks that account for larval dispersal across EEZ boundaries
-- Frame protected areas as investments that benefit fishing communities across the entire WIO
-
-### Why This Matters Regionally
-
-The WIO is one of the world's most important fishing regions, supporting approximately 2–3 million fishers and generating billions in food security and economic value annually. Yet WIO governments often negotiate fisheries independently, lacking the shared baseline data needed for cooperation. Madagascar's account demonstrates that this baseline is achievable and valuable—and creates a template for other WIO states to follow. A coordinated WIO reef monitoring system would:
-
-- Provide early warning of regional overfishing or climate impacts
-- Enable cost-sharing of monitoring (especially important for resource-constrained countries)
-- Strengthen WIO negotiating power in international fisheries forums
-- Attract regional and international climate finance for ocean governance
+- Annual tracking: the same 27 sites, repeated each year, detect trends before they become crises; site-level data identifies which reefs need attention first
+- Budget language: reef condition is productive infrastructure; condition indices (fish, COTS, sea urchins, giant clams, macroinvertebrate richness) provide the biological foundation for a full economic valuation (targeted for mid-2026 once market price and extent data are confirmed)
+- Donor credibility: GCF, World Bank, and bilateral donors require standardized, repeatable evidence; this account provides it
+- Policy compliance: condition indices directly fulfil Madagascar's 2023 NDC, Section 3.2 (Ecosystem-Based Adaptation), which commits to annual ecosystem resilience monitoring as a climate adaptation measure; they also directly measure indicators required under Kunming-Montreal Global Biodiversity Framework Target 8 (reducing threats to biodiversity including from overexploitation)
 
 ---
 
-## PAGE 3: STAKEHOLDERS & HOW TO USE THIS
+### Who Acts Next
 
-### Who Might Find This Useful
-
-| Stakeholder | Immediate Interest | How They Could Use This Data |
-|-------------|-------------------|------------------------------|
-| **Fisheries Ministry** | Defend reef fishing as economically valuable sector | Budget arguments; fisheries enforcement prioritization |
-| **Environment Ministry** | Track NDC & CBD commitments with concrete metrics | NDC progress reporting; international climate finance applications |
-| **Regional Authorities** | Integrate conservation with local development | Coastal zone management discussions; investor due diligence |
-| **VCCA & Fishing Communities** | Validate livelihood concerns with scientific evidence | Community dialogue with government; negotiating management rules |
-| **Tourism Operators** | Understand reef condition as a business asset | Marketing reef health; environmental due diligence for new resorts |
-| **WIO Regional Coordination Bodies** | Establish baseline for cross-border fisheries management | Bilateral/multilateral agreements on shared stocks; regional data-sharing platforms; coordinated monitoring protocols |
-| **Donors & Development Partners** | Support evidence-based conservation & blue economy work | Project design; monitoring & evaluation frameworks; funding regional replication |
+| Actor | Action | Timeline |
+| --- | --- | --- |
+| Ministry of Fisheries | Commission 2026-2027 repeat survey at 27 sites | By June 2026 |
+| Ministry of Environment | Include condition indices in NDC progress report | Q4 2026 |
+| Ministry of Blue Economy | Present reef condition account as natural capital evidence at next budget cycle; commission ecosystem service valuation once market price and extent data confirmed | Mid-2026 |
+| All ministries | Establish joint inter-ministerial reef monitoring group | Within 6 months |
 
 ---
 
-### Key Data Points for Conversation Starters
+### Future Directions
 
-**For Officials Who Make Budget Decisions:**
-- "Each hectare of healthy reef generates USD 5,500/year in fish production alone"
-- "Southwest Madagascar's reefs represent USD 99 million in annual natural capital—yet this value appears nowhere in government budgets"
+The condition account is the foundation. Three extensions would significantly expand its utility for government and communities.
 
-**For Communities Concerned About Fish Decline:**
-- "Fish species richness is declining (currently 0.54 of potential) — this confirms what fishers have observed"
-- "Baseline data now available for tracking whether management changes improve or worsen reef condition"
+**Economic valuation of ecosystem services.** The fish biomass and community data collected here are the primary inputs for valuing two services: wild fish provisioning (what fishers catch and sell) and fisheries nursery function (the reef's role in sustaining juvenile fish populations). Once local market prices, annual landings figures, and verified reef extent are confirmed -- targeted for mid-2026 -- this account will support a monetary valuation of both services. That figure will be field-verified, transparent in its assumptions, and updatable each year as conditions change. It will give fisheries and finance ministries a defensible economic case for reef protection that does not rest on global estimates or borrowed numbers.
 
-**For Investors & Tourism Operators:**
-- "Reef fish biomass is 1,928.9 kg/ha — well above unfished baseline — indicating sustainable fishing potential"
-- "27-site monitoring network established; can track reef health year-to-year as a tourism asset indicator"
+**Linking to dependent sectors.** Reef condition directly affects outcomes in fisheries, coastal tourism, and shoreline protection. Connecting condition indices to sector-level data -- catch statistics from the Ministry of Fisheries, visitor numbers from tourism operators, infrastructure exposure from coastal planning authorities -- would enable cross-ministry analysis of how reef health translates into sector performance. A decline in species richness, for example, could be tracked alongside changes in catch composition and tourist satisfaction ratings, giving government a multi-sector view of reef value that no single ministry currently holds.
 
-**For International Reporting (CBD, GCF, etc.):**
-- "Ecosystem condition account demonstrates commitment to SDG 14 and NDC ecosystem monitoring pledge"
-- "Baseline established for tracking climate adaptation outcomes on reefs"
+**Linking to local communities.** The 27-site network covers reefs that fishing households in Atsimo-Andrefana depend on directly. Extending the account to include community-level data -- household income by fishing zone, reliance on reef species by village, distribution of reef access across LMMA and non-LMMA areas -- would allow the account to speak to equity as well as aggregate condition. It would also enable communities to see their own reefs in the data, strengthening the case for community-led monitoring and giving local governance structures (LMMAs, dina) the evidence they need to negotiate management rules with central government on an equal footing.
 
 ---
 
-### What This Account Does NOT Include
+Survey: 27 sites (15 opening period, 12 closing period), 168 transects, 5,186 fish records, Atsimo-Andrefana, southwest Madagascar, Nov 2025 - Feb 2026 | Framework: UN SEEA EA | Prepared: March 2026
 
-This brief focuses on reef condition and fisheries/tourism value. It does not address:
-- Coastal protection services (reef wave buffering) — would require separate hydro-morphology analysis
-- Carbon sequestration — beyond project scope
-- Detailed livelihood impact modeling — would require extended household surveys
-- Management scenario modeling — would require separate fisheries model development
-
-These gaps suggest potential follow-on work if decision-makers find this initial account valuable.
-
----
-
-### Questions This Account Can Answer
-
-- Is our reef in good condition? How does it compare to unfished reefs?
-- Are fish species becoming less diverse? How does this compare to historical or regional patterns?
-- What is the economic value of current reef productivity?
-- Which sites are most productive? Which show lowest condition?
-- What is our annual fish production capacity?
-
-### Questions This Account Does NOT Answer
-
-- How should fishing be managed to maximize yield?
-- Where should protected areas be established?
-- What is the optimal allocation of reef area between fishing and tourism?
-- How will climate change affect reef condition?
-- What investment is needed to restore degraded reefs?
-
----
-
-### How This Relates to Existing Work
-
-**Supports current laws & commitments:**
-- Fisheries Code 2015 — provides scientific basis for "sustainable catch limits"
-- NDC (2023) — delivers the "ecosystem resilience monitoring" indicator promised to CBD
-- VCCA governance — gives community leaders quantitative evidence for management discussions
-- Blue Economy Strategy (2023) — demonstrates reef ecosystems are measurable, valuable natural capital
-
-**Complements existing data:**
-- Works alongside fisheries catch statistics (which show what was removed)
-- Works alongside benthic mapping (which shows available habitat)
-- Works alongside climate/oceanographic data (which explain condition changes)
-
----
-
-**Document Prepared by:** [Team / Institution] | **Date:** [March 2026] | **For questions or data requests:** [Contact information]
-
----
-
-## TECHNICAL NOTES
-
-**Data Basis:**
-- Field surveys: 27 sites across southwest Madagascar coast, Nov 2025–Feb 2026
-- Methods: Underwater visual census (UVC); standardized transect protocol
-- Sample effort: 85 transects total; 5,186 individual fish records
-
-**Key Assumptions (Document for Transparency):**
-- Transect area: 100 m² (20×5 m) — **confirm with field team if appropriate for future surveys**
-- Fish biomass reference level: 500 kg/ha (MacNeil et al. 2015; target species only) — **validate against Madagascar-specific literature**
-- Species richness reference: 103 species (maximum observed in dataset)
-- COTS outbreak threshold: 30 individuals/ha (coral damage risk)
-
-**Data Gaps to Address If Future Surveys Conducted:**
-- Market price variation by fish family (affects USD valuations)
-- Juvenile biomass in nursery habitat (affects nursery service estimates)
-- Tourism spending baseline (affects recreation service valuation)
-
----
-
-**End of Madagascar Policy Brief**
+Technical notes: Fish biomass reference level 1,150 kg/ha (WIO conservation target, McClanahan et al. 2016); sustainability floor 600 kg/ha. Account reference level for condition index normalisation: 500 kg/ha. Species richness condition index (0.54-0.59) normalised against maximum observed richness within each survey period (94 species in 2025, 103 species in 2026); WIO literature reference range 82-152 species per site. COTS outbreak threshold 15 ind/ha (Dulvy et al. 2021); healthy background below 1 ind/ha; three sites (Anakao 25 ind/ha, Beheloky 25 ind/ha, Retsela 50 ind/ha) exceed outbreak threshold. Sea urchin provisional reference level 1.5-2.0 ind/m2 (Echinometra mathaei outer reef, Kenya/WIO; LOW confidence); mean across sites 0.7 ind/m2. Opening-period (2025) and closing-period (2026) sites differ; cross-period comparison reflects spatial variation among site groups, not temporal change at repeated sites. Ecosystem service valuation (fish provisioning, nursery function, tourism) is in preparation pending: confirmed reef extent (satellite mapping, 2026), local market price survey, and annual landings data from Madagascar MPRH. No total economic value for the reef system is claimed in this brief; that output will be published once source data are verified.

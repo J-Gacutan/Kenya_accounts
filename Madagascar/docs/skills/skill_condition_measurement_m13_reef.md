@@ -26,7 +26,7 @@ This SOP describes the measurement and assessment of ecosystem condition for pho
 | Accounting extent | ~27 surveyed sites within SW Madagascar coastal zone |
 | Depth range | 3–16 m (as measured in field data: 3.6–16.5 m) |
 | Dominant coral genera | Porites, Acropora, Pocillopora (inferred from regional context) |
-| Reference condition | Regional benchmarks: ~40% live hard coral cover; unfished reef fish biomass ~500 kg/ha |
+| Reference condition | Regional benchmarks: ~40% live hard coral cover; WIO fish biomass conservation target: 1,150 kg/ha (McClanahan et al. 2016); sustainability floor: 600 kg/ha |
 
 ---
 
@@ -40,7 +40,7 @@ This SOP describes the measurement and assessment of ecosystem condition for pho
 | **Site names** | AMBATOMILO, AMBITIKY, AMBOHIBOLA, ... TSANDAMBA (see metadata) |
 | **Transects per station** | 2 transects (T1, T2) |
 | **Total stations** | 85 stations (implies ~3 stations/site on average) |
-| **Transect dimensions** | 20 m × 5 m (100 m² area) — *[CONFIRM with field team: spec says 20×5 vs. 20×20]* |
+| **Transect dimensions** | 50 m × 5 m (250 m² area) — confirmed with field team |
 | **Depth range** | 3.6–16.5 m as observed in 2025–2026 surveys |
 | **Survey date range** | 2025-11-11 to 2026-02-24 (Nov–Feb field campaign) |
 
@@ -58,7 +58,7 @@ All condition indicators are reported **at site level** (27 sites) to reflect th
 
 | Indicator | Unit | Reference Level | Expected Value (2025) | Notes |
 |-----------|------|-----------------|----------------------|-------|
-| **Total biomass** | kg/ha | 500 (MacNeil et al. 2015) | ~1,929 | Measured from 5,186 records across 227 species |
+| **Total biomass** | kg/ha | 1,150 (McClanahan et al. 2016 WIO target); floor: 600 | ~1,929 | Measured from 5,186 records across 227 species; exceeds WIO conservation target |
 | **Species richness** | count | 103 (regional reference) | 55 (mean per site) | Range: 32–68 species per site |
 | **Abundance** | ind/ha | — | ~3,500–5,000 (estimated) | Derived from 6 size-class counts |
 | **Trophic composition** | % biomass | — | Herbivore 40.6%, Carnivore 30%, Planktivore 15.2% | 7 functional groups recorded |
@@ -91,7 +91,7 @@ All condition indicators are reported **at site level** (27 sites) to reflect th
 **Method:** Underwater Visual Census (UVC) using belt transects
 
 **Protocol:**
-1. Deploy transect line marked at 20 m; observer swims along centerline (2.5 m on each side = 5 m width)
+1. Deploy transect line marked at 50 m; observer swims along centerline (2.5 m on each side = 5 m width)
 2. Record all fish observed within transect, identified to species level
 3. Estimate total length (TL) in cm for each individual using size-class bins:
    - 5–10 cm, 10–20 cm, 20–30 cm, 30–40 cm, 40–50 cm, 50–60 cm
@@ -109,17 +109,17 @@ All condition indicators are reported **at site level** (27 sites) to reflect th
 **Effort:**
 - 5,186 records (individual fish observations)
 - 2 transects per station × 85 stations = 170 transects total
-- 100 m² area per transect (2.5 m × 2 transects × 20 m = 100 m²)
-- Total surveyed area: 17,000 m² (1.7 ha) over Nov 2025–Feb 2026
+- 250 m² area per transect (2.5 m each side × 5 m width × 50 m length = 250 m²)
+- Total surveyed area: 42,500 m² (4.25 ha) over Nov 2025–Feb 2026
 
 ### 4.2 Invertebrate Survey
 
 **Method:** Belt transects (same spatial footprint as fish) + fixed-area quadrats
 
 **COTS (Crown-of-thorns Starfish):**
-- Counted during 20 m × 5 m belt transect (same as fish transect)
+- Counted during 50 m × 5 m belt transect (same as fish transect)
 - Inverted indicator: lower density = better condition
-- Outbreak threshold: >0.3 individuals per 100 m² transect
+- Outbreak threshold: >0.3 individuals per 250 m² transect
 
 **Sea Urchins:**
 - Counted in belt transect
@@ -170,25 +170,25 @@ where:
 
 ### 6.1 Fish Biomass Reference Level
 
-**Reference (unfished reef fish biomass):** 500 kg/ha (MacNeil et al. 2015, *Nature*)
-
-**Caveat:** This reference may underestimate total reef fish biomass for Madagascar reefs; confirmation with regional literature recommended.
+**Primary reference (WIO conservation target):** 1,150 kg/ha (McClanahan et al. 2016, *PLOS ONE* — WIO, 15 countries)
+**Sustainability floor:** 600 kg/ha (McClanahan et al. 2016)
+**Supplementary context:** ~1,000 kg/ha unfished B0 (MacNeil et al. 2015, *Nature* — global Indo-Pacific; retained for comparison only)
 
 **Condition Index (CI) — Fish Biomass:**
-$$CI_{\text{biomass}} = \min\left(\frac{\text{Measured biomass}}{500}, 1.0\right)$$
+$$CI_{\text{biomass}} = \min\left(\frac{\text{Measured biomass}}{1150}, 1.0\right)$$
 
-- 2025 mean: 1,929 / 500 = 3.86 → **capped at 1.0** (indicates very healthy fish biomass relative to reference)
-- Interpretation: Reef is above reference condition; suggests either high productivity or low fishing pressure
+- 2025 mean: 1,929 / 1,150 = 1.68 → **capped at 1.0** (exceeds WIO conservation target)
+- Interpretation: Reef is above WIO conservation target; suggests relatively healthy fish community relative to regional benchmark
 
 ### 6.2 COTS (Inverted) Reference Level
 
-**Outbreak threshold:** >0.3 ind/100 m² (AIMS Long-Term Monitoring Programme)
+**Outbreak threshold:** 15 ind/ha (Dulvy et al. 2021, *Nature Communications*; Indo-Pacific consensus; background predator-controlled <1 ind/ha)
 
 **Condition Index (CI) — COTS Density (inverted):**
 $$CI_{\text{COTS}} = 1 - \frac{\text{COTS density (ind/ha)}}{\text{Outbreak threshold (ind/ha)}}$$
 
 Clipped to [0, 1]:
-$$CI_{\text{COTS}} = \max\left(0, 1 - \frac{\text{COTS}}{3,000}\right)$$
+$$CI_{\text{COTS}} = \max\left(0, 1 - \frac{\text{COTS}}{15}\right)$$
 
 - 2025 mean: 6.7 ind/ha → CI = 1 − (6.7/3,000) = **0.98** (healthy; far below outbreak)
 
@@ -245,8 +245,7 @@ $$CI_{\text{composite}} = \frac{1.0 + 0.53 + 0.98}{3} = 0.84$$
 4. **Family field:** Suspect entries ('Pomacanthidae+', 'Pomacanthidae+H128:M128')
    - **Fix:** Standardise to valid family names; review original data entry
 
-5. **Transect area assumption:** Currently 100 m² (20 m × 5 m)
-   - **Confirm with field team:** Is this correct, or should it be 20 m × 20 m = 400 m²? This affects all biomass per-hectare calculations.
+5. **Transect area:** Confirmed as 250 m² (50 m × 5 m) with field team.
 
 ### Confidence Assessment:
 

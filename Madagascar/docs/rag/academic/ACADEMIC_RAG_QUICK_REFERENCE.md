@@ -52,6 +52,56 @@
 
 ---
 
+### Tier 1 (NEW — Phase 1 search, 2026-03-16): CONDITION BASELINE SOURCES
+
+#### Fish Biomass Baselines (WIO-specific)
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_023 | McClanahan et al. | 2016 | *PLOS ONE* | WIO conservation target: 1,150 kg/ha; sustainability floor: 600 kg/ha |
+| source_2026_wio_024 | McClanahan et al. | 2020 | *Aquatic Conservation* | Remote Indian Ocean: 2,450 kg/ha; long-term closure: 910 kg/ha |
+| source_2026_wio_025 | Samoilys et al. | 2019 | *Ecology and Evolution* | WIO fringing reef: ~1,000 kg/ha; lagoon: ~500 kg/ha (51 sites) |
+
+#### Fish Species Richness (WIO)
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_026 | Gudka et al. | 2022 | *Diversity* (MDPI) | Regional WIO pool: 356 spp. from 19 families |
+| source_2026_wio_027 | Randrianarivo et al. | 2022 | *PLOS ONE* | Contemporary Madagascar baseline; MPA vs. non-MPA contrast |
+| source_2026_wio_028 | Chabanet et al. | 2005 | *WIOJMS* / Blue Ventures | SW Madagascar Andavadoaka: 334 spp. total; ~187 spp. per assemblage survey |
+
+#### Trophic Composition
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_029 | Hicks et al. | 2023 | *Proc. R. Soc. B* | Global: herbivore+invertivore ~56% standing biomass; piscivore ~13% |
+| source_2026_wio_030 | Heenan et al. | 2020 | *Front. Ecol. Environ.* | Indian Ocean systems often bottom-heavy (>50% herbivore biomass) |
+| source_2026_wio_031 | Williams et al. | 2015 | *Proc. R. Soc. B* | Herbivore biomass: ~40–60% of total on productive reefs |
+
+#### COTS Density
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_032 | Dulvy et al. | 2021 | *Nature Communications* | Piscivores suppress COTS to <1–2 ind/ha; outbreak >15 ind/ha |
+| source_2026_wio_033 | Sheppard et al. | 2015 | *Marine Biology* | Chagos COTS outbreak and background data; Indian Ocean |
+
+#### Sea Urchin Density (provisional WIO references)
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_034 | McClanahan / Kitheka et al. | 1987+ | Various | Kenya WIO: E. mathaei outer reef ~1.7 ind/m²; inner lagoon 14.2 ind/m² |
+| source_2026_wio_035 | [Authors TBC] | 2024 | *Scientific Reports* | E. mathaei Kenya: 1.5 ± 0.4 ind/m² (low density state) |
+
+#### Clam / Tridacna Abundance
+
+| Source ID | Authors | Year | Journal | Key Value |
+|-----------|---------|------|---------|-----------|
+| source_2026_wio_036 | Apte et al. | 2010 | *Marine Biodiversity Records* | Lakshadweep T. maxima: 122–141 ind/ha (best Indian Ocean reference) |
+| source_2026_wio_037 | Kaullysing/Ramah et al. | 2019 | *Marine Biodiversity* | Mauritius WIO: >90% decline 1999–2016; contemporary baseline depleted |
+| source_2026_wio_038 | Chi et al. | 2025 | *Ecology and Evolution* | Indo-Pacific historical: hundreds/ha on unexploited reefs |
+
+---
+
 ## By Use Case
 
 ### Building Madagascar Coral Reef Condition Accounts

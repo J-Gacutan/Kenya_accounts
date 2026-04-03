@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Data Tables | Madagascar Coral Reef Condition Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.a0083439.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.a0083439.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/condition-per-site.csv.js", {"name":"./data/condition-per-site.csv.js","mimeType":"text/javascript","path":"./_file/data/condition-per-site.csv.0a88550b.js","lastModified":1774931774513,"size":6910});
+registerFile("./data/functional-groups.csv.js", {"name":"./data/functional-groups.csv.js","mimeType":"text/javascript","path":"./_file/data/functional-groups.csv.e5d2c6dd.js","lastModified":1774931828702,"size":5312});
+registerFile("./data/seea-condition.csv.js", {"name":"./data/seea-condition.csv.js","mimeType":"text/javascript","path":"./_file/data/seea-condition.csv.0f6c850b.js","lastModified":1774931739494,"size":624});
+registerFile("./data/site-condition.csv.js", {"name":"./data/site-condition.csv.js","mimeType":"text/javascript","path":"./_file/data/site-condition.csv.04a21603.js","lastModified":1774931785439,"size":1993});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "f2ab6d54", inputs: ["FileAttachment","d3"], outputs: ["siteRaw","siteData","seeaRaw","seeaData","perSiteRaw","perSiteData","fgRaw","fgData"], body: async (FileAttachment,d3) => {
+const siteRaw = await FileAttachment("./data/site-condition.csv.js").text();
+const siteData = d3.csvParse(siteRaw.replace(/^export default `|`;$/g, "").trim(), d3.autoType);
+
+const seeaRaw = await FileAttachment("./data/seea-condition.csv.js").text();
+const seeaData = d3.csvParse(seeaRaw.replace(/^export default `|`;$/g, "").trim(), d3.autoType);
+
+const perSiteRaw = await FileAttachment("./data/condition-per-site.csv.js").text();
+const perSiteData = d3.csvParse(perSiteRaw.replace(/^export default `|`;$/g, "").trim(), d3.autoType);
+
+const fgRaw = await FileAttachment("./data/functional-groups.csv.js").text();
+const fgData = d3.csvParse(fgRaw.replace(/^export default `|`;$/g, "").trim(), d3.autoType);
+return {siteRaw,siteData,seeaRaw,seeaData,perSiteRaw,perSiteData,fgRaw,fgData};
+}});
+
+define({id: "374a3573", mode: "inline", inputs: ["siteData","display"], body: async (siteData,display) => {
+display(await(
+new Set(siteData.map(d => d.Sites)).size
+))
+}});
+
+define({id: "e5b48014", mode: "inline", inputs: ["siteData","display"], body: async (siteData,display) => {
+display(await(
+siteData.length
+))
+}});
+
+define({id: "2101ea12", mode: "inline", inputs: ["seeaData","display"], body: async (seeaData,display) => {
+display(await(
+seeaData.length
+))
+}});
+
+define({id: "07c23c88", mode: "inline", inputs: ["fgData","display"], body: async (fgData,display) => {
+display(await(
+fgData.length
+))
+}});
+
+define({id: "bb91584c", inputs: ["Inputs","seeaData","display"], body: async (Inputs,seeaData,display) => {
+display(await(
+Inputs.table(seeaData, {
+  columns: ["calendar_year", "condition_indicator", "reference_level", "measured_value", "condition_index"],
+  header: {
+    calendar_year: "Year",
+    condition_indicator: "Indicator",
+    reference_level: "Reference Level",
+    measured_value: "Measured Value",
+    condition_index: "CI"
+  }
+})
+))
+}});
+
+define({id: "bcf48c67", inputs: ["view","Inputs"], outputs: ["yearFilter"], body: (view,Inputs) => {
+const yearFilter = view(Inputs.select([2025, 2026], {label: "Survey year", value: 2025}));
+return {yearFilter};
+}});
+
+define({id: "5efdd278", inputs: ["perSiteData","yearFilter"], outputs: ["filteredPerSite"], body: (perSiteData,yearFilter) => {
+const filteredPerSite = perSiteData.filter(d => d.calendar_year === yearFilter);
+return {filteredPerSite};
+}});
+
+define({id: "9beaa8b3", inputs: ["Inputs","filteredPerSite","display"], body: async (Inputs,filteredPerSite,display) => {
+display(await(
+Inputs.table(filteredPerSite, {
+  columns: ["site", "condition_indicator", "measured_value", "condition_index"],
+  header: {
+    site: "Site",
+    condition_indicator: "Indicator",
+    measured_value: "Measured",
+    condition_index: "CI"
+  },
+  sort: "site"
+})
+))
+}});
+
+define({id: "abe7e43e", inputs: ["siteData"], outputs: ["siteTable"], body: (siteData) => {
+const siteTable = siteData.map(d => ({
+  Year: d.Year,
+  Site: d.Sites,
+  "Biomass (kg/ha)": d.mean_biomass_kg_ha.toFixed(1),
+  "Abundance (ind/ha)": d.mean_abundance_ha.toFixed(0),
+  "Species": d.species_richness,
+  "CI Biomass": d.ci_fish_biomass.toFixed(2),
+  "CI Richness": d.ci_fish_richness.toFixed(2),
+  "COTS (ind/ha)": d.cots_density_ha.toFixed(1),
+  "CI COTS": d.ci_cots.toFixed(2),
+  "Tridacna": d.mean_tridacna_count.toFixed(1),
+  "Invert spp": d.species_richness_invert,
+  "Urchin (ind/m2)": d.urchin_density_m2.toFixed(2),
+  Transects: d.n_transects
+}));
+return {siteTable};
+}});
+
+define({id: "b85cd0df", inputs: ["Inputs","siteTable","display"], body: async (Inputs,siteTable,display) => {
+display(await(
+Inputs.table(siteTable, {
+  sort: "Site"
+})
+))
+}});
+
+define({id: "be4611b5", inputs: ["fgData"], outputs: ["fgTable"], body: (fgData) => {
+const fgTable = fgData.map(d => ({
+  Year: d.Year,
+  Site: d.Sites,
+  Group: d.Functional_Group_Std,
+  "Biomass (kg/ha)": d.mean_biomass_kg_ha.toFixed(1),
+  "Abundance (ind/ha)": d.mean_abundance_ha.toFixed(0),
+  Transects: d.n_transects
+}));
+return {fgTable};
+}});
+
+define({id: "8b1bbf9b", inputs: ["Inputs","fgTable","display"], body: async (Inputs,fgTable,display) => {
+display(await(
+Inputs.table(fgTable, {
+  sort: "Site"
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Madagascar Coral Reef Condition Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./condition-analysis">Condition Analysis</a></li>
+    <li class="observablehq-link"><a href="./trophic-composition">Trophic Composition</a></li>
+    <li class="observablehq-link"><a href="./site-comparison">Site Comparison</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#dataset-summary">Dataset Summary</a></li>
+<li class="observablehq-secondary-link"><a href="#seea-ea-condition-account">SEEA EA Condition Account</a></li>
+<li class="observablehq-secondary-link"><a href="#site-level-condition-indices">Site-Level Condition Indices</a></li>
+<li class="observablehq-secondary-link"><a href="#site-level-summary-data">Site-Level Summary Data</a></li>
+<li class="observablehq-secondary-link"><a href="#functional-group-composition">Functional Group Composition</a></li>
+<li class="observablehq-secondary-link"><a href="#export">Export</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="data-tables" tabindex="-1"><a class="observablehq-header-anchor" href="#data-tables">Data Tables</a></h1>
+<h2 id="interactive-data-explorer" tabindex="-1"><a class="observablehq-header-anchor" href="#interactive-data-explorer">Interactive Data Explorer</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:f2ab6d54:--></div>
+<hr>
+<h2 id="dataset-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#dataset-summary">Dataset Summary</a></h2>
+<div class="grid grid-cols-4">
+<div class="card">
+<h3>Sites</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:374a3573:--></p>
+</div>
+<div class="card">
+<h3>Site-Year Records</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:e5b48014:--></p>
+</div>
+<div class="card">
+<h3>SEEA Indicators</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:2101ea12:--></p>
+</div>
+<div class="card">
+<h3>Functional Group Records</h3>
+<p class="big"><observablehq-loading></observablehq-loading><!--:07c23c88:--></p>
+</div>
+</div>
+<hr>
+<h2 id="seea-ea-condition-account" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-condition-account">SEEA EA Condition Account</a></h2>
+<p>The aggregate ecosystem condition account in UN SEEA EA format, showing measured values against reference levels.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:bb91584c:--></div>
+<hr>
+<h2 id="site-level-condition-indices" tabindex="-1"><a class="observablehq-header-anchor" href="#site-level-condition-indices">Site-Level Condition Indices</a></h2>
+<div class="observablehq observablehq--block"><!--:bcf48c67:--></div>
+<div class="observablehq observablehq--block"><!--:5efdd278:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9beaa8b3:--></div>
+<hr>
+<h2 id="site-level-summary-data" tabindex="-1"><a class="observablehq-header-anchor" href="#site-level-summary-data">Site-Level Summary Data</a></h2>
+<p>All raw biotic metrics by site and year.</p>
+<div class="observablehq observablehq--block"><!--:abe7e43e:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:b85cd0df:--></div>
+<hr>
+<h2 id="functional-group-composition" tabindex="-1"><a class="observablehq-header-anchor" href="#functional-group-composition">Functional Group Composition</a></h2>
+<p>Trophic biomass breakdown by site, year, and functional group.</p>
+<div class="observablehq observablehq--block"><!--:be4611b5:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:8b1bbf9b:--></div>
+<hr>
+<h2 id="export" tabindex="-1"><a class="observablehq-header-anchor" href="#export">Export</a></h2>
+<p>To export any table as CSV, right-click the table and select "Copy" or use the download buttons provided by Observable's table component.</p>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./site-comparison"><span>Site Comparison</span></a><a rel="next" href="./methods"><span>Methods</span></a></nav>
+<div>Madagascar Coral Reef Condition Accounts -- UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

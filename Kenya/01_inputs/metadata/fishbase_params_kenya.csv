@@ -1,0 +1,132 @@
+species,family,a,b,source
+Thalassoma hebraicum,Labridae,0.01160,3.017,FishBase
+Acanthurus nigrofuscus,Acanthuridae,0.01380,3.048,FishBase
+Acanthurus mata,Acanthuridae,0.01450,3.020,FishBase
+Acanturus mata,Acanthuridae,0.01450,3.020,FishBase (typo variant)
+Parupeneus barberinus,Mullidae,0.01220,3.064,FishBase
+Scarus ghobban,Scaridae,0.01800,3.012,FishBase
+Siganus sutor,Siganidae,0.01622,3.047,FishBase
+Acanthurus leucosternon,Acanthuridae,0.01690,3.064,FishBase
+Plectorhinchus gaterinus,Haemulidae,0.02130,2.984,FishBase
+Halichoeres hortulanus,Labridae,0.01160,3.013,FishBase
+Halochoeres hortulanus,Labridae,0.01160,3.013,FishBase (spelling variant)
+Zanclus canescens,Zanclidae,0.01200,3.100,FishBase
+Chaetodon auriga,Chaetodontidae,0.03330,2.937,FishBase
+Chlorurus sordidus,Scaridae,0.02510,2.923,FishBase
+Cholorurus sordidus,Scaridae,0.02510,2.923,FishBase (spelling variant)
+Chloruru sordidus,Scaridae,0.02510,2.923,FishBase (typo variant)
+Pempheris magula,Pempheridae,0.00910,3.200,FishBase estimate
+Chromis dimidiata,Pomacentridae,0.03000,3.100,FishBase
+Gomphosus caeruleus,Labridae,0.01170,3.044,FishBase
+Neopomacentrus azysron,Pomacentridae,0.02000,3.100,FishBase
+Neopomacentrus ozysron,Pomacentridae,0.02000,3.100,FishBase (spelling variant)
+Labroides dimidiatus,Labridae,0.00830,3.147,FishBase
+Labroides dimitiatus,Labridae,0.00830,3.147,FishBase (typo variant)
+Parupeneus macronemus,Mullidae,0.01514,3.011,FishBase
+Plectorhinchus flavomaculatus,Haemulidae,0.02300,2.960,FishBase
+Acanthurus blochii,Acanthuridae,0.01370,3.027,FishBase
+Chaetodon linula,Chaetodontidae,0.03330,2.937,FishBase
+Thalassoma hardwicke,Labridae,0.01200,3.010,FishBase
+Abudefduf sexfasciatus,Pomacentridae,0.01960,3.063,FishBase
+Acanthurus dussumieri,Acanthuridae,0.02000,2.980,FishBase
+Ctenochaetus striatus,Acanthuridae,0.01410,3.102,FishBase
+Myripristis murdjan,Holocentridae,0.01380,3.210,FishBase
+Mypristitis murdjan,Holocentridae,0.01380,3.210,FishBase (typo variant)
+Aulostomus chinensis,Aulostomidae,0.00200,3.180,FishBase
+Cheilinus chlorourus,Labridae,0.02600,3.000,FishBase
+Cheilinus cholourorus,Labridae,0.02600,3.000,FishBase (spelling variant)
+Thalassoma lunare,Labridae,0.01380,3.017,FishBase
+Plectoglyphiododon lacrymatus,Pomacentridae,0.02200,3.100,FishBase
+Plectoglphiododon lacrymatus,Pomacentridae,0.02200,3.100,FishBase (typo variant)
+Bodianus axillaris,Labridae,0.01340,3.025,FishBase
+Pomacanthus semicirculatus,Pomacanthidae,0.03170,3.130,FishBase
+Abudefduf sparoides,Pomacentridae,0.01960,3.063,FishBase
+Acanthurus nigricauda,Acanthuridae,0.01380,3.048,FishBase
+Acanthurus ghama,Acanthuridae,0.01380,3.030,FishBase estimate
+Zebrasoma scopas,Acanthuridae,0.02120,3.148,FishBase
+Sufflamen chrysopterum,Balistidae,0.03980,2.980,FishBase
+Chaetodon trifasciatus,Chaetodontidae,0.03330,2.937,FishBase
+Heniochus acuminatus,Chaetodontidae,0.02810,2.937,FishBase
+Kyphosus vaigiensis,Kyphosidae,0.01690,3.028,FishBase
+Scarus psittacus,Scaridae,0.02000,2.960,FishBase
+Plectorhinchus playfairi,Haemulidae,0.02130,2.984,FishBase estimate
+Sargocentron caudimaculatum,Holocentridae,0.01000,3.000,FishBase estimate
+Sargocentron diadema,Holocentridae,0.01000,3.000,FishBase estimate
+Neoniphon argenteus,Holocentridae,0.01000,3.000,FishBase estimate
+Halichoeres scapularis,Labridae,0.01160,3.013,FishBase estimate
+Labroides pectoralis,Labridae,0.00830,3.147,FishBase estimate
+Thalassoma purpureum,Labridae,0.01380,3.017,FishBase
+Tthalassoma purpureum,Labridae,0.01380,3.017,FishBase (typo variant)
+Parupeneus rubescens,Mullidae,0.00977,3.08,FishBase Bayesian global mean (Ref. 93245)
+Chaetodon lunula,Chaetodontidae,0.03330,2.937,FishBase
+Paracirrhites forsteri,Cirrhitidae,0.01480,3.033,FishBase
+Archamia fucata,Apogonidae,0.01100,3.230,FishBase estimate
+Rhinecanthus rectangulus,Balistidae,0.03980,2.980,FishBase estimate
+Chaetodon guttatissimus,Chaetodontidae,0.03330,2.937,FishBase
+Cirrhitichthys oxycephalus,Cirrhitidae,0.01480,3.033,FishBase estimate
+Plectorhinchus chubbi,Haemulidae,0.02130,2.984,FishBase estimate
+Plectorhinchus sordidus,Haemulidae,0.02130,2.984,FishBase estimate
+Cheilio inermis,Labridae,0.00630,3.188,FishBase
+Halichoeres nigrescens,Labridae,0.01160,3.013,FishBase estimate
+Scolopsis ghanam,Nemipteridae,0.01600,3.019,FishBase
+Parapercis hexophthalma,Pinguipedidae,0.01210,3.020,FishBase
+Dascyllus trimaculatus,Pomacentridae,0.02600,3.030,FishBase
+Abudefduf vaigiensis,Pomacentridae,0.01960,3.063,FishBase
+Chromis agilis,Pomacentridae,0.03000,3.100,FishBase estimate
+Chrysiptera leucopoma,Pomacentridae,0.02000,3.100,FishBase estimate
+Scarus russelii,Scaridae,0.02040,3.030,FishBase
+Cephalopholis miniata,Serranidae,0.02100,3.017,FishBase
+Epinephelus merra,Serranidae,0.01920,3.010,FishBase
+Epinephelus spilotoceps,Serranidae,0.01800,3.010,FishBase estimate
+Canthigaster valentini,Tetraodontidae,0.02800,3.200,FishBase estimate
+Chaetodon xanthocephalus,Chaetodontidae,0.03330,2.937,FishBase
+Paracirrhites arcatus,Cirrhitidae,0.01480,3.033,FishBase estimate
+Platax teira,Ephippidae,0.04000,2.870,FishBase
+Cephalopholis argus,Epinephelidae,0.02100,3.017,FishBase
+Halichoeres bicolor,Labridae,0.01160,3.013,FishBase estimate
+Karalla daura,Leiognathidae,0.01100,3.100,FishBase estimate
+Monotaxis grandoculis,Lethrinidae,0.01780,3.037,FishBase
+Lutjanus fulviflamma,Lutjanidae,0.01750,2.944,FishBase
+Lutjanus flulviflamma,Lutjanidae,0.01750,2.944,FishBase (typo variant)
+Lutjanus gibbus,Lutjanidae,0.02450,2.985,FishBase
+Paraluteres prionurus,Monacanthidae,0.02800,3.200,FishBase estimate
+Monodactylus argenteus,Monodactylidae,0.01600,3.000,FishBase estimate
+Chromis weberi,Pomacentridae,0.03000,3.100,FishBase estimate
+Pomacentrus sulfureus,Pomacentridae,0.02000,3.100,FishBase estimate
+Chromis randalli,Pomacentridae,0.03000,3.100,FishBase estimate
+Chromis randilli,Pomacentridae,0.03000,3.100,FishBase (spelling variant)
+Chrysiptera unimaculata,Pomacentridae,0.02000,3.100,FishBase estimate
+Plectroglyphiododon melas,Pomacentridae,0.02200,3.100,FishBase estimate
+Scarus nigger,Scaridae,0.02300,3.100,FishBase estimate
+Pterois volitans,Scorpaenidae,0.01260,3.230,FishBase
+Hypoplectrus nigricans,Serranidae,0.01800,3.010,FishBase estimate
+Anampses twistii,Labridae,0.01160,3.013,FishBase estimate
+Acanthurus ghhama,Acanthuridae,0.01380,3.030,FishBase estimate (typo variant of ghama)
+Ostorhinchus cookii,Apogonidae,0.01100,3.150,FishBase estimate
+Balistapus undulatus,Balistidae,0.03520,3.032,FishBase
+Chaeotodon auriga,Chaetodontidae,0.03330,2.937,FishBase (typo variant)
+Paracirrhittes forsteri,Cirrhitidae,0.01480,3.033,FishBase (typo variant — double t)
+Myprististis murdjan,Holocentridae,0.01380,3.210,FishBase (typo variant)
+Sargocentrion diadema,Holocentridae,0.01000,3.000,FishBase estimate (typo variant)
+Boadianus axillaris,Labridae,0.01340,3.025,FishBase (typo variant)
+Stethojulis olbovittata,Labridae,0.01160,3.013,FishBase estimate
+Lutjanus kasmira,Lutjanidae,0.01479,2.97,FishBase Bayesian global mean (Ref. 93245) [name corrected: kassmira -> kasmira]
+Lutjanus russellii,Lutjanidae,0.02000,2.950,FishBase
+Macolor niger,Lutjanidae,0.01585,3.00,FishBase Bayesian global mean (Ref. 93245) [name corrected: Mocolar -> Macolor]
+Parupeneus cyclostomus,Mullidae,0.01259,3.09,FishBase Bayesian global mean (Ref. 93245) [name corrected: cyclotomus -> cyclostomus]
+Parupeneus indicus,Mullidae,0.01175,3.09,FishBase Bayesian global mean r2=0.90 (Ref. 93245)
+Centropyge multispinis,Pomacanthidae,0.03170,3.130,FishBase estimate
+Chromis viridis,Pomacentridae,0.03000,3.100,FishBase
+Dascyllus aruanus,Pomacentridae,0.02600,3.030,FishBase
+Pomacentrus natalensis,Pomacentridae,0.02000,3.100,FishBase estimate
+Pomacentrus pavo,Pomacentridae,0.02000,3.100,FishBase estimate
+Pomacentrus trilineatus,Pomacentridae,0.02000,3.100,FishBase estimate
+Leptoscarus vaigiensis,Scaridae,0.02000,2.960,FishBase estimate
+Scarus viridifucatus,Scaridae,0.02000,2.960,FishBase estimate
+Pterois miles,Scorpaenidae,0.01260,3.230,FishBase estimate
+Pterois radiata,Scorpaenidae,0.01260,3.230,FishBase estimate
+Siganus stellatus,Siganidae,0.01622,3.047,FishBase estimate
+Acanthopagrus bifasciatus,Sparidae,0.01780,3.050,FishBase
+Canthigaster solandri,Tetraodontidae,0.02800,3.200,FishBase estimate
+Canthigaster valentin,Tetraodontidae,0.02800,3.200,FishBase (typo variant — missing trailing i)
+Torpedo panthera,Torpedinidae,0.00500,3.200,FishBase estimate (likely data entry error)
