@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Seagrass Condition | Kenya Coastal Ecosystem Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.8aeaa8ef.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.8aeaa8ef.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.f97ad15a.csv","lastModified":1775023339396,"size":1141});
+registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775023339453,"size":2402});
+registerFile("./data/seagrass-health-zone.csv", {"name":"./data/seagrass-health-zone.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-zone.0856729c.csv","lastModified":1775023339867,"size":3648});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "b7cab275", inputs: ["FileAttachment"], outputs: ["coverData","healthData","zoneData"], body: async (FileAttachment) => {
+const coverData = await FileAttachment("./data/seagrass-cover-site.csv").csv({typed: true});
+const healthData = await FileAttachment("./data/seagrass-health-site.csv").csv({typed: true});
+const zoneData = await FileAttachment("./data/seagrass-health-zone.csv").csv({typed: true});
+return {coverData,healthData,zoneData};
+}});
+
+define({id: "11319463", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
+display(await(
+Plot.plot({
+  title: "Total seagrass cover by area (%)",
+  subtitle: "Dashed line = 50% cover threshold",
+  width: 800,
+  height: 350,
+  marginLeft: 160,
+  x: {label: "Total cover (%)", grid: true, domain: [0, 100]},
+  y: {label: null},
+  marks: [
+    Plot.barX(coverData, {
+      x: "Total_Cover_pct",
+      y: "Area",
+      fill: "#2a9d8f",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([50], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 1.5}),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "6ea31e12", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
+display(await(
+Plot.plot({
+  title: "Seagrass species richness by area",
+  subtitle: "Number of species recorded at each site",
+  width: 800,
+  height: 350,
+  marginLeft: 160,
+  x: {label: "Species richness", grid: true},
+  y: {label: null},
+  marks: [
+    Plot.barX(coverData, {
+      x: "Species_Richness",
+      y: "Area",
+      fill: "#264653",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "6139b72f", inputs: ["coverData"], outputs: ["speciesCols","speciesLabels","speciesLong"], body: (coverData) => {
+const speciesCols = ["Cymodocea_rotundata_pct", "Syringodium_isoetifolium_pct", "Thalassodendron_ciliatum_pct", "Halodule_uninervis_pct", "Halophila_stipulacea_pct", "Thalassia_hemprichii_pct", "Halophila_ovalis_pct", "Cymodocea_serrulata_pct", "Enhalus_acoroides_pct"];
+const speciesLabels = ["C. rotundata", "S. isoetifolium", "T. ciliatum", "H. uninervis", "H. stipulacea", "T. hemprichii", "H. ovalis", "C. serrulata", "E. acoroides"];
+
+const speciesLong = coverData.flatMap(d =>
+  speciesCols.map((col, i) => ({
+    area: d.Area,
+    species: speciesLabels[i],
+    cover: d[col] || 0
+  })).filter(r => r.cover > 0)
+);
+return {speciesCols,speciesLabels,speciesLong};
+}});
+
+define({id: "e704f05e", inputs: ["Plot","speciesLabels","speciesLong","display"], body: async (Plot,speciesLabels,speciesLong,display) => {
+display(await(
+Plot.plot({
+  title: "Mean cover by species and area (%)",
+  subtitle: "Mean cover where species is present; values are independent per species (not additive to 100%)",
+  width: 800,
+  height: 500,
+  marginLeft: 160,
+  x: {label: "Mean cover (%)", domain: [0, 100], grid: true},
+  fy: {label: null},
+  y: {label: null},
+  color: {
+    domain: speciesLabels,
+    range: ["#2a9d8f", "#264653", "#e9c46a", "#e76f51", "#a8dadc", "#457b9d", "#f4a261", "#6c757d", "#2d6a4f"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(speciesLong, {
+      x: "cover",
+      fy: "area",
+      y: "species",
+      fill: "species",
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "7ec300c1", inputs: ["healthData"], outputs: ["healthClean"], body: (healthData) => {
+const healthClean = healthData.filter(d => d.Area != null && d.Mean_Shoots_m2 > 0);
+return {healthClean};
+}});
+
+define({id: "570a3d13", inputs: ["Plot","healthClean","display"], body: async (Plot,healthClean,display) => {
+display(await(
+Plot.plot({
+  title: "Shoot density vs canopy height by species and area",
+  subtitle: "Each point = one species at one area",
+  width: 800,
+  height: 500,
+  x: {label: "Shoot density (shoots/m2)", grid: true},
+  y: {label: "Mean canopy height (cm)", grid: true},
+  color: {legend: true},
+  marks: [
+    Plot.dot(healthClean, {
+      x: "Mean_Shoots_m2",
+      y: "Mean_Canopy_height_cm",
+      fill: "Species",
+      r: d => Math.sqrt(d.n_quadrats) * 2,
+      tip: true,
+      title: d => `${d.Area} - ${d.Species}\nShoots: ${d.Mean_Shoots_m2.toFixed(0)}/m2\nHeight: ${d.Mean_Canopy_height_cm.toFixed(1)} cm\nn = ${d.n_quadrats}`
+    })
+  ]
+})
+))
+}});
+
+define({id: "2aa6d931", inputs: ["zoneData"], outputs: ["zoneClean"], body: (zoneData) => {
+const zoneClean = zoneData.filter(d => d.Area != null);
+return {zoneClean};
+}});
+
+define({id: "164c939b", inputs: ["Inputs","zoneClean","display"], body: async (Inputs,zoneClean,display) => {
+display(await(
+Inputs.table(zoneClean.map(d => ({
+  Area: d.Area,
+  Zone: d.Zone,
+  Species: d.Species,
+  "Shoots/m2": (+d.Mean_Shoots_m2).toFixed(0),
+  "Height (cm)": (+d.Mean_Canopy_height_cm).toFixed(1),
+  "Epiphyte": d.Mean_Epiphyte_cover_pct != null ? (+d.Mean_Epiphyte_cover_pct).toFixed(1) : "-",
+  Quadrats: d.n_quadrats
+})), {
+  sort: "Area",
+  columns: ["Area", "Zone", "Species", "Shoots/m2", "Height (cm)", "Epiphyte", "Quadrats"]
+})
+))
+}});
+
+define({id: "555d9885", inputs: ["Inputs","coverData","display"], body: async (Inputs,coverData,display) => {
+display(await(
+Inputs.table(coverData.map(d => ({
+  Area: d.Area,
+  "Cover (%)": (+d.Total_Cover_pct).toFixed(1),
+  "Spp richness": d.Species_Richness,
+  "N quadrats": d.n_quadrats_cover
+})), {
+  sort: "Area"
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Kenya Coastal Ecosystem Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Extent Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Condition Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./seagrass">Seagrass Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Services &amp; Integration</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./fisheries">Fisheries Provisioning</a></li>
+    <li class="observablehq-link"><a href="./synthesis">Cross-Ecosystem Synthesis</a></li>
+    <li class="observablehq-link"><a href="./seea-accounts">SEEA EA Accounts</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#total-seagrass-cover-by-area">Total Seagrass Cover by Area</a></li>
+<li class="observablehq-secondary-link"><a href="#species-richness-by-area">Species Richness by Area</a></li>
+<li class="observablehq-secondary-link"><a href="#species-composition-by-area">Species Composition by Area</a></li>
+<li class="observablehq-secondary-link"><a href="#shoot-density-and-canopy-height">Shoot Density and Canopy Height</a></li>
+<li class="observablehq-secondary-link"><a href="#seagrass-health-by-zone">Seagrass Health by Zone</a></li>
+<li class="observablehq-secondary-link"><a href="#summary-table">Summary Table</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="seagrass-condition" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-condition">Seagrass Condition</a></h1>
+<h2 id="kilifi-county-seagrass-meadow-assessment" tabindex="-1"><a class="observablehq-header-anchor" href="#kilifi-county-seagrass-meadow-assessment">Kilifi County Seagrass Meadow Assessment</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:b7cab275:--></div>
+<p>Seagrass meadows (M1.1) provide critical ecosystem services including carbon sequestration, sediment stabilisation, and nursery habitat for reef-associated fish species. Nine survey areas along the Kilifi coastline were assessed using 3,040 quadrat records collected between May and November 2024.</p>
+<p>Seagrass condition is generally good across the study area, with Ngomeni recording the highest species diversity (8 of 10 observed species). However, all condition indices carry LOW to MEDIUM confidence because no published WIO-specific reference levels exist for shoot density or canopy height. The values reported here should be treated as a baseline for future change detection rather than definitive condition assessments.</p>
+<hr>
+<h2 id="total-seagrass-cover-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#total-seagrass-cover-by-area">Total Seagrass Cover by Area</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:11319463:--></div>
+<p>Malindi Marine Park and Ngomeni show the highest cover (95% and 91% respectively). Marereni and Kuruwitu have the lowest cover (50% and 52%), potentially reflecting higher anthropogenic disturbance.</p>
+<hr>
+<h2 id="species-richness-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#species-richness-by-area">Species Richness by Area</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6ea31e12:--></div>
+<p>Ngomeni leads with 8 species - the highest diversity recorded. Kikambala has the fewest (2 species). Species richness is positively associated with total cover.</p>
+<hr>
+<h2 id="species-composition-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#species-composition-by-area">Species Composition by Area</a></h2>
+<div class="observablehq observablehq--block"><!--:6139b72f:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:e704f05e:--></div>
+<p>Values represent mean cover per species where that species was recorded - they do not sum to 100% because species overlap within quadrats. <em>Thalassodendron ciliatum</em> dominates at most sites (up to 100% at Ngomeni). <em>Cymodocea rotundata</em> is the second most common species. Ngomeni is the only area where <em>Enhalus acoroides</em> was recorded.</p>
+<hr>
+<h2 id="shoot-density-and-canopy-height" tabindex="-1"><a class="observablehq-header-anchor" href="#shoot-density-and-canopy-height">Shoot Density and Canopy Height</a></h2>
+<div class="observablehq observablehq--block"><!--:7ec300c1:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:570a3d13:--></div>
+<hr>
+<h2 id="seagrass-health-by-zone" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-health-by-zone">Seagrass Health by Zone</a></h2>
+<div class="observablehq observablehq--block"><!--:2aa6d931:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:164c939b:--></div>
+<hr>
+<h2 id="summary-table" tabindex="-1"><a class="observablehq-header-anchor" href="#summary-table">Summary Table</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:555d9885:--></div>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./coral-reef"><span>Coral Reef Condition</span></a><a rel="next" href="./fisheries"><span>Fisheries Provisioning</span></a></nav>
+<div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>

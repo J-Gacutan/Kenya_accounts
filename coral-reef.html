@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Coral Reef Condition | Kenya Coastal Ecosystem Accounts</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.8aeaa8ef.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-uj2P2BRlhRHt0cojKSRVqpbGN6F39TGsI+AX8CuaUtL6v6ldH8TZvVoNVVV6b3W4" crossorigin="anonymous">
+<script type="module">
+
+import {define} from "./_observablehq/client.8aeaa8ef.js";
+import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
+
+registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775023338984,"size":857});
+registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775023339220,"size":934});
+registerFile("./data/coral-health-site.csv", {"name":"./data/coral-health-site.csv","mimeType":"text/csv","path":"./_file/data/coral-health-site.3b1a3c2f.csv","lastModified":1775023339068,"size":1208});
+registerFile("./data/coral-recruitment-site.csv", {"name":"./data/coral-recruitment-site.csv","mimeType":"text/csv","path":"./_file/data/coral-recruitment-site.df20a218.csv","lastModified":1775023339149,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.0766e5f5.csv","lastModified":1775023338918,"size":1815});
+registerFile("./data/site-condition-all.csv", {"name":"./data/site-condition-all.csv","mimeType":"text/csv","path":"./_file/data/site-condition-all.dce37895.csv","lastModified":1775023339278,"size":6438});
+
+define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
+const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
+
+return {Plot,d3};
+}});
+
+define({id: "ffd3cce0", inputs: ["FileAttachment"], outputs: ["fishData","benthicData","healthData","recruitData","paData","siteAll"], body: async (FileAttachment) => {
+const fishData = await FileAttachment("./data/fish-condition-site.csv").csv({typed: true});
+const benthicData = await FileAttachment("./data/benthic-cover-site.csv").csv({typed: true});
+const healthData = await FileAttachment("./data/coral-health-site.csv").csv({typed: true});
+const recruitData = await FileAttachment("./data/coral-recruitment-site.csv").csv({typed: true});
+const paData = await FileAttachment("./data/condition-by-pa.csv").csv({typed: true});
+const siteAll = await FileAttachment("./data/site-condition-all.csv").csv({typed: true});
+return {fishData,benthicData,healthData,recruitData,paData,siteAll};
+}});
+
+define({id: "37d55d15", inputs: ["benthicData"], outputs: ["benthicWithCI"], body: (benthicData) => {
+const benthicWithCI = benthicData.filter(d => d.live_coral_pct != null);
+return {benthicWithCI};
+}});
+
+define({id: "4765cc31", inputs: ["Plot","benthicWithCI","display"], body: async (Plot,benthicWithCI,display) => {
+display(await(
+Plot.plot({
+  title: "Live hard coral cover by site (%)",
+  subtitle: "Dashed line = 30% GCRMN reference level; colour by survey period",
+  width: 800,
+  height: 450,
+  marginLeft: 160,
+  x: {label: "Live coral cover (%)", grid: true},
+  y: {label: null},
+  color: {
+    domain: ["Nov_2024", "Jul_2025"],
+    range: ["#264653", "#2a9d8f"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(benthicWithCI, {
+      x: "live_coral_pct",
+      y: "site",
+      fill: "survey_period",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([30], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 2}),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "ab6d89dc", inputs: ["benthicData"], outputs: ["jul2025","benthicLong"], body: (benthicData) => {
+const jul2025 = benthicData.filter(d => d.survey_period === "Jul_2025" && d.live_coral_pct != null);
+const benthicLong = jul2025.flatMap(d => [
+  {site: d.site, category: "Live coral", pct: d.live_coral_pct},
+  {site: d.site, category: "Dead coral", pct: d.dead_coral_pct},
+  {site: d.site, category: "Macroalgae", pct: d.macroalgae_pct},
+  {site: d.site, category: "Rubble", pct: d.rubble_pct}
+].filter(r => r.pct != null));
+return {jul2025,benthicLong};
+}});
+
+define({id: "3004a38e", inputs: ["Plot","benthicLong","display"], body: async (Plot,benthicLong,display) => {
+display(await(
+Plot.plot({
+  title: "Benthic composition by site - July 2025 (COMRED survey)",
+  subtitle: "Stacked proportion of benthic cover categories",
+  width: 800,
+  height: 350,
+  marginLeft: 160,
+  x: {label: "Cover (%)", domain: [0, 100]},
+  y: {label: null},
+  color: {
+    domain: ["Live coral", "Dead coral", "Macroalgae", "Rubble"],
+    range: ["#2a9d8f", "#6c757d", "#e76f51", "#e9c46a"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(benthicLong, Plot.stackX({
+      x: "pct",
+      y: "site",
+      fill: "category",
+      order: ["Live coral", "Dead coral", "Macroalgae", "Rubble"],
+      tip: true
+    })),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "8b1615a5", inputs: ["healthData"], outputs: ["healthClean","healthLong"], body: (healthData) => {
+const healthClean = healthData.filter(d => d.site != null && d.n_total > 0);
+const healthLong = healthClean.flatMap(d => [
+  {site: d.site, period: d.survey_period, status: "Healthy", pct: d.pct_healthy},
+  {site: d.site, period: d.survey_period, status: "Pale", pct: d.pct_pale},
+  {site: d.site, period: d.survey_period, status: "Bleached", pct: d.pct_bleached},
+  {site: d.site, period: d.survey_period, status: "Dead", pct: d.pct_dead}
+].filter(r => r.pct != null && !isNaN(r.pct)));
+return {healthClean,healthLong};
+}});
+
+define({id: "af8ac0d4", inputs: ["Plot","healthLong","display"], body: async (Plot,healthLong,display) => {
+display(await(
+Plot.plot({
+  title: "Coral colony health status by site",
+  subtitle: "Proportion of surveyed colonies by health category",
+  width: 800,
+  height: 500,
+  marginLeft: 160,
+  x: {label: "% of colonies", domain: [0, 100]},
+  y: {label: null},
+  color: {
+    domain: ["Healthy", "Pale", "Bleached", "Dead"],
+    range: ["#2a9d8f", "#e9c46a", "#f4a261", "#e76f51"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(healthLong, Plot.stackX({
+      x: "pct",
+      y: "site",
+      fill: "status",
+      order: ["Healthy", "Pale", "Bleached", "Dead"],
+      tip: true
+    })),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "3ff00d3b", inputs: ["Plot","d3","fishData","display"], body: async (Plot,d3,fishData,display) => {
+display(await(
+Plot.plot({
+  title: "Reef fish biomass by site (kg/ha)",
+  subtitle: "Nov 2024 and Jul 2025 shown side by side; dashed line = 500 kg/ha sustainability threshold",
+  width: 800,
+  height: 650,
+  marginLeft: 160,
+  x: {label: "Fish biomass (kg/ha)", grid: true},
+  fy: {label: null, domain: d3.groupSort(fishData, v => -d3.max(v, d => d.mean_biomass_kg_ha), d => d.site)},
+  y: {label: null},
+  color: {
+    domain: ["Nov_2024", "Jul_2025"],
+    range: ["#264653", "#2a9d8f"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(fishData, {
+      x: "mean_biomass_kg_ha",
+      fy: "site",
+      y: "survey_period",
+      fill: "survey_period",
+      tip: true
+    }),
+    Plot.ruleX([500], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 2}),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "998f674f", inputs: ["Plot","fishData","display"], body: async (Plot,fishData,display) => {
+display(await(
+Plot.plot({
+  title: "Fish biomass vs species richness by site",
+  subtitle: "Size proportional to number of transects",
+  width: 800,
+  height: 500,
+  x: {label: "Fish biomass (kg/ha)", grid: true, type: "log"},
+  y: {label: "Mean species richness", grid: true},
+  color: {
+    domain: ["Nov_2024", "Jul_2025"],
+    range: ["#264653", "#2a9d8f"],
+    legend: true
+  },
+  marks: [
+    Plot.dot(fishData, {
+      x: "mean_biomass_kg_ha",
+      y: "mean_richness",
+      fill: "survey_period",
+      r: d => Math.sqrt(d.n_transects) * 4,
+      tip: true,
+      title: d => `${d.site} (${d.survey_period})\nBiomass: ${d.mean_biomass_kg_ha.toFixed(0)} kg/ha\nRichness: ${d.mean_richness}`
+    }),
+    Plot.ruleX([500], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 1.5})
+  ]
+})
+))
+}});
+
+define({id: "98e75d46", inputs: ["recruitData"], outputs: ["recruitClean"], body: (recruitData) => {
+const recruitClean = recruitData.filter(d => d.site != null && d.mean_recruits_m2 > 0);
+return {recruitClean};
+}});
+
+define({id: "7e5b8fd9", inputs: ["Plot","d3","recruitClean","display"], body: async (Plot,d3,recruitClean,display) => {
+display(await(
+Plot.plot({
+  title: "Coral recruit density by site (recruits/m\u00B2)",
+  subtitle: "Reference: 1-3 recruits/m\u00B2 for healthy WIO reefs (Hughes et al. 2010). Sites with zero recruits excluded (see text).",
+  width: 800,
+  height: 400,
+  marginLeft: 160,
+  x: {label: "Recruits/m\u00B2", grid: true},
+  fy: {label: null, domain: d3.groupSort(recruitClean, v => -d3.max(v, d => d.mean_recruits_m2), d => d.site)},
+  y: {label: null},
+  color: {
+    domain: ["Nov_2024", "Jul_2025"],
+    range: ["#264653", "#2a9d8f"],
+    legend: true
+  },
+  marks: [
+    Plot.barX(recruitClean, {
+      x: "mean_recruits_m2",
+      fy: "site",
+      y: "survey_period",
+      fill: "survey_period",
+      tip: true
+    }),
+    Plot.ruleX([1], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 1.5}),
+    Plot.ruleX([0])
+  ]
+})
+))
+}});
+
+define({id: "7c88444d", inputs: ["paData"], outputs: ["paJul"], body: (paData) => {
+const paJul = paData.filter(d => d.survey_period === "Jul_2025");
+return {paJul};
+}});
+
+define({id: "6b11db43", inputs: ["Inputs","paJul","display"], body: async (Inputs,paJul,display) => {
+display(await(
+Inputs.table(paJul.map(d => ({
+  "PA Name": d.pa_name,
+  "PA Type": d.pa_type,
+  "N Sites": d.n_sites,
+  "Mean Coral (%)": d.mean_live_coral_pct != null ? (+d.mean_live_coral_pct).toFixed(1) : "-",
+  "Mean Healthy (%)": d.mean_pct_healthy != null ? (+d.mean_pct_healthy).toFixed(1) : "-",
+  "CI Coral Cover": d.mean_ci_coral_cover != null ? (+d.mean_ci_coral_cover).toFixed(3) : "-",
+  "CI Recruitment": d.mean_ci_recruitment != null ? (+d.mean_ci_recruitment).toFixed(3) : "-"
+})), {
+  columns: ["PA Name", "PA Type", "N Sites", "Mean Coral (%)", "Mean Healthy (%)", "CI Coral Cover", "CI Recruitment"]
+})
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Kenya Coastal Ecosystem Accounts</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Overview</a></li>
+  </ol>
+  <section>
+    <summary>Extent Accounts</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Condition Accounts</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./coral-reef">Coral Reef Condition</a></li>
+    <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Services &amp; Integration</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./fisheries">Fisheries Provisioning</a></li>
+    <li class="observablehq-link"><a href="./synthesis">Cross-Ecosystem Synthesis</a></li>
+    <li class="observablehq-link"><a href="./seea-accounts">SEEA EA Accounts</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Reference</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./data-tables">Data Tables</a></li>
+    <li class="observablehq-link"><a href="./methods">Methods</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#live-coral-cover-by-site">Live Coral Cover by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#benthic-composition-july-2025">Benthic Composition (July 2025)</a></li>
+<li class="observablehq-secondary-link"><a href="#coral-colony-health-by-status">Coral Colony Health (% by Status)</a></li>
+<li class="observablehq-secondary-link"><a href="#fish-biomass-by-site">Fish Biomass by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#fish-biomass-vs-species-richness">Fish Biomass vs Species Richness</a></li>
+<li class="observablehq-secondary-link"><a href="#coral-recruitment-by-site">Coral Recruitment by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#condition-by-protected-area-type">Condition by Protected Area Type</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="coral-reef-condition" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-reef-condition">Coral Reef Condition</a></h1>
+<h2 id="kilifi-county-reef-condition-indices" tabindex="-1"><a class="observablehq-header-anchor" href="#kilifi-county-reef-condition-indices">Kilifi County Reef Condition Indices</a></h2>
+<div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:ffd3cce0:--></div>
+<p>Coral reefs along the Kilifi coastline were surveyed across 25 sites by three independent programmes: CCVA/KMFRI (Nov 2024), PU-GOAP (Nov 2024), and COMRED Oceans (Jul 2025). The 8-month interval between survey periods captures post-bleaching recovery dynamics following the 2024 marine heatwave. Condition indices normalise raw biophysical measurements to a 0-1 scale against established reference levels. A value of 1.0 indicates the reference level is met or exceeded; values below 1.0 indicate departure from reference condition.</p>
+<p>Three headline findings emerge: (1) fish biomass in the no-take Watamu Marine Park exceeds 3,000 kg/ha - six times the sustainability threshold - while most open-access sites fall below 500 kg/ha; (2) coral colony health shows strong post-bleaching recovery by July 2025 (0% bleached colonies at COMRED sites); and (3) coral recruitment is critically low across all sites (0.00-0.14 recruits/m2 against a 1-3/m2 WIO benchmark), signalling a structural bottleneck in reef recovery.</p>
+<hr>
+<h2 id="live-coral-cover-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#live-coral-cover-by-site">Live Coral Cover by Site</a></h2>
+<p>Live hard coral cover is the primary structural indicator. The reference level is 30% (GCRMN 2021; Obura et al. 2022 WIO benchmark).</p>
+<div class="observablehq observablehq--block"><!--:37d55d15:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4765cc31:--></div>
+<p>November 2024 sites (Kilifi, Kanamai, Mtwapa, Malindi MPA) generally exceed the 30% threshold. July 2025 COMRED sites show lower cover, with Roka 1 at just 8% - potentially reflecting post-bleaching recovery dynamics.</p>
+<hr>
+<h2 id="benthic-composition-july-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#benthic-composition-july-2025">Benthic Composition (July 2025)</a></h2>
+<div class="observablehq observablehq--block"><!--:ab6d89dc:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3004a38e:--></div>
+<hr>
+<h2 id="coral-colony-health-by-status" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-colony-health-by-status">Coral Colony Health (% by Status)</a></h2>
+<div class="observablehq observablehq--block"><!--:8b1615a5:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:af8ac0d4:--></div>
+<p>July 2025 data shows high post-bleaching recovery: zero bleaching at all COMRED sites, but mortality rates of 4-15% at some Watamu sites.</p>
+<hr>
+<h2 id="fish-biomass-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#fish-biomass-by-site">Fish Biomass by Site</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3ff00d3b:--></div>
+<p>Richard Bennett (Watamu Marine Park, no-take MPA) stands out at 3,085 kg/ha - six times the sustainability threshold. Most open-access sites fall well below 500 kg/ha.</p>
+<hr>
+<h2 id="fish-biomass-vs-species-richness" tabindex="-1"><a class="observablehq-header-anchor" href="#fish-biomass-vs-species-richness">Fish Biomass vs Species Richness</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:998f674f:--></div>
+<hr>
+<h2 id="coral-recruitment-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-recruitment-by-site">Coral Recruitment by Site</a></h2>
+<p>Coral recruitment (recruits/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>) is a key recovery indicator. Low recruitment suggests limited capacity for reef recovery following disturbance. Sites marked with * recorded <strong>zero recruits</strong> and are excluded from the chart: Richard Bennett*, Watamu Coral Garden*, Bamsa*, Maliwai*, Ngomeni Outer*, Ras Ngomeni Inner*, and Roka 2* (all 0.00 recruits/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>).</p>
+<div class="observablehq observablehq--block"><!--:98e75d46:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:7e5b8fd9:--></div>
+<p>Recruitment rates across all sites are critically low (0.00-0.14 recruits/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>), well below the 1-3 recruits/m<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> WIO benchmark. Seven of 16 site-period combinations recorded zero recruits. This is the single most concerning finding for reef recovery prospects.</p>
+<hr>
+<h2 id="condition-by-protected-area-type" tabindex="-1"><a class="observablehq-header-anchor" href="#condition-by-protected-area-type">Condition by Protected Area Type</a></h2>
+<div class="observablehq observablehq--block"><!--:7c88444d:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6b11db43:--></div>
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./mangrove"><span>Mangrove Extent &amp; Condition</span></a><a rel="next" href="./seagrass"><span>Seagrass Condition</span></a></nav>
+<div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
+</footer>
+</div>
+</body>
+</html>
