@@ -8,6 +8,32 @@ import * as d3 from "npm:d3";
 ```
 
 ```js
+function copyableTable(data, options = {}) {
+  const container = document.createElement("div");
+  container.style.position = "relative";
+
+  const btn = document.createElement("button");
+  btn.textContent = "📋 Copy table";
+  btn.style.cssText = "margin-bottom:8px;padding:4px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#f8f8f8;font-size:0.85rem;";
+  btn.onclick = () => {
+    const cols = options.columns || Object.keys(data[0]);
+    const headers = cols.map(c => (options.header && options.header[c]) || c);
+    const rows = data.map(row => cols.map(c => row[c] ?? "").join("\t"));
+    const tsv = [headers.join("\t"), ...rows].join("\n");
+    navigator.clipboard.writeText(tsv).then(() => {
+      btn.textContent = "✓ Copied!";
+      setTimeout(() => btn.textContent = "📋 Copy table", 2000);
+    });
+  };
+
+  const table = copyableTable(data, options);
+  container.appendChild(btn);
+  container.appendChild(table);
+  return container;
+}
+```
+
+```js
 const fishData = await FileAttachment("data/fish-condition-site.csv").csv({typed: true});
 const benthicData = await FileAttachment("data/benthic-cover-site.csv").csv({typed: true});
 const healthData = await FileAttachment("data/coral-health-site.csv").csv({typed: true});
@@ -50,7 +76,7 @@ const monData = await FileAttachment("data/fisheries-monetary.csv").csv({typed: 
 ## SEEA EA Condition Account (Final)
 
 ```js
-Inputs.table(condFinal, {
+copyableTable(condFinal, {
   columns: ["Entry", "Units", "Coral_Reef", "Mangrove", "Seagrass"],
   header: {Coral_Reef: "Coral Reef"},
   width: {Entry: 300}
@@ -62,7 +88,7 @@ Inputs.table(condFinal, {
 ## SEEA EA Extent Account (Final)
 
 ```js
-Inputs.table(extFinal, {
+copyableTable(extFinal, {
   columns: ["Entry", "Units", "Mangrove", "Seagrass", "Coral_Reef", "Totals"],
   header: {Coral_Reef: "Coral Reef"},
   width: {Entry: 180}
@@ -74,7 +100,7 @@ Inputs.table(extFinal, {
 ## Condition Summary (Accounting-Area Means)
 
 ```js
-Inputs.table(condSummary, {
+copyableTable(condSummary, {
   columns: ["survey_period", "condition_indicator", "unit", "mean_value", "se_value", "mean_ci", "n_sites", "confidence"],
   header: {
     survey_period: "Period",
@@ -93,7 +119,7 @@ Inputs.table(condSummary, {
 ## Fish Condition by Site
 
 ```js
-Inputs.table(fishData, {
+copyableTable(fishData, {
   columns: ["survey_period", "site", "mean_biomass_kg_ha", "se_biomass_kg_ha", "mean_abundance_ha", "mean_richness", "n_transects"],
   header: {
     survey_period: "Period",
@@ -112,7 +138,7 @@ Inputs.table(fishData, {
 ## Benthic Cover by Site
 
 ```js
-Inputs.table(benthicData, {
+copyableTable(benthicData, {
   columns: ["survey_period", "site", "live_coral_pct", "dead_coral_pct", "macroalgae_pct", "rubble_pct", "bleached_pct", "n_transects", "source"],
   header: {
     survey_period: "Period",
@@ -133,7 +159,7 @@ Inputs.table(benthicData, {
 
 ```js
 const healthClean = healthData.filter(d => d.site != null);
-Inputs.table(healthClean, {
+copyableTable(healthClean, {
   columns: ["survey_period", "site", "n_total", "pct_healthy", "pct_pale", "pct_bleached", "pct_diseased", "pct_dead"],
   header: {
     survey_period: "Period",
@@ -154,7 +180,7 @@ Inputs.table(healthClean, {
 
 ```js
 const recruitClean = recruitData.filter(d => d.site != null);
-Inputs.table(recruitClean, {
+copyableTable(recruitClean, {
   columns: ["survey_period", "site", "mean_recruits_m2", "se_recruits_m2", "n_quadrats"],
   header: {
     survey_period: "Period",
@@ -171,7 +197,7 @@ Inputs.table(recruitClean, {
 ## Mangrove Condition by Site
 
 ```js
-Inputs.table(mangroveData, {
+copyableTable(mangroveData, {
   columns: ["area", "site", "n_plots", "mean_stem_density_ha", "mean_dbh_cm", "mean_height_m", "mean_canopy_cover_pct", "ci_composite", "pa_status"],
   header: {
     mean_stem_density_ha: "Stems/ha",
@@ -191,7 +217,7 @@ Inputs.table(mangroveData, {
 ## Seagrass Cover by Area
 
 ```js
-Inputs.table(coverData, {
+copyableTable(coverData, {
   columns: ["Area", "Total_Cover_pct", "Species_Richness", "n_quadrats_cover"],
   header: {
     Total_Cover_pct: "Total cover (%)",
@@ -207,7 +233,7 @@ Inputs.table(coverData, {
 ## Seagrass Health (Shoot Density & Canopy Height)
 
 ```js
-Inputs.table(healthSg, {
+copyableTable(healthSg, {
   columns: ["Area", "Species", "Mean_Shoots_m2", "Mean_Canopy_height_cm", "n_quadrats"],
   header: {
     Mean_Shoots_m2: "Shoots/m2",
@@ -223,7 +249,7 @@ Inputs.table(healthSg, {
 ## Fisheries Physical Supply
 
 ```js
-Inputs.table(physData, {
+copyableTable(physData, {
   columns: ["year", "total_county_catch_mt", "reef_catch_adjusted_mt", "reef_fraction_pct", "reef_catch_lower_mt", "reef_catch_upper_mt"],
   header: {
     total_county_catch_mt: "County catch (mt)",
@@ -240,7 +266,7 @@ Inputs.table(physData, {
 ## Fisheries Monetary Supply
 
 ```js
-Inputs.table(monData, {
+copyableTable(monData, {
   columns: ["year", "reef_revenue_real_2024_usd", "resource_rent_lower_usd", "resource_rent_central_usd", "resource_rent_upper_usd"],
   header: {
     reef_revenue_real_2024_usd: "Revenue (USD)",
