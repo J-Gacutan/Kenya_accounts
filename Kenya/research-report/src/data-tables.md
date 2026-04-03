@@ -26,7 +26,7 @@ function copyableTable(data, options = {}) {
     });
   };
 
-  const table = copyableTable(data, options);
+  const table = Inputs.table(data, options);
   container.appendChild(btn);
   container.appendChild(table);
   return container;
