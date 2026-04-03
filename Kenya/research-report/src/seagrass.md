@@ -8,14 +8,29 @@ import * as d3 from "npm:d3";
 ```
 
 ```js
-const coverData = await FileAttachment("data/seagrass-cover-site.csv").csv({typed: true});
+const coverRaw = await FileAttachment("data/seagrass-cover-site.csv").csv({typed: true});
 const healthData = await FileAttachment("data/seagrass-health-site.csv").csv({typed: true});
 const zoneData = await FileAttachment("data/seagrass-health-zone.csv").csv({typed: true});
+
+// Average across sampling dates for sites with multiple dates (e.g. Malindi)
+const speciesCols0 = ["Cymodocea_rotundata_pct", "Syringodium_isoetifolium_pct", "Thalassodendron_ciliatum_pct", "Halodule_uninervis_pct", "Halophila_stipulacea_pct", "Thalassia_hemprichii_pct", "Halophila_ovalis_pct", "Cymodocea_serrulata_pct", "Enhalus_acoroides_pct"];
+const numericCols = ["Total_Cover_pct", "Species_Richness", "n_quadrats_cover", ...speciesCols0];
+const coverData = Array.from(
+  d3.rollup(coverRaw, rows => {
+    const out = {Area: rows[0].Area};
+    for (const col of numericCols) {
+      out[col] = d3.mean(rows, d => d[col]);
+    }
+    // Round species richness to nearest integer (average of counts)
+    out.Species_Richness = Math.round(out.Species_Richness);
+    return out;
+  }, d => d.Area).values()
+);
 ```
 
-Seagrass meadows (M1.1) provide critical ecosystem services including carbon sequestration, sediment stabilisation, and nursery habitat for reef-associated fish species. Nine survey areas along the Kilifi coastline were assessed using 3,040 quadrat records collected between May and November 2024.
+Seagrass meadows (M1.1) provide critical ecosystem services including carbon sequestration, sediment stabilisation, and nursery habitat for reef-associated fish species. Ten survey areas along the Kilifi coastline were assessed using quadrat records collected between May and November 2024.
 
-Seagrass condition is generally good across the study area, with Ngomeni recording the highest species diversity (8 of 10 observed species). However, all condition indices carry LOW to MEDIUM confidence because no published WIO-specific reference levels exist for shoot density or canopy height. The values reported here should be treated as a baseline for future change detection rather than definitive condition assessments.
+Seagrass condition is generally good across the study area, with Ngomeni recording the highest species diversity (8 of 9 observed species). However, all condition indices carry LOW confidence because no published WIO-specific reference levels exist for shoot density or canopy height. The values reported here should be treated as a baseline for future change detection rather than definitive condition assessments.
 
 ---
 
@@ -44,7 +59,7 @@ Plot.plot({
 })
 ```
 
-Malindi Marine Park and Ngomeni show the highest cover (95% and 91% respectively). Marereni and Kuruwitu have the lowest cover (50% and 52%), potentially reflecting higher anthropogenic disturbance.
+Wesa and Bofa show the highest cover (84% and 81% respectively). Kikambala and Marereni have the lowest cover (56% and 58%), potentially reflecting higher anthropogenic disturbance.
 
 ---
 
@@ -72,7 +87,7 @@ Plot.plot({
 })
 ```
 
-Ngomeni leads with 8 species - the highest diversity recorded. Kikambala has the fewest (2 species). Species richness is positively associated with total cover.
+Ngomeni leads with 8 species - the highest diversity recorded. Kikambala has the fewest (2 species).
 
 ---
 
@@ -96,10 +111,10 @@ Plot.plot({
   title: "Mean cover by species and area (%)",
   subtitle: "Mean cover where species is present; values are independent per species (not additive to 100%)",
   width: 800,
-  height: 500,
+  height: 800,
   marginLeft: 160,
   x: {label: "Mean cover (%)", domain: [0, 100], grid: true},
-  fy: {label: null},
+  fy: {label: null, padding: 0.15},
   y: {label: null},
   color: {
     domain: speciesLabels,

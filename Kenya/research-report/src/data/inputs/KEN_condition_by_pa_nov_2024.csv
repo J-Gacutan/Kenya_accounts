@@ -1,0 +1,6 @@
+"survey_period","pa_name","pa_type","n_sites","mean_live_coral_pct","mean_pct_healthy","mean_pct_bleached","mean_recruits_m2","mean_ci_coral_cover","mean_ci_bleaching","mean_ci_disease","mean_ci_recruitment","mean_ci_cots"
+"Nov_2024","Kanamai Community Park","Community CPA",1,NA,NA,NA,NA,NA,NA,NA,NA,1
+"Nov_2024","Kuruwitu Community Park","Community CPA",1,NA,NA,NA,NA,NA,NA,NA,NA,1
+"Nov_2024","Malindi MPA","Managed MPA",2,NA,NA,NA,0,NA,NA,NA,0,1
+"Nov_2024","Watamu Marine Park","No-take MPA",1,NA,70.8333333333333,0,0,NA,1,1,0,1
+"Nov_2024","Unprotected","Open access",7,NA,89.7810218978102,0.72992700729927,0.0228686868686869,NA,0.854014598540146,1,0.0228686868686869,1

@@ -11,12 +11,13 @@ export default {
     {
       name: "Extent Accounts",
       pages: [
-        {name: "Mangrove Extent & Condition", path: "/mangrove"},
+        {name: "Mangrove Extent", path: "/mangrove"},
       ]
     },
     {
       name: "Condition Accounts",
       pages: [
+        {name: "Mangrove Condition", path: "/mangrove-condition"},
         {name: "Coral Reef Condition", path: "/coral-reef"},
         {name: "Seagrass Condition", path: "/seagrass"},
       ]

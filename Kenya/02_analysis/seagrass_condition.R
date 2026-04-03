@@ -32,7 +32,7 @@ library(lubridate)
 DATA_FILE <- here("Kenya", "01_inputs", "raw_data", "seagrass",
                   "All_seagrass_field_data.xlsx")
 
-OUTPUT_DIR <- here("Kenya", "03_outputs")
+OUTPUT_DIR <- here("Kenya", "03_outputs", "seagrass")
 
 # Provisional reference values used for condition index normalisation.
 # All values should be confirmed against peer-reviewed WIO literature.
@@ -98,6 +98,26 @@ health <- health_raw |>
     shoot_density  = `Shoot density`,
     canopy_height  = `Canopy height`
   )
+
+# ------------------------------------------------------------
+# 2a-extra. Fill down quadrat identifiers
+# ------------------------------------------------------------
+# When `Quadrant 5m*5m` (or `Quadrant 50 cm*50cm`) is NA the row belongs to the
+# same transect / sub-quadrat as the preceding non-NA row.  Fill forward within
+# each area × date group so every row inherits the correct quadrat ID.
+#
+# Some sites (e.g. Malindi) repeat Q1-Q10 across multiple transect walks on the
+# same date.  Each walk has a unique lat/lon, which is used downstream to
+# distinguish walks when grouping quadrats.
+
+cover <- cover |>
+  group_by(area, date) |>
+  fill(quadrat_5m, quadrat_50cm, .direction = "down") |>
+  ungroup()
+
+n_filled <- sum(is.na(cover_raw[["Quadrant 5m*5m"]])) -
+            sum(is.na(cover$quadrat_5m))
+message(sprintf("  Filled %d NA quadrat identifiers via forward-fill.", n_filled))
 
 # ------------------------------------------------------------
 # 2b. Taxonomy standardisation
@@ -266,35 +286,35 @@ message("QA/QC complete.")
 message("Aggregating seagrass cover by site and species...")
 
 # ------------------------------------------------------------
-# 3a. Species-level mean cover per site
+# 3a. Species-level mean cover per site per date
 # ------------------------------------------------------------
-# Mean Percentage Cover per area per species, averaged across all
-# sub-quadrats and 5m x 5m plots within each site.
+# Mean Percentage Cover per area per date per species, averaged across all
+# sub-quadrats and 5m x 5m plots within each site-date combination.
 
 cover_by_species <- cover_seagrass |>
   filter(!is.na(cover_pct)) |>
-  group_by(area, species = substrate) |>
+  group_by(area, date, species = substrate) |>
   summarise(mean_cover_pct = mean(cover_pct, na.rm = TRUE), .groups = "drop")
 
 # ------------------------------------------------------------
-# 3b. Total seagrass cover per site (correct aggregation)
+# 3b. Total seagrass cover per site per date (correct aggregation)
 # ------------------------------------------------------------
 # CORRECT METHOD: sum species covers within each sub-quadrat first (multiple species
 # can co-occur in the same quadrat), cap per-quadrat total at 100% (physical ceiling),
-# then take the mean across all sub-quadrats within the site.
+# then take the mean across all sub-quadrats within the site-date combination.
 # NOTE: Summing species means directly (naive method) overcounts because it mixes
 # sub-quadrats with different species compositions and inflates totals to >>100%.
 
 cover_by_quadrat <- cover_seagrass |>
   filter(!is.na(cover_pct)) |>
-  group_by(area, quadrat_5m, quadrat_50cm) |>
+  group_by(area, date, latitude, longitude, quadrat_5m, quadrat_50cm) |>
   summarise(
     quadrat_total_cover = pmin(sum(cover_pct, na.rm = TRUE), 100),  # cap at 100%
     .groups = "drop"
   )
 
 cover_site_totals <- cover_by_quadrat |>
-  group_by(area) |>
+  group_by(area, date) |>
   summarise(
     Total_Cover_pct  = mean(quadrat_total_cover, na.rm = TRUE),
     n_quadrats_cover = n(),
@@ -304,18 +324,19 @@ cover_site_totals <- cover_by_quadrat |>
   left_join(
     cover_seagrass |>
       filter(!is.na(cover_pct)) |>
-      group_by(area) |>
+      group_by(area, date) |>
       summarise(Species_Richness = n_distinct(substrate), .groups = "drop"),
-    by = "area"
+    by = c("area", "date")
   )
 
 # ------------------------------------------------------------
 # 3c. Species composition (% of total seagrass cover)
 # ------------------------------------------------------------
-# Each species as a proportion of the site total cover.
+# Each species as a proportion of the site-date total cover.
 
 cover_composition <- cover_by_species |>
-  left_join(cover_site_totals |> select(area, Total_Cover_pct), by = "area") |>
+  left_join(cover_site_totals |> select(area, date, Total_Cover_pct),
+            by = c("area", "date")) |>
   mutate(species_pct_of_total = (mean_cover_pct / Total_Cover_pct) * 100)
 
 # ------------------------------------------------------------
@@ -325,23 +346,20 @@ cover_composition <- cover_by_species |>
 # Column names: e.g. Cymodocea_rotundata_pct
 
 cover_wide <- cover_composition |>
-  select(area, species, mean_cover_pct) |>
+  select(area, date, species, mean_cover_pct) |>
   mutate(
     # Clean species name for use as column header
     col_name = paste0(str_replace_all(species, " ", "_"), "_pct")
   ) |>
-  select(area, col_name, mean_cover_pct) |>
+  select(area, date, col_name, mean_cover_pct) |>
   pivot_wider(names_from = col_name, values_from = mean_cover_pct, values_fill = 0) |>
-  left_join(cover_site_totals, by = "area") |>
+  left_join(cover_site_totals, by = c("area", "date")) |>
   # Move summary columns to the front
-  select(Area = area, Total_Cover_pct, Species_Richness, everything())
+  select(Area = area, Date = date, Total_Cover_pct, Species_Richness, everything())
 
-message(sprintf("  Cover aggregation complete: %d sites, %d species observed.",
+message(sprintf("  Cover aggregation complete: %d site-date combinations, %d species observed.",
                 nrow(cover_wide),
-                nrow(cover_site_totals |> left_join(
-                  cover_by_species |> distinct(area, species),
-                  by = "area"
-                ) |> distinct(species))))
+                n_distinct(cover_by_species$species)))
 
 # ============================================================
 # 4. Health metrics
@@ -425,7 +443,7 @@ ci_cover <- cover_site_totals |>
   mutate(
     CI_cover = pmin(Total_Cover_pct / REF_COVER_PCT, 1.0)  # PROVISIONAL — confirm against WIO literature
   ) |>
-  rename(Area = area)
+  rename(Area = area, Date = date)
 
 # ------------------------------------------------------------
 # 5b. Species richness condition index
@@ -440,7 +458,7 @@ ci_richness <- cover_site_totals |>
   mutate(
     CI_richness = Species_Richness / max_richness  # PROVISIONAL — confirm against WIO literature
   ) |>
-  rename(Area = area)
+  rename(Area = area, Date = date)
 
 # ------------------------------------------------------------
 # 5c. Shoot density condition index (species-specific references)
@@ -482,8 +500,8 @@ ci_density_site <- ci_density |>
 
 # Join all CIs and compute composite
 ci_composite <- ci_cover |>
-  select(Area, CI_cover) |>
-  left_join(ci_richness |> select(Area, CI_richness), by = "Area") |>
+  select(Area, Date, CI_cover) |>
+  left_join(ci_richness |> select(Area, Date, CI_richness), by = c("Area", "Date")) |>
   left_join(ci_density_site, by = "Area") |>
   rowwise() |>
   mutate(
@@ -501,12 +519,13 @@ message("Condition index normalisation complete.")
 message("Building SEEA EA condition table...")
 
 # Helper: create a standard SEEA EA row
-seea_row <- function(area, indicator_group, indicator, variable, unit,
+seea_row <- function(area, date = NA, indicator_group, indicator, variable, unit,
                      value_2024, ci_2024, reference_value,
                      reference_confidence, notes) {
   tibble(
     Ecosystem_type        = "Seagrass meadows (M1.1)",
     Area                  = area,
+    Date                  = as.character(date),
     Indicator_group       = indicator_group,
     Indicator             = indicator,
     Variable              = variable,
@@ -524,15 +543,16 @@ seea_row <- function(area, indicator_group, indicator, variable, unit,
 # ------------------------------------------------------------
 
 seea_cover <- cover_site_totals |>
-  rename(Area = area) |>
-  left_join(ci_cover |> select(Area, CI_cover), by = "Area") |>
-  left_join(ci_richness |> select(Area, CI_richness), by = "Area") |>
-  select(Area, Total_Cover_pct, Species_Richness, CI_cover, CI_richness) |>
-  pmap_dfr(function(Area, Total_Cover_pct, Species_Richness,
+  rename(Area = area, Date = date) |>
+  left_join(ci_cover |> select(Area, Date, CI_cover), by = c("Area", "Date")) |>
+  left_join(ci_richness |> select(Area, Date, CI_richness), by = c("Area", "Date")) |>
+  select(Area, Date, Total_Cover_pct, Species_Richness, CI_cover, CI_richness) |>
+  pmap_dfr(function(Area, Date, Total_Cover_pct, Species_Richness,
                     CI_cover, CI_richness) {
     bind_rows(
       seea_row(
         area                 = Area,
+        date                 = Date,
         indicator_group      = "Biotic condition — Seagrass cover",
         indicator            = "Total seagrass cover",
         variable             = "Mean percentage cover across all species",
@@ -545,6 +565,7 @@ seea_cover <- cover_site_totals |>
       ),
       seea_row(
         area                 = Area,
+        date                 = Date,
         indicator_group      = "Biotic condition — Seagrass cover",
         indicator            = "Species richness",
         variable             = "Number of seagrass species observed",
@@ -624,9 +645,10 @@ seea_health <- ci_density |>
 # ------------------------------------------------------------
 
 seea_composite <- ci_composite |>
-  pmap_dfr(function(Area, CI_cover, CI_richness, CI_density_mean, CI_composite) {
+  pmap_dfr(function(Area, Date, CI_cover, CI_richness, CI_density_mean, CI_composite) {
     seea_row(
       area                 = Area,
+      date                 = Date,
       indicator_group      = "Biotic condition — Composite",
       indicator            = "Composite condition index",
       variable             = "Mean of cover CI, richness CI, and mean shoot density CI",
@@ -664,32 +686,32 @@ if (!dir.exists(OUTPUT_DIR)) {
 # 7a. Site-level cover (wide format)
 write_csv(
   cover_wide,
-  here("Kenya", "03_outputs", "KEN_seagrass_cover_site.csv")
+  here("Kenya", "03_outputs", "seagrass", "KEN_seagrass_cover_site.csv")
 )
 message("  Written: KEN_seagrass_cover_site.csv")
 
 # 7b. Site-level health (shoot density + canopy height by species)
 write_csv(
   health_site,
-  here("Kenya", "03_outputs", "KEN_seagrass_health_site.csv")
+  here("Kenya", "03_outputs", "seagrass", "KEN_seagrass_health_site.csv")
 )
 message("  Written: KEN_seagrass_health_site.csv")
 
 # 7c. Zone-level health
 write_csv(
   health_zone,
-  here("Kenya", "03_outputs", "KEN_seagrass_health_zone.csv")
+  here("Kenya", "03_outputs", "seagrass", "KEN_seagrass_health_zone.csv")
 )
 message("  Written: KEN_seagrass_health_zone.csv")
 
 # 7d. SEEA EA condition account table
 write_csv(
   seea_table,
-  here("Kenya", "03_outputs", "KEN_seea_condition_account_seagrass.csv")
+  here("Kenya", "03_outputs", "seagrass", "KEN_seea_condition_account_seagrass.csv")
 )
 message("  Written: KEN_seea_condition_account_seagrass.csv")
 
-message("Done. All outputs written to Kenya/03_outputs/")
+message("Done. All outputs written to Kenya/03_outputs/seagrass/")
 message("")
 message("IMPORTANT: All reference values are PROVISIONAL.")
 message("  Confirm the following against peer-reviewed WIO seagrass literature before finalising:")

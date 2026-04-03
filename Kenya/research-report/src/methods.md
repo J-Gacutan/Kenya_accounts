@@ -173,10 +173,10 @@ This account follows the **UN SEEA EA** (2021) structure:
 
 | Dataset | Records | Coverage |
 |-----|-----|-----|
-| KEN_fish_condition_site.csv | 25 site-periods | 25 reef sites, 2 periods |
-| KEN_benthic_cover_site.csv | 12 site-periods | Benthic cover, 2 periods |
-| KEN_coral_health_site.csv | 15 site-periods | Colony-level health status |
-| KEN_coral_recruitment_site.csv | 16 site-periods | Recruit quadrat counts |
+| KEN_fish_condition_site.csv | 17 site-periods | 9 sites (Nov 2024) + 8 sites (Jul 2025) |
+| KEN_benthic_cover_site.csv | 11 site-periods | 6 sites (Nov 2024) + 5 sites (Jul 2025) |
+| KEN_coral_health_site.csv | 15 site-periods | 9 sites (Nov 2024) + 6 sites (Jul 2025) |
+| KEN_coral_recruitment_site.csv | 16 site-periods | 10 sites (Nov 2024) + 6 sites (Jul 2025) |
 | KEN_mangrove_condition_by_site.csv | 32 sites | 4 areas, 32 field plots |
 | KEN_seagrass_cover_site.csv | 9 areas | Cover and species composition |
 | KEN_seagrass_health_site.csv | 40 records | Shoot density and canopy height by species |

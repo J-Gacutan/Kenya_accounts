@@ -28,7 +28,7 @@ library(lubridate)
 
 RAW_DIR  <- here("Kenya", "01_inputs", "raw_data", "coral_reef")
 META_DIR <- here("Kenya", "01_inputs", "metadata")
-OUT_DIR  <- here("Kenya", "03_outputs")
+OUT_DIR  <- here("Kenya", "03_outputs", "coral_reef")
 
 F_KLF      <- file.path(RAW_DIR, "KLF-FISH-DATA-CCVA-GOAP-COMRED.xlsx")
 F_COMRED_F <- file.path(RAW_DIR, "COMRED_OCEANS-JULY2025-FISH-DATA.xlsx")
@@ -442,17 +442,92 @@ if (!is.null(fish_ci)) {
 # 7. EXPORT
 # =============================================================================
 
-cat("--- Step 7: Export ---\n")
+cat("--- Step 7: Export (per survey period) ---\n")
 
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-output_files <- list()
-if (!is.null(fish_site))      output_files[["KEN_fish_condition_site.csv"]] <- fish_site
-if (!is.null(fish_seea_rows)) output_files[["KEN_fish_seea_rows.csv"]]      <- fish_seea_rows
+periods <- unique(fish_all$survey_period)
 
-iwalk(output_files, \(df, nm) {
-  write.csv(df, file.path(OUT_DIR, nm), row.names = FALSE)
-  cat(sprintf("  Wrote %s\n", nm))
-})
+for (p in periods) {
+  tag <- tolower(p)  # e.g. "nov_2024"
+
+  if (!is.null(fish_site)) {
+    df <- fish_site |> filter(survey_period == p)
+    if (nrow(df) > 0) {
+      nm <- sprintf("KEN_fish_condition_site_%s.csv", tag)
+      write.csv(df, file.path(OUT_DIR, nm), row.names = FALSE)
+      cat(sprintf("  Wrote %s (%d rows)\n", nm, nrow(df)))
+    }
+  }
+
+  if (!is.null(fish_seea_rows)) {
+    df <- fish_seea_rows |> filter(survey_period == p)
+    if (nrow(df) > 0) {
+      nm <- sprintf("KEN_fish_seea_rows_%s.csv", tag)
+      write.csv(df, file.path(OUT_DIR, nm), row.names = FALSE)
+      cat(sprintf("  Wrote %s (%d rows)\n", nm, nrow(df)))
+    }
+  }
+}
+
+# =============================================================================
+# 8. BAR GRAPH — FISH BIOMASS BY SITE AND SURVEY PERIOD
+# =============================================================================
+
+cat("--- Step 8: Bar graph ---\n")
+
+if (!is.null(fish_site)) {
+  library(ggplot2)
+  library(scales)
+
+  # Reorder sites by biomass (highest first) and label survey periods
+  plot_df <- fish_site |>
+    mutate(
+      period_label = case_when(
+        survey_period == "Nov_2024" ~ "Nov 2024",
+        survey_period == "Jul_2025" ~ "Jul 2025",
+        .default = survey_period
+      ),
+      site = reorder(site, mean_biomass_kg_ha, FUN = max)
+    )
+
+  p <- ggplot(plot_df, aes(x = site, y = mean_biomass_kg_ha, fill = period_label)) +
+    geom_col(position = position_dodge(width = 0.8), width = 0.7) +
+    geom_errorbar(
+      aes(ymin = pmax(mean_biomass_kg_ha - se_biomass_kg_ha, 0),
+          ymax = mean_biomass_kg_ha + se_biomass_kg_ha),
+      position = position_dodge(width = 0.8), width = 0.25, linewidth = 0.4
+    ) +
+    geom_hline(
+      yintercept = REF$fish_biomass_target, linetype = "dashed",
+      colour = "grey40", linewidth = 0.5
+    ) +
+    annotate("text", x = 0.5, y = REF$fish_biomass_target,
+             label = "WIO conservation target (1,150 kg/ha)",
+             hjust = 0, vjust = -0.5, size = 3, colour = "grey40") +
+    scale_fill_manual(
+      values = c("Nov 2024" = "#4E79A7", "Jul 2025" = "#F28E2B"),
+      name = "Survey period"
+    ) +
+    scale_y_continuous(labels = comma) +
+    coord_flip() +
+    labs(
+      title = "Fish biomass by site",
+      subtitle = "Kilifi County coral reefs — mean biomass per transect (+/- SE)",
+      x = NULL,
+      y = "Mean biomass (kg/ha)",
+      caption = paste0("Transect area assumed ", TRANSECT_AREA_M2, " m2 (pending confirmation)")
+    ) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "top",
+      panel.grid.major.y = element_blank(),
+      plot.title = element_text(face = "bold")
+    )
+
+  ggsave(file.path(OUT_DIR, "KEN_fish_biomass_by_site.png"),
+         p, width = 10, height = 7, dpi = 300)
+  cat("  Wrote KEN_fish_biomass_by_site.png\n")
+}
 
 cat("--- Fish condition analysis complete ---\n")

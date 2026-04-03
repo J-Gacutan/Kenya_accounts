@@ -1,0 +1,9 @@
+"survey_period","site","live_coral_pct","ci_coral_cover","pct_healthy","pct_bleached","pct_diseased","pct_dead","ci_healthy","ci_bleaching","ci_disease","pct_large_colonies","mean_recruits_m2","ci_recruitment","mean_urchin_m2","mean_cots_ha","tridacna_present","ci_cots","ci_urchin","ci_tridacna","pa_name","pa_type","mean_biomass_kg_ha","mean_richness"
+"Jul_2025","Richard Bennett",29.36,0.978666666666667,96,0,0,2.66666666666667,1,1,1,27.6315789473684,0,0,NA,NA,NA,NA,NA,NA,"Watamu Marine Park","No-take MPA",3085.14700586833,19.5
+"Jul_2025","Roka 1",8.08,0.269333333333333,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Unprotected","Open access",31.401885052293,10
+"Jul_2025","Turtle Reef",19.6,0.653333333333333,95.8333333333333,0,0,4.16666666666667,1,1,1,20.4081632653061,0.0308641975308642,0.0308641975308642,NA,NA,NA,NA,NA,NA,"Watamu Marine Park","No-take MPA",541.065533569583,14
+"Jul_2025","Uyombo",30.4,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Unprotected","Open access",328.450507881253,14.5
+"Jul_2025","Watamu Coral Garden",22.48,0.749333333333333,91.4893617021277,0,0,8.51063829787234,0.963045912653975,1,1,42.8571428571429,0,0,NA,NA,NA,NA,NA,NA,"Watamu Marine Park","No-take MPA",1074.55745243291,19
+"Jul_2025","Roka",NA,NA,100,0,0,0,1,1,1,50,0.00617283950617282,0.00617283950617282,NA,NA,NA,NA,NA,NA,"Unprotected","Open access",NA,NA
+"Jul_2025","Wesa",NA,NA,100,0,0,0,1,1,1,10.1851851851852,0.141975308641975,0.141975308641975,NA,NA,NA,NA,NA,NA,"Unprotected","Open access",NA,NA
+"Jul_2025","Whale island/Uyombo",NA,NA,85.3932584269663,0,0,14.6067415730337,0.898876404494382,1,1,28.2608695652174,0.141975308641975,0.141975308641975,NA,NA,NA,NA,NA,NA,"Watamu Marine Park","No-take MPA",NA,NA

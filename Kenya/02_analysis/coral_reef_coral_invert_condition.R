@@ -39,7 +39,7 @@ library(lubridate)
 # =============================================================================
 
 RAW_DIR <- here("Kenya", "01_inputs", "raw_data", "coral_reef")
-OUT_DIR <- here("Kenya", "03_outputs")
+OUT_DIR <- here("Kenya", "03_outputs", "coral_reef")
 
 F_CCVA_INV <- file.path(RAW_DIR, "CCVA-SEPT2024-KILIFI-INVERTS-DATA.xlsx")
 F_COMRED_C <- file.path(RAW_DIR, "COMRED_OCEANS-JULY2025-CORAL ABUNDANCE AND CONDITION-DATA.xlsx")
@@ -47,7 +47,8 @@ F_COMRED_B <- file.path(RAW_DIR, "COMRED_OCEANS-JULY2025-CORAL-DATA.xlsx")
 F_PUGOAP   <- file.path(RAW_DIR, "PU-GOAP-KILIFI-NOV2024-CORALDATA.xlsx")
 
 # Optional fish output for joining into site_condition_all_indicators
-F_FISH_SITE <- file.path(OUT_DIR, "fish_condition_site.csv")
+# Fish script now exports per-period files; glob for all of them
+F_FISH_SITE_PATTERN <- file.path(OUT_DIR, "KEN_fish_condition_site_*.csv")
 
 # ----------------------------------------------------------------------------
 # TRANSECT / QUADRAT AREAS
@@ -582,13 +583,14 @@ if (nrow(unmapped) > 0) {
 }
 
 # Optionally join fish condition if the fish script has already been run
-if (file.exists(F_FISH_SITE)) {
-  fish_site_csv <- read.csv(F_FISH_SITE) |>
+fish_site_files <- Sys.glob(F_FISH_SITE_PATTERN)
+if (length(fish_site_files) > 0) {
+  fish_site_csv <- bind_rows(lapply(fish_site_files, read.csv)) |>
     as_tibble() |>
     select(survey_period, site, mean_biomass_kg_ha, mean_richness)
   all_conditions <- all_conditions |>
     left_join(fish_site_csv, by = c("survey_period", "site"))
-  cat("  Fish condition joined from fish_condition_site.csv\n")
+  cat(sprintf("  Fish condition joined from %d file(s)\n", length(fish_site_files)))
 } else {
   cat("  fish_condition_site.csv not found — run coral_reef_fish_condition.R first to include fish columns\n")
 }
@@ -725,12 +727,12 @@ seea_rows <- list(
 )
 
 # Append fish SEEA rows from fish script output if available
-f_fish_seea <- file.path(OUT_DIR, "fish_seea_rows.csv")
-if (file.exists(f_fish_seea)) {
-  fish_seea_csv <- read.csv(f_fish_seea) |> as_tibble()
+fish_seea_files <- Sys.glob(file.path(OUT_DIR, "KEN_fish_seea_rows_*.csv"))
+if (length(fish_seea_files) > 0) {
+  fish_seea_csv <- bind_rows(lapply(fish_seea_files, read.csv)) |> as_tibble()
   seea_rows <- c(seea_rows, list(fish_seea_csv))
-  cat(sprintf("  Fish SEEA rows joined from fish_seea_rows.csv (%d rows)\n",
-              nrow(fish_seea_csv)))
+  cat(sprintf("  Fish SEEA rows joined from %d file(s) (%d rows)\n",
+              length(fish_seea_files), nrow(fish_seea_csv)))
 } else {
   cat("  fish_seea_rows.csv not found — run coral_reef_fish_condition.R to include fish SEEA rows\n")
 }
@@ -757,25 +759,44 @@ print(seea_summary, n = 50)
 # 9. EXPORT
 # =============================================================================
 
-cat("--- Step 9: Export ---\n")
+cat("--- Step 9: Export (per survey period) ---\n")
 
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-output_files <- list(
-  "KEN_seea_condition_account.csv"          = seea_table,
-  "KEN_seea_condition_summary.csv"          = seea_summary,
-  "KEN_site_condition_all_indicators.csv"   = all_conditions,
-  "KEN_condition_by_pa.csv"                 = pa_summary,
-  "KEN_multiperiod_comparison.csv"          = multiperiod,
-  "KEN_coral_health_site.csv"               = coral_health_site,
-  "KEN_coral_recruitment_site.csv"          = recruits_site,
-  "KEN_benthic_cover_site.csv"              = cover_site,
-  "KEN_invertebrate_condition_site.csv"     = invert_site
+# Cross-period outputs (not split)
+output_files_combined <- list(
+  "KEN_multiperiod_comparison.csv" = multiperiod
 )
 
-iwalk(output_files, \(df, nm) {
+iwalk(output_files_combined, \(df, nm) {
   write.csv(df, file.path(OUT_DIR, nm), row.names = FALSE)
   cat(sprintf("  Wrote %s\n", nm))
 })
+
+# Per-period outputs
+periods <- unique(all_conditions$survey_period)
+
+per_period_sets <- list(
+  "KEN_seea_condition_account"        = seea_table,
+  "KEN_seea_condition_summary"        = seea_summary,
+  "KEN_site_condition_all_indicators" = all_conditions,
+  "KEN_condition_by_pa"               = pa_summary,
+  "KEN_coral_health_site"             = coral_health_site,
+  "KEN_coral_recruitment_site"        = recruits_site,
+  "KEN_benthic_cover_site"            = cover_site,
+  "KEN_invertebrate_condition_site"   = invert_site
+)
+
+for (p in periods) {
+  tag <- tolower(p)
+  iwalk(per_period_sets, \(df, base) {
+    sub <- df |> filter(survey_period == p)
+    if (nrow(sub) > 0) {
+      nm <- sprintf("%s_%s.csv", base, tag)
+      write.csv(sub, file.path(OUT_DIR, nm), row.names = FALSE)
+      cat(sprintf("  Wrote %s (%d rows)\n", nm, nrow(sub)))
+    }
+  })
+}
 
 cat("--- Coral + invertebrate condition analysis complete ---\n")
