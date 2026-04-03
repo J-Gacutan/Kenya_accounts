@@ -62,14 +62,14 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775209812284,"size":934});
-registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775209812415,"size":1271});
-registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775209812464,"size":1086});
-registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775209812509,"size":864});
-registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775209812560,"size":5198});
-registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775209812706,"size":1333});
-registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775209812840,"size":1735});
-registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775209812885,"size":1992});
+registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775211060839,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775211060840,"size":1271});
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775211060840,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775211060840,"size":864});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775211060841,"size":5198});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775211060843,"size":1333});
+registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775211060844,"size":1735});
+registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775211060844,"size":1992});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
@@ -112,7 +112,7 @@ Inputs.table(paLong.map(d => ({
 ))
 }});
 
-define({id: "b0941db3", inputs: ["Plot","paLong","display"], body: async (Plot,paLong,display) => {
+define({id: "0560c272", inputs: ["Plot","paLong","display"], body: async (Plot,paLong,display) => {
 display(await(
 Plot.plot({
   title: "Reef condition indices: Watamu MPA vs unprotected (Jul 2025)",
@@ -120,10 +120,9 @@ Plot.plot({
   width: 800,
   height: 350,
   marginLeft: 120,
-  marginRight: 160,
   x: {label: "Condition Index (0-1)", domain: [0, 1], grid: true},
   fy: {label: null, domain: ["Coral cover", "Recruitment", "Bleaching", "Disease"]},
-  y: {label: null, axis: "right"},
+  y: {label: null},
   color: {
     domain: ["Watamu Marine Park", "Unprotected"],
     range: ["#2a9d8f", "#e76f51"],
@@ -247,10 +246,10 @@ if (ngomeniMangrove.length > 0) {
 }
 }});
 
-define({id: "f9d3dae7", outputs: ["confidence"], body: () => {
+define({id: "cb51e6b4", outputs: ["confidence"], body: () => {
 const confidence = [
-  {component: "Fish biomass (kg/ha)", confidence: "MEDIUM", basis: "17 site-periods (9 Nov 2024 + 8 Jul 2025); FishBase allometry; McClanahan 2016 reference", caveat: "Transect area (250 m2) pending field confirmation"},
-  {component: "Live coral cover (%)", confidence: "MEDIUM", basis: "11 site-periods (6 Nov 2024 + 5 Jul 2025); GCRMN 2021 / Obura 2022 reference (30%)", caveat: "Nov 2024 and Jul 2025 are different site sets, not repeated measures"},
+  {component: "Fish biomass (kg/ha)", confidence: "MEDIUM", basis: "25 site-periods; FishBase allometry; McClanahan 2016 reference", caveat: "Transect area (250 m2) pending field confirmation"},
+  {component: "Live coral cover (%)", confidence: "MEDIUM", basis: "12 site-periods; GCRMN 2021 / Obura 2022 reference (30%)", caveat: "Nov 2024 and Jul 2025 are different site sets, not repeated measures"},
   {component: "Coral recruitment", confidence: "LOW-MEDIUM", basis: "16 site-periods; Hughes 2010 WIO reference (1-3/m2)", caveat: "Methodology equivalence with reference studies unconfirmed"},
   {component: "Coral health (bleaching)", confidence: "MEDIUM", basis: "15 site-periods; colony-level assessment", caveat: "Post-bleaching snapshot; no pre-bleaching baseline"},
   {component: "Mangrove condition (composite)", confidence: "MEDIUM", basis: "32 plots, 22 sites; Kenya literature references", caveat: "13 sites with fewer than 2 plots (low sample size flag)"},
@@ -503,7 +502,7 @@ Inputs.table(crossEco, {
 <h3 id="coral-reefs-no-take-mpa-vs-open-access-july-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-reefs-no-take-mpa-vs-open-access-july-2025">Coral reefs: no-take MPA vs open access (July 2025)</a></h3>
 <div class="observablehq observablehq--block"><!--:5d392cd6:--></div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:db809952:--></div>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:b0941db3:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:0560c272:--></div>
 <p>Watamu Marine Park outperforms unprotected sites on coral cover (CI 0.79 vs 0.63) and bleaching/disease resistance (both at 1.0). Recruitment is critically low in both categories, though slightly lower in protected areas - a pattern consistent with larval supply limitation rather than local management failure.</p>
 <h3 id="mangroves-mida-creek-mnr-vs-unprotected" tabindex="-1"><a class="observablehq-header-anchor" href="#mangroves-mida-creek-mnr-vs-unprotected">Mangroves: Mida Creek MNR vs unprotected</a></h3>
 <div class="observablehq observablehq--block"><!--:27bdfd7b:--></div>
@@ -535,7 +534,7 @@ Inputs.table(crossEco, {
 <hr>
 <h2 id="3-data-confidence-assessment" tabindex="-1"><a class="observablehq-header-anchor" href="#3-data-confidence-assessment">3. Data Confidence Assessment</a></h2>
 <p>Not all indicators carry the same weight of evidence. The table below summarises the confidence level for each major account component, based on data volume, reference level robustness, and temporal coverage.</p>
-<div class="observablehq observablehq--block"><!--:f9d3dae7:--></div>
+<div class="observablehq observablehq--block"><!--:cb51e6b4:--></div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:96706eff:--></div>
 <h3 id="confidence-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#confidence-summary">Confidence summary</a></h3>
 <div class="observablehq observablehq--block"><!--:d737c63f:--></div>

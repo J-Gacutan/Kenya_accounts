@@ -8,18 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
-<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.b050d634.css">
-<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
 <link rel="modulepreload" href="./_observablehq/client.ef8b565d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.277aeab8.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
-<link rel="modulepreload" href="./_observablehq/stdlib/inputs.31cd1366.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
-<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
@@ -62,23 +58,50 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775209812244,"size":857});
-registerFile("./data/coral-health-site.csv", {"name":"./data/coral-health-site.csv","mimeType":"text/csv","path":"./_file/data/coral-health-site.3b1a3c2f.csv","lastModified":1775209812326,"size":1208});
-registerFile("./data/coral-recruitment-site.csv", {"name":"./data/coral-recruitment-site.csv","mimeType":"text/csv","path":"./_file/data/coral-recruitment-site.df20a218.csv","lastModified":1775209812369,"size":934});
-registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775209812415,"size":1271});
-registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775209812464,"size":1086});
-registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775209812509,"size":864});
-registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775209812560,"size":5198});
-registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775209812706,"size":1333});
-registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775209812751,"size":2402});
-registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775209812840,"size":1735});
-registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775209812885,"size":1992});
-registerFile("./data/seea-extent-final.csv", {"name":"./data/seea-extent-final.csv","mimeType":"text/csv","path":"./_file/data/seea-extent-final.2f63103d.csv","lastModified":1775209812933,"size":298});
+registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775211060839,"size":857});
+registerFile("./data/coral-health-site.csv", {"name":"./data/coral-health-site.csv","mimeType":"text/csv","path":"./_file/data/coral-health-site.3b1a3c2f.csv","lastModified":1775211060840,"size":1208});
+registerFile("./data/coral-recruitment-site.csv", {"name":"./data/coral-recruitment-site.csv","mimeType":"text/csv","path":"./_file/data/coral-recruitment-site.df20a218.csv","lastModified":1775211060840,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775211060840,"size":1271});
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775211060840,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775211060840,"size":864});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775211060841,"size":5198});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775211060843,"size":1333});
+registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775211060843,"size":2402});
+registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775211060844,"size":1735});
+registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775211060844,"size":1992});
+registerFile("./data/seea-extent-final.csv", {"name":"./data/seea-extent-final.csv","mimeType":"text/csv","path":"./_file/data/seea-extent-final.2f63103d.csv","lastModified":1775211060844,"size":298});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
 
 return {Plot,d3};
+}});
+
+define({id: "04aebc7d", outputs: ["copyableTable"], body: () => {
+function copyableTable(data, options = {}) {
+  const container = document.createElement("div");
+  container.style.position = "relative";
+
+  const btn = document.createElement("button");
+  btn.textContent = "📋 Copy table";
+  btn.style.cssText = "margin-bottom:8px;padding:4px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#f8f8f8;font-size:0.85rem;";
+  btn.onclick = () => {
+    const cols = options.columns || Object.keys(data[0]);
+    const headers = cols.map(c => (options.header && options.header[c]) || c);
+    const rows = data.map(row => cols.map(c => row[c] ?? "").join("\t"));
+    const tsv = [headers.join("\t"), ...rows].join("\n");
+    navigator.clipboard.writeText(tsv).then(() => {
+      btn.textContent = "✓ Copied!";
+      setTimeout(() => btn.textContent = "📋 Copy table", 2000);
+    });
+  };
+
+  const table = copyableTable(data, options);
+  container.appendChild(btn);
+  container.appendChild(table);
+  return container;
+}
+return {copyableTable};
 }});
 
 define({id: "dc5866fb", inputs: ["FileAttachment"], outputs: ["fishData","benthicData","healthData","recruitData","mangroveData","coverData","healthSg","condFinal","extFinal","condSummary","physData","monData"], body: async (FileAttachment) => {
@@ -121,9 +144,9 @@ physData.length
 ))
 }});
 
-define({id: "e569f63f", inputs: ["Inputs","condFinal","display"], body: async (Inputs,condFinal,display) => {
+define({id: "082f5a1f", inputs: ["copyableTable","condFinal","display"], body: async (copyableTable,condFinal,display) => {
 display(await(
-Inputs.table(condFinal, {
+copyableTable(condFinal, {
   columns: ["Entry", "Units", "Coral_Reef", "Mangrove", "Seagrass"],
   header: {Coral_Reef: "Coral Reef"},
   width: {Entry: 300}
@@ -131,9 +154,9 @@ Inputs.table(condFinal, {
 ))
 }});
 
-define({id: "6636969d", inputs: ["Inputs","extFinal","display"], body: async (Inputs,extFinal,display) => {
+define({id: "acef510c", inputs: ["copyableTable","extFinal","display"], body: async (copyableTable,extFinal,display) => {
 display(await(
-Inputs.table(extFinal, {
+copyableTable(extFinal, {
   columns: ["Entry", "Units", "Mangrove", "Seagrass", "Coral_Reef", "Totals"],
   header: {Coral_Reef: "Coral Reef"},
   width: {Entry: 180}
@@ -141,9 +164,9 @@ Inputs.table(extFinal, {
 ))
 }});
 
-define({id: "33b2fa7e", inputs: ["Inputs","condSummary","display"], body: async (Inputs,condSummary,display) => {
+define({id: "1199a177", inputs: ["copyableTable","condSummary","display"], body: async (copyableTable,condSummary,display) => {
 display(await(
-Inputs.table(condSummary, {
+copyableTable(condSummary, {
   columns: ["survey_period", "condition_indicator", "unit", "mean_value", "se_value", "mean_ci", "n_sites", "confidence"],
   header: {
     survey_period: "Period",
@@ -158,9 +181,9 @@ Inputs.table(condSummary, {
 ))
 }});
 
-define({id: "50d8f10b", inputs: ["Inputs","fishData","display"], body: async (Inputs,fishData,display) => {
+define({id: "ca62c291", inputs: ["copyableTable","fishData","display"], body: async (copyableTable,fishData,display) => {
 display(await(
-Inputs.table(fishData, {
+copyableTable(fishData, {
   columns: ["survey_period", "site", "mean_biomass_kg_ha", "se_biomass_kg_ha", "mean_abundance_ha", "mean_richness", "n_transects"],
   header: {
     survey_period: "Period",
@@ -175,9 +198,9 @@ Inputs.table(fishData, {
 ))
 }});
 
-define({id: "19ddf2bb", inputs: ["Inputs","benthicData","display"], body: async (Inputs,benthicData,display) => {
+define({id: "ce7f686b", inputs: ["copyableTable","benthicData","display"], body: async (copyableTable,benthicData,display) => {
 display(await(
-Inputs.table(benthicData, {
+copyableTable(benthicData, {
   columns: ["survey_period", "site", "live_coral_pct", "dead_coral_pct", "macroalgae_pct", "rubble_pct", "bleached_pct", "n_transects", "source"],
   header: {
     survey_period: "Period",
@@ -193,9 +216,9 @@ Inputs.table(benthicData, {
 ))
 }});
 
-define({id: "34370480", inputs: ["healthData","Inputs"], outputs: ["healthClean"], body: (healthData,Inputs) => {
+define({id: "73e5364f", inputs: ["healthData","copyableTable"], outputs: ["healthClean"], body: (healthData,copyableTable) => {
 const healthClean = healthData.filter(d => d.site != null);
-Inputs.table(healthClean, {
+copyableTable(healthClean, {
   columns: ["survey_period", "site", "n_total", "pct_healthy", "pct_pale", "pct_bleached", "pct_diseased", "pct_dead"],
   header: {
     survey_period: "Period",
@@ -211,9 +234,9 @@ Inputs.table(healthClean, {
 return {healthClean};
 }});
 
-define({id: "58e064dd", inputs: ["recruitData","Inputs"], outputs: ["recruitClean"], body: (recruitData,Inputs) => {
+define({id: "6a2fa004", inputs: ["recruitData","copyableTable"], outputs: ["recruitClean"], body: (recruitData,copyableTable) => {
 const recruitClean = recruitData.filter(d => d.site != null);
-Inputs.table(recruitClean, {
+copyableTable(recruitClean, {
   columns: ["survey_period", "site", "mean_recruits_m2", "se_recruits_m2", "n_quadrats"],
   header: {
     survey_period: "Period",
@@ -226,9 +249,9 @@ Inputs.table(recruitClean, {
 return {recruitClean};
 }});
 
-define({id: "ebfc18bf", inputs: ["Inputs","mangroveData","display"], body: async (Inputs,mangroveData,display) => {
+define({id: "1bcdaaa6", inputs: ["copyableTable","mangroveData","display"], body: async (copyableTable,mangroveData,display) => {
 display(await(
-Inputs.table(mangroveData, {
+copyableTable(mangroveData, {
   columns: ["area", "site", "n_plots", "mean_stem_density_ha", "mean_dbh_cm", "mean_height_m", "mean_canopy_cover_pct", "ci_composite", "pa_status"],
   header: {
     mean_stem_density_ha: "Stems/ha",
@@ -244,9 +267,9 @@ Inputs.table(mangroveData, {
 ))
 }});
 
-define({id: "3612e721", inputs: ["Inputs","coverData","display"], body: async (Inputs,coverData,display) => {
+define({id: "1603609a", inputs: ["copyableTable","coverData","display"], body: async (copyableTable,coverData,display) => {
 display(await(
-Inputs.table(coverData, {
+copyableTable(coverData, {
   columns: ["Area", "Total_Cover_pct", "Species_Richness", "n_quadrats_cover"],
   header: {
     Total_Cover_pct: "Total cover (%)",
@@ -258,9 +281,9 @@ Inputs.table(coverData, {
 ))
 }});
 
-define({id: "fb2a88f6", inputs: ["Inputs","healthSg","display"], body: async (Inputs,healthSg,display) => {
+define({id: "2ffa0adb", inputs: ["copyableTable","healthSg","display"], body: async (copyableTable,healthSg,display) => {
 display(await(
-Inputs.table(healthSg, {
+copyableTable(healthSg, {
   columns: ["Area", "Species", "Mean_Shoots_m2", "Mean_Canopy_height_cm", "n_quadrats"],
   header: {
     Mean_Shoots_m2: "Shoots/m2",
@@ -272,9 +295,9 @@ Inputs.table(healthSg, {
 ))
 }});
 
-define({id: "3fdab71e", inputs: ["Inputs","physData","display"], body: async (Inputs,physData,display) => {
+define({id: "55b3ea31", inputs: ["copyableTable","physData","display"], body: async (copyableTable,physData,display) => {
 display(await(
-Inputs.table(physData, {
+copyableTable(physData, {
   columns: ["year", "total_county_catch_mt", "reef_catch_adjusted_mt", "reef_fraction_pct", "reef_catch_lower_mt", "reef_catch_upper_mt"],
   header: {
     total_county_catch_mt: "County catch (mt)",
@@ -287,9 +310,9 @@ Inputs.table(physData, {
 ))
 }});
 
-define({id: "a2e36fff", inputs: ["Inputs","monData","display"], body: async (Inputs,monData,display) => {
+define({id: "c0d3ab33", inputs: ["copyableTable","monData","display"], body: async (copyableTable,monData,display) => {
 display(await(
-Inputs.table(monData, {
+copyableTable(monData, {
   columns: ["year", "reef_revenue_real_2024_usd", "resource_rent_lower_usd", "resource_rent_central_usd", "resource_rent_upper_usd"],
   header: {
     reef_revenue_real_2024_usd: "Revenue (USD)",
@@ -372,6 +395,7 @@ Inputs.table(monData, {
 <h1 id="data-tables" tabindex="-1"><a class="observablehq-header-anchor" href="#data-tables">Data Tables</a></h1>
 <h2 id="interactive-data-explorer" tabindex="-1"><a class="observablehq-header-anchor" href="#interactive-data-explorer">Interactive Data Explorer</a></h2>
 <div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
+<div class="observablehq observablehq--block"><!--:04aebc7d:--></div>
 <div class="observablehq observablehq--block"><!--:dc5866fb:--></div>
 <hr>
 <h2 id="dataset-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#dataset-summary">Dataset Summary</a></h2>
@@ -395,40 +419,40 @@ Inputs.table(monData, {
 </div>
 <hr>
 <h2 id="seea-ea-condition-account-final" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-condition-account-final">SEEA EA Condition Account (Final)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:e569f63f:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:082f5a1f:--></div>
 <hr>
 <h2 id="seea-ea-extent-account-final" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-extent-account-final">SEEA EA Extent Account (Final)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6636969d:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:acef510c:--></div>
 <hr>
 <h2 id="condition-summary-accounting-area-means" tabindex="-1"><a class="observablehq-header-anchor" href="#condition-summary-accounting-area-means">Condition Summary (Accounting-Area Means)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:33b2fa7e:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:1199a177:--></div>
 <hr>
 <h2 id="fish-condition-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#fish-condition-by-site">Fish Condition by Site</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:50d8f10b:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ca62c291:--></div>
 <hr>
 <h2 id="benthic-cover-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#benthic-cover-by-site">Benthic Cover by Site</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:19ddf2bb:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ce7f686b:--></div>
 <hr>
 <h2 id="coral-health-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-health-by-site">Coral Health by Site</a></h2>
-<div class="observablehq observablehq--block"><!--:34370480:--></div>
+<div class="observablehq observablehq--block"><!--:73e5364f:--></div>
 <hr>
 <h2 id="coral-recruitment-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-recruitment-by-site">Coral Recruitment by Site</a></h2>
-<div class="observablehq observablehq--block"><!--:58e064dd:--></div>
+<div class="observablehq observablehq--block"><!--:6a2fa004:--></div>
 <hr>
 <h2 id="mangrove-condition-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#mangrove-condition-by-site">Mangrove Condition by Site</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ebfc18bf:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:1bcdaaa6:--></div>
 <hr>
 <h2 id="seagrass-cover-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-cover-by-area">Seagrass Cover by Area</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3612e721:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:1603609a:--></div>
 <hr>
 <h2 id="seagrass-health-shoot-density-and-canopy-height" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-health-shoot-density-and-canopy-height">Seagrass Health (Shoot Density &amp; Canopy Height)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:fb2a88f6:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:2ffa0adb:--></div>
 <hr>
 <h2 id="fisheries-physical-supply" tabindex="-1"><a class="observablehq-header-anchor" href="#fisheries-physical-supply">Fisheries Physical Supply</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:3fdab71e:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:55b3ea31:--></div>
 <hr>
 <h2 id="fisheries-monetary-supply" tabindex="-1"><a class="observablehq-header-anchor" href="#fisheries-monetary-supply">Fisheries Monetary Supply</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:a2e36fff:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:c0d3ab33:--></div>
 <hr>
 <h2 id="export" tabindex="-1"><a class="observablehq-header-anchor" href="#export">Export</a></h2>
 <p>To export any table as CSV, right-click the table and select "Copy" or use the download buttons provided by Observable's table component.</p>
