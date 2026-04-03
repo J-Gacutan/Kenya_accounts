@@ -62,9 +62,9 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775201665888,"size":1333});
-registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775201665940,"size":2402});
-registerFile("./data/seagrass-health-zone.csv", {"name":"./data/seagrass-health-zone.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-zone.0856729c.csv","lastModified":1775201666350,"size":3648});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775209230102,"size":1333});
+registerFile("./data/seagrass-health-site.csv", {"name":"./data/seagrass-health-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-site.e87e1ed4.csv","lastModified":1775209230156,"size":2402});
+registerFile("./data/seagrass-health-zone.csv", {"name":"./data/seagrass-health-zone.csv","mimeType":"text/csv","path":"./_file/data/seagrass-health-zone.0856729c.csv","lastModified":1775209230589,"size":3648});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
@@ -94,13 +94,13 @@ const coverData = Array.from(
 return {coverRaw,healthData,zoneData,speciesCols0,numericCols,coverData};
 }});
 
-define({id: "11319463", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
+define({id: "f57216b5", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
 display(await(
 Plot.plot({
   title: "Total seagrass cover by area (%)",
   subtitle: "Dashed line = 50% cover threshold",
   width: 800,
-  height: 350,
+  height: 420,
   marginLeft: 160,
   x: {label: "Total cover (%)", grid: true, domain: [0, 100]},
   y: {label: null},
@@ -119,13 +119,13 @@ Plot.plot({
 ))
 }});
 
-define({id: "6ea31e12", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
+define({id: "556a613b", inputs: ["Plot","coverData","display"], body: async (Plot,coverData,display) => {
 display(await(
 Plot.plot({
   title: "Seagrass species richness by area",
   subtitle: "Number of species recorded at each site",
   width: 800,
-  height: 350,
+  height: 420,
   marginLeft: 160,
   x: {label: "Species richness", grid: true},
   y: {label: null},
@@ -157,31 +157,33 @@ const speciesLong = coverData.flatMap(d =>
 return {speciesCols,speciesLabels,speciesLong};
 }});
 
-define({id: "9575fc4c", inputs: ["Plot","speciesLabels","speciesLong","display"], body: async (Plot,speciesLabels,speciesLong,display) => {
+define({id: "ccbc2c3f", inputs: ["Plot","speciesLabels","speciesLong","display"], body: async (Plot,speciesLabels,speciesLong,display) => {
 display(await(
 Plot.plot({
   title: "Mean cover by species and area (%)",
-  subtitle: "Mean cover where species is present; values are independent per species (not additive to 100%)",
+  subtitle: "Values are independent per species (not additive to 100%); blank cells = species absent",
   width: 800,
-  height: 800,
+  height: 450,
   marginLeft: 160,
-  x: {label: "Mean cover (%)", domain: [0, 100], grid: true},
-  fy: {label: null, padding: 0.15},
+  marginBottom: 80,
+  x: {label: null, tickRotate: -45, domain: speciesLabels},
   y: {label: null},
-  color: {
-    domain: speciesLabels,
-    range: ["#2a9d8f", "#264653", "#e9c46a", "#e76f51", "#a8dadc", "#457b9d", "#f4a261", "#6c757d", "#2d6a4f"],
-    legend: true
-  },
+  color: {scheme: "YlGn", domain: [0, 100], legend: true, label: "Cover (%)"},
   marks: [
-    Plot.barX(speciesLong, {
-      x: "cover",
-      fy: "area",
-      y: "species",
-      fill: "species",
-      tip: true
+    Plot.cell(speciesLong, {
+      x: "species",
+      y: "area",
+      fill: "cover",
+      tip: true,
+      sort: {y: {value: "cover", reduce: "sum", reverse: true}}
     }),
-    Plot.ruleX([0])
+    Plot.text(speciesLong, {
+      x: "species",
+      y: "area",
+      text: d => d.cover.toFixed(0),
+      fill: d => d.cover > 55 ? "white" : "black",
+      fontSize: 11
+    })
   ]
 })
 ))
@@ -267,12 +269,13 @@ Inputs.table(coverData.map(d => ({
   <section>
     <summary>Extent Accounts</summary>
     <ol>
-    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent</a></li>
     </ol>
   </section>
   <section class="observablehq-section-active">
     <summary>Condition Accounts</summary>
     <ol>
+    <li class="observablehq-link"><a href="./mangrove-condition">Mangrove Condition</a></li>
     <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
     <li class="observablehq-link observablehq-link-active"><a href="./seagrass">Seagrass Condition</a></li>
     </ol>
@@ -318,16 +321,16 @@ Inputs.table(coverData.map(d => ({
 <p>Seagrass condition is generally good across the study area, with Ngomeni recording the highest species diversity (8 of 9 observed species). However, all condition indices carry LOW confidence because no published WIO-specific reference levels exist for shoot density or canopy height. The values reported here should be treated as a baseline for future change detection rather than definitive condition assessments.</p>
 <hr>
 <h2 id="total-seagrass-cover-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#total-seagrass-cover-by-area">Total Seagrass Cover by Area</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:11319463:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f57216b5:--></div>
 <p>Wesa and Bofa show the highest cover (84% and 81% respectively). Kikambala and Marereni have the lowest cover (56% and 58%), potentially reflecting higher anthropogenic disturbance.</p>
 <hr>
 <h2 id="species-richness-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#species-richness-by-area">Species Richness by Area</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6ea31e12:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:556a613b:--></div>
 <p>Ngomeni leads with 8 species - the highest diversity recorded. Kikambala has the fewest (2 species).</p>
 <hr>
 <h2 id="species-composition-by-area" tabindex="-1"><a class="observablehq-header-anchor" href="#species-composition-by-area">Species Composition by Area</a></h2>
 <div class="observablehq observablehq--block"><!--:6139b72f:--></div>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9575fc4c:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ccbc2c3f:--></div>
 <p>Values represent mean cover per species where that species was recorded - they do not sum to 100% because species overlap within quadrats. <em>Thalassodendron ciliatum</em> dominates at most sites (up to 100% at Ngomeni). <em>Cymodocea rotundata</em> is the second most common species. Ngomeni is the only area where <em>Enhalus acoroides</em> was recorded.</p>
 <hr>
 <h2 id="shoot-density-and-canopy-height" tabindex="-1"><a class="observablehq-header-anchor" href="#shoot-density-and-canopy-height">Shoot Density and Canopy Height</a></h2>

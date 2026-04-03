@@ -62,15 +62,15 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775201665565,"size":857});
-registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775201665725,"size":934});
-registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775201665504,"size":1271});
-registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775201666200,"size":1086});
-registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775201666148,"size":864});
-registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775201665832,"size":5198});
-registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775201665888,"size":1333});
-registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775201665993,"size":1735});
-registerFile("./data/seea-extent-final.csv", {"name":"./data/seea-extent-final.csv","mimeType":"text/csv","path":"./_file/data/seea-extent-final.2f63103d.csv","lastModified":1775201666045,"size":298});
+registerFile("./data/benthic-cover-site.csv", {"name":"./data/benthic-cover-site.csv","mimeType":"text/csv","path":"./_file/data/benthic-cover-site.7ea22ddc.csv","lastModified":1775209229768,"size":857});
+registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775209229939,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775209229711,"size":1271});
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775209230430,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775209230376,"size":864});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775209230048,"size":5198});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775209230102,"size":1333});
+registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775209230211,"size":1735});
+registerFile("./data/seea-extent-final.csv", {"name":"./data/seea-extent-final.csv","mimeType":"text/csv","path":"./_file/data/seea-extent-final.2f63103d.csv","lastModified":1775209230266,"size":298});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
@@ -178,15 +178,13 @@ Plot.plot({
 ))
 }});
 
-define({id: "d95d0b0a", outputs: ["coralCondition"], body: () => {
+define({id: "787a130c", outputs: ["coralCondition"], body: () => {
 const coralCondition = [
-  {indicator: "Live coral cover", opening: 0.905, closing: 0.730, change: -0.175},
-  {indicator: "Coral bleaching", opening: 0.628, closing: 1.000, change: 0.372},
-  {indicator: "Coral health", opening: 0.809, closing: 0.977, change: 0.168},
-  {indicator: "Coral recruitment", opening: 0.010, closing: 0.054, change: 0.044},
-  {indicator: "Fish biomass", opening: 0.207, closing: 0.380, change: 0.173},
-  {indicator: "Fish richness", opening: 0.558, closing: 0.728, change: 0.169},
-  {indicator: "Composite", opening: 0.520, closing: 0.645, change: 0.125}
+  {indicator: "Coral bleaching", opening: 0.927, closing: 1.000, change: 0.073},
+  {indicator: "Coral health (% healthy)", opening: 0.845, closing: 0.988, change: 0.142},
+  {indicator: "Coral disease", opening: 1.000, closing: 1.000, change: 0.000},
+  {indicator: "Coral recruitment", opening: 0.030, closing: 0.049, change: 0.019},
+  {indicator: "Composite (matched)", opening: 0.701, closing: 0.759, change: 0.058}
 ];
 return {coralCondition};
 }});
@@ -294,12 +292,13 @@ Plot.plot({
   <section>
     <summary>Extent Accounts</summary>
     <ol>
-    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent</a></li>
     </ol>
   </section>
   <section>
     <summary>Condition Accounts</summary>
     <ol>
+    <li class="observablehq-link"><a href="./mangrove-condition">Mangrove Condition</a></li>
     <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
     <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
     </ol>
@@ -362,7 +361,7 @@ Plot.plot({
 <p><strong>Kanamai to Malindi MPA</strong> - fringing and patch reefs</p>
 <ul>
 <li><strong>2 survey periods</strong> (Nov 2024, Jul 2025)</li>
-<li><strong>25</strong> reef survey sites across 3 programmes</li>
+<li><strong>53</strong> reef survey sites across 3 programmes (48 in Nov 2024, 8 in Jul 2025; 3 overlap)</li>
 <li>Fish biomass, benthic cover, coral health, recruitment</li>
 <li>4 protected area categories (no-take, managed, community, open access)</li>
 </ul>
@@ -463,9 +462,10 @@ Plot.plot({
 <h2 id="seea-ea-condition-accounts" tabindex="-1"><a class="observablehq-header-anchor" href="#seea-ea-condition-accounts">SEEA EA Condition Accounts</a></h2>
 <p>Condition indices are normalised to a 0-1 scale against established reference levels. Coral reef has two time points (opening and closing); mangrove and seagrass are single-year baselines.</p>
 <h3 id="coral-reef-m1-3-nov-2024-to-jul-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#coral-reef-m1-3-nov-2024-to-jul-2025">Coral Reef (M1.3) - Nov 2024 to Jul 2025</a></h3>
-<div class="observablehq observablehq--block"><!--:d95d0b0a:--></div>
+<p>Only three sites -- Roka, Watamu Coral Garden, and Wesa -- were surveyed in both periods, enabling direct opening-vs-closing comparison. The matched indicators are limited to coral health metrics; fish biomass, live coral cover, and invertebrate indicators were not measured at these same sites in both periods.</p>
+<div class="observablehq observablehq--block"><!--:787a130c:--></div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:025cd018:--></div>
-<p>Overall composite condition improved from 0.520 to 0.645 (+0.125), driven by post-bleaching recovery in coral health and bleaching indices. Coral recruitment remains critically low (CI 0.054), the single most concerning indicator.</p>
+<p>Composite condition at the three overlapping sites improved from 0.701 to 0.759 (+0.058), driven by post-bleaching recovery in coral health and bleaching indices. Coral recruitment remains critically low (CI 0.049), well below the WIO benchmark. Fish biomass, live coral cover, and invertebrate indicators are available for each period separately but cannot be compared temporally as they were measured at different sites.</p>
 <h3 id="mangrove-mft-1-2-2025-baseline" tabindex="-1"><a class="observablehq-header-anchor" href="#mangrove-mft-1-2-2025-baseline">Mangrove (MFT1.2) - 2025 baseline</a></h3>
 <p>Mangrove condition is a single-year snapshot (December 2025). Composite CI of <strong>0.40</strong> reflects a regenerating-stand signature: high stem density (CI 0.91) offset by low structural maturity (DBH CI 0.17, height CI 0.28). No temporal comparison is available until resurvey.</p>
 <h3 id="seagrass-m1-1-2024-baseline" tabindex="-1"><a class="observablehq-header-anchor" href="#seagrass-m1-1-2024-baseline">Seagrass (M1.1) - 2024 baseline</a></h3>
@@ -543,7 +543,7 @@ Plot.plot({
 </section>
 </main>
 <footer id="observablehq-footer">
-<nav><a rel="next" href="./mangrove"><span>Mangrove Extent &amp; Condition</span></a></nav>
+<nav><a rel="next" href="./mangrove"><span>Mangrove Extent</span></a></nav>
 <div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
 </footer>
 </div>

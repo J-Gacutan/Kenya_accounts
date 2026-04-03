@@ -1,0 +1,216 @@
+# Seagrass Condition
+
+## Kilifi County Seagrass Meadow Assessment
+
+```js
+import * as Plot from "npm:@observablehq/plot";
+import * as d3 from "npm:d3";
+```
+
+```js
+const coverRaw = await FileAttachment("data/seagrass-cover-site.csv").csv({typed: true});
+const healthData = await FileAttachment("data/seagrass-health-site.csv").csv({typed: true});
+const zoneData = await FileAttachment("data/seagrass-health-zone.csv").csv({typed: true});
+
+// Average across sampling dates for sites with multiple dates (e.g. Malindi)
+const speciesCols0 = ["Cymodocea_rotundata_pct", "Syringodium_isoetifolium_pct", "Thalassodendron_ciliatum_pct", "Halodule_uninervis_pct", "Halophila_stipulacea_pct", "Thalassia_hemprichii_pct", "Halophila_ovalis_pct", "Cymodocea_serrulata_pct", "Enhalus_acoroides_pct"];
+const numericCols = ["Total_Cover_pct", "Species_Richness", "n_quadrats_cover", ...speciesCols0];
+const coverData = Array.from(
+  d3.rollup(coverRaw, rows => {
+    const out = {Area: rows[0].Area};
+    for (const col of numericCols) {
+      out[col] = d3.mean(rows, d => d[col]);
+    }
+    // Round species richness to nearest integer (average of counts)
+    out.Species_Richness = Math.round(out.Species_Richness);
+    return out;
+  }, d => d.Area).values()
+);
+```
+
+Seagrass meadows (M1.1) provide critical ecosystem services including carbon sequestration, sediment stabilisation, and nursery habitat for reef-associated fish species. Ten survey areas along the Kilifi coastline were assessed using quadrat records collected between May and November 2024.
+
+Seagrass condition is generally good across the study area, with Ngomeni recording the highest species diversity (8 of 9 observed species). However, all condition indices carry LOW confidence because no published WIO-specific reference levels exist for shoot density or canopy height. The values reported here should be treated as a baseline for future change detection rather than definitive condition assessments.
+
+---
+
+## Total Seagrass Cover by Area
+
+```js
+Plot.plot({
+  title: "Total seagrass cover by area (%)",
+  subtitle: "Dashed line = 50% cover threshold",
+  width: 800,
+  height: 420,
+  marginLeft: 160,
+  x: {label: "Total cover (%)", grid: true, domain: [0, 100]},
+  y: {label: null},
+  marks: [
+    Plot.barX(coverData, {
+      x: "Total_Cover_pct",
+      y: "Area",
+      fill: "#2a9d8f",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([50], {stroke: "#e76f51", strokeDasharray: "4,4", strokeWidth: 1.5}),
+    Plot.ruleX([0])
+  ]
+})
+```
+
+Wesa and Bofa show the highest cover (84% and 81% respectively). Kikambala and Marereni have the lowest cover (56% and 58%), potentially reflecting higher anthropogenic disturbance.
+
+---
+
+## Species Richness by Area
+
+```js
+Plot.plot({
+  title: "Seagrass species richness by area",
+  subtitle: "Number of species recorded at each site",
+  width: 800,
+  height: 420,
+  marginLeft: 160,
+  x: {label: "Species richness", grid: true},
+  y: {label: null},
+  marks: [
+    Plot.barX(coverData, {
+      x: "Species_Richness",
+      y: "Area",
+      fill: "#264653",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
+})
+```
+
+Ngomeni leads with 8 species - the highest diversity recorded. Kikambala has the fewest (2 species).
+
+---
+
+## Species Composition by Area
+
+```js
+const speciesCols = ["Cymodocea_rotundata_pct", "Syringodium_isoetifolium_pct", "Thalassodendron_ciliatum_pct", "Halodule_uninervis_pct", "Halophila_stipulacea_pct", "Thalassia_hemprichii_pct", "Halophila_ovalis_pct", "Cymodocea_serrulata_pct", "Enhalus_acoroides_pct"];
+const speciesLabels = ["C. rotundata", "S. isoetifolium", "T. ciliatum", "H. uninervis", "H. stipulacea", "T. hemprichii", "H. ovalis", "C. serrulata", "E. acoroides"];
+
+const speciesLong = coverData.flatMap(d =>
+  speciesCols.map((col, i) => ({
+    area: d.Area,
+    species: speciesLabels[i],
+    cover: d[col] || 0
+  })).filter(r => r.cover > 0)
+);
+```
+
+```js
+Plot.plot({
+  title: "Mean cover by species and area (%)",
+  subtitle: "Values are independent per species (not additive to 100%); blank cells = species absent",
+  width: 800,
+  height: 450,
+  marginLeft: 160,
+  marginBottom: 80,
+  x: {label: null, tickRotate: -45, domain: speciesLabels},
+  y: {label: null},
+  color: {scheme: "YlGn", domain: [0, 100], legend: true, label: "Cover (%)"},
+  marks: [
+    Plot.cell(speciesLong, {
+      x: "species",
+      y: "area",
+      fill: "cover",
+      tip: true,
+      sort: {y: {value: "cover", reduce: "sum", reverse: true}}
+    }),
+    Plot.text(speciesLong, {
+      x: "species",
+      y: "area",
+      text: d => d.cover.toFixed(0),
+      fill: d => d.cover > 55 ? "white" : "black",
+      fontSize: 11
+    })
+  ]
+})
+```
+
+Values represent mean cover per species where that species was recorded - they do not sum to 100% because species overlap within quadrats. *Thalassodendron ciliatum* dominates at most sites (up to 100% at Ngomeni). *Cymodocea rotundata* is the second most common species. Ngomeni is the only area where *Enhalus acoroides* was recorded.
+
+---
+
+## Shoot Density and Canopy Height
+
+```js
+const healthClean = healthData.filter(d => d.Area != null && d.Mean_Shoots_m2 > 0);
+```
+
+```js
+Plot.plot({
+  title: "Shoot density vs canopy height by species and area",
+  subtitle: "Each point = one species at one area",
+  width: 800,
+  height: 500,
+  x: {label: "Shoot density (shoots/m2)", grid: true},
+  y: {label: "Mean canopy height (cm)", grid: true},
+  color: {legend: true},
+  marks: [
+    Plot.dot(healthClean, {
+      x: "Mean_Shoots_m2",
+      y: "Mean_Canopy_height_cm",
+      fill: "Species",
+      r: d => Math.sqrt(d.n_quadrats) * 2,
+      tip: true,
+      title: d => `${d.Area} - ${d.Species}\nShoots: ${d.Mean_Shoots_m2.toFixed(0)}/m2\nHeight: ${d.Mean_Canopy_height_cm.toFixed(1)} cm\nn = ${d.n_quadrats}`
+    })
+  ]
+})
+```
+
+---
+
+## Seagrass Health by Zone
+
+```js
+const zoneClean = zoneData.filter(d => d.Area != null);
+```
+
+```js
+Inputs.table(zoneClean.map(d => ({
+  Area: d.Area,
+  Zone: d.Zone,
+  Species: d.Species,
+  "Shoots/m2": (+d.Mean_Shoots_m2).toFixed(0),
+  "Height (cm)": (+d.Mean_Canopy_height_cm).toFixed(1),
+  "Epiphyte": d.Mean_Epiphyte_cover_pct != null ? (+d.Mean_Epiphyte_cover_pct).toFixed(1) : "-",
+  Quadrats: d.n_quadrats
+})), {
+  sort: "Area",
+  columns: ["Area", "Zone", "Species", "Shoots/m2", "Height (cm)", "Epiphyte", "Quadrats"]
+})
+```
+
+---
+
+## Summary Table
+
+```js
+Inputs.table(coverData.map(d => ({
+  Area: d.Area,
+  "Cover (%)": (+d.Total_Cover_pct).toFixed(1),
+  "Spp richness": d.Species_Richness,
+  "N quadrats": d.n_quadrats_cover
+})), {
+  sort: "Area"
+})
+```
+
+<style>
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+}
+.card h3 { margin-top: 0; }
+</style>

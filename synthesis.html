@@ -62,14 +62,14 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775201665725,"size":934});
-registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775201665504,"size":1271});
-registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775201666200,"size":1086});
-registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775201666148,"size":864});
-registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775201665832,"size":5198});
-registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775201665888,"size":1333});
-registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775201665993,"size":1735});
-registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775201666098,"size":1992});
+registerFile("./data/condition-by-pa.csv", {"name":"./data/condition-by-pa.csv","mimeType":"text/csv","path":"./_file/data/condition-by-pa.ed3a4e8c.csv","lastModified":1775209229939,"size":934});
+registerFile("./data/fish-condition-site.csv", {"name":"./data/fish-condition-site.csv","mimeType":"text/csv","path":"./_file/data/fish-condition-site.46906644.csv","lastModified":1775209229711,"size":1271});
+registerFile("./data/fisheries-monetary.csv", {"name":"./data/fisheries-monetary.csv","mimeType":"text/csv","path":"./_file/data/fisheries-monetary.0c0ed15a.csv","lastModified":1775209230430,"size":1086});
+registerFile("./data/fisheries-physical.csv", {"name":"./data/fisheries-physical.csv","mimeType":"text/csv","path":"./_file/data/fisheries-physical.05ed20d8.csv","lastModified":1775209230376,"size":864});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775209230048,"size":5198});
+registerFile("./data/seagrass-cover-site.csv", {"name":"./data/seagrass-cover-site.csv","mimeType":"text/csv","path":"./_file/data/seagrass-cover-site.8a8db89b.csv","lastModified":1775209230102,"size":1333});
+registerFile("./data/seea-condition-final.csv", {"name":"./data/seea-condition-final.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-final.a2f11a7b.csv","lastModified":1775209230211,"size":1735});
+registerFile("./data/seea-condition-summary.csv", {"name":"./data/seea-condition-summary.csv","mimeType":"text/csv","path":"./_file/data/seea-condition-summary.9e7775be.csv","lastModified":1775209230323,"size":1992});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
@@ -246,10 +246,10 @@ if (ngomeniMangrove.length > 0) {
 }
 }});
 
-define({id: "cb51e6b4", outputs: ["confidence"], body: () => {
+define({id: "f9d3dae7", outputs: ["confidence"], body: () => {
 const confidence = [
-  {component: "Fish biomass (kg/ha)", confidence: "MEDIUM", basis: "25 site-periods; FishBase allometry; McClanahan 2016 reference", caveat: "Transect area (250 m2) pending field confirmation"},
-  {component: "Live coral cover (%)", confidence: "MEDIUM", basis: "12 site-periods; GCRMN 2021 / Obura 2022 reference (30%)", caveat: "Nov 2024 and Jul 2025 are different site sets, not repeated measures"},
+  {component: "Fish biomass (kg/ha)", confidence: "MEDIUM", basis: "17 site-periods (9 Nov 2024 + 8 Jul 2025); FishBase allometry; McClanahan 2016 reference", caveat: "Transect area (250 m2) pending field confirmation"},
+  {component: "Live coral cover (%)", confidence: "MEDIUM", basis: "11 site-periods (6 Nov 2024 + 5 Jul 2025); GCRMN 2021 / Obura 2022 reference (30%)", caveat: "Nov 2024 and Jul 2025 are different site sets, not repeated measures"},
   {component: "Coral recruitment", confidence: "LOW-MEDIUM", basis: "16 site-periods; Hughes 2010 WIO reference (1-3/m2)", caveat: "Methodology equivalence with reference studies unconfirmed"},
   {component: "Coral health (bleaching)", confidence: "MEDIUM", basis: "15 site-periods; colony-level assessment", caveat: "Post-bleaching snapshot; no pre-bleaching baseline"},
   {component: "Mangrove condition (composite)", confidence: "MEDIUM", basis: "32 plots, 22 sites; Kenya literature references", caveat: "13 sites with fewer than 2 plots (low sample size flag)"},
@@ -447,12 +447,13 @@ Inputs.table(crossEco, {
   <section>
     <summary>Extent Accounts</summary>
     <ol>
-    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent</a></li>
     </ol>
   </section>
   <section>
     <summary>Condition Accounts</summary>
     <ol>
+    <li class="observablehq-link"><a href="./mangrove-condition">Mangrove Condition</a></li>
     <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
     <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
     </ol>
@@ -533,7 +534,7 @@ Inputs.table(crossEco, {
 <hr>
 <h2 id="3-data-confidence-assessment" tabindex="-1"><a class="observablehq-header-anchor" href="#3-data-confidence-assessment">3. Data Confidence Assessment</a></h2>
 <p>Not all indicators carry the same weight of evidence. The table below summarises the confidence level for each major account component, based on data volume, reference level robustness, and temporal coverage.</p>
-<div class="observablehq observablehq--block"><!--:cb51e6b4:--></div>
+<div class="observablehq observablehq--block"><!--:f9d3dae7:--></div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:96706eff:--></div>
 <h3 id="confidence-summary" tabindex="-1"><a class="observablehq-header-anchor" href="#confidence-summary">Confidence summary</a></h3>
 <div class="observablehq observablehq--block"><!--:d737c63f:--></div>
