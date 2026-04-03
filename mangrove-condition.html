@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.4">
-<title>Mangrove Extent &amp; Condition | Kenya Coastal Ecosystem Accounts</title>
+<title>Mangrove Condition | Kenya Coastal Ecosystem Accounts</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.b050d634.css">
@@ -62,9 +62,7 @@
 import {define} from "./_observablehq/client.ef8b565d.js";
 import {registerFile} from "./_observablehq/stdlib.277aeab8.js";
 
-registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775201665832,"size":5198});
-registerFile("./data/mangrove-extent-change.csv", {"name":"./data/mangrove-extent-change.csv","mimeType":"text/csv","path":"./_file/data/mangrove-extent-change.5679a4c4.csv","lastModified":1775201666253,"size":868});
-registerFile("./data/mangrove-species.csv", {"name":"./data/mangrove-species.csv","mimeType":"text/csv","path":"./_file/data/mangrove-species.8076e47b.csv","lastModified":1775201666304,"size":3167});
+registerFile("./data/mangrove-condition-site.csv", {"name":"./data/mangrove-condition-site.csv","mimeType":"text/csv","path":"./_file/data/mangrove-condition-site.b4f03cbe.csv","lastModified":1775208250797,"size":5198});
 
 define({id: "7c75f0ab", outputs: ["Plot","d3"], body: async () => {
 const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a96a6bbb.js"), import("./_npm/d3@7.9.0/66d82917.js")]);
@@ -72,78 +70,9 @@ const [Plot, d3] = await Promise.all([import("./_npm/@observablehq/plot@0.6.17/a
 return {Plot,d3};
 }});
 
-define({id: "bb6b2a99", inputs: ["FileAttachment"], outputs: ["extentChange","conditionSite","speciesData"], body: async (FileAttachment) => {
-const extentChange = await FileAttachment("./data/mangrove-extent-change.csv").csv({typed: true});
+define({id: "3d4bbacc", inputs: ["FileAttachment"], outputs: ["conditionSite"], body: async (FileAttachment) => {
 const conditionSite = await FileAttachment("./data/mangrove-condition-site.csv").csv({typed: true});
-const speciesData = await FileAttachment("./data/mangrove-species.csv").csv({typed: true});
-return {extentChange,conditionSite,speciesData};
-}});
-
-define({id: "9659acc3", inputs: ["Inputs","extentChange","display"], body: async (Inputs,extentChange,display) => {
-display(await(
-Inputs.table(extentChange, {
-  columns: ["Component", "Year", "Polygons", "Area_ha", "Source"],
-  header: {
-    Component: "Entry",
-    Area_ha: "Area (ha)"
-  },
-  width: {Component: 250, Source: 200}
-})
-))
-}});
-
-define({id: "2490203d", inputs: ["Plot","display"], body: async (Plot,display) => {
-display(await(
-Plot.plot({
-  title: "Mangrove extent account",
-  subtitle: "Opening, additions, reductions, and closing extent (hectares)",
-  width: 700,
-  height: 200,
-  marginLeft: 250,
-  x: {label: "Area (ha)", grid: true},
-  y: {label: null, domain: ["Opening extent (GMW 2020)", "Additions (new in 2025)", "Reductions (lost since 2020)", "Closing extent (2025)"]},
-  marks: [
-    Plot.barX([
-      {label: "Opening extent (GMW 2020)", value: 6083.04, type: "extent"},
-      {label: "Additions (new in 2025)", value: 589.10, type: "gain"},
-      {label: "Reductions (lost since 2020)", value: 927.84, type: "loss"},
-      {label: "Closing extent (2025)", value: 5741.64, type: "extent"}
-    ], {
-      x: "value",
-      y: "label",
-      fill: d => d.type === "loss" ? "#e76f51" : d.type === "gain" ? "#2a9d8f" : "#264653",
-      tip: true
-    }),
-    Plot.ruleX([0])
-  ]
-})
-))
-}});
-
-define({id: "6ca21bee", inputs: ["Plot","display"], body: async (Plot,display) => {
-display(await(
-Plot.plot({
-  title: "Mangrove extent by protection status",
-  subtitle: "66.3% of remaining mangrove falls within protected areas",
-  width: 700,
-  height: 150,
-  marginLeft: 250,
-  x: {label: "Area (ha)", grid: true},
-  y: {label: null, domain: ["Within protected areas", "Outside protected areas"]},
-  marks: [
-    Plot.barX([
-      {label: "Within protected areas", value: 3806.46},
-      {label: "Outside protected areas", value: 1935.18}
-    ], {
-      x: "value",
-      y: "label",
-      fill: d => d.label.includes("Within") ? "#2a9d8f" : "#e9c46a",
-      tip: true
-    }),
-    Plot.ruleX([0])
-  ]
-})
-))
+return {conditionSite};
 }});
 
 define({id: "85f55db2", inputs: ["conditionSite"], outputs: ["condClean"], body: (conditionSite) => {
@@ -289,15 +218,16 @@ Inputs.table(condClean.map(d => ({
   <ol>
     <li class="observablehq-link"><a href="./">Overview</a></li>
   </ol>
-  <section class="observablehq-section-active">
+  <section>
     <summary>Extent Accounts</summary>
     <ol>
-    <li class="observablehq-link observablehq-link-active"><a href="./mangrove">Mangrove Extent &amp; Condition</a></li>
+    <li class="observablehq-link"><a href="./mangrove">Mangrove Extent</a></li>
     </ol>
   </section>
-  <section>
+  <section class="observablehq-section-active">
     <summary>Condition Accounts</summary>
     <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./mangrove-condition">Mangrove Condition</a></li>
     <li class="observablehq-link"><a href="./coral-reef">Coral Reef Condition</a></li>
     <li class="observablehq-link"><a href="./seagrass">Seagrass Condition</a></li>
     </ol>
@@ -325,10 +255,7 @@ Inputs.table(condClean.map(d => ({
 <nav>
 <div>Contents</div>
 <ol>
-<li class="observablehq-secondary-link"><a href="#extent-account-2020-2025">Extent Account (2020-2025)</a></li>
-<li class="observablehq-secondary-link"><a href="#extent-change-2020-2025">Extent Change (2020-2025)</a></li>
-<li class="observablehq-secondary-link"><a href="#protected-area-coverage-2025">Protected Area Coverage (2025)</a></li>
-<li class="observablehq-secondary-link"><a href="#field-based-condition-indices-by-site">Field-Based Condition Indices by Site</a></li>
+<li class="observablehq-secondary-link"><a href="#composite-condition-index-by-site">Composite Condition Index by Site</a></li>
 <li class="observablehq-secondary-link"><a href="#individual-condition-indicators">Individual Condition Indicators</a></li>
 <li class="observablehq-secondary-link"><a href="#condition-by-area">Condition by Area</a></li>
 <li class="observablehq-secondary-link"><a href="#full-site-level-condition-data">Full Site-Level Condition Data</a></li>
@@ -336,42 +263,13 @@ Inputs.table(condClean.map(d => ({
 </nav>
 </aside>
 <main id="observablehq-main" class="observablehq">
-<h1 id="mangrove-extent-and-condition" tabindex="-1"><a class="observablehq-header-anchor" href="#mangrove-extent-and-condition">Mangrove Extent &amp; Condition</a></h1>
-<h2 id="kilifi-county-mangrove-accounts" tabindex="-1"><a class="observablehq-header-anchor" href="#kilifi-county-mangrove-accounts">Kilifi County Mangrove Accounts</a></h2>
+<h1 id="mangrove-condition" tabindex="-1"><a class="observablehq-header-anchor" href="#mangrove-condition">Mangrove Condition</a></h1>
+<h2 id="kilifi-county-field-based-condition-account" tabindex="-1"><a class="observablehq-header-anchor" href="#kilifi-county-field-based-condition-account">Kilifi County Field-Based Condition Account</a></h2>
 <div class="observablehq observablehq--block"><!--:7c75f0ab:--></div>
-<div class="observablehq observablehq--block"><!--:bb6b2a99:--></div>
-<p>Mangroves along the Kilifi coastline were assessed through two complementary approaches: satellite-derived extent mapping (GMW 2020 baseline vs 2025 project classification) and field-based condition surveys across 32 plots in 4 areas. The accounts reveal a paradox: despite 66% of mangrove falling within protected areas, extent declined by 5.6% over 5 years. Field data show a regenerating-stand signature - high stem density but low DBH - consistent with recent disturbance followed by regrowth rather than mature forest.</p>
+<div class="observablehq observablehq--block"><!--:3d4bbacc:--></div>
+<p>Field-based condition surveys across 32 plots in 4 areas along the Kilifi coastline. Five structural indicators are normalised to 0-1 against reference values: stem density, mean DBH, mean height, canopy cover, and tree quality index. The data show a regenerating-stand signature - high stem density but low DBH - consistent with recent disturbance followed by regrowth rather than mature forest. See <a href="./mangrove">Mangrove Extent</a> for the satellite-derived extent account.</p>
 <hr>
-<h2 id="extent-account-2020-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#extent-account-2020-2025">Extent Account (2020-2025)</a></h2>
-<p>The mangrove extent account tracks change between the Global Mangrove Watch (GMW) v4 2020 baseline (Sentinel-2 analysis at 10 m spatial resolution) and the 2025 project classification.</p>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9659acc3:--></div>
-<div class="grid grid-cols-4">
-<div class="card">
-<h3>Opening (2020)</h3>
-<p class="big">6,083 ha</p>
-</div>
-<div class="card">
-<h3>Additions</h3>
-<p class="big" style="color:#2a9d8f">+589 ha</p>
-</div>
-<div class="card">
-<h3>Reductions</h3>
-<p class="big" style="color:#e76f51">-928 ha</p>
-</div>
-<div class="card">
-<h3>Closing (2025)</h3>
-<p class="big">5,742 ha</p>
-</div>
-</div>
-<p>Net loss of 341 ha (-5.6%) over 5 years. 66.3% of remaining mangrove (3,806 ha) falls within protected areas.</p>
-<hr>
-<h2 id="extent-change-2020-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#extent-change-2020-2025">Extent Change (2020-2025)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:2490203d:--></div>
-<h2 id="protected-area-coverage-2025" tabindex="-1"><a class="observablehq-header-anchor" href="#protected-area-coverage-2025">Protected Area Coverage (2025)</a></h2>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6ca21bee:--></div>
-<hr>
-<h2 id="field-based-condition-indices-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#field-based-condition-indices-by-site">Field-Based Condition Indices by Site</a></h2>
-<p>Condition indices are normalised to 0-1 against reference values. Five indicators are measured: stem density, mean DBH, mean height, canopy cover, and tree quality index.</p>
+<h2 id="composite-condition-index-by-site" tabindex="-1"><a class="observablehq-header-anchor" href="#composite-condition-index-by-site">Composite Condition Index by Site</a></h2>
 <div class="observablehq observablehq--block"><!--:85f55db2:--></div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:231d4ec2:--></div>
 <hr>
@@ -392,17 +290,9 @@ Inputs.table(condClean.map(d => ({
 <hr>
 <h2 id="full-site-level-condition-data" tabindex="-1"><a class="observablehq-header-anchor" href="#full-site-level-condition-data">Full Site-Level Condition Data</a></h2>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ff860603:--></div>
-<style>
-.big {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0.5rem 0 0 0;
-}
-.card h3 { margin-top: 0; }
-</style>
 </main>
 <footer id="observablehq-footer">
-<nav><a rel="prev" href="./"><span>Kenya Coastal Ecosystem Accounts</span></a><a rel="next" href="./coral-reef"><span>Coral Reef Condition</span></a></nav>
+<nav><a rel="prev" href="./mangrove"><span>Mangrove Extent</span></a><a rel="next" href="./coral-reef"><span>Coral Reef Condition</span></a></nav>
 <div>Kenya Coastal Ecosystem Accounts - UN SEEA EA Framework. Built with Observable Framework.</div>
 </footer>
 </div>

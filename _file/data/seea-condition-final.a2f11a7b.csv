@@ -1,0 +1,31 @@
+"Entry","Units","Coral_Reef","Mangrove","Seagrass"
+"Live coral cover -- Opening (Nov 2024)","index (0-1)",0.905,--,--
+"Live coral cover -- Closing (Jul 2025)","index (0-1)",0.73,--,--
+"Live coral cover -- Change","index (0-1)",-0.175,--,--
+"Coral bleaching -- Opening (Nov 2024)","index (0-1)",0.628,--,--
+"Coral bleaching -- Closing (Jul 2025)","index (0-1)",1,--,--
+"Coral bleaching -- Change","index (0-1)",0.372,--,--
+"Coral health -- Opening (Nov 2024)","index (0-1)",0.809,--,--
+"Coral health -- Closing (Jul 2025)","index (0-1)",0.977,--,--
+"Coral health -- Change","index (0-1)",0.168,--,--
+"Coral recruitment -- Opening (Nov 2024)","index (0-1)",0.01,--,--
+"Coral recruitment -- Closing (Jul 2025)","index (0-1)",0.054,--,--
+"Coral recruitment -- Change","index (0-1)",0.044,--,--
+"Fish biomass -- Opening (Nov 2024)","index (0-1)",0.207,--,--
+"Fish biomass -- Closing (Jul 2025)","index (0-1)",0.38,--,--
+"Fish biomass -- Change","index (0-1)",0.173,--,--
+"Fish richness -- Opening (Nov 2024)","index (0-1)",0.558,--,--
+"Fish richness -- Closing (Jul 2025)","index (0-1)",0.728,--,--
+"Fish richness -- Change","index (0-1)",0.169,--,--
+"Composite -- Opening (Nov 2024)","index (0-1)",0.52,--,--
+"Composite -- Closing (Jul 2025)","index (0-1)",0.645,--,--
+"Composite -- Change","index (0-1)",0.125,--,--
+"Stem density (2025)","index (0-1)",--,0.91,--
+"Mean DBH (2025)","index (0-1)",--,0.17,--
+"Mean height (2025)","index (0-1)",--,0.281,--
+"Canopy cover (2025)","index (0-1)",--,0.326,--
+"Tree quality (2025)","index (0-1)",--,0.299,--
+"Composite (2025)","index (0-1)",--,0.397,--
+"Total cover (2024)","index (0-1)",--,--,0.963
+"Species richness (2024)","index (0-1)",--,--,0.537
+"Composite (2024)","index (0-1)",--,--,0.781
